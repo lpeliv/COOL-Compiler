@@ -1,0 +1,96 @@
+#name ".//test_files//init-order-self.cl"
+#5 CLASS
+#5 TYPEID Main
+#5 INHERITS
+#5 TYPEID IO
+#6 '{'
+#7 OBJECTID recite
+#7 '('
+#7 OBJECTID value
+#7 ':'
+#7 TYPEID Int
+#7 ')'
+#7 ':'
+#7 TYPEID Object
+#8 '{'
+#9 '{'
+#10 OBJECTID out_int
+#10 '('
+#10 OBJECTID value
+#10 ')'
+#10 ';'
+#11 OBJECTID out_string
+#11 '('
+#11 STR_CONST "\n"
+#11 ')'
+#11 ';'
+#12 OBJECTID self
+#12 ';'
+#13 '}'
+#14 '}'
+#14 ';'
+#16 OBJECTID x
+#16 ':'
+#16 TYPEID Object
+#16 ASSIGN
+#16 OBJECTID recite
+#16 '('
+#16 INT_CONST 1
+#16 ')'
+#16 ';'
+#17 OBJECTID y
+#17 ':'
+#17 TYPEID Object
+#17 ASSIGN
+#17 OBJECTID recite
+#17 '('
+#17 INT_CONST 2
+#17 ')'
+#17 ';'
+#18 OBJECTID z
+#18 ':'
+#18 TYPEID Object
+#18 ASSIGN
+#18 OBJECTID recite
+#18 '('
+#18 INT_CONST 3
+#18 ')'
+#18 ';'
+#19 OBJECTID c
+#19 ':'
+#19 TYPEID Object
+#19 ASSIGN
+#19 OBJECTID recite
+#19 '('
+#19 INT_CONST 4
+#19 ')'
+#19 ';'
+#20 OBJECTID b
+#20 ':'
+#20 TYPEID Object
+#20 ASSIGN
+#20 OBJECTID recite
+#20 '('
+#20 INT_CONST 5
+#20 ')'
+#20 ';'
+#21 OBJECTID a
+#21 ':'
+#21 TYPEID Object
+#21 ASSIGN
+#21 OBJECTID recite
+#21 '('
+#21 INT_CONST 6
+#21 ')'
+#21 ';'
+#23 OBJECTID main
+#23 '('
+#23 ')'
+#23 ':'
+#23 TYPEID Object
+#24 '{'
+#25 OBJECTID self
+#26 '}'
+#26 ';'
+#27 '}'
+#27 ';'

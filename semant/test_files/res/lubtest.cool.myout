@@ -1,0 +1,173 @@
+Class Name: Main, Class Definition: 0x580e37d6c240
+Class Name: Object, Class Definition: 0x580e37d6dfb0
+Class Name: Int, Class Definition: 0x580e36e158d0
+Class Name: Z, Class Definition: 0x580e37d6c320
+Class Name: A, Class Definition: 0x580e37d6c430
+Class Name: B, Class Definition: 0x580e37d6c540
+Class Name: C, Class Definition: 0x580e37d6c650
+Class Name: D, Class Definition: 0x580e37d6c760
+Class Name: Test, Class Definition: 0x580e37d6d320
+Class Name: Bool, Class Definition: 0x580e37d6d380
+Class Name: IO, Class Definition: 0x7fff62b989d0
+Class Name: String, Class Definition: 0x580e37d6dc10
+Class Object is inherited by:
+  Main
+  Z
+  Test
+Class Z is inherited by:
+  A
+  B
+Class B is inherited by:
+  C
+  D
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//lubtest.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    Z
+    Object
+    ".//test_files//lubtest.cl"
+    (
+    )
+  #1
+  _class
+    A
+    Z
+    ".//test_files//lubtest.cl"
+    (
+    )
+  #1
+  _class
+    B
+    Z
+    ".//test_files//lubtest.cl"
+    (
+    )
+  #1
+  _class
+    C
+    B
+    ".//test_files//lubtest.cl"
+    (
+    )
+  #1
+  _class
+    D
+    B
+    ".//test_files//lubtest.cl"
+    (
+    )
+  #1
+  _class
+    Test
+    Object
+    ".//test_files//lubtest.cl"
+    (
+    #1
+    _attr
+      a
+      A
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      b
+      B
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      c
+      C
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      d
+      D
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      z
+      Z
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      f
+      Z
+      #1
+      _cond
+        #1
+        _bool
+          1
+        : _no_type
+        #1
+        _object
+          a
+        : _no_type
+        #1
+        _object
+          b
+        : _no_type
+      : _no_type
+    #1
+    _method
+      g
+      Object
+      #1
+      _cond
+        #1
+        _bool
+          1
+        : _no_type
+        #1
+        _object
+          a
+        : _no_type
+        #1
+        _object
+          b
+        : _no_type
+      : _no_type
+    #1
+    _method
+      h
+      B
+      #1
+      _cond
+        #1
+        _bool
+          1
+        : _no_type
+        #1
+        _object
+          c
+        : _no_type
+        #1
+        _object
+          a
+        : _no_type
+      : _no_type
+    )

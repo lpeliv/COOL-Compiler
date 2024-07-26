@@ -1,0 +1,154 @@
+#name ".//test_files//new-st.cl"
+#4 CLASS
+#4 TYPEID A
+#4 '{'
+#5 OBJECTID x
+#5 ':'
+#5 TYPEID Int
+#5 ASSIGN
+#5 OBJECTID x
+#5 '+'
+#5 INT_CONST 1
+#5 ';'
+#6 OBJECTID printX
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#6 '{'
+#6 '{'
+#7 '('
+#7 NEW
+#7 TYPEID IO
+#7 ')'
+#7 '.'
+#7 OBJECTID out_string
+#7 '('
+#7 STR_CONST "x is "
+#7 ')'
+#7 ';'
+#8 '('
+#8 NEW
+#8 TYPEID IO
+#8 ')'
+#8 '.'
+#8 OBJECTID out_int
+#8 '('
+#8 OBJECTID x
+#8 ')'
+#8 ';'
+#9 '('
+#9 NEW
+#9 TYPEID IO
+#9 ')'
+#9 '.'
+#9 OBJECTID out_string
+#9 '('
+#9 STR_CONST "\n"
+#9 ')'
+#9 ';'
+#10 '}'
+#10 '}'
+#10 ';'
+#11 OBJECTID new_st
+#11 '('
+#11 ')'
+#11 ':'
+#11 TYPEID A
+#11 '{'
+#12 NEW
+#12 TYPEID SELF_TYPE
+#13 '}'
+#13 ';'
+#14 OBJECTID bump
+#14 '('
+#14 ')'
+#14 ':'
+#14 TYPEID Object
+#14 '{'
+#15 OBJECTID x
+#15 ASSIGN
+#15 OBJECTID x
+#15 '+'
+#15 INT_CONST 1
+#16 '}'
+#16 ';'
+#17 '}'
+#17 ';'
+#19 CLASS
+#19 TYPEID Main
+#19 '{'
+#20 OBJECTID main
+#20 '('
+#20 ')'
+#20 ':'
+#20 TYPEID Object
+#20 '{'
+#21 LET
+#22 OBJECTID a1
+#22 ':'
+#22 TYPEID A
+#22 ASSIGN
+#22 NEW
+#22 TYPEID A
+#22 ','
+#23 OBJECTID a2
+#23 ':'
+#23 TYPEID A
+#24 IN
+#24 '{'
+#25 OBJECTID a1
+#25 '.'
+#25 OBJECTID printX
+#25 '('
+#25 ')'
+#25 ';'
+#26 OBJECTID a1
+#26 '.'
+#26 OBJECTID bump
+#26 '('
+#26 ')'
+#26 ';'
+#27 OBJECTID a1
+#27 '.'
+#27 OBJECTID bump
+#27 '('
+#27 ')'
+#27 ';'
+#28 OBJECTID a1
+#28 '.'
+#28 OBJECTID bump
+#28 '('
+#28 ')'
+#28 ';'
+#29 OBJECTID a1
+#29 '.'
+#29 OBJECTID printX
+#29 '('
+#29 ')'
+#29 ';'
+#30 OBJECTID a2
+#30 ASSIGN
+#30 OBJECTID a1
+#30 '.'
+#30 OBJECTID new_st
+#30 '('
+#30 ')'
+#30 ';'
+#31 OBJECTID a2
+#31 '.'
+#31 OBJECTID printX
+#31 '('
+#31 ')'
+#31 ';'
+#32 OBJECTID a1
+#32 '.'
+#32 OBJECTID printX
+#32 '('
+#32 ')'
+#32 ';'
+#33 '}'
+#34 '}'
+#34 ';'
+#35 '}'
+#35 ';'

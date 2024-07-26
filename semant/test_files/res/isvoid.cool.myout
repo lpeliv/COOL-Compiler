@@ -1,0 +1,52 @@
+Class Name: Main, Class Definition: 0x5fa5724a85e0
+Class Name: IO, Class Definition: 0x7fff49cb78b0
+Class Name: Bool, Class Definition: 0x5fa5724a8620
+Class Name: Object, Class Definition: 0x5fa5724a91e0
+Class Name: Int, Class Definition: 0x5fa571a1d8d0
+Class Name: String, Class Definition: 0x5fa5724a8e40
+Class IO is inherited by:
+  Main
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//isvoid.cl"
+    (
+    #1
+    _attr
+      x
+      Bool
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _isvoid
+          #1
+          _bool
+            1
+          : _no_type
+        : _no_type
+        #1
+        _isvoid
+          #1
+          _bool
+            0
+          : _no_type
+        : _no_type
+        #1
+        _isvoid
+          #1
+          _object
+            x
+          : _no_type
+        : _no_type
+      : _no_type
+    )

@@ -1,0 +1,99 @@
+Class Name: Main, Class Definition: 0x59d7287c1240
+Class Name: Object, Class Definition: 0x59d7287c27e0
+Class Name: Int, Class Definition: 0x59d726b028d0
+Class Name: A, Class Definition: 0x59d7287c1800
+Class Name: String, Class Definition: 0x59d7287c2440
+Class Name: Bool, Class Definition: 0x59d7287c1c70
+Class Name: B, Class Definition: 0x59d7287c1c10
+Class Name: IO, Class Definition: 0x7fff798fc2f0
+Class Object is inherited by:
+  Main
+  A
+Class A is inherited by:
+  B
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//overridingmethod2.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//overridingmethod2.cl"
+    (
+    #1
+    _method
+      inky
+      #1
+      _formal
+        a
+        Int
+      #1
+      _formal
+        b
+        String
+      #1
+      _formal
+        c
+        A
+      #1
+      _formal
+        d
+        Bool
+      Int
+      #1
+      _object
+        a
+      : _no_type
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//overridingmethod2.cl"
+    (
+    #1
+    _method
+      inky
+      #1
+      _formal
+        a
+        Int
+      #1
+      _formal
+        b
+        String
+      #1
+      _formal
+        c
+        A
+      #1
+      _formal
+        d
+        Bool
+      Int
+      #1
+      _plus
+        #1
+        _object
+          a
+        : _no_type
+        #1
+        _int
+          1
+        : _no_type
+      : _no_type
+    )

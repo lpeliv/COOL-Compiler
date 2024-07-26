@@ -1,0 +1,31 @@
+#name ".//test_files//casevoid.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 '{'
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID Main
+#2 ';'
+#3 OBJECTID main
+#3 '('
+#3 ')'
+#3 ':'
+#3 TYPEID Object
+#3 '{'
+#3 '{'
+#3 CASE
+#3 OBJECTID x
+#3 OF
+#3 OBJECTID m
+#3 ':'
+#3 TYPEID Main
+#3 DARROW
+#3 INT_CONST 0
+#3 ';'
+#3 ESAC
+#3 ';'
+#3 '}'
+#3 '}'
+#3 ';'
+#4 '}'
+#4 ';'

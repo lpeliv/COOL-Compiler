@@ -1,0 +1,64 @@
+#name ".//test_files//many_objects_on_heap.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID a
+#2 ':'
+#2 TYPEID Int
+#2 ';'
+#3 OBJECTID i
+#3 ':'
+#3 TYPEID Int
+#3 ASSIGN
+#3 INT_CONST 100
+#3 ';'
+#4 OBJECTID main
+#4 '('
+#4 ')'
+#4 ':'
+#4 TYPEID Object
+#4 '{'
+#4 '{'
+#5 WHILE
+#5 '~'
+#5 OBJECTID i
+#5 '<'
+#5 INT_CONST 0
+#5 LOOP
+#5 '{'
+#6 OBJECTID a
+#6 ASSIGN
+#6 NEW
+#6 TYPEID Int
+#6 ';'
+#7 LET
+#7 OBJECTID b
+#7 ':'
+#7 TYPEID IO
+#7 ASSIGN
+#7 NEW
+#7 TYPEID IO
+#7 IN
+#7 OBJECTID b
+#7 ';'
+#8 OBJECTID i
+#8 ASSIGN
+#8 OBJECTID i
+#8 '-'
+#8 INT_CONST 1
+#8 ';'
+#9 '}'
+#9 POOL
+#9 ';'
+#10 OBJECTID out_int
+#10 '('
+#10 OBJECTID i
+#10 ')'
+#10 ';'
+#11 '}'
+#11 '}'
+#11 ';'
+#12 '}'
+#12 ';'

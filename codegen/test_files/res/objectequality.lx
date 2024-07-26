@@ -1,0 +1,163 @@
+#name ".//test_files//objectequality.cl"
+#1 CLASS
+#1 TYPEID A
+#1 '{'
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID Int
+#2 ASSIGN
+#2 INT_CONST 5
+#2 ';'
+#3 OBJECTID foo
+#3 '('
+#3 OBJECTID y
+#3 ':'
+#3 TYPEID Int
+#3 ')'
+#3 ':'
+#3 TYPEID SELF_TYPE
+#3 '{'
+#3 '{'
+#3 OBJECTID x
+#3 ASSIGN
+#3 OBJECTID y
+#3 ';'
+#3 OBJECTID self
+#3 ';'
+#3 '}'
+#3 '}'
+#3 ';'
+#4 '}'
+#4 ';'
+#5 CLASS
+#5 TYPEID B
+#5 INHERITS
+#5 TYPEID A
+#5 '{'
+#6 '}'
+#6 ';'
+#8 CLASS
+#8 TYPEID Main
+#8 '{'
+#9 OBJECTID main
+#9 '('
+#9 ')'
+#9 ':'
+#9 TYPEID Object
+#9 '{'
+#9 '{'
+#10 LET
+#10 OBJECTID x
+#10 ':'
+#10 TYPEID B
+#10 ASSIGN
+#10 NEW
+#10 TYPEID B
+#10 IN
+#10 '{'
+#11 IF
+#11 OBJECTID x
+#11 '='
+#11 OBJECTID x
+#11 THEN
+#11 INT_CONST 0
+#11 ELSE
+#11 OBJECTID abort
+#11 '('
+#11 ')'
+#11 FI
+#11 ';'
+#12 IF
+#12 OBJECTID x
+#12 '='
+#12 NEW
+#12 TYPEID B
+#12 THEN
+#12 OBJECTID abort
+#12 '('
+#12 ')'
+#12 ELSE
+#12 INT_CONST 0
+#12 FI
+#12 ';'
+#13 IF
+#13 NEW
+#13 TYPEID A
+#13 '='
+#13 NEW
+#13 TYPEID A
+#13 THEN
+#13 OBJECTID abort
+#13 '('
+#13 ')'
+#13 ELSE
+#13 INT_CONST 0
+#13 FI
+#13 ';'
+#14 LET
+#14 OBJECTID y
+#14 ':'
+#14 TYPEID A
+#14 ASSIGN
+#14 OBJECTID x
+#14 IN
+#14 '{'
+#15 IF
+#15 OBJECTID y
+#15 '='
+#15 OBJECTID x
+#15 THEN
+#15 INT_CONST 0
+#15 ELSE
+#15 OBJECTID abort
+#15 '('
+#15 ')'
+#15 FI
+#15 ';'
+#16 IF
+#16 OBJECTID y
+#16 '.'
+#16 OBJECTID foo
+#16 '('
+#16 INT_CONST 3
+#16 ')'
+#16 '='
+#16 OBJECTID x
+#16 THEN
+#16 INT_CONST 0
+#16 ELSE
+#16 OBJECTID abort
+#16 '('
+#16 ')'
+#16 FI
+#16 ';'
+#17 '}'
+#17 ';'
+#18 '}'
+#18 ';'
+#19 LET
+#19 OBJECTID x
+#19 ':'
+#19 TYPEID A
+#19 ','
+#19 OBJECTID y
+#19 ':'
+#19 TYPEID B
+#19 IN
+#19 IF
+#19 OBJECTID x
+#19 '='
+#19 OBJECTID y
+#19 THEN
+#19 INT_CONST 0
+#19 ELSE
+#19 OBJECTID abort
+#19 '('
+#19 ')'
+#19 FI
+#19 ';'
+#20 '}'
+#20 '}'
+#20 ';'
+#21 '}'
+#21 ';'

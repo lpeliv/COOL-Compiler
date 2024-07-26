@@ -1,0 +1,124 @@
+#24
+_program
+  #3
+  _class
+    Main
+    IO
+    ".//test_files//let-nested.cl"
+    (
+    #5
+    _method
+      print
+      #5
+      _formal
+        x
+        Int
+      Object
+      #6
+      _block
+        #7
+        _dispatch
+          #7
+          _object
+            self
+          : _no_type
+          out_int
+          (
+          #7
+          _object
+            x
+          : _no_type
+          )
+        : _no_type
+        #8
+        _dispatch
+          #8
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #8
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    #12
+    _method
+      main
+      Object
+      #14
+      _let
+        foo
+        Int
+        #14
+        _int
+          5
+        : _no_type
+        #15
+        _let
+          foo
+          Int
+          #15
+          _neg
+            #15
+            _int
+              1
+            : _no_type
+          : _no_type
+          #16
+          _let
+            foo
+            Bool
+            #0
+            _no_expr
+            : _no_type
+            #17
+            _cond
+              #17
+              _comp
+                #17
+                _object
+                  foo
+                : _no_type
+              : _no_type
+              #18
+              _let
+                foo
+                Int
+                #0
+                _no_expr
+                : _no_type
+                #19
+                _dispatch
+                  #19
+                  _object
+                    self
+                  : _no_type
+                  print
+                  (
+                  #19
+                  _plus
+                    #19
+                    _object
+                      foo
+                    : _no_type
+                    #19
+                    _int
+                      1
+                    : _no_type
+                  : _no_type
+                  )
+                : _no_type
+              : _no_type
+              #21
+              _int
+                5
+              : _no_type
+            : _no_type
+          : _no_type
+        : _no_type
+      : _no_type
+    )

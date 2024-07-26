@@ -1,0 +1,116 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//string-methods.cl"
+    (
+    #1
+    _attr
+      s
+      String
+      #1
+      _string
+        "this is a"
+      : String
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              s
+            : String
+            length
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _dispatch
+            #1
+            _string
+              "\n"
+            : String
+            concat
+            (
+            #1
+            _dispatch
+              #1
+              _object
+                s
+              : String
+              concat
+              (
+              #1
+              _string
+                " string\n"
+              : String
+              )
+            : String
+            )
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _dispatch
+            #1
+            _dispatch
+              #1
+              _object
+                s
+              : String
+              substr
+              (
+              #1
+              _int
+                5
+              : Int
+              #1
+              _int
+                2
+              : Int
+              )
+            : String
+            concat
+            (
+            #1
+            _string
+              "\n"
+            : String
+            )
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )

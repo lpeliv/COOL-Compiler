@@ -1,0 +1,123 @@
+Class Name: Main, Class Definition: 0x609ada6f4620
+Class Name: Object, Class Definition: 0x609ada6f5a40
+Class Name: B, Class Definition: 0x609ada6f4db0
+Class Name: A, Class Definition: 0x609ada6f4a60
+Class Name: Int, Class Definition: 0x609ad93c08d0
+Class Name: Bool, Class Definition: 0x609ada6f4e10
+Class Name: IO, Class Definition: 0x7ffe6512baa0
+Class Name: String, Class Definition: 0x609ada6f56a0
+Class Object is inherited by:
+  Main
+  A
+Class A is inherited by:
+  B
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//staticdispatch.cl"
+    (
+    #1
+    _attr
+      b
+      B
+      #1
+      _new
+        B
+      : _no_type
+    #1
+    _method
+      main
+      Object
+      #1
+      _static_dispatch
+        #1
+        _object
+          b
+        : _no_type
+        A
+        foo
+        (
+        #1
+        _int
+          5
+        : _no_type
+        #1
+        _object
+          b
+        : _no_type
+        #1
+        _object
+          b
+        : _no_type
+        #1
+        _object
+          b
+        : _no_type
+        )
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//staticdispatch.cl"
+    (
+    #1
+    _method
+      foo
+      #1
+      _formal
+        a
+        Int
+      #1
+      _formal
+        b
+        B
+      #1
+      _formal
+        c
+        A
+      #1
+      _formal
+        d
+        B
+      Int
+      #1
+      _int
+        5
+      : _no_type
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//staticdispatch.cl"
+    (
+    #1
+    _method
+      foo
+      #1
+      _formal
+        a
+        Int
+      #1
+      _formal
+        b
+        B
+      #1
+      _formal
+        c
+        A
+      #1
+      _formal
+        d
+        B
+      Int
+      #1
+      _int
+        6
+      : _no_type
+    )

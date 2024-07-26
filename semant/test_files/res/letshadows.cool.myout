@@ -1,0 +1,50 @@
+Class Name: Main, Class Definition: 0x5656520bb580
+Class Name: IO, Class Definition: 0x7ffed8b7f6b0
+Class Name: Int, Class Definition: 0x5656515ec8d0
+Class Name: Object, Class Definition: 0x5656520bc0c0
+Class Name: String, Class Definition: 0x5656520bbd20
+Class Name: Bool, Class Definition: 0x5656520bb5c0
+Class IO is inherited by:
+  Main
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//letshadows.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _let
+          x
+          String
+          #1
+          _string
+            "test"
+          : _no_type
+          #1
+          _dispatch
+            #1
+            _object
+              x
+            : _no_type
+            length
+            (
+            )
+          : _no_type
+        : _no_type
+      : _no_type
+    )

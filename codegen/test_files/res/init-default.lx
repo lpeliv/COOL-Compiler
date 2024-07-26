@@ -1,0 +1,124 @@
+#name ".//test_files//init-default.cl"
+#1 CLASS
+#1 TYPEID A
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID Int
+#2 ASSIGN
+#2 IF
+#2 OBJECTID b
+#2 THEN
+#2 INT_CONST 1
+#2 ELSE
+#2 '~'
+#2 INT_CONST 1
+#2 FI
+#2 ';'
+#3 OBJECTID b
+#3 ':'
+#3 TYPEID Bool
+#3 ASSIGN
+#3 BOOL_CONST true
+#3 ';'
+#4 OBJECTID y
+#4 ':'
+#4 TYPEID Int
+#4 ASSIGN
+#4 OBJECTID x
+#4 '+'
+#4 INT_CONST 3
+#4 ';'
+#5 OBJECTID z
+#5 ':'
+#5 TYPEID Int
+#5 ASSIGN
+#5 OBJECTID z
+#5 '-'
+#5 INT_CONST 5
+#5 ';'
+#7 OBJECTID print_attr
+#7 '('
+#7 ')'
+#7 ':'
+#7 TYPEID Object
+#7 '{'
+#7 '{'
+#8 OBJECTID out_string
+#8 '('
+#8 STR_CONST "x: "
+#8 ')'
+#8 ';'
+#9 OBJECTID out_int
+#9 '('
+#9 OBJECTID x
+#9 ')'
+#9 ';'
+#10 OBJECTID out_string
+#10 '('
+#10 STR_CONST "\nb: "
+#10 ')'
+#10 ';'
+#11 OBJECTID out_string
+#11 '('
+#11 IF
+#11 OBJECTID b
+#11 THEN
+#11 STR_CONST "true"
+#11 ELSE
+#11 STR_CONST "false"
+#11 FI
+#11 ')'
+#11 ';'
+#12 OBJECTID out_string
+#12 '('
+#12 STR_CONST "\ny: "
+#12 ')'
+#12 ';'
+#13 OBJECTID out_int
+#13 '('
+#13 OBJECTID y
+#13 ')'
+#13 ';'
+#14 OBJECTID out_string
+#14 '('
+#14 STR_CONST "\nz: "
+#14 ')'
+#14 ';'
+#15 OBJECTID out_int
+#15 '('
+#15 OBJECTID z
+#15 ')'
+#15 ';'
+#16 '}'
+#16 '}'
+#16 ';'
+#17 '}'
+#17 ';'
+#19 CLASS
+#19 TYPEID Main
+#19 '{'
+#20 OBJECTID a
+#20 ':'
+#20 TYPEID A
+#20 ASSIGN
+#20 NEW
+#20 TYPEID A
+#20 ';'
+#21 OBJECTID main
+#21 '('
+#21 ')'
+#21 ':'
+#21 TYPEID Object
+#21 '{'
+#22 OBJECTID a
+#22 '.'
+#22 OBJECTID print_attr
+#22 '('
+#22 ')'
+#23 '}'
+#23 ';'
+#24 '}'
+#24 ';'

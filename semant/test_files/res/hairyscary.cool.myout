@@ -1,0 +1,4 @@
+.//test_files//hairyscary.cl:1: Class Foo inherits from an undefined class Bazz.
+.//test_files//hairyscary.cl:1: Class Bar inherits from an undefined class Razz.
+.//test_files//hairyscary.cl:1: Class Razz inherits from an undefined class Foo.
+Compilation halted due to static semantic errors.

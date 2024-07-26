@@ -1,0 +1,54 @@
+Class Name: Main, Class Definition: 0x5b4d645fa240
+Class Name: Object, Class Definition: 0x5b4d645fb240
+Class Name: Int, Class Definition: 0x5b4d6434d8d0
+Class Name: A, Class Definition: 0x5b4d645fa670
+Class Name: String, Class Definition: 0x5b4d645faea0
+Class Name: Bool, Class Definition: 0x5b4d645fa6d0
+Class Name: IO, Class Definition: 0x7fff0c9a5bc0
+Class Object is inherited by:
+  Main
+  A
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//selfinformalparameter.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//selfinformalparameter.cl"
+    (
+    #1
+    _attr
+      x
+      A
+      #1
+      _new
+        A
+      : _no_type
+    #1
+    _method
+      foo
+      #1
+      _formal
+        self
+        String
+      String
+      #1
+      _string
+        "hoo-ah"
+      : _no_type
+    )

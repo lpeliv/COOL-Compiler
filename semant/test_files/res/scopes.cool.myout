@@ -1,0 +1,114 @@
+Class Name: Main, Class Definition: 0x63c02b6ff240
+Class Name: Object, Class Definition: 0x63c02b700700
+Class Name: Int, Class Definition: 0x63c029d1c8d0
+Class Name: A, Class Definition: 0x63c02b6ffb90
+Class Name: String, Class Definition: 0x63c02b700360
+Class Name: Bool, Class Definition: 0x63c02b6ffbf0
+Class Name: IO, Class Definition: 0x7ffc071fed80
+Class Object is inherited by:
+  Main
+  A
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//scopes.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//scopes.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      f
+      #1
+      _formal
+        x
+        A
+      String
+      #1
+      _string
+        "ab"
+      : _no_type
+    #1
+    _method
+      g
+      #1
+      _formal
+        x
+        Bool
+      A
+      #1
+      _object
+        self
+      : _no_type
+    #1
+    _method
+      h
+      Object
+      #1
+      _let
+        x
+        String
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : _no_type
+          f
+          (
+          #1
+          _let
+            x
+            Bool
+            #1
+            _no_expr
+            : _no_type
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : _no_type
+              g
+              (
+              #1
+              _object
+                x
+              : _no_type
+              )
+            : _no_type
+          : _no_type
+          )
+        : _no_type
+        #1
+        _assign
+          x
+          #1
+          _string
+            "ab"
+          : _no_type
+        : _no_type
+      : _no_type
+    )

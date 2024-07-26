@@ -1,0 +1,65 @@
+Class Name: A, Class Definition: 0x6147f7ba1340
+Class Name: Object, Class Definition: 0x6147f7ba2300
+Class Name: Int, Class Definition: 0x6147f5e248d0
+Class Name: B, Class Definition: 0x6147f7ba14d0
+Class Name: Main, Class Definition: 0x6147f7ba1670
+Class Name: Bool, Class Definition: 0x6147f7ba16d0
+Class Name: IO, Class Definition: 0x7fff3f34e3f0
+Class Name: String, Class Definition: 0x6147f7ba1f60
+Class Object is inherited by:
+  A
+  B
+  Main
+#1
+_program
+  #1
+  _class
+    A
+    Object
+    ".//test_files//inheritsObject.cl"
+    (
+    #1
+    _attr
+      foo
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        6
+      : _no_type
+    )
+  #1
+  _class
+    B
+    Object
+    ".//test_files//inheritsObject.cl"
+    (
+    #1
+    _attr
+      bar
+      Int
+      #1
+      _no_expr
+      : _no_type
+    )
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//inheritsObject.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        6
+      : _no_type
+    )

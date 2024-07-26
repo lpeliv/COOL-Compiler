@@ -1,0 +1,184 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//fact.cl"
+    (
+    #1
+    _method
+      fact
+      #1
+      _formal
+        n
+        Int
+      Int
+      #1
+      _cond
+        #1
+        _eq
+          #1
+          _object
+            n
+          : Int
+          #1
+          _int
+            0
+          : Int
+        : Bool
+        #1
+        _int
+          1
+        : Int
+        #1
+        _mul
+          #1
+          _object
+            n
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            fact
+            (
+            #1
+            _sub
+              #1
+              _object
+                n
+              : Int
+              #1
+              _int
+                1
+              : Int
+            : Int
+            )
+          : Int
+        : Int
+      : Int
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            fact
+            (
+            #1
+            _int
+              3
+            : Int
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            fact
+            (
+            #1
+            _int
+              7
+            : Int
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            fact
+            (
+            #1
+            _int
+              10
+            : Int
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )

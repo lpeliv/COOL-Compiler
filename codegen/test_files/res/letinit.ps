@@ -1,0 +1,105 @@
+#9
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//letinit.cl"
+    (
+    #2
+    _method
+      main
+      Object
+      #2
+      _block
+        #3
+        _let
+          x
+          Bool
+          #0
+          _no_expr
+          : _no_type
+          #3
+          _let
+            y
+            Int
+            #0
+            _no_expr
+            : _no_type
+            #3
+            _let
+              z
+              String
+              #0
+              _no_expr
+              : _no_type
+              #4
+              _cond
+                #4
+                _object
+                  x
+                : _no_type
+                #4
+                _dispatch
+                  #4
+                  _object
+                    self
+                  : _no_type
+                  abort
+                  (
+                  )
+                : _no_type
+                #4
+                _block
+                  #5
+                  _dispatch
+                    #5
+                    _object
+                      self
+                    : _no_type
+                    out_int
+                    (
+                    #5
+                    _plus
+                      #5
+                      _object
+                        y
+                      : _no_type
+                      #5
+                      _int
+                        1
+                      : _no_type
+                    : _no_type
+                    )
+                  : _no_type
+                  #6
+                  _dispatch
+                    #6
+                    _object
+                      self
+                    : _no_type
+                    out_string
+                    (
+                    #6
+                    _dispatch
+                      #6
+                      _object
+                        z
+                      : _no_type
+                      concat
+                      (
+                      #6
+                      _string
+                        "test\n"
+                      : _no_type
+                      )
+                    : _no_type
+                    )
+                  : _no_type
+                : _no_type
+              : _no_type
+            : _no_type
+          : _no_type
+        : _no_type
+      : _no_type
+    )

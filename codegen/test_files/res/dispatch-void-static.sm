@@ -1,0 +1,50 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//dispatch-void-static.cl"
+    (
+    #1
+    _method
+      complain
+      Object
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        out_string
+        (
+        #1
+        _string
+          "bad\n"
+        : String
+        )
+      : SELF_TYPE
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        nothing
+        Main
+        #1
+        _no_expr
+        : _no_type
+        #1
+        _static_dispatch
+          #1
+          _object
+            nothing
+          : Main
+          Main
+          complain
+          (
+          )
+        : Object
+      : Object
+    )

@@ -1,0 +1,150 @@
+#15
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//assignment-val.cl"
+    (
+    #2
+    _method
+      f
+      #2
+      _formal
+        x
+        Int
+      #2
+      _formal
+        y
+        Int
+      Object
+      #2
+      _block
+        #3
+        _dispatch
+          #3
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #3
+          _string
+            "x: "
+          : _no_type
+          )
+        : _no_type
+        #4
+        _dispatch
+          #4
+          _object
+            self
+          : _no_type
+          out_int
+          (
+          #4
+          _object
+            x
+          : _no_type
+          )
+        : _no_type
+        #5
+        _dispatch
+          #5
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #5
+          _string
+            "\ny: "
+          : _no_type
+          )
+        : _no_type
+        #6
+        _dispatch
+          #6
+          _object
+            self
+          : _no_type
+          out_int
+          (
+          #6
+          _object
+            y
+          : _no_type
+          )
+        : _no_type
+        #7
+        _dispatch
+          #7
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #7
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    #9
+    _method
+      main
+      Object
+      #10
+      _let
+        x
+        Int
+        #10
+        _int
+          2
+        : _no_type
+        #10
+        _block
+          #11
+          _dispatch
+            #11
+            _object
+              self
+            : _no_type
+            f
+            (
+            #11
+            _assign
+              x
+              #11
+              _int
+                3
+              : _no_type
+            : _no_type
+            #11
+            _assign
+              x
+              #11
+              _int
+                4
+              : _no_type
+            : _no_type
+            )
+          : _no_type
+          #12
+          _dispatch
+            #12
+            _object
+              self
+            : _no_type
+            out_int
+            (
+            #12
+            _object
+              x
+            : _no_type
+            )
+          : _no_type
+        : _no_type
+      : _no_type
+    )

@@ -1,0 +1,50 @@
+#name ".//test_files//shadow-formal-let.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID method
+#6 '('
+#6 OBJECTID var
+#6 ':'
+#6 TYPEID String
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 LET
+#8 OBJECTID var
+#8 ':'
+#8 TYPEID String
+#8 ASSIGN
+#8 STR_CONST "good"
+#8 IN
+#9 OBJECTID out_string
+#9 '('
+#9 OBJECTID var
+#9 ')'
+#10 '}'
+#10 ';'
+#12 OBJECTID main
+#12 '('
+#12 ')'
+#12 ':'
+#12 TYPEID Object
+#13 '{'
+#14 '{'
+#15 OBJECTID method
+#15 '('
+#15 STR_CONST "bad"
+#15 ')'
+#15 ';'
+#16 OBJECTID out_string
+#16 '('
+#16 STR_CONST "\n"
+#16 ')'
+#16 ';'
+#17 '}'
+#18 '}'
+#18 ';'
+#19 '}'
+#19 ';'

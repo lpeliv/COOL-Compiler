@@ -1,0 +1,170 @@
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//basicequality.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _cond
+          #1
+          _eq
+            #1
+            _bool
+              1
+            : Bool
+            #1
+            _bool
+              0
+            : Bool
+          : Bool
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            abort
+            (
+            )
+          : Object
+          #1
+          _int
+            0
+          : Int
+        : Object
+        #1
+        _cond
+          #1
+          _eq
+            #1
+            _bool
+              1
+            : Bool
+            #1
+            _bool
+              1
+            : Bool
+          : Bool
+          #1
+          _int
+            0
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            abort
+            (
+            )
+          : Object
+        : Object
+        #1
+        _cond
+          #1
+          _eq
+            #1
+            _string
+              "hello"
+            : String
+            #1
+            _dispatch
+              #1
+              _string
+                "hello"
+              : String
+              copy
+              (
+              )
+            : String
+          : Bool
+          #1
+          _int
+            0
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            abort
+            (
+            )
+          : Object
+        : Object
+        #1
+        _let
+          a
+          String
+          #1
+          _no_expr
+          : _no_type
+          #1
+          _cond
+            #1
+            _eq
+              #1
+              _object
+                a
+              : String
+              #1
+              _string
+                ""
+              : String
+            : Bool
+            #1
+            _int
+              0
+            : Int
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              abort
+              (
+              )
+            : Object
+          : Object
+        : Object
+        #1
+        _cond
+          #1
+          _eq
+            #1
+            _int
+              5
+            : Int
+            #1
+            _int
+              6
+            : Int
+          : Bool
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            abort
+            (
+            )
+          : Object
+          #1
+          _int
+            0
+          : Int
+        : Object
+      : Object
+    )

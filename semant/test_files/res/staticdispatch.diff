@@ -1,0 +1,333 @@
+error in line# 1
+    parsed as: Class Name: Main, Class Definition: 0x609ada6f4620
+    should be: 
+error in line# 2
+    parsed as: Class Name: Object, Class Definition: 0x609ada6f5a40
+    should be: _program
+error in line# 3
+    parsed as: Class Name: B, Class Definition: 0x609ada6f4db0
+    should be: 
+error in line# 4
+    parsed as: Class Name: A, Class Definition: 0x609ada6f4a60
+    should be:   _class
+error in line# 5
+    parsed as: Class Name: Int, Class Definition: 0x609ad93c08d0
+    should be:     Main
+error in line# 6
+    parsed as: Class Name: Bool, Class Definition: 0x609ada6f4e10
+    should be:     Object
+error in line# 7
+    parsed as: Class Name: IO, Class Definition: 0x7ffe6512baa0
+    should be:     filename
+error in line# 8
+    parsed as: Class Name: String, Class Definition: 0x609ada6f56a0
+    should be:     (
+error in line# 9
+    parsed as: Class Object is inherited by:
+    should be: 
+error in line# 10
+    parsed as:   Main
+    should be:     _attr
+error in line# 11
+    parsed as:   A
+    should be:       b
+error in line# 12
+    parsed as: Class A is inherited by:
+    should be:       B
+error in line# 13
+    parsed as:   B
+    should be: 
+error in line# 14
+    parsed as: 
+    should be:       _new
+error in line# 15
+    parsed as: _program
+    should be:         B
+error in line# 16
+    parsed as: 
+    should be:       : B
+error in line# 17
+    parsed as:   _class
+    should be: 
+error in line# 18
+    parsed as:     Main
+    should be:     _method
+error in line# 19
+    parsed as:     Object
+    should be:       main
+error in line# 20
+    parsed as:     filename
+    should be:       Object
+error in line# 21
+    parsed as:     (
+    should be: 
+error in line# 22
+    parsed as: 
+    should be:       _static_dispatch
+error in line# 23
+    parsed as:     _attr
+    should be: 
+error in line# 24
+    parsed as:       b
+    should be:         _object
+error in line# 25
+    parsed as:       B
+    should be:           b
+error in line# 26
+    parsed as: 
+    should be:         : B
+error in line# 27
+    parsed as:       _new
+    should be:         A
+error in line# 28
+    parsed as:         B
+    should be:         foo
+error in line# 29
+    parsed as:       : _no_type
+    should be:         (
+error in line# 31
+    parsed as:     _method
+    should be:         _int
+error in line# 32
+    parsed as:       main
+    should be:           5
+error in line# 33
+    parsed as:       Object
+    should be:         : Int
+error in line# 35
+    parsed as:       _static_dispatch
+    should be:         _object
+error in line# 36
+    parsed as: 
+    should be:           b
+error in line# 37
+    parsed as:         _object
+    should be:         : B
+error in line# 38
+    parsed as:           b
+    should be: 
+error in line# 39
+    parsed as:         : _no_type
+    should be:         _object
+error in line# 40
+    parsed as:         A
+    should be:           b
+error in line# 41
+    parsed as:         foo
+    should be:         : B
+error in line# 42
+    parsed as:         (
+    should be: 
+error in line# 43
+    parsed as: 
+    should be:         _object
+error in line# 44
+    parsed as:         _int
+    should be:           b
+error in line# 45
+    parsed as:           5
+    should be:         : B
+error in line# 46
+    parsed as:         : _no_type
+    should be:         )
+error in line# 47
+    parsed as: 
+    should be:       : Int
+error in line# 48
+    parsed as:         _object
+    should be:     )
+error in line# 49
+    parsed as:           b
+    should be: 
+error in line# 50
+    parsed as:         : _no_type
+    should be:   _class
+error in line# 51
+    parsed as: 
+    should be:     A
+error in line# 52
+    parsed as:         _object
+    should be:     Object
+error in line# 53
+    parsed as:           b
+    should be:     filename
+error in line# 54
+    parsed as:         : _no_type
+    should be:     (
+error in line# 56
+    parsed as:         _object
+    should be:     _method
+error in line# 57
+    parsed as:           b
+    should be:       foo
+error in line# 58
+    parsed as:         : _no_type
+    should be: 
+error in line# 59
+    parsed as:         )
+    should be:       _formal
+error in line# 60
+    parsed as:       : _no_type
+    should be:         a
+error in line# 61
+    parsed as:     )
+    should be:         Int
+error in line# 63
+    parsed as:   _class
+    should be:       _formal
+error in line# 64
+    parsed as:     A
+    should be:         b
+error in line# 65
+    parsed as:     Object
+    should be:         B
+error in line# 66
+    parsed as:     filename
+    should be: 
+error in line# 67
+    parsed as:     (
+    should be:       _formal
+error in line# 68
+    parsed as: 
+    should be:         c
+error in line# 69
+    parsed as:     _method
+    should be:         A
+error in line# 70
+    parsed as:       foo
+    should be: 
+error in line# 71
+    parsed as: 
+    should be:       _formal
+error in line# 72
+    parsed as:       _formal
+    should be:         d
+error in line# 73
+    parsed as:         a
+    should be:         B
+error in line# 74
+    parsed as:         Int
+    should be:       Int
+error in line# 76
+    parsed as:       _formal
+    should be:       _int
+error in line# 77
+    parsed as:         b
+    should be:         5
+error in line# 78
+    parsed as:         B
+    should be:       : Int
+error in line# 79
+    parsed as: 
+    should be:     )
+error in line# 80
+    parsed as:       _formal
+    should be: 
+error in line# 81
+    parsed as:         c
+    should be:   _class
+error in line# 82
+    parsed as:         A
+    should be:     B
+error in line# 83
+    parsed as: 
+    should be:     A
+error in line# 84
+    parsed as:       _formal
+    should be:     filename
+error in line# 85
+    parsed as:         d
+    should be:     (
+error in line# 86
+    parsed as:         B
+    should be: 
+error in line# 87
+    parsed as:       Int
+    should be:     _method
+error in line# 88
+    parsed as: 
+    should be:       foo
+error in line# 89
+    parsed as:       _int
+    should be: 
+error in line# 90
+    parsed as:         5
+    should be:       _formal
+error in line# 91
+    parsed as:       : _no_type
+    should be:         a
+error in line# 92
+    parsed as:     )
+    should be:         Int
+error in line# 94
+    parsed as:   _class
+    should be:       _formal
+error in line# 95
+    parsed as:     B
+    should be:         b
+error in line# 96
+    parsed as:     A
+    should be:         B
+error in line# 97
+    parsed as:     filename
+    should be: 
+error in line# 98
+    parsed as:     (
+    should be:       _formal
+error in line# 99
+    parsed as: 
+    should be:         c
+error in line# 100
+    parsed as:     _method
+    should be:         A
+error in line# 101
+    parsed as:       foo
+    should be: 
+error in line# 102
+    parsed as: 
+    should be:       _formal
+error in line# 103
+    parsed as:       _formal
+    should be:         d
+error in line# 104
+    parsed as:         a
+    should be:         B
+error in line# 105
+    parsed as:         Int
+    should be:       Int
+error in line# 107
+    parsed as:       _formal
+    should be:       _int
+error in line# 108
+    parsed as:         b
+    should be:         6
+error in line# 109
+    parsed as:         B
+    should be:       : Int
+error in line# 110
+    parsed as: 
+    should be:     )
+error in line# 111
+    parsed as:       _formal
+    should be: 
+error in line# 112
+    parsed as:         c
+    should be: 
+error in line# 113
+    parsed as:         A
+    should be: 
+error in line# 115
+    parsed as:       _formal
+    should be: 
+error in line# 116
+    parsed as:         d
+    should be: 
+error in line# 117
+    parsed as:         B
+    should be: 
+error in line# 118
+    parsed as:       Int
+    should be: 
+error in line# 120
+    parsed as:       _int
+    should be: 

@@ -1,0 +1,2777 @@
+#name ".//test_files//bigexample.cl"
+#7 CLASS
+#7 TYPEID P
+#7 '{'
+#8 OBJECTID x
+#8 ':'
+#8 TYPEID Int
+#8 ASSIGN
+#8 INT_CONST 3
+#8 ';'
+#9 '}'
+#9 ';'
+#10 CLASS
+#10 TYPEID C1
+#10 INHERITS
+#10 TYPEID P
+#10 '{'
+#10 '}'
+#10 ';'
+#11 CLASS
+#11 TYPEID C2
+#11 INHERITS
+#11 TYPEID P
+#11 '{'
+#12 OBJECTID getX
+#12 '('
+#12 ')'
+#12 ':'
+#12 TYPEID Int
+#12 '{'
+#12 OBJECTID x
+#12 '}'
+#12 ';'
+#13 OBJECTID setX
+#13 '('
+#13 OBJECTID i
+#13 ':'
+#13 TYPEID Int
+#13 ')'
+#13 ':'
+#13 TYPEID Int
+#13 '{'
+#13 OBJECTID x
+#13 ASSIGN
+#13 OBJECTID i
+#13 '}'
+#13 ';'
+#14 '}'
+#14 ';'
+#16 CLASS
+#16 TYPEID Blah
+#16 '{'
+#17 OBJECTID i
+#17 ':'
+#17 TYPEID Int
+#17 ';'
+#18 OBJECTID b
+#18 ':'
+#18 TYPEID Bool
+#18 ';'
+#19 OBJECTID s
+#19 ':'
+#19 TYPEID String
+#19 ';'
+#21 OBJECTID j
+#21 ':'
+#21 TYPEID Int
+#21 ASSIGN
+#21 OBJECTID tiny
+#21 '('
+#21 ')'
+#21 ';'
+#22 OBJECTID c
+#22 ':'
+#22 TYPEID Bool
+#22 ASSIGN
+#22 BOOL_CONST true
+#22 ';'
+#23 OBJECTID t
+#23 ':'
+#23 TYPEID String
+#23 ASSIGN
+#23 '{'
+#23 OBJECTID self
+#23 '@'
+#23 TYPEID Blah
+#23 '.'
+#23 OBJECTID add
+#23 '('
+#23 ')'
+#23 ';'
+#23 STR_CONST "whassup?!"
+#23 ';'
+#23 '}'
+#23 ';'
+#25 OBJECTID io
+#25 ':'
+#25 TYPEID IO
+#25 ASSIGN
+#25 NEW
+#25 TYPEID IO
+#25 ';'
+#26 OBJECTID void
+#26 ':'
+#26 TYPEID Object
+#26 ';'
+#28 OBJECTID tiny
+#28 '('
+#28 ')'
+#28 ':'
+#28 TYPEID Int
+#28 '{'
+#28 '{'
+#28 STR_CONST "Hi"
+#28 ';'
+#28 BOOL_CONST false
+#28 ';'
+#28 INT_CONST 0
+#28 ';'
+#28 '}'
+#28 '}'
+#28 ';'
+#30 OBJECTID add
+#30 '('
+#30 ')'
+#30 ':'
+#30 TYPEID Int
+#30 '{'
+#30 INT_CONST 1
+#30 '+'
+#30 INT_CONST 2
+#30 '}'
+#30 ';'
+#32 OBJECTID compare
+#32 '('
+#32 ')'
+#32 ':'
+#32 TYPEID Bool
+#32 '{'
+#32 INT_CONST 1
+#32 '<'
+#32 INT_CONST 2
+#32 '}'
+#32 ';'
+#33 OBJECTID compareEq
+#33 '('
+#33 ')'
+#33 ':'
+#33 TYPEID Bool
+#33 '{'
+#33 INT_CONST 1
+#33 '='
+#33 INT_CONST 2
+#33 '}'
+#33 ';'
+#35 OBJECTID isv
+#35 '('
+#35 ')'
+#35 ':'
+#35 TYPEID Bool
+#35 '{'
+#35 ISVOID
+#35 INT_CONST 1
+#35 '}'
+#35 ';'
+#37 OBJECTID divByZero
+#37 '('
+#37 ')'
+#37 ':'
+#37 TYPEID Int
+#37 '{'
+#37 INT_CONST 1
+#37 '/'
+#37 INT_CONST 0
+#37 '}'
+#37 ';'
+#39 OBJECTID cmp
+#39 '('
+#39 ')'
+#39 ':'
+#39 TYPEID Bool
+#39 '{'
+#39 NOT
+#39 BOOL_CONST true
+#39 '}'
+#39 ';'
+#41 OBJECTID ng
+#41 '('
+#41 ')'
+#41 ':'
+#41 TYPEID Int
+#41 '{'
+#41 '~'
+#41 INT_CONST 5
+#41 '}'
+#41 ';'
+#43 OBJECTID caller
+#43 '('
+#43 ')'
+#43 ':'
+#43 TYPEID Int
+#43 '{'
+#43 OBJECTID self
+#43 '@'
+#43 TYPEID Blah
+#43 '.'
+#43 OBJECTID callee
+#43 '('
+#43 INT_CONST 6
+#43 ','
+#43 INT_CONST 13
+#43 ')'
+#43 '+'
+#43 OBJECTID self
+#43 '@'
+#43 TYPEID Blah
+#43 '.'
+#43 OBJECTID callee
+#43 '('
+#43 INT_CONST 9
+#43 ','
+#43 INT_CONST 2
+#43 ')'
+#43 '}'
+#43 ';'
+#44 OBJECTID callee
+#44 '('
+#44 OBJECTID x
+#44 ':'
+#44 TYPEID Int
+#44 ','
+#44 OBJECTID y
+#44 ':'
+#44 TYPEID Int
+#44 ')'
+#44 ':'
+#44 TYPEID Int
+#44 '{'
+#44 OBJECTID x
+#44 '+'
+#44 OBJECTID y
+#44 '}'
+#44 ';'
+#46 OBJECTID get_t
+#46 '('
+#46 ')'
+#46 ':'
+#46 TYPEID String
+#46 '{'
+#46 OBJECTID t
+#46 '}'
+#46 ';'
+#48 OBJECTID useLet
+#48 '('
+#48 ')'
+#48 ':'
+#48 TYPEID Int
+#48 '{'
+#49 LET
+#50 OBJECTID q
+#50 ':'
+#50 TYPEID Int
+#50 ','
+#51 OBJECTID r
+#51 ':'
+#51 TYPEID Int
+#51 ASSIGN
+#51 INT_CONST 99
+#51 ','
+#52 OBJECTID s
+#52 ':'
+#52 TYPEID Int
+#52 ASSIGN
+#52 OBJECTID j
+#53 IN
+#54 OBJECTID q
+#54 '+'
+#54 OBJECTID r
+#54 '+'
+#54 OBJECTID s
+#55 '}'
+#55 ';'
+#57 OBJECTID useIf
+#57 '('
+#57 ')'
+#57 ':'
+#57 TYPEID Int
+#57 '{'
+#58 IF
+#58 OBJECTID cmp
+#58 '('
+#58 ')'
+#58 THEN
+#59 OBJECTID ng
+#59 '('
+#59 ')'
+#60 ELSE
+#61 OBJECTID tiny
+#61 '('
+#61 ')'
+#62 FI
+#63 '}'
+#63 ';'
+#65 OBJECTID useWhile
+#65 '('
+#65 ')'
+#65 ':'
+#65 TYPEID Object
+#65 '{'
+#66 WHILE
+#66 OBJECTID cmp
+#66 '('
+#66 ')'
+#66 LOOP
+#67 OBJECTID get_t
+#67 '('
+#67 ')'
+#68 POOL
+#69 '}'
+#69 ';'
+#71 OBJECTID useCase
+#71 '('
+#71 ')'
+#71 ':'
+#71 TYPEID Int
+#71 '{'
+#72 CASE
+#72 OBJECTID self
+#72 OF
+#73 OBJECTID p
+#73 ':'
+#73 TYPEID P
+#73 DARROW
+#73 INT_CONST 3
+#73 ';'
+#74 OBJECTID c
+#74 ':'
+#74 TYPEID C
+#74 DARROW
+#74 INT_CONST 4
+#74 ';'
+#75 OBJECTID b
+#75 ':'
+#75 TYPEID Blah
+#75 DARROW
+#75 INT_CONST 5
+#75 ';'
+#76 ESAC
+#77 '}'
+#77 ';'
+#79 OBJECTID useNew
+#79 '('
+#79 ')'
+#79 ':'
+#79 TYPEID Object
+#79 '{'
+#79 '{'
+#80 NEW
+#80 TYPEID Int
+#80 ';'
+#81 NEW
+#81 TYPEID Bool
+#81 ';'
+#82 NEW
+#82 TYPEID C
+#82 ';'
+#83 NEW
+#83 TYPEID Main
+#83 ';'
+#84 NEW
+#84 TYPEID SELF_TYPE
+#84 ';'
+#85 '}'
+#85 '}'
+#85 ';'
+#87 OBJECTID doThemAll
+#87 '('
+#87 ')'
+#87 ':'
+#87 TYPEID Int
+#87 '{'
+#87 '{'
+#88 OBJECTID io
+#88 '@'
+#88 TYPEID IO
+#88 '.'
+#88 OBJECTID out_string
+#88 '('
+#88 STR_CONST "basics:\n"
+#88 ')'
+#88 ';'
+#89 OBJECTID tiny
+#89 '('
+#89 ')'
+#89 ';'
+#90 OBJECTID add
+#90 '('
+#90 ')'
+#90 ';'
+#91 OBJECTID compare
+#91 '('
+#91 ')'
+#91 ';'
+#92 OBJECTID compareEq
+#92 '('
+#92 ')'
+#92 ';'
+#93 OBJECTID isv
+#93 '('
+#93 ')'
+#93 ';'
+#95 OBJECTID cmp
+#95 '('
+#95 ')'
+#95 ';'
+#96 OBJECTID ng
+#96 '('
+#96 ')'
+#96 ';'
+#97 OBJECTID caller
+#97 '('
+#97 ')'
+#97 ';'
+#98 OBJECTID callee
+#98 '('
+#98 INT_CONST 3
+#98 ','
+#98 INT_CONST 4
+#98 ')'
+#98 ';'
+#99 OBJECTID get_t
+#99 '('
+#99 ')'
+#99 ';'
+#100 OBJECTID useLet
+#100 '('
+#100 ')'
+#100 ';'
+#101 OBJECTID useIf
+#101 '('
+#101 ')'
+#101 ';'
+#102 OBJECTID useWhile
+#102 '('
+#102 ')'
+#102 ';'
+#103 OBJECTID useCase
+#103 '('
+#103 ')'
+#103 ';'
+#104 OBJECTID useNew
+#104 '('
+#104 ')'
+#104 ';'
+#106 OBJECTID io
+#106 '@'
+#106 TYPEID IO
+#106 '.'
+#106 OBJECTID out_string
+#106 '('
+#106 STR_CONST "more advanced:\n"
+#106 ')'
+#106 ';'
+#107 OBJECTID bigIf
+#107 '('
+#107 ')'
+#107 ';'
+#108 OBJECTID bigMath
+#108 '('
+#108 ')'
+#108 ';'
+#109 OBJECTID bigAssign
+#109 '('
+#109 ')'
+#109 ';'
+#110 OBJECTID bigWhile
+#110 '('
+#110 ')'
+#110 ';'
+#111 OBJECTID bigSelf
+#111 '('
+#111 ')'
+#111 ';'
+#112 OBJECTID bigStrCompare
+#112 '('
+#112 ')'
+#112 ';'
+#113 OBJECTID bigCase
+#113 '('
+#113 ')'
+#113 ';'
+#114 OBJECTID bigAttrAccess
+#114 '('
+#114 ')'
+#114 ';'
+#116 INT_CONST 0
+#116 ';'
+#117 '}'
+#117 '}'
+#117 ';'
+#119 OBJECTID bigIf
+#119 '('
+#119 ')'
+#119 ':'
+#119 TYPEID Int
+#119 '{'
+#119 '{'
+#120 OBJECTID io
+#120 '.'
+#120 OBJECTID out_string
+#120 '('
+#120 STR_CONST "bigIf\n"
+#120 ')'
+#120 ';'
+#122 IF
+#122 BOOL_CONST true
+#122 THEN
+#123 IF
+#123 BOOL_CONST false
+#123 THEN
+#124 OBJECTID self
+#124 '@'
+#124 TYPEID Object
+#124 '.'
+#124 OBJECTID abort
+#124 '('
+#124 ')'
+#125 ELSE
+#126 INT_CONST 0
+#127 FI
+#128 ELSE
+#129 OBJECTID self
+#129 '@'
+#129 TYPEID Object
+#129 '.'
+#129 OBJECTID abort
+#129 '('
+#129 ')'
+#130 FI
+#130 ';'
+#132 IF
+#132 BOOL_CONST false
+#132 THEN
+#133 OBJECTID self
+#133 '@'
+#133 TYPEID Object
+#133 '.'
+#133 OBJECTID abort
+#133 '('
+#133 ')'
+#134 ELSE
+#135 IF
+#135 BOOL_CONST false
+#135 THEN
+#136 OBJECTID self
+#136 '@'
+#136 TYPEID Object
+#136 '.'
+#136 OBJECTID abort
+#136 '('
+#136 ')'
+#137 ELSE
+#138 INT_CONST 0
+#139 FI
+#140 FI
+#140 ';'
+#142 IF
+#142 BOOL_CONST true
+#142 THEN
+#143 IF
+#143 BOOL_CONST true
+#143 THEN
+#144 INT_CONST 0
+#145 ELSE
+#146 OBJECTID self
+#146 '@'
+#146 TYPEID Object
+#146 '.'
+#146 OBJECTID abort
+#146 '('
+#146 ')'
+#147 FI
+#148 ELSE
+#149 OBJECTID self
+#149 '@'
+#149 TYPEID Object
+#149 '.'
+#149 OBJECTID abort
+#149 '('
+#149 ')'
+#150 FI
+#150 ';'
+#152 IF
+#152 BOOL_CONST false
+#152 THEN
+#153 OBJECTID self
+#153 '@'
+#153 TYPEID Object
+#153 '.'
+#153 OBJECTID abort
+#153 '('
+#153 ')'
+#154 ELSE
+#155 IF
+#155 BOOL_CONST true
+#155 THEN
+#156 INT_CONST 0
+#157 ELSE
+#158 OBJECTID self
+#158 '@'
+#158 TYPEID Object
+#158 '.'
+#158 OBJECTID abort
+#158 '('
+#158 ')'
+#159 FI
+#160 FI
+#160 ';'
+#162 INT_CONST 0
+#162 ';'
+#163 '}'
+#163 '}'
+#163 ';'
+#165 OBJECTID bigWhile
+#165 '('
+#165 ')'
+#165 ':'
+#165 TYPEID Object
+#165 '{'
+#165 '{'
+#166 OBJECTID io
+#166 '.'
+#166 OBJECTID out_string
+#166 '('
+#166 STR_CONST "bigWhile\n"
+#166 ')'
+#166 ';'
+#169 LET
+#170 OBJECTID x
+#170 ':'
+#170 TYPEID Int
+#170 ASSIGN
+#170 INT_CONST 34
+#170 ','
+#171 OBJECTID ct
+#171 ':'
+#171 TYPEID Int
+#171 ASSIGN
+#171 INT_CONST 0
+#172 IN
+#172 '{'
+#173 WHILE
+#173 NOT
+#173 OBJECTID x
+#173 LE
+#173 INT_CONST 10
+#173 LOOP
+#173 '{'
+#174 OBJECTID x
+#174 ASSIGN
+#174 OBJECTID x
+#174 '-'
+#174 INT_CONST 1
+#174 ';'
+#175 OBJECTID ct
+#175 ASSIGN
+#175 OBJECTID ct
+#175 '+'
+#175 INT_CONST 1
+#175 ';'
+#176 '}'
+#176 POOL
+#176 ';'
+#178 IF
+#178 NOT
+#178 OBJECTID x
+#178 '='
+#178 INT_CONST 10
+#178 THEN
+#178 OBJECTID abort
+#178 '('
+#178 ')'
+#178 ELSE
+#179 IF
+#179 NOT
+#179 OBJECTID ct
+#179 '='
+#179 INT_CONST 24
+#179 THEN
+#179 OBJECTID abort
+#179 '('
+#179 ')'
+#179 ELSE
+#180 OBJECTID self
+#181 FI
+#181 FI
+#181 ';'
+#182 '}'
+#182 ';'
+#185 LET
+#186 OBJECTID i
+#186 ':'
+#186 TYPEID Int
+#186 ','
+#187 OBJECTID j
+#187 ':'
+#187 TYPEID Int
+#187 ','
+#188 OBJECTID k
+#188 ':'
+#188 TYPEID Int
+#188 ','
+#189 OBJECTID ctI
+#189 ':'
+#189 TYPEID Int
+#189 ASSIGN
+#189 INT_CONST 0
+#189 ','
+#190 OBJECTID ctJ
+#190 ':'
+#190 TYPEID Int
+#190 ASSIGN
+#190 INT_CONST 0
+#190 ','
+#191 OBJECTID ctK
+#191 ':'
+#191 TYPEID Int
+#191 ASSIGN
+#191 INT_CONST 0
+#192 IN
+#192 '{'
+#193 OBJECTID i
+#193 ASSIGN
+#193 INT_CONST 0
+#193 ';'
+#194 WHILE
+#194 OBJECTID i
+#194 '<'
+#194 INT_CONST 10
+#194 LOOP
+#194 '{'
+#195 OBJECTID j
+#195 ASSIGN
+#195 INT_CONST 0
+#195 ';'
+#196 WHILE
+#196 OBJECTID j
+#196 '<'
+#196 INT_CONST 10
+#196 LOOP
+#196 '{'
+#197 OBJECTID k
+#197 ASSIGN
+#197 INT_CONST 0
+#197 ';'
+#198 WHILE
+#198 OBJECTID k
+#198 '<'
+#198 INT_CONST 10
+#198 LOOP
+#198 '{'
+#199 OBJECTID k
+#199 ASSIGN
+#199 OBJECTID k
+#199 '+'
+#199 INT_CONST 1
+#199 ';'
+#200 OBJECTID ctK
+#200 ASSIGN
+#200 OBJECTID ctK
+#200 '+'
+#200 INT_CONST 1
+#200 ';'
+#201 '}'
+#201 POOL
+#201 ';'
+#202 OBJECTID j
+#202 ASSIGN
+#202 OBJECTID j
+#202 '+'
+#202 INT_CONST 1
+#202 ';'
+#203 OBJECTID ctJ
+#203 ASSIGN
+#203 OBJECTID ctJ
+#203 '+'
+#203 INT_CONST 1
+#203 ';'
+#204 '}'
+#204 POOL
+#204 ';'
+#205 OBJECTID i
+#205 ASSIGN
+#205 OBJECTID i
+#205 '+'
+#205 INT_CONST 1
+#205 ';'
+#206 OBJECTID ctI
+#206 ASSIGN
+#206 OBJECTID ctI
+#206 '+'
+#206 INT_CONST 1
+#206 ';'
+#207 '}'
+#207 POOL
+#207 ';'
+#209 OBJECTID assert
+#209 '('
+#209 OBJECTID ctI
+#209 '='
+#209 INT_CONST 10
+#209 ','
+#209 INT_CONST 12
+#209 ')'
+#209 ';'
+#210 OBJECTID assert
+#210 '('
+#210 OBJECTID ctJ
+#210 '='
+#210 INT_CONST 100
+#210 ','
+#210 INT_CONST 123
+#210 ')'
+#210 ';'
+#211 OBJECTID assert
+#211 '('
+#211 OBJECTID ctK
+#211 '='
+#211 INT_CONST 1000
+#211 ','
+#211 INT_CONST 1234
+#211 ')'
+#211 ';'
+#212 '}'
+#212 ';'
+#214 '}'
+#214 '}'
+#214 ';'
+#217 OBJECTID bail
+#217 '('
+#217 OBJECTID i
+#217 ':'
+#217 TYPEID Int
+#217 ')'
+#217 ':'
+#217 TYPEID Object
+#217 '{'
+#217 '{'
+#218 OBJECTID io
+#218 '.'
+#218 OBJECTID out_string
+#218 '('
+#218 STR_CONST "failed: "
+#218 ')'
+#218 ';'
+#219 OBJECTID io
+#219 '.'
+#219 OBJECTID out_int
+#219 '('
+#219 OBJECTID i
+#219 ')'
+#219 ';'
+#220 OBJECTID io
+#220 '.'
+#220 OBJECTID out_string
+#220 '('
+#220 STR_CONST "\n"
+#220 ')'
+#220 ';'
+#221 OBJECTID abort
+#221 '('
+#221 ')'
+#221 ';'
+#222 '}'
+#222 '}'
+#222 ';'
+#224 OBJECTID bigMath
+#224 '('
+#224 ')'
+#224 ':'
+#224 TYPEID Object
+#224 '{'
+#224 '{'
+#225 IF
+#225 INT_CONST 1
+#225 '+'
+#225 INT_CONST 2
+#225 '='
+#225 INT_CONST 3
+#225 THEN
+#226 INT_CONST 0
+#227 ELSE
+#228 OBJECTID bail
+#228 '('
+#228 INT_CONST 55
+#228 ')'
+#229 FI
+#229 ';'
+#231 OBJECTID io
+#231 '.'
+#231 OBJECTID out_string
+#231 '('
+#231 STR_CONST "bigMath\n"
+#231 ')'
+#231 ';'
+#233 IF
+#233 INT_CONST 1
+#233 '='
+#233 INT_CONST 1
+#233 THEN
+#234 IF
+#234 INT_CONST 1
+#234 '+'
+#234 INT_CONST 2
+#234 '='
+#234 INT_CONST 3
+#234 THEN
+#235 IF
+#235 INT_CONST 5
+#235 '-'
+#235 INT_CONST 3
+#235 '='
+#235 INT_CONST 2
+#235 THEN
+#236 IF
+#236 INT_CONST 11
+#236 '*'
+#236 INT_CONST 2
+#236 '='
+#236 INT_CONST 22
+#236 THEN
+#237 IF
+#237 INT_CONST 99
+#237 '/'
+#237 INT_CONST 11
+#237 '='
+#237 INT_CONST 9
+#237 THEN
+#238 IF
+#238 INT_CONST 45
+#238 '+'
+#238 INT_CONST 14
+#238 '-'
+#238 INT_CONST 75
+#238 '*'
+#238 INT_CONST 2
+#238 '+'
+#238 INT_CONST 100
+#238 '='
+#238 INT_CONST 9
+#238 THEN
+#239 IF
+#239 INT_CONST 100
+#239 '/'
+#239 INT_CONST 2
+#239 '/'
+#239 INT_CONST 2
+#239 '/'
+#239 INT_CONST 2
+#239 '/'
+#239 INT_CONST 2
+#239 '/'
+#239 INT_CONST 2
+#239 '='
+#239 INT_CONST 3
+#239 THEN
+#240 IF
+#240 INT_CONST 1
+#240 '+'
+#240 '('
+#240 INT_CONST 2
+#240 '+'
+#240 INT_CONST 3
+#240 ')'
+#240 '='
+#240 INT_CONST 6
+#240 THEN
+#241 IF
+#241 INT_CONST 1
+#241 '+'
+#241 '('
+#241 INT_CONST 2
+#241 '+'
+#241 '('
+#241 INT_CONST 3
+#241 '+'
+#241 '('
+#241 INT_CONST 4
+#241 '+'
+#241 INT_CONST 5
+#241 ')'
+#241 ')'
+#241 ')'
+#241 '='
+#241 INT_CONST 15
+#241 THEN
+#242 IF
+#242 INT_CONST 1
+#242 '+'
+#242 '('
+#242 INT_CONST 2
+#242 '+'
+#242 '('
+#242 INT_CONST 3
+#242 '+'
+#242 '('
+#242 INT_CONST 4
+#242 '+'
+#242 '('
+#242 INT_CONST 5
+#242 '+'
+#242 '('
+#242 INT_CONST 6
+#242 '+'
+#242 '('
+#242 INT_CONST 7
+#242 '+'
+#242 '('
+#242 INT_CONST 8
+#242 '+'
+#242 '('
+#242 INT_CONST 9
+#242 '+'
+#242 INT_CONST 10
+#242 ')'
+#242 ')'
+#242 ')'
+#242 ')'
+#242 ')'
+#242 ')'
+#242 ')'
+#242 ')'
+#242 '='
+#242 INT_CONST 55
+#242 THEN
+#243 BOOL_CONST true
+#244 ELSE
+#244 OBJECTID bail
+#244 '('
+#244 INT_CONST 1
+#244 ')'
+#244 FI
+#245 ELSE
+#245 OBJECTID bail
+#245 '('
+#245 INT_CONST 2
+#245 ')'
+#245 FI
+#246 ELSE
+#246 OBJECTID bail
+#246 '('
+#246 INT_CONST 3
+#246 ')'
+#246 FI
+#247 ELSE
+#247 OBJECTID bail
+#247 '('
+#247 INT_CONST 4
+#247 ')'
+#247 FI
+#248 ELSE
+#248 OBJECTID bail
+#248 '('
+#248 INT_CONST 5
+#248 ')'
+#248 FI
+#249 ELSE
+#249 OBJECTID bail
+#249 '('
+#249 INT_CONST 6
+#249 ')'
+#249 FI
+#250 ELSE
+#250 OBJECTID bail
+#250 '('
+#250 INT_CONST 7
+#250 ')'
+#250 FI
+#251 ELSE
+#251 OBJECTID bail
+#251 '('
+#251 INT_CONST 8
+#251 ')'
+#251 FI
+#252 ELSE
+#252 OBJECTID bail
+#252 '('
+#252 INT_CONST 9
+#252 ')'
+#252 FI
+#253 ELSE
+#253 OBJECTID bail
+#253 '('
+#253 INT_CONST 10
+#253 ')'
+#253 FI
+#254 ';'
+#256 OBJECTID assert
+#256 '('
+#256 NOT
+#256 BOOL_CONST false
+#256 ','
+#256 INT_CONST 250
+#256 ')'
+#256 ';'
+#257 OBJECTID assert
+#257 '('
+#257 NOT
+#257 NOT
+#257 BOOL_CONST true
+#257 ','
+#257 INT_CONST 251
+#257 ')'
+#257 ';'
+#259 OBJECTID assert
+#259 '('
+#259 INT_CONST 3
+#259 '<'
+#259 INT_CONST 4
+#259 ','
+#259 INT_CONST 253
+#259 ')'
+#259 ';'
+#260 OBJECTID assert
+#260 '('
+#260 NOT
+#260 INT_CONST 3
+#260 '<'
+#260 INT_CONST 3
+#260 ','
+#260 INT_CONST 254
+#260 ')'
+#260 ';'
+#261 OBJECTID assert
+#261 '('
+#261 INT_CONST 65
+#261 LE
+#261 INT_CONST 66
+#261 ','
+#261 INT_CONST 255
+#261 ')'
+#261 ';'
+#262 OBJECTID assert
+#262 '('
+#262 INT_CONST 65
+#262 LE
+#262 INT_CONST 65
+#262 ','
+#262 INT_CONST 255
+#262 ')'
+#262 ';'
+#264 OBJECTID assert
+#264 '('
+#264 '~'
+#264 INT_CONST 2
+#264 '='
+#264 '('
+#264 INT_CONST 0
+#264 '-'
+#264 INT_CONST 2
+#264 ')'
+#264 ','
+#264 INT_CONST 257
+#264 ')'
+#264 ';'
+#265 OBJECTID assert
+#265 '('
+#265 '~'
+#265 INT_CONST 2
+#265 '<'
+#265 INT_CONST 2
+#265 ','
+#265 INT_CONST 258
+#265 ')'
+#265 ';'
+#266 OBJECTID assert
+#266 '('
+#266 '~'
+#266 INT_CONST 0
+#266 '='
+#266 INT_CONST 0
+#266 ','
+#266 INT_CONST 259
+#266 ')'
+#266 ';'
+#267 '}'
+#267 '}'
+#267 ';'
+#269 OBJECTID assert
+#269 '('
+#269 OBJECTID b
+#269 ':'
+#269 TYPEID Bool
+#269 ','
+#269 OBJECTID line
+#269 ':'
+#269 TYPEID Int
+#269 ')'
+#269 ':'
+#269 TYPEID Object
+#269 '{'
+#270 IF
+#270 OBJECTID b
+#270 THEN
+#270 BOOL_CONST true
+#270 ELSE
+#270 '{'
+#271 OBJECTID io
+#271 '.'
+#271 OBJECTID out_string
+#271 '('
+#271 STR_CONST "assertion failed: "
+#271 ')'
+#271 ';'
+#272 OBJECTID io
+#272 '.'
+#272 OBJECTID out_int
+#272 '('
+#272 OBJECTID line
+#272 ')'
+#272 ';'
+#273 OBJECTID io
+#273 '.'
+#273 OBJECTID out_string
+#273 '('
+#273 STR_CONST "\n"
+#273 ')'
+#273 ';'
+#274 OBJECTID abort
+#274 '('
+#274 ')'
+#274 ';'
+#275 '}'
+#275 FI
+#276 '}'
+#276 ';'
+#278 OBJECTID bigAssign
+#278 '('
+#278 ')'
+#278 ':'
+#278 TYPEID Object
+#278 '{'
+#279 LET
+#280 OBJECTID x
+#280 ':'
+#280 TYPEID Int
+#280 ','
+#281 OBJECTID y
+#281 ':'
+#281 TYPEID Int
+#281 ','
+#282 OBJECTID z
+#282 ':'
+#282 TYPEID Int
+#283 IN
+#283 '{'
+#284 OBJECTID io
+#284 '.'
+#284 OBJECTID out_string
+#284 '('
+#284 STR_CONST "bigAssign\n"
+#284 ')'
+#284 ';'
+#286 OBJECTID assert
+#286 '('
+#286 OBJECTID x
+#286 '='
+#286 INT_CONST 0
+#286 ','
+#286 INT_CONST 1
+#286 ')'
+#286 ';'
+#287 OBJECTID assert
+#287 '('
+#287 OBJECTID y
+#287 '='
+#287 INT_CONST 0
+#287 ','
+#287 INT_CONST 2
+#287 ')'
+#287 ';'
+#288 OBJECTID assert
+#288 '('
+#288 OBJECTID z
+#288 '='
+#288 INT_CONST 0
+#288 ','
+#288 INT_CONST 3
+#288 ')'
+#288 ';'
+#290 OBJECTID x
+#290 ASSIGN
+#290 INT_CONST 1
+#290 ';'
+#291 OBJECTID y
+#291 ASSIGN
+#291 INT_CONST 2
+#291 ';'
+#292 OBJECTID z
+#292 ASSIGN
+#292 INT_CONST 3
+#292 ';'
+#293 OBJECTID assert
+#293 '('
+#293 OBJECTID x
+#293 '='
+#293 INT_CONST 1
+#293 ','
+#293 INT_CONST 4
+#293 ')'
+#293 ';'
+#294 OBJECTID assert
+#294 '('
+#294 OBJECTID y
+#294 '='
+#294 INT_CONST 2
+#294 ','
+#294 INT_CONST 5
+#294 ')'
+#294 ';'
+#295 OBJECTID assert
+#295 '('
+#295 OBJECTID z
+#295 '='
+#295 INT_CONST 3
+#295 ','
+#295 INT_CONST 6
+#295 ')'
+#295 ';'
+#297 OBJECTID z
+#297 ASSIGN
+#297 INT_CONST 1
+#297 ';'
+#298 OBJECTID y
+#298 ASSIGN
+#298 INT_CONST 2
+#298 ';'
+#299 OBJECTID x
+#299 ASSIGN
+#299 INT_CONST 3
+#299 ';'
+#300 OBJECTID assert
+#300 '('
+#300 OBJECTID z
+#300 '='
+#300 INT_CONST 1
+#300 ','
+#300 INT_CONST 14
+#300 ')'
+#300 ';'
+#301 OBJECTID assert
+#301 '('
+#301 OBJECTID y
+#301 '='
+#301 INT_CONST 2
+#301 ','
+#301 INT_CONST 15
+#301 ')'
+#301 ';'
+#302 OBJECTID assert
+#302 '('
+#302 OBJECTID x
+#302 '='
+#302 INT_CONST 3
+#302 ','
+#302 INT_CONST 16
+#302 ')'
+#302 ';'
+#304 OBJECTID x
+#304 ASSIGN
+#304 OBJECTID y
+#304 ASSIGN
+#304 INT_CONST 6
+#304 ';'
+#305 OBJECTID assert
+#305 '('
+#305 OBJECTID x
+#305 '='
+#305 INT_CONST 6
+#305 ','
+#305 INT_CONST 114
+#305 ')'
+#305 ';'
+#306 OBJECTID assert
+#306 '('
+#306 OBJECTID y
+#306 '='
+#306 INT_CONST 6
+#306 ','
+#306 INT_CONST 115
+#306 ')'
+#306 ';'
+#307 OBJECTID assert
+#307 '('
+#307 OBJECTID z
+#307 '='
+#307 INT_CONST 1
+#307 ','
+#307 INT_CONST 116
+#307 ')'
+#307 ';'
+#309 OBJECTID x
+#309 ASSIGN
+#309 OBJECTID y
+#309 '+'
+#309 INT_CONST 4
+#309 ';'
+#310 OBJECTID y
+#310 ASSIGN
+#310 OBJECTID x
+#310 '-'
+#310 INT_CONST 3
+#310 ';'
+#311 OBJECTID z
+#311 ASSIGN
+#311 OBJECTID x
+#311 '*'
+#311 OBJECTID y
+#311 '+'
+#311 INT_CONST 14
+#311 ';'
+#312 OBJECTID y
+#312 ASSIGN
+#312 OBJECTID y
+#312 '+'
+#312 INT_CONST 1
+#312 ';'
+#313 OBJECTID assert
+#313 '('
+#313 OBJECTID x
+#313 '='
+#313 INT_CONST 10
+#313 ','
+#313 INT_CONST 2114
+#313 ')'
+#313 ';'
+#314 OBJECTID assert
+#314 '('
+#314 OBJECTID y
+#314 '='
+#314 INT_CONST 8
+#314 ','
+#314 INT_CONST 3114
+#314 ')'
+#314 ';'
+#315 OBJECTID assert
+#315 '('
+#315 OBJECTID z
+#315 '='
+#315 INT_CONST 84
+#315 ','
+#315 INT_CONST 2116
+#315 ')'
+#315 ';'
+#317 OBJECTID x
+#317 ASSIGN
+#317 OBJECTID y
+#317 ';'
+#318 OBJECTID y
+#318 ASSIGN
+#318 OBJECTID z
+#318 ';'
+#319 OBJECTID z
+#319 ASSIGN
+#319 OBJECTID x
+#319 ';'
+#320 OBJECTID assert
+#320 '('
+#320 OBJECTID x
+#320 '='
+#320 INT_CONST 8
+#320 ','
+#320 INT_CONST 101
+#320 ')'
+#320 ';'
+#321 OBJECTID assert
+#321 '('
+#321 OBJECTID y
+#321 '='
+#321 INT_CONST 84
+#321 ','
+#321 INT_CONST 102
+#321 ')'
+#321 ';'
+#322 OBJECTID assert
+#322 '('
+#322 OBJECTID z
+#322 '='
+#322 INT_CONST 8
+#322 ','
+#322 INT_CONST 103
+#322 ')'
+#322 ';'
+#324 OBJECTID assert
+#324 '('
+#324 OBJECTID x
+#324 '+'
+#324 OBJECTID y
+#324 '='
+#324 INT_CONST 92
+#324 ','
+#324 INT_CONST 104
+#324 ')'
+#324 ';'
+#325 OBJECTID assert
+#325 '('
+#325 OBJECTID x
+#325 '='
+#325 INT_CONST 8
+#325 ','
+#325 INT_CONST 105
+#325 ')'
+#325 ';'
+#326 OBJECTID assert
+#326 '('
+#326 OBJECTID y
+#326 '='
+#326 INT_CONST 84
+#326 ','
+#326 INT_CONST 106
+#326 ')'
+#326 ';'
+#327 '}'
+#328 '}'
+#328 ';'
+#330 OBJECTID setI
+#330 '('
+#330 OBJECTID newI
+#330 ':'
+#330 TYPEID Int
+#330 ')'
+#330 ':'
+#330 TYPEID Int
+#330 '{'
+#330 OBJECTID i
+#330 ASSIGN
+#330 OBJECTID newI
+#330 '}'
+#330 ';'
+#331 OBJECTID getI
+#331 '('
+#331 ')'
+#331 ':'
+#331 TYPEID Int
+#331 '{'
+#331 OBJECTID i
+#331 '}'
+#331 ';'
+#333 OBJECTID bigSelf
+#333 '('
+#333 ')'
+#333 ':'
+#333 TYPEID Object
+#333 '{'
+#334 LET
+#335 OBJECTID v
+#335 ':'
+#335 TYPEID Blah
+#335 ','
+#336 OBJECTID s
+#336 ':'
+#336 TYPEID Blah
+#336 ASSIGN
+#336 OBJECTID self
+#336 ','
+#337 OBJECTID t
+#337 ':'
+#337 TYPEID Blah
+#337 ASSIGN
+#337 NEW
+#337 TYPEID Blah
+#338 IN
+#338 '{'
+#339 OBJECTID io
+#339 '.'
+#339 OBJECTID out_string
+#339 '('
+#339 STR_CONST "bigSelf\n"
+#339 ')'
+#339 ';'
+#341 OBJECTID assert
+#341 '('
+#341 ISVOID
+#341 OBJECTID v
+#341 ','
+#341 INT_CONST 310
+#341 ')'
+#341 ';'
+#342 OBJECTID assert
+#342 '('
+#342 NOT
+#342 OBJECTID v
+#342 '='
+#342 OBJECTID s
+#342 ','
+#342 INT_CONST 311
+#342 ')'
+#342 ';'
+#343 OBJECTID assert
+#343 '('
+#343 NOT
+#343 OBJECTID s
+#343 '='
+#343 OBJECTID t
+#343 ','
+#343 INT_CONST 312
+#343 ')'
+#343 ';'
+#344 OBJECTID assert
+#344 '('
+#344 NOT
+#344 OBJECTID v
+#344 '='
+#344 OBJECTID t
+#344 ','
+#344 INT_CONST 313
+#344 ')'
+#344 ';'
+#346 OBJECTID s
+#346 '.'
+#346 OBJECTID setI
+#346 '('
+#346 INT_CONST 3
+#346 ')'
+#346 ';'
+#347 OBJECTID t
+#347 '.'
+#347 OBJECTID setI
+#347 '('
+#347 INT_CONST 4
+#347 ')'
+#347 ';'
+#348 OBJECTID assert
+#348 '('
+#348 NOT
+#348 OBJECTID s
+#348 '.'
+#348 OBJECTID getI
+#348 '('
+#348 ')'
+#348 '='
+#348 OBJECTID t
+#348 '.'
+#348 OBJECTID getI
+#348 '('
+#348 ')'
+#348 ','
+#348 INT_CONST 320
+#348 ')'
+#348 ';'
+#350 OBJECTID t
+#350 ASSIGN
+#350 OBJECTID self
+#350 ';'
+#351 OBJECTID assert
+#351 '('
+#351 OBJECTID s
+#351 '='
+#351 OBJECTID t
+#351 ','
+#351 INT_CONST 314
+#351 ')'
+#351 ';'
+#353 OBJECTID s
+#353 '.'
+#353 OBJECTID setI
+#353 '('
+#353 INT_CONST 5
+#353 ')'
+#353 ';'
+#354 OBJECTID t
+#354 '.'
+#354 OBJECTID setI
+#354 '('
+#354 INT_CONST 6
+#354 ')'
+#354 ';'
+#355 OBJECTID assert
+#355 '('
+#355 OBJECTID s
+#355 '.'
+#355 OBJECTID getI
+#355 '('
+#355 ')'
+#355 '='
+#355 OBJECTID t
+#355 '.'
+#355 OBJECTID getI
+#355 '('
+#355 ')'
+#355 ','
+#355 INT_CONST 327
+#355 ')'
+#355 ';'
+#356 '}'
+#357 '}'
+#357 ';'
+#359 OBJECTID bigStrCompare
+#359 '('
+#359 ')'
+#359 ':'
+#359 TYPEID Object
+#359 '{'
+#360 LET
+#361 OBJECTID s
+#361 ':'
+#361 TYPEID String
+#361 ASSIGN
+#361 STR_CONST "foo"
+#361 ','
+#362 OBJECTID t
+#362 ':'
+#362 TYPEID String
+#362 ASSIGN
+#362 STR_CONST "bar"
+#362 ','
+#363 OBJECTID u
+#363 ':'
+#363 TYPEID String
+#363 ASSIGN
+#363 STR_CONST "foobar"
+#363 ','
+#364 OBJECTID v
+#364 ':'
+#364 TYPEID String
+#364 ','
+#365 OBJECTID w
+#365 ':'
+#365 TYPEID String
+#366 IN
+#366 '{'
+#367 OBJECTID io
+#367 '.'
+#367 OBJECTID out_string
+#367 '('
+#367 STR_CONST "bigStrCompare\n"
+#367 ')'
+#367 ';'
+#369 OBJECTID assert
+#369 '('
+#369 NOT
+#369 OBJECTID s
+#369 '='
+#369 OBJECTID t
+#369 ','
+#369 INT_CONST 339
+#369 ')'
+#369 ';'
+#370 OBJECTID assert
+#370 '('
+#370 OBJECTID s
+#370 '='
+#370 STR_CONST "foo"
+#370 ','
+#370 INT_CONST 340
+#370 ')'
+#370 ';'
+#371 OBJECTID assert
+#371 '('
+#371 OBJECTID t
+#371 '='
+#371 STR_CONST "bar"
+#371 ','
+#371 INT_CONST 341
+#371 ')'
+#371 ';'
+#372 OBJECTID assert
+#372 '('
+#372 OBJECTID v
+#372 '='
+#372 OBJECTID w
+#372 ','
+#372 INT_CONST 342
+#372 ')'
+#372 ';'
+#373 OBJECTID assert
+#373 '('
+#373 NOT
+#373 OBJECTID v
+#373 '='
+#373 OBJECTID u
+#373 ','
+#373 INT_CONST 346
+#373 ')'
+#373 ';'
+#375 OBJECTID v
+#375 ASSIGN
+#375 OBJECTID u
+#375 '.'
+#375 OBJECTID substr
+#375 '('
+#375 INT_CONST 0
+#375 ','
+#375 INT_CONST 3
+#375 ')'
+#375 ';'
+#376 OBJECTID w
+#376 ASSIGN
+#376 OBJECTID u
+#376 '.'
+#376 OBJECTID substr
+#376 '('
+#376 INT_CONST 3
+#376 ','
+#376 INT_CONST 3
+#376 ')'
+#376 ';'
+#377 OBJECTID assert
+#377 '('
+#377 NOT
+#377 OBJECTID v
+#377 '='
+#377 OBJECTID w
+#377 ','
+#377 INT_CONST 350
+#377 ')'
+#377 ';'
+#378 OBJECTID assert
+#378 '('
+#378 OBJECTID v
+#378 '='
+#378 OBJECTID s
+#378 ','
+#378 INT_CONST 351
+#378 ')'
+#378 ';'
+#379 OBJECTID assert
+#379 '('
+#379 OBJECTID w
+#379 '='
+#379 OBJECTID t
+#379 ','
+#379 INT_CONST 352
+#379 ')'
+#379 ';'
+#380 OBJECTID assert
+#380 '('
+#380 NOT
+#380 OBJECTID v
+#380 '='
+#380 OBJECTID t
+#380 ','
+#380 INT_CONST 353
+#380 ')'
+#380 ';'
+#382 OBJECTID assert
+#382 '('
+#382 OBJECTID s
+#382 '.'
+#382 OBJECTID substr
+#382 '('
+#382 INT_CONST 1
+#382 ','
+#382 INT_CONST 1
+#382 ')'
+#382 '='
+#382 OBJECTID s
+#382 '.'
+#382 OBJECTID substr
+#382 '('
+#382 INT_CONST 2
+#382 ','
+#382 INT_CONST 1
+#382 ')'
+#382 ','
+#382 INT_CONST 355
+#382 ')'
+#382 ';'
+#383 '}'
+#384 '}'
+#384 ';'
+#386 OBJECTID bigCase
+#386 '('
+#386 ')'
+#386 ':'
+#386 TYPEID Object
+#386 '{'
+#387 LET
+#388 OBJECTID a
+#388 ':'
+#388 TYPEID A
+#388 ASSIGN
+#388 NEW
+#388 TYPEID A
+#388 ','
+#389 OBJECTID b
+#389 ':'
+#389 TYPEID B
+#389 ASSIGN
+#389 NEW
+#389 TYPEID B
+#389 ','
+#390 OBJECTID c
+#390 ':'
+#390 TYPEID C
+#390 ASSIGN
+#390 NEW
+#390 TYPEID C
+#390 ','
+#391 OBJECTID p
+#391 ':'
+#391 TYPEID P
+#391 ASSIGN
+#391 NEW
+#391 TYPEID P
+#391 ','
+#392 OBJECTID c1
+#392 ':'
+#392 TYPEID C1
+#392 ASSIGN
+#392 NEW
+#392 TYPEID C1
+#392 ','
+#393 OBJECTID c2
+#393 ':'
+#393 TYPEID C2
+#393 ASSIGN
+#393 NEW
+#393 TYPEID C2
+#393 ','
+#394 OBJECTID i
+#394 ':'
+#394 TYPEID Int
+#394 ','
+#395 OBJECTID o
+#395 ':'
+#395 TYPEID Object
+#396 IN
+#396 '{'
+#397 OBJECTID io
+#397 '.'
+#397 OBJECTID out_string
+#397 '('
+#397 STR_CONST "bigCase\n"
+#397 ')'
+#397 ';'
+#399 OBJECTID o
+#399 ASSIGN
+#399 OBJECTID c1
+#399 ';'
+#400 OBJECTID i
+#400 ASSIGN
+#400 CASE
+#400 OBJECTID o
+#400 OF
+#401 OBJECTID x
+#401 ':'
+#401 TYPEID A
+#401 DARROW
+#401 INT_CONST 1
+#401 ';'
+#402 OBJECTID y
+#402 ':'
+#402 TYPEID C1
+#402 DARROW
+#402 INT_CONST 2
+#402 ';'
+#403 OBJECTID z
+#403 ':'
+#403 TYPEID C2
+#403 DARROW
+#403 INT_CONST 3
+#403 ';'
+#404 OBJECTID k
+#404 ':'
+#404 TYPEID Object
+#404 DARROW
+#404 INT_CONST 4
+#404 ';'
+#405 ESAC
+#405 ';'
+#406 OBJECTID assert
+#406 '('
+#406 OBJECTID i
+#406 '='
+#406 INT_CONST 2
+#406 ','
+#406 INT_CONST 381
+#406 ')'
+#406 ';'
+#408 OBJECTID o
+#408 ASSIGN
+#408 OBJECTID c1
+#408 ';'
+#409 OBJECTID i
+#409 ASSIGN
+#409 CASE
+#409 OBJECTID o
+#409 OF
+#410 OBJECTID x
+#410 ':'
+#410 TYPEID A
+#410 DARROW
+#410 INT_CONST 1
+#410 ';'
+#411 OBJECTID y
+#411 ':'
+#411 TYPEID P
+#411 DARROW
+#411 INT_CONST 2
+#411 ';'
+#412 OBJECTID z
+#412 ':'
+#412 TYPEID C2
+#412 DARROW
+#412 INT_CONST 3
+#412 ';'
+#413 OBJECTID k
+#413 ':'
+#413 TYPEID Object
+#413 DARROW
+#413 INT_CONST 4
+#413 ';'
+#414 ESAC
+#414 ';'
+#415 OBJECTID assert
+#415 '('
+#415 OBJECTID i
+#415 '='
+#415 INT_CONST 2
+#415 ','
+#415 INT_CONST 390
+#415 ')'
+#415 ';'
+#417 OBJECTID o
+#417 ASSIGN
+#417 OBJECTID c2
+#417 ';'
+#418 OBJECTID i
+#418 ASSIGN
+#418 CASE
+#418 OBJECTID o
+#418 OF
+#419 OBJECTID x
+#419 ':'
+#419 TYPEID A
+#419 DARROW
+#419 INT_CONST 1
+#419 ';'
+#420 OBJECTID y
+#420 ':'
+#420 TYPEID P
+#420 DARROW
+#420 INT_CONST 2
+#420 ';'
+#421 OBJECTID z
+#421 ':'
+#421 TYPEID C2
+#421 DARROW
+#421 INT_CONST 3
+#421 ';'
+#422 OBJECTID k
+#422 ':'
+#422 TYPEID Object
+#422 DARROW
+#422 INT_CONST 4
+#422 ';'
+#423 ESAC
+#423 ';'
+#424 OBJECTID assert
+#424 '('
+#424 OBJECTID i
+#424 '='
+#424 INT_CONST 3
+#424 ','
+#424 INT_CONST 399
+#424 ')'
+#424 ';'
+#426 OBJECTID o
+#426 ASSIGN
+#426 OBJECTID c1
+#426 ';'
+#427 OBJECTID i
+#427 ASSIGN
+#427 CASE
+#427 OBJECTID b
+#427 OF
+#428 OBJECTID x
+#428 ':'
+#428 TYPEID A
+#428 DARROW
+#428 INT_CONST 1
+#428 ';'
+#429 OBJECTID y
+#429 ':'
+#429 TYPEID C1
+#429 DARROW
+#429 INT_CONST 2
+#429 ';'
+#430 OBJECTID z
+#430 ':'
+#430 TYPEID C2
+#430 DARROW
+#430 INT_CONST 3
+#430 ';'
+#431 OBJECTID k
+#431 ':'
+#431 TYPEID Object
+#431 DARROW
+#431 INT_CONST 4
+#431 ';'
+#432 ESAC
+#432 ';'
+#433 OBJECTID assert
+#433 '('
+#433 OBJECTID i
+#433 '='
+#433 INT_CONST 1
+#433 ','
+#433 INT_CONST 408
+#433 ')'
+#433 ';'
+#435 OBJECTID o
+#435 ASSIGN
+#435 OBJECTID b
+#435 ';'
+#436 OBJECTID i
+#436 ASSIGN
+#436 CASE
+#436 OBJECTID o
+#436 OF
+#437 OBJECTID x
+#437 ':'
+#437 TYPEID A
+#437 DARROW
+#437 INT_CONST 1
+#437 ';'
+#438 OBJECTID x
+#438 ':'
+#438 TYPEID B
+#438 DARROW
+#438 INT_CONST 2
+#438 ';'
+#439 OBJECTID x
+#439 ':'
+#439 TYPEID C
+#439 DARROW
+#439 INT_CONST 3
+#439 ';'
+#440 ESAC
+#440 ';'
+#441 OBJECTID assert
+#441 '('
+#441 OBJECTID i
+#441 '='
+#441 INT_CONST 2
+#441 ','
+#441 INT_CONST 417
+#441 ')'
+#441 ';'
+#443 OBJECTID o
+#443 ASSIGN
+#443 OBJECTID c
+#443 ';'
+#444 OBJECTID i
+#444 ASSIGN
+#444 CASE
+#444 OBJECTID o
+#444 OF
+#445 OBJECTID x
+#445 ':'
+#445 TYPEID A
+#445 DARROW
+#445 INT_CONST 1
+#445 ';'
+#446 OBJECTID x
+#446 ':'
+#446 TYPEID B
+#446 DARROW
+#446 INT_CONST 2
+#446 ';'
+#447 OBJECTID x
+#447 ':'
+#447 TYPEID C
+#447 DARROW
+#447 INT_CONST 3
+#447 ';'
+#448 OBJECTID k
+#448 ':'
+#448 TYPEID Object
+#448 DARROW
+#448 INT_CONST 4
+#448 ';'
+#449 ESAC
+#449 ';'
+#450 OBJECTID assert
+#450 '('
+#450 OBJECTID i
+#450 '='
+#450 INT_CONST 3
+#450 ','
+#450 INT_CONST 426
+#450 ')'
+#450 ';'
+#452 OBJECTID o
+#452 ASSIGN
+#452 OBJECTID c1
+#452 ';'
+#453 OBJECTID i
+#453 ASSIGN
+#453 CASE
+#453 OBJECTID o
+#453 OF
+#454 OBJECTID x
+#454 ':'
+#454 TYPEID A
+#454 DARROW
+#454 INT_CONST 1
+#454 ';'
+#455 OBJECTID x
+#455 ':'
+#455 TYPEID B
+#455 DARROW
+#455 INT_CONST 2
+#455 ';'
+#456 OBJECTID x
+#456 ':'
+#456 TYPEID C
+#456 DARROW
+#456 INT_CONST 3
+#456 ';'
+#457 OBJECTID k
+#457 ':'
+#457 TYPEID Object
+#457 DARROW
+#457 INT_CONST 4
+#457 ';'
+#458 ESAC
+#458 ';'
+#459 OBJECTID assert
+#459 '('
+#459 OBJECTID i
+#459 '='
+#459 INT_CONST 4
+#459 ','
+#459 INT_CONST 438
+#459 ')'
+#459 ';'
+#461 OBJECTID o
+#461 ASSIGN
+#461 OBJECTID b
+#461 ';'
+#462 OBJECTID i
+#462 ASSIGN
+#462 CASE
+#462 OBJECTID o
+#462 OF
+#463 OBJECTID k
+#463 ':'
+#463 TYPEID Object
+#463 DARROW
+#463 INT_CONST 4
+#463 ';'
+#464 ESAC
+#464 ';'
+#465 OBJECTID assert
+#465 '('
+#465 OBJECTID i
+#465 '='
+#465 INT_CONST 4
+#465 ','
+#465 INT_CONST 444
+#465 ')'
+#465 ';'
+#467 OBJECTID o
+#467 ASSIGN
+#467 BOOL_CONST true
+#467 ';'
+#468 OBJECTID i
+#468 ASSIGN
+#468 CASE
+#468 OBJECTID o
+#468 OF
+#469 OBJECTID x
+#469 ':'
+#469 TYPEID Bool
+#469 DARROW
+#469 INT_CONST 1
+#469 ';'
+#470 OBJECTID x
+#470 ':'
+#470 TYPEID B
+#470 DARROW
+#470 INT_CONST 2
+#470 ';'
+#471 OBJECTID x
+#471 ':'
+#471 TYPEID C
+#471 DARROW
+#471 INT_CONST 3
+#471 ';'
+#472 ESAC
+#472 ';'
+#473 OBJECTID assert
+#473 '('
+#473 OBJECTID i
+#473 '='
+#473 INT_CONST 1
+#473 ','
+#473 INT_CONST 453
+#473 ')'
+#473 ';'
+#475 OBJECTID o
+#475 ASSIGN
+#475 INT_CONST 2
+#475 ';'
+#476 OBJECTID i
+#476 ASSIGN
+#476 CASE
+#476 INT_CONST 3
+#476 OF
+#477 OBJECTID k
+#477 ':'
+#477 TYPEID Object
+#477 DARROW
+#477 INT_CONST 4
+#477 ';'
+#478 ESAC
+#478 ';'
+#479 OBJECTID assert
+#479 '('
+#479 OBJECTID i
+#479 '='
+#479 INT_CONST 4
+#479 ','
+#479 INT_CONST 459
+#479 ')'
+#479 ';'
+#481 OBJECTID o
+#481 ASSIGN
+#481 STR_CONST "foobar"
+#481 ';'
+#482 OBJECTID i
+#482 ASSIGN
+#482 CASE
+#482 STR_CONST "foobar"
+#482 '.'
+#482 OBJECTID substr
+#482 '('
+#482 INT_CONST 2
+#482 ','
+#482 INT_CONST 2
+#482 ')'
+#482 OF
+#483 OBJECTID x
+#483 ':'
+#483 TYPEID Bool
+#483 DARROW
+#483 INT_CONST 1
+#483 ';'
+#484 OBJECTID y
+#484 ':'
+#484 TYPEID String
+#484 DARROW
+#484 INT_CONST 2
+#484 ';'
+#485 OBJECTID x
+#485 ':'
+#485 TYPEID C
+#485 DARROW
+#485 INT_CONST 3
+#485 ';'
+#486 OBJECTID k
+#486 ':'
+#486 TYPEID Object
+#486 DARROW
+#486 INT_CONST 4
+#486 ';'
+#487 ESAC
+#487 ';'
+#488 OBJECTID assert
+#488 '('
+#488 OBJECTID i
+#488 '='
+#488 INT_CONST 2
+#488 ','
+#488 INT_CONST 468
+#488 ')'
+#488 ';'
+#489 '}'
+#490 '}'
+#490 ';'
+#493 OBJECTID bigAttrAccess
+#493 '('
+#493 ')'
+#493 ':'
+#493 TYPEID Object
+#493 '{'
+#494 LET
+#495 OBJECTID c
+#495 ':'
+#495 TYPEID C2
+#495 ASSIGN
+#495 NEW
+#495 TYPEID C2
+#496 IN
+#496 '{'
+#497 OBJECTID io
+#497 '.'
+#497 OBJECTID out_string
+#497 '('
+#497 STR_CONST "bigAttrAccess\n"
+#497 ')'
+#497 ';'
+#498 OBJECTID assert
+#498 '('
+#498 OBJECTID c
+#498 '.'
+#498 OBJECTID getX
+#498 '('
+#498 ')'
+#498 '='
+#498 INT_CONST 3
+#498 ','
+#498 INT_CONST 496
+#498 ')'
+#498 ';'
+#499 OBJECTID c
+#499 '.'
+#499 OBJECTID setX
+#499 '('
+#499 INT_CONST 5
+#499 ')'
+#499 ';'
+#500 OBJECTID assert
+#500 '('
+#500 OBJECTID c
+#500 '.'
+#500 OBJECTID getX
+#500 '('
+#500 ')'
+#500 '='
+#500 INT_CONST 5
+#500 ','
+#500 INT_CONST 498
+#500 ')'
+#500 ';'
+#501 '}'
+#502 '}'
+#502 ';'
+#503 '}'
+#503 ';'
+#505 CLASS
+#505 TYPEID A
+#505 '{'
+#506 OBJECTID e
+#506 '('
+#506 ')'
+#506 ':'
+#506 TYPEID Int
+#506 '{'
+#506 INT_CONST 0
+#506 '}'
+#506 ';'
+#507 OBJECTID f
+#507 '('
+#507 ')'
+#507 ':'
+#507 TYPEID Int
+#507 '{'
+#507 INT_CONST 0
+#507 '}'
+#507 ';'
+#508 OBJECTID g
+#508 '('
+#508 ')'
+#508 ':'
+#508 TYPEID Int
+#508 '{'
+#508 INT_CONST 0
+#508 '}'
+#508 ';'
+#509 OBJECTID i
+#509 '('
+#509 ')'
+#509 ':'
+#509 TYPEID Int
+#509 '{'
+#509 INT_CONST 0
+#509 '}'
+#509 ';'
+#510 OBJECTID j
+#510 '('
+#510 ')'
+#510 ':'
+#510 TYPEID Int
+#510 '{'
+#510 INT_CONST 0
+#510 '}'
+#510 ';'
+#511 '}'
+#511 ';'
+#513 CLASS
+#513 TYPEID B
+#513 INHERITS
+#513 TYPEID A
+#513 '{'
+#514 OBJECTID e
+#514 '('
+#514 ')'
+#514 ':'
+#514 TYPEID Int
+#514 '{'
+#514 INT_CONST 0
+#514 '}'
+#514 ';'
+#515 OBJECTID g
+#515 '('
+#515 ')'
+#515 ':'
+#515 TYPEID Int
+#515 '{'
+#515 INT_CONST 0
+#515 '}'
+#515 ';'
+#516 OBJECTID h
+#516 '('
+#516 ')'
+#516 ':'
+#516 TYPEID Int
+#516 '{'
+#516 INT_CONST 0
+#516 '}'
+#516 ';'
+#517 OBJECTID k
+#517 '('
+#517 ')'
+#517 ':'
+#517 TYPEID Int
+#517 '{'
+#517 INT_CONST 0
+#517 '}'
+#517 ';'
+#518 '}'
+#518 ';'
+#520 CLASS
+#520 TYPEID C
+#520 INHERITS
+#520 TYPEID B
+#520 '{'
+#521 OBJECTID e
+#521 '('
+#521 ')'
+#521 ':'
+#521 TYPEID Int
+#521 '{'
+#521 INT_CONST 0
+#521 '}'
+#521 ';'
+#522 OBJECTID h
+#522 '('
+#522 ')'
+#522 ':'
+#522 TYPEID Int
+#522 '{'
+#522 INT_CONST 0
+#522 '}'
+#522 ';'
+#523 OBJECTID i
+#523 '('
+#523 ')'
+#523 ':'
+#523 TYPEID Int
+#523 '{'
+#523 INT_CONST 0
+#523 '}'
+#523 ';'
+#524 OBJECTID ell
+#524 '('
+#524 ')'
+#524 ':'
+#524 TYPEID Int
+#524 '{'
+#524 INT_CONST 0
+#524 '}'
+#524 ';'
+#525 '}'
+#525 ';'
+#528 CLASS
+#528 TYPEID Base
+#528 '{'
+#529 OBJECTID a
+#529 ':'
+#529 TYPEID Int
+#529 ';'
+#530 OBJECTID b
+#530 ':'
+#530 TYPEID String
+#530 ';'
+#531 OBJECTID c
+#531 ':'
+#531 TYPEID Bool
+#531 ';'
+#532 '}'
+#532 ';'
+#534 CLASS
+#534 TYPEID Grandparent
+#534 INHERITS
+#534 TYPEID Base
+#534 '{'
+#535 OBJECTID d
+#535 ':'
+#535 TYPEID Base
+#535 ';'
+#536 OBJECTID e
+#536 ':'
+#536 TYPEID Int
+#536 ';'
+#537 OBJECTID f
+#537 ':'
+#537 TYPEID Grandparent
+#537 ';'
+#538 '}'
+#538 ';'
+#540 CLASS
+#540 TYPEID Parent
+#540 INHERITS
+#540 TYPEID Grandparent
+#540 '{'
+#541 OBJECTID g
+#541 ':'
+#541 TYPEID SELF_TYPE
+#541 ';'
+#542 OBJECTID h
+#542 ':'
+#542 TYPEID Int
+#542 ';'
+#543 OBJECTID i
+#543 ':'
+#543 TYPEID Bool
+#543 ';'
+#544 '}'
+#544 ';'
+#546 CLASS
+#546 TYPEID Child
+#546 INHERITS
+#546 TYPEID Parent
+#546 '{'
+#547 OBJECTID j
+#547 ':'
+#547 TYPEID Base
+#547 ';'
+#548 OBJECTID k
+#548 ':'
+#548 TYPEID Grandparent
+#548 ';'
+#549 OBJECTID l
+#549 ':'
+#549 TYPEID Main
+#549 ';'
+#550 OBJECTID m
+#550 ':'
+#550 TYPEID String
+#550 ';'
+#551 '}'
+#551 ';'
+#554 CLASS
+#554 TYPEID Main
+#554 '{'
+#555 OBJECTID main
+#555 '('
+#555 ')'
+#555 ':'
+#555 TYPEID IO
+#555 '{'
+#556 LET
+#557 OBJECTID io
+#557 ':'
+#557 TYPEID IO
+#557 ASSIGN
+#557 NEW
+#557 TYPEID IO
+#557 ','
+#558 OBJECTID b
+#558 ':'
+#558 TYPEID Blah
+#559 IN
+#559 '{'
+#560 OBJECTID io
+#560 '@'
+#560 TYPEID IO
+#560 '.'
+#560 OBJECTID out_string
+#560 '('
+#560 STR_CONST "hello, world\n"
+#560 ')'
+#560 ';'
+#562 OBJECTID io
+#562 '.'
+#562 OBJECTID out_string
+#562 '('
+#562 STR_CONST "printed via dynamic dispatch\n"
+#562 ')'
+#562 ';'
+#564 OBJECTID io
+#564 '@'
+#564 TYPEID IO
+#564 '.'
+#564 OBJECTID out_string
+#564 '('
+#564 STR_CONST "tested static dispatch and 'new IO'\n"
+#564 ')'
+#564 ';'
+#566 LET
+#567 OBJECTID i
+#567 ':'
+#567 TYPEID Int
+#567 ASSIGN
+#567 INT_CONST 3
+#568 IN
+#568 '{'
+#569 OBJECTID io
+#569 '@'
+#569 TYPEID IO
+#569 '.'
+#569 OBJECTID out_string
+#569 '('
+#569 STR_CONST "an int: "
+#569 ')'
+#569 ';'
+#570 OBJECTID io
+#570 '@'
+#570 TYPEID IO
+#570 '.'
+#570 OBJECTID out_int
+#570 '('
+#570 OBJECTID i
+#570 ')'
+#570 ';'
+#571 OBJECTID io
+#571 '@'
+#571 TYPEID IO
+#571 '.'
+#571 OBJECTID out_string
+#571 '('
+#571 STR_CONST "\n"
+#571 ')'
+#571 ';'
+#572 '}'
+#572 ';'
+#574 OBJECTID io
+#574 '.'
+#574 OBJECTID out_string
+#574 '('
+#574 STR_CONST "gonna make a Blah\n"
+#574 ')'
+#574 ';'
+#575 OBJECTID b
+#575 ASSIGN
+#575 NEW
+#575 TYPEID Blah
+#575 ';'
+#577 OBJECTID io
+#577 '.'
+#577 OBJECTID out_string
+#577 '('
+#577 STR_CONST "gonna call doThemAll\n"
+#577 ')'
+#577 ';'
+#578 OBJECTID b
+#578 '.'
+#578 OBJECTID doThemAll
+#578 '('
+#578 ')'
+#578 ';'
+#580 OBJECTID io
+#580 '.'
+#580 OBJECTID out_string
+#580 '('
+#580 STR_CONST "looks ok!\n"
+#580 ')'
+#580 ';'
+#581 '}'
+#582 '}'
+#582 ';'
+#584 '}'
+#584 ';'

@@ -1,0 +1,41 @@
+#name ".//test_files//shadow-attr-let.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID var
+#6 ':'
+#6 TYPEID String
+#6 ASSIGN
+#6 STR_CONST "bad"
+#6 ';'
+#8 OBJECTID main
+#8 '('
+#8 ')'
+#8 ':'
+#8 TYPEID Object
+#9 '{'
+#10 '{'
+#11 LET
+#11 OBJECTID var
+#11 ':'
+#11 TYPEID String
+#11 ASSIGN
+#11 STR_CONST "good"
+#11 IN
+#12 OBJECTID out_string
+#12 '('
+#12 OBJECTID var
+#12 ')'
+#12 ';'
+#14 OBJECTID out_string
+#14 '('
+#14 STR_CONST "\n"
+#14 ')'
+#14 ';'
+#15 '}'
+#16 '}'
+#16 ';'
+#17 '}'
+#17 ';'

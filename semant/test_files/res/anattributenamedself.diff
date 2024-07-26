@@ -1,0 +1,132 @@
+error in line# 1
+    parsed as: Class Name: Main, Class Definition: 0x6417bd4aa240
+    should be: : 'self' cannot be the name of an attribute.
+error in line# 2
+    parsed as: Class Name: Object, Class Definition: 0x6417bd4ab270
+    should be: Compilation halted due to static semantic errors.
+error in line# 3
+    parsed as: Class Name: Int, Class Definition: 0x6417bc3b78d0
+    should be: 
+error in line# 4
+    parsed as: Class Name: A, Class Definition: 0x6417bd4aa6a0
+    should be: 
+error in line# 5
+    parsed as: Class Name: String, Class Definition: 0x6417bd4aaed0
+    should be: 
+error in line# 6
+    parsed as: Class Name: Bool, Class Definition: 0x6417bd4aa700
+    should be: 
+error in line# 7
+    parsed as: Class Name: IO, Class Definition: 0x7fffff6c12f0
+    should be: 
+error in line# 8
+    parsed as: Class Object is inherited by:
+    should be: 
+error in line# 9
+    parsed as:   Main
+    should be: 
+error in line# 10
+    parsed as:   A
+    should be: 
+error in line# 12
+    parsed as: _program
+    should be: 
+error in line# 14
+    parsed as:   _class
+    should be: 
+error in line# 15
+    parsed as:     Main
+    should be: 
+error in line# 16
+    parsed as:     Object
+    should be: 
+error in line# 17
+    parsed as:     filename
+    should be: 
+error in line# 18
+    parsed as:     (
+    should be: 
+error in line# 20
+    parsed as:     _method
+    should be: 
+error in line# 21
+    parsed as:       main
+    should be: 
+error in line# 22
+    parsed as:       Int
+    should be: 
+error in line# 24
+    parsed as:       _int
+    should be: 
+error in line# 25
+    parsed as:         0
+    should be: 
+error in line# 26
+    parsed as:       : _no_type
+    should be: 
+error in line# 27
+    parsed as:     )
+    should be: 
+error in line# 29
+    parsed as:   _class
+    should be: 
+error in line# 30
+    parsed as:     A
+    should be: 
+error in line# 31
+    parsed as:     Object
+    should be: 
+error in line# 32
+    parsed as:     filename
+    should be: 
+error in line# 33
+    parsed as:     (
+    should be: 
+error in line# 35
+    parsed as:     _attr
+    should be: 
+error in line# 36
+    parsed as:       self
+    should be: 
+error in line# 37
+    parsed as:       A
+    should be: 
+error in line# 39
+    parsed as:       _new
+    should be: 
+error in line# 40
+    parsed as:         A
+    should be: 
+error in line# 41
+    parsed as:       : _no_type
+    should be: 
+error in line# 43
+    parsed as:     _method
+    should be: 
+error in line# 44
+    parsed as:       foo
+    should be: 
+error in line# 46
+    parsed as:       _formal
+    should be: 
+error in line# 47
+    parsed as:         x
+    should be: 
+error in line# 48
+    parsed as:         String
+    should be: 
+error in line# 49
+    parsed as:       String
+    should be: 
+error in line# 51
+    parsed as:       _assign
+    should be: 
+error in line# 52
+    parsed as:         x
+    should be: 
+error in line# 54
+    parsed as:         _string
+    should be: 
+error in line# 55
+    parsed as:           "a boy named sue"
+    should be: 

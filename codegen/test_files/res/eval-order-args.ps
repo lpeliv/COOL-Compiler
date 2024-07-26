@@ -1,0 +1,124 @@
+#23
+_program
+  #4
+  _class
+    Main
+    IO
+    ".//test_files//eval-order-args.cl"
+    (
+    #6
+    _method
+      recite
+      #6
+      _formal
+        value
+        Int
+      Object
+      #8
+      _block
+        #9
+        _dispatch
+          #9
+          _object
+            self
+          : _no_type
+          out_int
+          (
+          #9
+          _object
+            value
+          : _no_type
+          )
+        : _no_type
+        #10
+        _dispatch
+          #10
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #10
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    #14
+    _method
+      disregard
+      #14
+      _formal
+        a
+        Object
+      #14
+      _formal
+        b
+        Object
+      #14
+      _formal
+        c
+        Object
+      Object
+      #16
+      _object
+        self
+      : _no_type
+    #19
+    _method
+      main
+      Object
+      #21
+      _dispatch
+        #21
+        _object
+          self
+        : _no_type
+        disregard
+        (
+        #21
+        _dispatch
+          #21
+          _object
+            self
+          : _no_type
+          recite
+          (
+          #21
+          _int
+            1
+          : _no_type
+          )
+        : _no_type
+        #21
+        _dispatch
+          #21
+          _object
+            self
+          : _no_type
+          recite
+          (
+          #21
+          _int
+            2
+          : _no_type
+          )
+        : _no_type
+        #21
+        _dispatch
+          #21
+          _object
+            self
+          : _no_type
+          recite
+          (
+          #21
+          _int
+            3
+          : _no_type
+          )
+        : _no_type
+        )
+      : _no_type
+    )

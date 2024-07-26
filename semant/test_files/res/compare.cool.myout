@@ -1,0 +1,81 @@
+Class Name: Main, Class Definition: 0x6228a5e0c240
+Class Name: Object, Class Definition: 0x6228a5e0d520
+Class Name: Int, Class Definition: 0x6228a47fd8d0
+Class Name: A, Class Definition: 0x6228a5e0c320
+Class Name: B, Class Definition: 0x6228a5e0c430
+Class Name: C, Class Definition: 0x6228a5e0c8f0
+Class Name: Bool, Class Definition: 0x6228a5e0c950
+Class Name: IO, Class Definition: 0x7ffc52092c90
+Class Name: String, Class Definition: 0x6228a5e0d180
+Class Object is inherited by:
+  Main
+  A
+  B
+  C
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//compare.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//compare.cl"
+    (
+    )
+  #1
+  _class
+    B
+    Object
+    ".//test_files//compare.cl"
+    (
+    )
+  #1
+  _class
+    C
+    Object
+    ".//test_files//compare.cl"
+    (
+    #1
+    _attr
+      a
+      A
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      b
+      B
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      compare
+      Bool
+      #1
+      _eq
+        #1
+        _object
+          a
+        : _no_type
+        #1
+        _object
+          b
+        : _no_type
+      : _no_type
+    )

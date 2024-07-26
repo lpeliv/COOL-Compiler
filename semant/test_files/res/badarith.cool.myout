@@ -1,0 +1,49 @@
+Class Name: Main, Class Definition: 0x6286785f8240
+Class Name: Object, Class Definition: 0x6286785f91c0
+Class Name: Int, Class Definition: 0x628676c538d0
+Class Name: A, Class Definition: 0x6286785f8530
+Class Name: Bool, Class Definition: 0x6286785f8590
+Class Name: IO, Class Definition: 0x7ffc4726adb0
+Class Name: String, Class Definition: 0x6286785f8e20
+Class Object is inherited by:
+  Main
+  A
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//badarith.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//badarith.cl"
+    (
+    #1
+    _method
+      inky
+      Object
+      #1
+      _plus
+        #1
+        _int
+          1
+        : _no_type
+        #1
+        _string
+          "hello"
+        : _no_type
+      : _no_type
+    )

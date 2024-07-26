@@ -1,0 +1,127 @@
+#name ".//test_files//not.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 '{'
+#5 OBJECTID main
+#5 '('
+#5 ')'
+#5 ':'
+#5 TYPEID Object
+#5 '{'
+#6 LET
+#7 OBJECTID x
+#7 ':'
+#7 TYPEID Int
+#7 ASSIGN
+#7 INT_CONST 0
+#7 ','
+#8 OBJECTID b
+#8 ':'
+#8 TYPEID Bool
+#9 IN
+#9 '{'
+#10 WHILE
+#10 OBJECTID x
+#10 '<'
+#10 INT_CONST 100
+#10 LOOP
+#10 '{'
+#11 OBJECTID b
+#11 '='
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 NOT
+#11 OBJECTID b
+#11 ';'
+#12 OBJECTID b
+#12 '='
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 NOT
+#12 OBJECTID b
+#12 ';'
+#13 OBJECTID b
+#13 '='
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 NOT
+#13 OBJECTID b
+#13 ';'
+#14 OBJECTID b
+#14 '='
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 NOT
+#14 OBJECTID b
+#14 ';'
+#15 OBJECTID b
+#15 '='
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 NOT
+#15 OBJECTID b
+#15 ';'
+#16 OBJECTID x
+#16 ASSIGN
+#16 OBJECTID x
+#16 '+'
+#16 INT_CONST 1
+#16 ';'
+#17 '}'
+#17 POOL
+#17 ';'
+#18 IF
+#18 OBJECTID b
+#18 THEN
+#18 OBJECTID abort
+#18 '('
+#18 ')'
+#18 ELSE
+#18 INT_CONST 0
+#18 FI
+#18 ';'
+#19 '}'
+#20 '}'
+#20 ';'
+#21 '}'
+#21 ';'

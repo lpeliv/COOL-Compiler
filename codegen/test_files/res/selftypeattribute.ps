@@ -1,0 +1,135 @@
+#20
+_program
+  #1
+  _class
+    A
+    Object
+    ".//test_files//selftypeattribute.cl"
+    (
+    #2
+    _attr
+      x
+      SELF_TYPE
+      #2
+      _no_expr
+      : _no_type
+    #3
+    _method
+      init
+      Object
+      #3
+      _assign
+        x
+        #3
+        _new
+          SELF_TYPE
+        : _no_type
+      : _no_type
+    #4
+    _method
+      foo
+      Int
+      #4
+      _int
+        1
+      : _no_type
+    #5
+    _method
+      getx
+      A
+      #5
+      _object
+        x
+      : _no_type
+    )
+  #8
+  _class
+    B
+    A
+    ".//test_files//selftypeattribute.cl"
+    (
+    #9
+    _method
+      foo
+      Int
+      #9
+      _int
+        2
+      : _no_type
+    )
+  #12
+  _class
+    Main
+    IO
+    ".//test_files//selftypeattribute.cl"
+    (
+    #13
+    _method
+      main
+      Object
+      #13
+      _block
+        #14
+        _let
+          a
+          A
+          #14
+          _new
+            B
+          : _no_type
+          #14
+          _block
+            #15
+            _dispatch
+              #15
+              _object
+                a
+              : _no_type
+              init
+              (
+              )
+            : _no_type
+            #16
+            _dispatch
+              #16
+              _object
+                self
+              : _no_type
+              out_int
+              (
+              #16
+              _dispatch
+                #16
+                _dispatch
+                  #16
+                  _object
+                    a
+                  : _no_type
+                  getx
+                  (
+                  )
+                : _no_type
+                foo
+                (
+                )
+              : _no_type
+              )
+            : _no_type
+          : _no_type
+        : _no_type
+        #18
+        _dispatch
+          #18
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #18
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    )

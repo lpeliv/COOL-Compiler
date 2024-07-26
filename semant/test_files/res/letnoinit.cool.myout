@@ -1,0 +1,36 @@
+Class Name: Main, Class Definition: 0x619084f1f350
+Class Name: IO, Class Definition: 0x7fff33fc05e0
+Class Name: Object, Class Definition: 0x619084f1ff50
+Class Name: Int, Class Definition: 0x6190839198d0
+Class Name: Bool, Class Definition: 0x619084f1f390
+Class Name: String, Class Definition: 0x619084f1fbb0
+Class IO is inherited by:
+  Main
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//letnoinit.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _let
+          x
+          Int
+          #1
+          _no_expr
+          : _no_type
+          #1
+          _object
+            x
+          : _no_type
+        : _no_type
+      : _no_type
+    )

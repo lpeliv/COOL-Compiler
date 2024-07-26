@@ -1,0 +1,688 @@
+#1
+_program
+  #1
+  _class
+    List
+    IO
+    ".//test_files//sort_list.cl"
+    (
+    #1
+    _method
+      isNil
+      Bool
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #1
+        _bool
+          1
+        : Bool
+      : Bool
+    #1
+    _method
+      cons
+      #1
+      _formal
+        hd
+        Int
+      Cons
+      #1
+      _let
+        new_cell
+        Cons
+        #1
+        _new
+          Cons
+        : Cons
+        #1
+        _dispatch
+          #1
+          _object
+            new_cell
+          : Cons
+          init
+          (
+          #1
+          _object
+            hd
+          : Int
+          #1
+          _object
+            self
+          : SELF_TYPE
+          )
+        : Cons
+      : Cons
+    #1
+    _method
+      car
+      Int
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #1
+        _new
+          Int
+        : Int
+      : Int
+    #1
+    _method
+      cdr
+      List
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #1
+        _new
+          List
+        : List
+      : List
+    #1
+    _method
+      rev
+      List
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        cdr
+        (
+        )
+      : List
+    #1
+    _method
+      sort
+      List
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        cdr
+        (
+        )
+      : List
+    #1
+    _method
+      insert
+      #1
+      _formal
+        i
+        Int
+      List
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        cdr
+        (
+        )
+      : List
+    #1
+    _method
+      rcons
+      #1
+      _formal
+        i
+        Int
+      List
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        cdr
+        (
+        )
+      : List
+    #1
+    _method
+      print_list
+      Object
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        abort
+        (
+        )
+      : Object
+    )
+  #1
+  _class
+    Cons
+    List
+    ".//test_files//sort_list.cl"
+    (
+    #1
+    _attr
+      xcar
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      xcdr
+      List
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      isNil
+      Bool
+      #1
+      _bool
+        0
+      : Bool
+    #1
+    _method
+      init
+      #1
+      _formal
+        hd
+        Int
+      #1
+      _formal
+        tl
+        List
+      Cons
+      #1
+      _block
+        #1
+        _assign
+          xcar
+          #1
+          _object
+            hd
+          : Int
+        : Int
+        #1
+        _assign
+          xcdr
+          #1
+          _object
+            tl
+          : List
+        : List
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      car
+      Int
+      #1
+      _object
+        xcar
+      : Int
+    #1
+    _method
+      cdr
+      List
+      #1
+      _object
+        xcdr
+      : List
+    #1
+    _method
+      rev
+      List
+      #1
+      _dispatch
+        #1
+        _dispatch
+          #1
+          _object
+            xcdr
+          : List
+          rev
+          (
+          )
+        : List
+        rcons
+        (
+        #1
+        _object
+          xcar
+        : Int
+        )
+      : List
+    #1
+    _method
+      sort
+      List
+      #1
+      _dispatch
+        #1
+        _dispatch
+          #1
+          _object
+            xcdr
+          : List
+          sort
+          (
+          )
+        : List
+        insert
+        (
+        #1
+        _object
+          xcar
+        : Int
+        )
+      : List
+    #1
+    _method
+      insert
+      #1
+      _formal
+        i
+        Int
+      List
+      #1
+      _cond
+        #1
+        _lt
+          #1
+          _object
+            i
+          : Int
+          #1
+          _object
+            xcar
+          : Int
+        : Bool
+        #1
+        _dispatch
+          #1
+          _new
+            Cons
+          : Cons
+          init
+          (
+          #1
+          _object
+            i
+          : Int
+          #1
+          _object
+            self
+          : SELF_TYPE
+          )
+        : Cons
+        #1
+        _dispatch
+          #1
+          _new
+            Cons
+          : Cons
+          init
+          (
+          #1
+          _object
+            xcar
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              xcdr
+            : List
+            insert
+            (
+            #1
+            _object
+              i
+            : Int
+            )
+          : List
+          )
+        : Cons
+      : Cons
+    #1
+    _method
+      rcons
+      #1
+      _formal
+        i
+        Int
+      List
+      #1
+      _dispatch
+        #1
+        _new
+          Cons
+        : Cons
+        init
+        (
+        #1
+        _object
+          xcar
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            xcdr
+          : List
+          rcons
+          (
+          #1
+          _object
+            i
+          : Int
+          )
+        : List
+        )
+      : Cons
+    #1
+    _method
+      print_list
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            xcar
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            xcdr
+          : List
+          print_list
+          (
+          )
+        : Object
+      : Object
+    )
+  #1
+  _class
+    Nil
+    List
+    ".//test_files//sort_list.cl"
+    (
+    #1
+    _method
+      isNil
+      Bool
+      #1
+      _bool
+        1
+      : Bool
+    #1
+    _method
+      rev
+      List
+      #1
+      _object
+        self
+      : SELF_TYPE
+    #1
+    _method
+      sort
+      List
+      #1
+      _object
+        self
+      : SELF_TYPE
+    #1
+    _method
+      insert
+      #1
+      _formal
+        i
+        Int
+      List
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        rcons
+        (
+        #1
+        _object
+          i
+        : Int
+        )
+      : List
+    #1
+    _method
+      rcons
+      #1
+      _formal
+        i
+        Int
+      List
+      #1
+      _dispatch
+        #1
+        _new
+          Cons
+        : Cons
+        init
+        (
+        #1
+        _object
+          i
+        : Int
+        #1
+        _object
+          self
+        : SELF_TYPE
+        )
+      : Cons
+    #1
+    _method
+      print_list
+      Object
+      #1
+      _bool
+        1
+      : Bool
+    )
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//sort_list.cl"
+    (
+    #1
+    _attr
+      l
+      List
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      iota
+      #1
+      _formal
+        i
+        Int
+      List
+      #1
+      _block
+        #1
+        _assign
+          l
+          #1
+          _new
+            Nil
+          : Nil
+        : List
+        #1
+        _let
+          j
+          Int
+          #1
+          _int
+            0
+          : Int
+          #1
+          _loop
+            #1
+            _lt
+              #1
+              _object
+                j
+              : Int
+              #1
+              _object
+                i
+              : Int
+            : Bool
+            #1
+            _block
+              #1
+              _assign
+                l
+                #1
+                _dispatch
+                  #1
+                  _new
+                    Cons
+                  : Cons
+                  init
+                  (
+                  #1
+                  _object
+                    j
+                  : Int
+                  #1
+                  _object
+                    l
+                  : List
+                  )
+                : Cons
+              : List
+              #1
+              _assign
+                j
+                #1
+                _plus
+                  #1
+                  _object
+                    j
+                  : Int
+                  #1
+                  _int
+                    1
+                  : Int
+                : Int
+              : Int
+            : Int
+          : Object
+        : Object
+        #1
+        _object
+          l
+        : List
+      : List
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _dispatch
+            #1
+            _dispatch
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                iota
+                (
+                #1
+                _int
+                  20
+                : Int
+                )
+              : List
+              rev
+              (
+              )
+            : List
+            sort
+            (
+            )
+          : List
+          print_list
+          (
+          )
+        : Object
+      : Object
+    )

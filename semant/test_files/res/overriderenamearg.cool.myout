@@ -1,0 +1,68 @@
+Class Name: Main, Class Definition: 0x55da50739240
+Class Name: Object, Class Definition: 0x55da5073a3c0
+Class Name: Int, Class Definition: 0x55da4f12a8d0
+Class Name: D, Class Definition: 0x55da50739500
+Class Name: E, Class Definition: 0x55da50739730
+Class Name: Bool, Class Definition: 0x55da50739790
+Class Name: IO, Class Definition: 0x7ffc4709f7a0
+Class Name: String, Class Definition: 0x55da5073a020
+Class Object is inherited by:
+  Main
+  D
+Class D is inherited by:
+  E
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//overriderenamearg.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    D
+    Object
+    ".//test_files//overriderenamearg.cl"
+    (
+    #1
+    _method
+      inky
+      #1
+      _formal
+        b
+        Int
+      Object
+      #1
+      _int
+        1
+      : _no_type
+    )
+  #1
+  _class
+    E
+    D
+    ".//test_files//overriderenamearg.cl"
+    (
+    #1
+    _method
+      inky
+      #1
+      _formal
+        c
+        Int
+      Object
+      #1
+      _int
+        1
+      : _no_type
+    )

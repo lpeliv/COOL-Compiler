@@ -1,0 +1,43 @@
+#name ".//test_files//shadow-attr-case.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID var
+#6 ':'
+#6 TYPEID String
+#6 ASSIGN
+#6 STR_CONST "bad"
+#6 ';'
+#8 OBJECTID main
+#8 '('
+#8 ')'
+#8 ':'
+#8 TYPEID Object
+#9 '{'
+#10 '{'
+#11 CASE
+#11 STR_CONST "good"
+#11 OF
+#12 OBJECTID var
+#12 ':'
+#12 TYPEID String
+#12 DARROW
+#13 OBJECTID out_string
+#13 '('
+#13 OBJECTID var
+#13 ')'
+#13 ';'
+#14 ESAC
+#14 ';'
+#16 OBJECTID out_string
+#16 '('
+#16 STR_CONST "\n"
+#16 ')'
+#16 ';'
+#17 '}'
+#18 '}'
+#18 ';'
+#19 '}'
+#19 ';'

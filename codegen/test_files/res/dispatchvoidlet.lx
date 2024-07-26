@@ -1,0 +1,33 @@
+#name ".//test_files//dispatchvoidlet.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 '{'
+#2 OBJECTID foo
+#2 '('
+#2 ')'
+#2 ':'
+#2 TYPEID Int
+#2 '{'
+#2 INT_CONST 5
+#2 '}'
+#2 ';'
+#3 OBJECTID main
+#3 '('
+#3 ')'
+#3 ':'
+#3 TYPEID Object
+#3 '{'
+#3 LET
+#3 OBJECTID m
+#3 ':'
+#3 TYPEID Main
+#3 IN
+#3 OBJECTID m
+#3 '.'
+#3 OBJECTID foo
+#3 '('
+#3 ')'
+#3 '}'
+#3 ';'
+#5 '}'
+#5 ';'

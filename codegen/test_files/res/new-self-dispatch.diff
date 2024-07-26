@@ -1,0 +1,48 @@
+error in line# 1
+    parsed as: Int_protObj
+    should be: derived
+error in line# 1
+    parsed as: _int_tag
+    should be: COOL program successfully executed
+error in line# 1
+    parsed as: _string_tag
+    should be: 
+error in line# 1
+    parsed as: Main.main
+    should be: 
+error in line# 1
+    parsed as: String_protObj
+    should be: 
+error in line# 1
+    parsed as: _MemMgr_TEST
+    should be: 
+error in line# 1
+    parsed as: _MemMgr_COLLECTOR
+    should be: 
+error in line# 1
+    parsed as: class_nameTab
+    should be: 
+error in line# 1
+    parsed as: Int_init
+    should be: 
+error in line# 1
+    parsed as: String_init
+    should be: 
+error in line# 1
+    parsed as: Main_protObj
+    should be: 
+error in line# 1
+    parsed as: _MemMgr_INITIALIZER
+    should be: 
+error in line# 1
+    parsed as: main
+    should be: 
+error in line# 1
+    parsed as: Main_init
+    should be: 
+error in line# 2
+    parsed as: Instruction references undefined symbol at 0x004006d0
+    should be: 
+error in line# 2
+    parsed as: [0x004006d0]	0x3c010000  lui $1, 0 [_MemMgr_INITIALIZER] ; 1080: la	$t0 _MemMgr_INITIALIZER		# pointer to initialization
+    should be: 

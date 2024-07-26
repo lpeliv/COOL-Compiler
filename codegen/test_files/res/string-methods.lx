@@ -1,0 +1,65 @@
+#name ".//test_files//string-methods.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID s
+#2 ':'
+#2 TYPEID String
+#2 ASSIGN
+#2 STR_CONST "this is a"
+#2 ';'
+#3 OBJECTID main
+#3 '('
+#3 ')'
+#3 ':'
+#3 TYPEID Object
+#3 '{'
+#3 '{'
+#4 OBJECTID out_int
+#4 '('
+#4 OBJECTID s
+#4 '.'
+#4 OBJECTID length
+#4 '('
+#4 ')'
+#4 ')'
+#4 ';'
+#5 OBJECTID out_string
+#5 '('
+#5 STR_CONST "\n"
+#5 '.'
+#5 OBJECTID concat
+#5 '('
+#5 OBJECTID s
+#5 '.'
+#5 OBJECTID concat
+#5 '('
+#5 STR_CONST " string\n"
+#5 ')'
+#5 ')'
+#5 ')'
+#5 ';'
+#6 OBJECTID out_string
+#6 '('
+#6 OBJECTID s
+#6 '.'
+#6 OBJECTID substr
+#6 '('
+#6 INT_CONST 5
+#6 ','
+#6 INT_CONST 2
+#6 ')'
+#6 '.'
+#6 OBJECTID concat
+#6 '('
+#6 STR_CONST "\n"
+#6 ')'
+#6 ')'
+#6 ';'
+#7 '}'
+#7 '}'
+#7 ';'
+#8 '}'
+#8 ';'

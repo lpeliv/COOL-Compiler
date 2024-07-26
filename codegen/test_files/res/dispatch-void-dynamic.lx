@@ -1,0 +1,35 @@
+#name ".//test_files//dispatch-void-dynamic.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID main
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 LET
+#8 OBJECTID nothing
+#8 ':'
+#8 TYPEID Object
+#8 ASSIGN
+#8 WHILE
+#8 BOOL_CONST false
+#8 LOOP
+#8 INT_CONST 1
+#8 POOL
+#8 IN
+#9 OBJECTID out_string
+#9 '('
+#9 OBJECTID nothing
+#9 '.'
+#9 OBJECTID type_name
+#9 '('
+#9 ')'
+#9 ')'
+#10 '}'
+#10 ';'
+#11 '}'
+#11 ';'

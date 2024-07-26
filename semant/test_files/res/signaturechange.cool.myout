@@ -1,0 +1,79 @@
+Class Name: Main, Class Definition: 0x574ba67e1240
+Class Name: Object, Class Definition: 0x574ba67e2480
+Class Name: Int, Class Definition: 0x574ba4af18d0
+Class Name: A, Class Definition: 0x574ba67e15a0
+Class Name: String, Class Definition: 0x574ba67e20e0
+Class Name: B, Class Definition: 0x574ba67e18b0
+Class Name: Bool, Class Definition: 0x574ba67e1910
+Class Name: IO, Class Definition: 0x7ffd8894dcc0
+Class Object is inherited by:
+  Main
+  A
+Class A is inherited by:
+  B
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//signaturechange.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//signaturechange.cl"
+    (
+    #1
+    _attr
+      x
+      String
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      foo
+      #1
+      _formal
+        x
+        A
+      A
+      #1
+      _object
+        x
+      : _no_type
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//signaturechange.cl"
+    (
+    #1
+    _method
+      foo
+      #1
+      _formal
+        x
+        A
+      #1
+      _formal
+        y
+        A
+      A
+      #1
+      _object
+        self
+      : _no_type
+    )

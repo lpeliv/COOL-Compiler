@@ -1,0 +1,76 @@
+#name ".//test_files//eval-order-args.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID recite
+#6 '('
+#6 OBJECTID value
+#6 ':'
+#6 TYPEID Int
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 '{'
+#9 OBJECTID out_int
+#9 '('
+#9 OBJECTID value
+#9 ')'
+#9 ';'
+#10 OBJECTID out_string
+#10 '('
+#10 STR_CONST "\n"
+#10 ')'
+#10 ';'
+#11 '}'
+#12 '}'
+#12 ';'
+#14 OBJECTID disregard
+#14 '('
+#14 OBJECTID a
+#14 ':'
+#14 TYPEID Object
+#14 ','
+#14 OBJECTID b
+#14 ':'
+#14 TYPEID Object
+#14 ','
+#14 OBJECTID c
+#14 ':'
+#14 TYPEID Object
+#14 ')'
+#14 ':'
+#14 TYPEID Object
+#15 '{'
+#16 OBJECTID self
+#17 '}'
+#17 ';'
+#19 OBJECTID main
+#19 '('
+#19 ')'
+#19 ':'
+#19 TYPEID Object
+#20 '{'
+#21 OBJECTID disregard
+#21 '('
+#21 OBJECTID recite
+#21 '('
+#21 INT_CONST 1
+#21 ')'
+#21 ','
+#21 OBJECTID recite
+#21 '('
+#21 INT_CONST 2
+#21 ')'
+#21 ','
+#21 OBJECTID recite
+#21 '('
+#21 INT_CONST 3
+#21 ')'
+#21 ')'
+#22 '}'
+#22 ';'
+#23 '}'
+#23 ';'

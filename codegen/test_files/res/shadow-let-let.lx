@@ -1,0 +1,42 @@
+#name ".//test_files//shadow-let-let.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID main
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 '{'
+#9 LET
+#9 OBJECTID var
+#9 ':'
+#9 TYPEID String
+#9 ASSIGN
+#9 STR_CONST "bad"
+#9 IN
+#10 LET
+#10 OBJECTID var
+#10 ':'
+#10 TYPEID String
+#10 ASSIGN
+#10 STR_CONST "good"
+#10 IN
+#11 OBJECTID out_string
+#11 '('
+#11 OBJECTID var
+#11 ')'
+#11 ';'
+#13 OBJECTID out_string
+#13 '('
+#13 STR_CONST "\n"
+#13 ')'
+#13 ';'
+#14 '}'
+#15 '}'
+#15 ';'
+#16 '}'
+#16 ';'

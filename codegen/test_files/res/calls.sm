@@ -1,0 +1,147 @@
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//calls.cl"
+    (
+    #1
+    _attr
+      io
+      IO
+      #1
+      _new
+        IO
+      : IO
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            f
+            (
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              g
+              (
+              #1
+              _int
+                1
+              : Int
+              )
+            : Int
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              h
+              (
+              #1
+              _int
+                2
+              : Int
+              )
+            : Int
+            )
+          : Int
+          )
+        : IO
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : IO
+      : IO
+    #1
+    _method
+      f
+      #1
+      _formal
+        x
+        Int
+      #1
+      _formal
+        y
+        Int
+      Int
+      #1
+      _plus
+        #1
+        _object
+          x
+        : Int
+        #1
+        _object
+          y
+        : Int
+      : Int
+    #1
+    _method
+      g
+      #1
+      _formal
+        x
+        Int
+      Int
+      #1
+      _plus
+        #1
+        _object
+          x
+        : Int
+        #1
+        _int
+          5
+        : Int
+      : Int
+    #1
+    _method
+      h
+      #1
+      _formal
+        x
+        Int
+      Int
+      #1
+      _plus
+        #1
+        _object
+          x
+        : Int
+        #1
+        _int
+          7
+        : Int
+      : Int
+    )

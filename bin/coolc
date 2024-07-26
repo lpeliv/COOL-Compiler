@@ -1,0 +1,2 @@
+#!/bin/csh -f
+~/jip/bin/lexer $* | ~/jip/bin/parser $* | ~/jip/bin/semant $* | ~/jip/bin/codegen $*

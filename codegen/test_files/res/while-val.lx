@@ -1,0 +1,43 @@
+#name ".//test_files//while-val.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 '{'
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID Int
+#2 ';'
+#3 OBJECTID main
+#3 '('
+#3 ')'
+#3 ':'
+#3 TYPEID Object
+#3 '{'
+#4 '('
+#4 NEW
+#4 TYPEID IO
+#4 ')'
+#4 '.'
+#4 OBJECTID out_string
+#4 '('
+#4 WHILE
+#4 '('
+#4 OBJECTID x
+#4 '<'
+#4 INT_CONST 10
+#4 ')'
+#4 LOOP
+#4 OBJECTID x
+#4 ASSIGN
+#4 OBJECTID x
+#4 '+'
+#4 INT_CONST 1
+#4 POOL
+#4 '.'
+#4 OBJECTID type_name
+#4 '('
+#4 ')'
+#4 ')'
+#5 '}'
+#5 ';'
+#6 '}'
+#6 ';'

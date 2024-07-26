@@ -1,0 +1,237 @@
+#1
+_program
+  #1
+  _class
+    Bob
+    IO
+    ".//test_files//scoping.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      y
+      Int
+      #1
+      _int
+        4
+      : Int
+    )
+  #1
+  _class
+    Main
+    Bob
+    ".//test_files//scoping.cl"
+    (
+    #1
+    _attr
+      z
+      Int
+      #1
+      _int
+        23
+      : Int
+    #1
+    _method
+      jack
+      #1
+      _formal
+        q
+        Int
+      #1
+      _formal
+        z
+        Int
+      Int
+      #1
+      _block
+        #1
+        _let
+          z
+          Int
+          #1
+          _plus
+            #1
+            _object
+              z
+            : Int
+            #1
+            _object
+              y
+            : Int
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            print_z
+            (
+            #1
+            _object
+              z
+            : Int
+            )
+          : SELF_TYPE
+        : SELF_TYPE
+        #1
+        _assign
+          y
+          #1
+          _plus
+            #1
+            _object
+              y
+            : Int
+            #1
+            _int
+              4
+            : Int
+          : Int
+        : Int
+        #1
+        _let
+          y
+          Int
+          #1
+          _plus
+            #1
+            _object
+              z
+            : Int
+            #1
+            _object
+              y
+            : Int
+          : Int
+          #1
+          _object
+            y
+          : Int
+        : Int
+      : Int
+    #1
+    _method
+      print_z
+      #1
+      _formal
+        z
+        Int
+      SELF_TYPE
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "z = "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            z
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      main
+      Bob
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          print_z
+          (
+          #1
+          _object
+            z
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _let
+          z
+          Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            jack
+            (
+            #1
+            _int
+              5
+            : Int
+            #1
+            _plus
+              #1
+              _object
+                z
+              : Int
+              #1
+              _int
+                2
+              : Int
+            : Int
+            )
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            print_z
+            (
+            #1
+            _object
+              z
+            : Int
+            )
+          : SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    )

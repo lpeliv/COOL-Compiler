@@ -1,0 +1,89 @@
+Class Name: A, Class Definition: 0x64498d2f3300
+Class Name: Object, Class Definition: 0x64498d2f4500
+Class Name: Int, Class Definition: 0x64498cc758d0
+Class Name: String, Class Definition: 0x64498d2f4160
+Class Name: L, Class Definition: 0x64498d2f34d0
+Class Name: R, Class Definition: 0x64498d2f3670
+Class Name: Main, Class Definition: 0x64498d2f38d0
+Class Name: Bool, Class Definition: 0x64498d2f3930
+Class Name: IO, Class Definition: 0x7fff7c5ddc60
+Class A is inherited by:
+  L
+  R
+Class Object is inherited by:
+  A
+  Main
+#1
+_program
+  #1
+  _class
+    A
+    Object
+    ".//test_files//methodnameclash.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      y
+      String
+      #1
+      _no_expr
+      : _no_type
+    )
+  #1
+  _class
+    L
+    A
+    ".//test_files//methodnameclash.cl"
+    (
+    #1
+    _method
+      foo
+      Int
+      #1
+      _object
+        x
+      : _no_type
+    )
+  #1
+  _class
+    R
+    A
+    ".//test_files//methodnameclash.cl"
+    (
+    #1
+    _method
+      foo
+      String
+      #1
+      _object
+        y
+      : _no_type
+    )
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//methodnameclash.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _dispatch
+        #1
+        _new
+          L
+        : _no_type
+        foo
+        (
+        )
+      : _no_type
+    )

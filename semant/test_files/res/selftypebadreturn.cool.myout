@@ -1,0 +1,46 @@
+Class Name: Main, Class Definition: 0x5fcad4a4d240
+Class Name: Object, Class Definition: 0x5fcad4a4e130
+Class Name: Int, Class Definition: 0x5fcad33bd8d0
+Class Name: A, Class Definition: 0x5fcad4a4d500
+Class Name: Bool, Class Definition: 0x5fcad4a4d560
+Class Name: IO, Class Definition: 0x7ffd603404a0
+Class Name: String, Class Definition: 0x5fcad4a4dd90
+Class Object is inherited by:
+  Main
+  A
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//selftypebadreturn.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//selftypebadreturn.cl"
+    (
+    #1
+    _method
+      foo
+      #1
+      _formal
+        x
+        Object
+      SELF_TYPE
+      #1
+      _new
+        A
+      : _no_type
+    )

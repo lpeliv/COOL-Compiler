@@ -1,0 +1,116 @@
+#8
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//string-methods.cl"
+    (
+    #2
+    _attr
+      s
+      String
+      #2
+      _string
+        "this is a"
+      : _no_type
+    #3
+    _method
+      main
+      Object
+      #3
+      _block
+        #4
+        _dispatch
+          #4
+          _object
+            self
+          : _no_type
+          out_int
+          (
+          #4
+          _dispatch
+            #4
+            _object
+              s
+            : _no_type
+            length
+            (
+            )
+          : _no_type
+          )
+        : _no_type
+        #5
+        _dispatch
+          #5
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #5
+          _dispatch
+            #5
+            _string
+              "\n"
+            : _no_type
+            concat
+            (
+            #5
+            _dispatch
+              #5
+              _object
+                s
+              : _no_type
+              concat
+              (
+              #5
+              _string
+                " string\n"
+              : _no_type
+              )
+            : _no_type
+            )
+          : _no_type
+          )
+        : _no_type
+        #6
+        _dispatch
+          #6
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #6
+          _dispatch
+            #6
+            _dispatch
+              #6
+              _object
+                s
+              : _no_type
+              substr
+              (
+              #6
+              _int
+                5
+              : _no_type
+              #6
+              _int
+                2
+              : _no_type
+              )
+            : _no_type
+            concat
+            (
+            #6
+            _string
+              "\n"
+            : _no_type
+            )
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    )

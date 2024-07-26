@@ -1,0 +1,280 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//primes.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _attr
+      out
+      Int
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "2 is trivially prime.\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _int
+          2
+        : Int
+      : Int
+    #1
+    _attr
+      testee
+      Int
+      #1
+      _object
+        out
+      : Int
+    #1
+    _attr
+      divisor
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      stop
+      Int
+      #1
+      _int
+        500
+      : Int
+    #1
+    _attr
+      m
+      Object
+      #1
+      _loop
+        #1
+        _bool
+          1
+        : Bool
+        #1
+        _block
+          #1
+          _assign
+            testee
+            #1
+            _plus
+              #1
+              _object
+                testee
+              : Int
+              #1
+              _int
+                1
+              : Int
+            : Int
+          : Int
+          #1
+          _assign
+            divisor
+            #1
+            _int
+              2
+            : Int
+          : Int
+          #1
+          _loop
+            #1
+            _cond
+              #1
+              _lt
+                #1
+                _object
+                  testee
+                : Int
+                #1
+                _mul
+                  #1
+                  _object
+                    divisor
+                  : Int
+                  #1
+                  _object
+                    divisor
+                  : Int
+                : Int
+              : Bool
+              #1
+              _bool
+                0
+              : Bool
+              #1
+              _cond
+                #1
+                _eq
+                  #1
+                  _sub
+                    #1
+                    _object
+                      testee
+                    : Int
+                    #1
+                    _mul
+                      #1
+                      _object
+                        divisor
+                      : Int
+                      #1
+                      _divide
+                        #1
+                        _object
+                          testee
+                        : Int
+                        #1
+                        _object
+                          divisor
+                        : Int
+                      : Int
+                    : Int
+                  : Int
+                  #1
+                  _int
+                    0
+                  : Int
+                : Bool
+                #1
+                _bool
+                  0
+                : Bool
+                #1
+                _bool
+                  1
+                : Bool
+              : Bool
+            : Bool
+            #1
+            _assign
+              divisor
+              #1
+              _plus
+                #1
+                _object
+                  divisor
+                : Int
+                #1
+                _int
+                  1
+                : Int
+              : Int
+            : Int
+          : Object
+          #1
+          _cond
+            #1
+            _lt
+              #1
+              _object
+                testee
+              : Int
+              #1
+              _mul
+                #1
+                _object
+                  divisor
+                : Int
+                #1
+                _object
+                  divisor
+                : Int
+              : Int
+            : Bool
+            #1
+            _block
+              #1
+              _assign
+                out
+                #1
+                _object
+                  testee
+                : Int
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                out_int
+                (
+                #1
+                _object
+                  out
+                : Int
+                )
+              : SELF_TYPE
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                out_string
+                (
+                #1
+                _string
+                  " is prime.\n"
+                : String
+                )
+              : SELF_TYPE
+            : SELF_TYPE
+            #1
+            _int
+              0
+            : Int
+          : Object
+          #1
+          _cond
+            #1
+            _leq
+              #1
+              _object
+                stop
+              : Int
+              #1
+              _object
+                testee
+              : Int
+            : Bool
+            #1
+            _dispatch
+              #1
+              _string
+                "halt"
+              : String
+              abort
+              (
+              )
+            : Object
+            #1
+            _string
+              "continue"
+            : String
+          : Object
+        : Object
+      : Object
+    )

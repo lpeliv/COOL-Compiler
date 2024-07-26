@@ -1,0 +1,108 @@
+#name ".//test_files//selftypeattribute.cl"
+#1 CLASS
+#1 TYPEID A
+#1 '{'
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID SELF_TYPE
+#2 ';'
+#3 OBJECTID init
+#3 '('
+#3 ')'
+#3 ':'
+#3 TYPEID Object
+#3 '{'
+#3 OBJECTID x
+#3 ASSIGN
+#3 NEW
+#3 TYPEID SELF_TYPE
+#3 '}'
+#3 ';'
+#4 OBJECTID foo
+#4 '('
+#4 ')'
+#4 ':'
+#4 TYPEID Int
+#4 '{'
+#4 INT_CONST 1
+#4 '}'
+#4 ';'
+#5 OBJECTID getx
+#5 '('
+#5 ')'
+#5 ':'
+#5 TYPEID A
+#5 '{'
+#5 OBJECTID x
+#5 '}'
+#5 ';'
+#6 '}'
+#6 ';'
+#8 CLASS
+#8 TYPEID B
+#8 INHERITS
+#8 TYPEID A
+#8 '{'
+#9 OBJECTID foo
+#9 '('
+#9 ')'
+#9 ':'
+#9 TYPEID Int
+#9 '{'
+#9 INT_CONST 2
+#9 '}'
+#9 ';'
+#10 '}'
+#10 ';'
+#12 CLASS
+#12 TYPEID Main
+#12 INHERITS
+#12 TYPEID IO
+#12 '{'
+#13 OBJECTID main
+#13 '('
+#13 ')'
+#13 ':'
+#13 TYPEID Object
+#13 '{'
+#13 '{'
+#14 LET
+#14 OBJECTID a
+#14 ':'
+#14 TYPEID A
+#14 ASSIGN
+#14 NEW
+#14 TYPEID B
+#14 IN
+#14 '{'
+#15 OBJECTID a
+#15 '.'
+#15 OBJECTID init
+#15 '('
+#15 ')'
+#15 ';'
+#16 OBJECTID out_int
+#16 '('
+#16 OBJECTID a
+#16 '.'
+#16 OBJECTID getx
+#16 '('
+#16 ')'
+#16 '.'
+#16 OBJECTID foo
+#16 '('
+#16 ')'
+#16 ')'
+#16 ';'
+#17 '}'
+#17 ';'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "\n"
+#18 ')'
+#18 ';'
+#19 '}'
+#19 '}'
+#19 ';'
+#20 '}'
+#20 ';'

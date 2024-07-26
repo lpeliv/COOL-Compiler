@@ -1,0 +1,5219 @@
+#1
+_program
+  #1
+  _class
+    P
+    Object
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _int
+        3
+      : Int
+    )
+  #1
+  _class
+    C1
+    P
+    ".//test_files//bigexample.cl"
+    (
+    )
+  #1
+  _class
+    C2
+    P
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _method
+      getX
+      Int
+      #1
+      _object
+        x
+      : Int
+    #1
+    _method
+      setX
+      #1
+      _formal
+        i
+        Int
+      Int
+      #1
+      _assign
+        x
+        #1
+        _object
+          i
+        : Int
+      : Int
+    )
+  #1
+  _class
+    Blah
+    Object
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _attr
+      i
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      b
+      Bool
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      s
+      String
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      j
+      Int
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        tiny
+        (
+        )
+      : Int
+    #1
+    _attr
+      c
+      Bool
+      #1
+      _bool
+        1
+      : Bool
+    #1
+    _attr
+      t
+      String
+      #1
+      _block
+        #1
+        _static_dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          Blah
+          add
+          (
+          )
+        : Int
+        #1
+        _string
+          "whassup?!"
+        : String
+      : String
+    #1
+    _attr
+      io
+      IO
+      #1
+      _new
+        IO
+      : IO
+    #1
+    _attr
+      void
+      Object
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      tiny
+      Int
+      #1
+      _block
+        #1
+        _string
+          "Hi"
+        : String
+        #1
+        _bool
+          0
+        : Bool
+        #1
+        _int
+          0
+        : Int
+      : Int
+    #1
+    _method
+      add
+      Int
+      #1
+      _plus
+        #1
+        _int
+          1
+        : Int
+        #1
+        _int
+          2
+        : Int
+      : Int
+    #1
+    _method
+      compare
+      Bool
+      #1
+      _lt
+        #1
+        _int
+          1
+        : Int
+        #1
+        _int
+          2
+        : Int
+      : Bool
+    #1
+    _method
+      compareEq
+      Bool
+      #1
+      _eq
+        #1
+        _int
+          1
+        : Int
+        #1
+        _int
+          2
+        : Int
+      : Bool
+    #1
+    _method
+      isv
+      Bool
+      #1
+      _isvoid
+        #1
+        _int
+          1
+        : Int
+      : Bool
+    #1
+    _method
+      divByZero
+      Int
+      #1
+      _divide
+        #1
+        _int
+          1
+        : Int
+        #1
+        _int
+          0
+        : Int
+      : Int
+    #1
+    _method
+      cmp
+      Bool
+      #1
+      _comp
+        #1
+        _bool
+          1
+        : Bool
+      : Bool
+    #1
+    _method
+      ng
+      Int
+      #1
+      _neg
+        #1
+        _int
+          5
+        : Int
+      : Int
+    #1
+    _method
+      caller
+      Int
+      #1
+      _plus
+        #1
+        _static_dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          Blah
+          callee
+          (
+          #1
+          _int
+            6
+          : Int
+          #1
+          _int
+            13
+          : Int
+          )
+        : Int
+        #1
+        _static_dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          Blah
+          callee
+          (
+          #1
+          _int
+            9
+          : Int
+          #1
+          _int
+            2
+          : Int
+          )
+        : Int
+      : Int
+    #1
+    _method
+      callee
+      #1
+      _formal
+        x
+        Int
+      #1
+      _formal
+        y
+        Int
+      Int
+      #1
+      _plus
+        #1
+        _object
+          x
+        : Int
+        #1
+        _object
+          y
+        : Int
+      : Int
+    #1
+    _method
+      get_t
+      String
+      #1
+      _object
+        t
+      : String
+    #1
+    _method
+      useLet
+      Int
+      #1
+      _let
+        q
+        Int
+        #1
+        _no_expr
+        : _no_type
+        #1
+        _let
+          r
+          Int
+          #1
+          _int
+            99
+          : Int
+          #1
+          _let
+            s
+            Int
+            #1
+            _object
+              j
+            : Int
+            #1
+            _plus
+              #1
+              _plus
+                #1
+                _object
+                  q
+                : Int
+                #1
+                _object
+                  r
+                : Int
+              : Int
+              #1
+              _object
+                s
+              : Int
+            : Int
+          : Int
+        : Int
+      : Int
+    #1
+    _method
+      useIf
+      Int
+      #1
+      _cond
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          cmp
+          (
+          )
+        : Bool
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          ng
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          tiny
+          (
+          )
+        : Int
+      : Int
+    #1
+    _method
+      useWhile
+      Object
+      #1
+      _loop
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          cmp
+          (
+          )
+        : Bool
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          get_t
+          (
+          )
+        : String
+      : Object
+    #1
+    _method
+      useCase
+      Int
+      #1
+      _typcase
+        #1
+        _object
+          self
+        : SELF_TYPE
+        #1
+        _branch
+          p
+          P
+          #1
+          _int
+            3
+          : Int
+        #1
+        _branch
+          c
+          C
+          #1
+          _int
+            4
+          : Int
+        #1
+        _branch
+          b
+          Blah
+          #1
+          _int
+            5
+          : Int
+      : Int
+    #1
+    _method
+      useNew
+      Object
+      #1
+      _block
+        #1
+        _new
+          Int
+        : Int
+        #1
+        _new
+          Bool
+        : Bool
+        #1
+        _new
+          C
+        : C
+        #1
+        _new
+          Main
+        : Main
+        #1
+        _new
+          SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      doThemAll
+      Int
+      #1
+      _block
+        #1
+        _static_dispatch
+          #1
+          _object
+            io
+          : IO
+          IO
+          out_string
+          (
+          #1
+          _string
+            "basics:\n"
+          : String
+          )
+        : IO
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          tiny
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          add
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          compare
+          (
+          )
+        : Bool
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          compareEq
+          (
+          )
+        : Bool
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          isv
+          (
+          )
+        : Bool
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          cmp
+          (
+          )
+        : Bool
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          ng
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          caller
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          callee
+          (
+          #1
+          _int
+            3
+          : Int
+          #1
+          _int
+            4
+          : Int
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          get_t
+          (
+          )
+        : String
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          useLet
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          useIf
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          useWhile
+          (
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          useCase
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          useNew
+          (
+          )
+        : Object
+        #1
+        _static_dispatch
+          #1
+          _object
+            io
+          : IO
+          IO
+          out_string
+          (
+          #1
+          _string
+            "more advanced:\n"
+          : String
+          )
+        : IO
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigIf
+          (
+          )
+        : Int
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigMath
+          (
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigAssign
+          (
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigWhile
+          (
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigSelf
+          (
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigStrCompare
+          (
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigCase
+          (
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          bigAttrAccess
+          (
+          )
+        : Object
+        #1
+        _int
+          0
+        : Int
+      : Int
+    #1
+    _method
+      bigIf
+      Int
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_string
+          (
+          #1
+          _string
+            "bigIf\n"
+          : String
+          )
+        : IO
+        #1
+        _cond
+          #1
+          _bool
+            1
+          : Bool
+          #1
+          _cond
+            #1
+            _bool
+              0
+            : Bool
+            #1
+            _static_dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              Object
+              abort
+              (
+              )
+            : Object
+            #1
+            _int
+              0
+            : Int
+          : Object
+          #1
+          _static_dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            Object
+            abort
+            (
+            )
+          : Object
+        : Object
+        #1
+        _cond
+          #1
+          _bool
+            0
+          : Bool
+          #1
+          _static_dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            Object
+            abort
+            (
+            )
+          : Object
+          #1
+          _cond
+            #1
+            _bool
+              0
+            : Bool
+            #1
+            _static_dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              Object
+              abort
+              (
+              )
+            : Object
+            #1
+            _int
+              0
+            : Int
+          : Object
+        : Object
+        #1
+        _cond
+          #1
+          _bool
+            1
+          : Bool
+          #1
+          _cond
+            #1
+            _bool
+              1
+            : Bool
+            #1
+            _int
+              0
+            : Int
+            #1
+            _static_dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              Object
+              abort
+              (
+              )
+            : Object
+          : Object
+          #1
+          _static_dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            Object
+            abort
+            (
+            )
+          : Object
+        : Object
+        #1
+        _cond
+          #1
+          _bool
+            0
+          : Bool
+          #1
+          _static_dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            Object
+            abort
+            (
+            )
+          : Object
+          #1
+          _cond
+            #1
+            _bool
+              1
+            : Bool
+            #1
+            _int
+              0
+            : Int
+            #1
+            _static_dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              Object
+              abort
+              (
+              )
+            : Object
+          : Object
+        : Object
+        #1
+        _int
+          0
+        : Int
+      : Int
+    #1
+    _method
+      bigWhile
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_string
+          (
+          #1
+          _string
+            "bigWhile\n"
+          : String
+          )
+        : IO
+        #1
+        _let
+          x
+          Int
+          #1
+          _int
+            34
+          : Int
+          #1
+          _let
+            ct
+            Int
+            #1
+            _int
+              0
+            : Int
+            #1
+            _block
+              #1
+              _loop
+                #1
+                _comp
+                  #1
+                  _leq
+                    #1
+                    _object
+                      x
+                    : Int
+                    #1
+                    _int
+                      10
+                    : Int
+                  : Bool
+                : Bool
+                #1
+                _block
+                  #1
+                  _assign
+                    x
+                    #1
+                    _sub
+                      #1
+                      _object
+                        x
+                      : Int
+                      #1
+                      _int
+                        1
+                      : Int
+                    : Int
+                  : Int
+                  #1
+                  _assign
+                    ct
+                    #1
+                    _plus
+                      #1
+                      _object
+                        ct
+                      : Int
+                      #1
+                      _int
+                        1
+                      : Int
+                    : Int
+                  : Int
+                : Int
+              : Object
+              #1
+              _cond
+                #1
+                _comp
+                  #1
+                  _eq
+                    #1
+                    _object
+                      x
+                    : Int
+                    #1
+                    _int
+                      10
+                    : Int
+                  : Bool
+                : Bool
+                #1
+                _dispatch
+                  #1
+                  _object
+                    self
+                  : SELF_TYPE
+                  abort
+                  (
+                  )
+                : Object
+                #1
+                _cond
+                  #1
+                  _comp
+                    #1
+                    _eq
+                      #1
+                      _object
+                        ct
+                      : Int
+                      #1
+                      _int
+                        24
+                      : Int
+                    : Bool
+                  : Bool
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    abort
+                    (
+                    )
+                  : Object
+                  #1
+                  _object
+                    self
+                  : SELF_TYPE
+                : Object
+              : Object
+            : Object
+          : Object
+        : Object
+        #1
+        _let
+          i
+          Int
+          #1
+          _no_expr
+          : _no_type
+          #1
+          _let
+            j
+            Int
+            #1
+            _no_expr
+            : _no_type
+            #1
+            _let
+              k
+              Int
+              #1
+              _no_expr
+              : _no_type
+              #1
+              _let
+                ctI
+                Int
+                #1
+                _int
+                  0
+                : Int
+                #1
+                _let
+                  ctJ
+                  Int
+                  #1
+                  _int
+                    0
+                  : Int
+                  #1
+                  _let
+                    ctK
+                    Int
+                    #1
+                    _int
+                      0
+                    : Int
+                    #1
+                    _block
+                      #1
+                      _assign
+                        i
+                        #1
+                        _int
+                          0
+                        : Int
+                      : Int
+                      #1
+                      _loop
+                        #1
+                        _lt
+                          #1
+                          _object
+                            i
+                          : Int
+                          #1
+                          _int
+                            10
+                          : Int
+                        : Bool
+                        #1
+                        _block
+                          #1
+                          _assign
+                            j
+                            #1
+                            _int
+                              0
+                            : Int
+                          : Int
+                          #1
+                          _loop
+                            #1
+                            _lt
+                              #1
+                              _object
+                                j
+                              : Int
+                              #1
+                              _int
+                                10
+                              : Int
+                            : Bool
+                            #1
+                            _block
+                              #1
+                              _assign
+                                k
+                                #1
+                                _int
+                                  0
+                                : Int
+                              : Int
+                              #1
+                              _loop
+                                #1
+                                _lt
+                                  #1
+                                  _object
+                                    k
+                                  : Int
+                                  #1
+                                  _int
+                                    10
+                                  : Int
+                                : Bool
+                                #1
+                                _block
+                                  #1
+                                  _assign
+                                    k
+                                    #1
+                                    _plus
+                                      #1
+                                      _object
+                                        k
+                                      : Int
+                                      #1
+                                      _int
+                                        1
+                                      : Int
+                                    : Int
+                                  : Int
+                                  #1
+                                  _assign
+                                    ctK
+                                    #1
+                                    _plus
+                                      #1
+                                      _object
+                                        ctK
+                                      : Int
+                                      #1
+                                      _int
+                                        1
+                                      : Int
+                                    : Int
+                                  : Int
+                                : Int
+                              : Object
+                              #1
+                              _assign
+                                j
+                                #1
+                                _plus
+                                  #1
+                                  _object
+                                    j
+                                  : Int
+                                  #1
+                                  _int
+                                    1
+                                  : Int
+                                : Int
+                              : Int
+                              #1
+                              _assign
+                                ctJ
+                                #1
+                                _plus
+                                  #1
+                                  _object
+                                    ctJ
+                                  : Int
+                                  #1
+                                  _int
+                                    1
+                                  : Int
+                                : Int
+                              : Int
+                            : Int
+                          : Object
+                          #1
+                          _assign
+                            i
+                            #1
+                            _plus
+                              #1
+                              _object
+                                i
+                              : Int
+                              #1
+                              _int
+                                1
+                              : Int
+                            : Int
+                          : Int
+                          #1
+                          _assign
+                            ctI
+                            #1
+                            _plus
+                              #1
+                              _object
+                                ctI
+                              : Int
+                              #1
+                              _int
+                                1
+                              : Int
+                            : Int
+                          : Int
+                        : Int
+                      : Object
+                      #1
+                      _dispatch
+                        #1
+                        _object
+                          self
+                        : SELF_TYPE
+                        assert
+                        (
+                        #1
+                        _eq
+                          #1
+                          _object
+                            ctI
+                          : Int
+                          #1
+                          _int
+                            10
+                          : Int
+                        : Bool
+                        #1
+                        _int
+                          12
+                        : Int
+                        )
+                      : Object
+                      #1
+                      _dispatch
+                        #1
+                        _object
+                          self
+                        : SELF_TYPE
+                        assert
+                        (
+                        #1
+                        _eq
+                          #1
+                          _object
+                            ctJ
+                          : Int
+                          #1
+                          _int
+                            100
+                          : Int
+                        : Bool
+                        #1
+                        _int
+                          123
+                        : Int
+                        )
+                      : Object
+                      #1
+                      _dispatch
+                        #1
+                        _object
+                          self
+                        : SELF_TYPE
+                        assert
+                        (
+                        #1
+                        _eq
+                          #1
+                          _object
+                            ctK
+                          : Int
+                          #1
+                          _int
+                            1000
+                          : Int
+                        : Bool
+                        #1
+                        _int
+                          1234
+                        : Int
+                        )
+                      : Object
+                    : Object
+                  : Object
+                : Object
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #1
+    _method
+      bail
+      #1
+      _formal
+        i
+        Int
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_string
+          (
+          #1
+          _string
+            "failed: "
+          : String
+          )
+        : IO
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_int
+          (
+          #1
+          _object
+            i
+          : Int
+          )
+        : IO
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : IO
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+      : Object
+    #1
+    _method
+      bigMath
+      Object
+      #1
+      _block
+        #1
+        _cond
+          #1
+          _eq
+            #1
+            _plus
+              #1
+              _int
+                1
+              : Int
+              #1
+              _int
+                2
+              : Int
+            : Int
+            #1
+            _int
+              3
+            : Int
+          : Bool
+          #1
+          _int
+            0
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            bail
+            (
+            #1
+            _int
+              55
+            : Int
+            )
+          : Object
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            io
+          : IO
+          out_string
+          (
+          #1
+          _string
+            "bigMath\n"
+          : String
+          )
+        : IO
+        #1
+        _cond
+          #1
+          _eq
+            #1
+            _int
+              1
+            : Int
+            #1
+            _int
+              1
+            : Int
+          : Bool
+          #1
+          _cond
+            #1
+            _eq
+              #1
+              _plus
+                #1
+                _int
+                  1
+                : Int
+                #1
+                _int
+                  2
+                : Int
+              : Int
+              #1
+              _int
+                3
+              : Int
+            : Bool
+            #1
+            _cond
+              #1
+              _eq
+                #1
+                _sub
+                  #1
+                  _int
+                    5
+                  : Int
+                  #1
+                  _int
+                    3
+                  : Int
+                : Int
+                #1
+                _int
+                  2
+                : Int
+              : Bool
+              #1
+              _cond
+                #1
+                _eq
+                  #1
+                  _mul
+                    #1
+                    _int
+                      11
+                    : Int
+                    #1
+                    _int
+                      2
+                    : Int
+                  : Int
+                  #1
+                  _int
+                    22
+                  : Int
+                : Bool
+                #1
+                _cond
+                  #1
+                  _eq
+                    #1
+                    _divide
+                      #1
+                      _int
+                        99
+                      : Int
+                      #1
+                      _int
+                        11
+                      : Int
+                    : Int
+                    #1
+                    _int
+                      9
+                    : Int
+                  : Bool
+                  #1
+                  _cond
+                    #1
+                    _eq
+                      #1
+                      _plus
+                        #1
+                        _sub
+                          #1
+                          _plus
+                            #1
+                            _int
+                              45
+                            : Int
+                            #1
+                            _int
+                              14
+                            : Int
+                          : Int
+                          #1
+                          _mul
+                            #1
+                            _int
+                              75
+                            : Int
+                            #1
+                            _int
+                              2
+                            : Int
+                          : Int
+                        : Int
+                        #1
+                        _int
+                          100
+                        : Int
+                      : Int
+                      #1
+                      _int
+                        9
+                      : Int
+                    : Bool
+                    #1
+                    _cond
+                      #1
+                      _eq
+                        #1
+                        _divide
+                          #1
+                          _divide
+                            #1
+                            _divide
+                              #1
+                              _divide
+                                #1
+                                _divide
+                                  #1
+                                  _int
+                                    100
+                                  : Int
+                                  #1
+                                  _int
+                                    2
+                                  : Int
+                                : Int
+                                #1
+                                _int
+                                  2
+                                : Int
+                              : Int
+                              #1
+                              _int
+                                2
+                              : Int
+                            : Int
+                            #1
+                            _int
+                              2
+                            : Int
+                          : Int
+                          #1
+                          _int
+                            2
+                          : Int
+                        : Int
+                        #1
+                        _int
+                          3
+                        : Int
+                      : Bool
+                      #1
+                      _cond
+                        #1
+                        _eq
+                          #1
+                          _plus
+                            #1
+                            _int
+                              1
+                            : Int
+                            #1
+                            _plus
+                              #1
+                              _int
+                                2
+                              : Int
+                              #1
+                              _int
+                                3
+                              : Int
+                            : Int
+                          : Int
+                          #1
+                          _int
+                            6
+                          : Int
+                        : Bool
+                        #1
+                        _cond
+                          #1
+                          _eq
+                            #1
+                            _plus
+                              #1
+                              _int
+                                1
+                              : Int
+                              #1
+                              _plus
+                                #1
+                                _int
+                                  2
+                                : Int
+                                #1
+                                _plus
+                                  #1
+                                  _int
+                                    3
+                                  : Int
+                                  #1
+                                  _plus
+                                    #1
+                                    _int
+                                      4
+                                    : Int
+                                    #1
+                                    _int
+                                      5
+                                    : Int
+                                  : Int
+                                : Int
+                              : Int
+                            : Int
+                            #1
+                            _int
+                              15
+                            : Int
+                          : Bool
+                          #1
+                          _cond
+                            #1
+                            _eq
+                              #1
+                              _plus
+                                #1
+                                _int
+                                  1
+                                : Int
+                                #1
+                                _plus
+                                  #1
+                                  _int
+                                    2
+                                  : Int
+                                  #1
+                                  _plus
+                                    #1
+                                    _int
+                                      3
+                                    : Int
+                                    #1
+                                    _plus
+                                      #1
+                                      _int
+                                        4
+                                      : Int
+                                      #1
+                                      _plus
+                                        #1
+                                        _int
+                                          5
+                                        : Int
+                                        #1
+                                        _plus
+                                          #1
+                                          _int
+                                            6
+                                          : Int
+                                          #1
+                                          _plus
+                                            #1
+                                            _int
+                                              7
+                                            : Int
+                                            #1
+                                            _plus
+                                              #1
+                                              _int
+                                                8
+                                              : Int
+                                              #1
+                                              _plus
+                                                #1
+                                                _int
+                                                  9
+                                                : Int
+                                                #1
+                                                _int
+                                                  10
+                                                : Int
+                                              : Int
+                                            : Int
+                                          : Int
+                                        : Int
+                                      : Int
+                                    : Int
+                                  : Int
+                                : Int
+                              : Int
+                              #1
+                              _int
+                                55
+                              : Int
+                            : Bool
+                            #1
+                            _bool
+                              1
+                            : Bool
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                self
+                              : SELF_TYPE
+                              bail
+                              (
+                              #1
+                              _int
+                                1
+                              : Int
+                              )
+                            : Object
+                          : Object
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              self
+                            : SELF_TYPE
+                            bail
+                            (
+                            #1
+                            _int
+                              2
+                            : Int
+                            )
+                          : Object
+                        : Object
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          bail
+                          (
+                          #1
+                          _int
+                            3
+                          : Int
+                          )
+                        : Object
+                      : Object
+                      #1
+                      _dispatch
+                        #1
+                        _object
+                          self
+                        : SELF_TYPE
+                        bail
+                        (
+                        #1
+                        _int
+                          4
+                        : Int
+                        )
+                      : Object
+                    : Object
+                    #1
+                    _dispatch
+                      #1
+                      _object
+                        self
+                      : SELF_TYPE
+                      bail
+                      (
+                      #1
+                      _int
+                        5
+                      : Int
+                      )
+                    : Object
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    bail
+                    (
+                    #1
+                    _int
+                      6
+                    : Int
+                    )
+                  : Object
+                : Object
+                #1
+                _dispatch
+                  #1
+                  _object
+                    self
+                  : SELF_TYPE
+                  bail
+                  (
+                  #1
+                  _int
+                    7
+                  : Int
+                  )
+                : Object
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                bail
+                (
+                #1
+                _int
+                  8
+                : Int
+                )
+              : Object
+            : Object
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              bail
+              (
+              #1
+              _int
+                9
+              : Int
+              )
+            : Object
+          : Object
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            bail
+            (
+            #1
+            _int
+              10
+            : Int
+            )
+          : Object
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _comp
+            #1
+            _bool
+              0
+            : Bool
+          : Bool
+          #1
+          _int
+            250
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _comp
+            #1
+            _comp
+              #1
+              _bool
+                1
+              : Bool
+            : Bool
+          : Bool
+          #1
+          _int
+            251
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _lt
+            #1
+            _int
+              3
+            : Int
+            #1
+            _int
+              4
+            : Int
+          : Bool
+          #1
+          _int
+            253
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _comp
+            #1
+            _lt
+              #1
+              _int
+                3
+              : Int
+              #1
+              _int
+                3
+              : Int
+            : Bool
+          : Bool
+          #1
+          _int
+            254
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _leq
+            #1
+            _int
+              65
+            : Int
+            #1
+            _int
+              66
+            : Int
+          : Bool
+          #1
+          _int
+            255
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _leq
+            #1
+            _int
+              65
+            : Int
+            #1
+            _int
+              65
+            : Int
+          : Bool
+          #1
+          _int
+            255
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _eq
+            #1
+            _neg
+              #1
+              _int
+                2
+              : Int
+            : Int
+            #1
+            _sub
+              #1
+              _int
+                0
+              : Int
+              #1
+              _int
+                2
+              : Int
+            : Int
+          : Bool
+          #1
+          _int
+            257
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _lt
+            #1
+            _neg
+              #1
+              _int
+                2
+              : Int
+            : Int
+            #1
+            _int
+              2
+            : Int
+          : Bool
+          #1
+          _int
+            258
+          : Int
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          assert
+          (
+          #1
+          _eq
+            #1
+            _neg
+              #1
+              _int
+                0
+              : Int
+            : Int
+            #1
+            _int
+              0
+            : Int
+          : Bool
+          #1
+          _int
+            259
+          : Int
+          )
+        : Object
+      : Object
+    #1
+    _method
+      assert
+      #1
+      _formal
+        b
+        Bool
+      #1
+      _formal
+        line
+        Int
+      Object
+      #1
+      _cond
+        #1
+        _object
+          b
+        : Bool
+        #1
+        _bool
+          1
+        : Bool
+        #1
+        _block
+          #1
+          _dispatch
+            #1
+            _object
+              io
+            : IO
+            out_string
+            (
+            #1
+            _string
+              "assertion failed: "
+            : String
+            )
+          : IO
+          #1
+          _dispatch
+            #1
+            _object
+              io
+            : IO
+            out_int
+            (
+            #1
+            _object
+              line
+            : Int
+            )
+          : IO
+          #1
+          _dispatch
+            #1
+            _object
+              io
+            : IO
+            out_string
+            (
+            #1
+            _string
+              "\n"
+            : String
+            )
+          : IO
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            abort
+            (
+            )
+          : Object
+        : Object
+      : Object
+    #1
+    _method
+      bigAssign
+      Object
+      #1
+      _let
+        x
+        Int
+        #1
+        _no_expr
+        : _no_type
+        #1
+        _let
+          y
+          Int
+          #1
+          _no_expr
+          : _no_type
+          #1
+          _let
+            z
+            Int
+            #1
+            _no_expr
+            : _no_type
+            #1
+            _block
+              #1
+              _dispatch
+                #1
+                _object
+                  io
+                : IO
+                out_string
+                (
+                #1
+                _string
+                  "bigAssign\n"
+                : String
+                )
+              : IO
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    0
+                  : Int
+                : Bool
+                #1
+                _int
+                  1
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    0
+                  : Int
+                : Bool
+                #1
+                _int
+                  2
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    z
+                  : Int
+                  #1
+                  _int
+                    0
+                  : Int
+                : Bool
+                #1
+                _int
+                  3
+                : Int
+                )
+              : Object
+              #1
+              _assign
+                x
+                #1
+                _int
+                  1
+                : Int
+              : Int
+              #1
+              _assign
+                y
+                #1
+                _int
+                  2
+                : Int
+              : Int
+              #1
+              _assign
+                z
+                #1
+                _int
+                  3
+                : Int
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    1
+                  : Int
+                : Bool
+                #1
+                _int
+                  4
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    2
+                  : Int
+                : Bool
+                #1
+                _int
+                  5
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    z
+                  : Int
+                  #1
+                  _int
+                    3
+                  : Int
+                : Bool
+                #1
+                _int
+                  6
+                : Int
+                )
+              : Object
+              #1
+              _assign
+                z
+                #1
+                _int
+                  1
+                : Int
+              : Int
+              #1
+              _assign
+                y
+                #1
+                _int
+                  2
+                : Int
+              : Int
+              #1
+              _assign
+                x
+                #1
+                _int
+                  3
+                : Int
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    z
+                  : Int
+                  #1
+                  _int
+                    1
+                  : Int
+                : Bool
+                #1
+                _int
+                  14
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    2
+                  : Int
+                : Bool
+                #1
+                _int
+                  15
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    3
+                  : Int
+                : Bool
+                #1
+                _int
+                  16
+                : Int
+                )
+              : Object
+              #1
+              _assign
+                x
+                #1
+                _assign
+                  y
+                  #1
+                  _int
+                    6
+                  : Int
+                : Int
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    6
+                  : Int
+                : Bool
+                #1
+                _int
+                  114
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    6
+                  : Int
+                : Bool
+                #1
+                _int
+                  115
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    z
+                  : Int
+                  #1
+                  _int
+                    1
+                  : Int
+                : Bool
+                #1
+                _int
+                  116
+                : Int
+                )
+              : Object
+              #1
+              _assign
+                x
+                #1
+                _plus
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    4
+                  : Int
+                : Int
+              : Int
+              #1
+              _assign
+                y
+                #1
+                _sub
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    3
+                  : Int
+                : Int
+              : Int
+              #1
+              _assign
+                z
+                #1
+                _plus
+                  #1
+                  _mul
+                    #1
+                    _object
+                      x
+                    : Int
+                    #1
+                    _object
+                      y
+                    : Int
+                  : Int
+                  #1
+                  _int
+                    14
+                  : Int
+                : Int
+              : Int
+              #1
+              _assign
+                y
+                #1
+                _plus
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    1
+                  : Int
+                : Int
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    10
+                  : Int
+                : Bool
+                #1
+                _int
+                  2114
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    8
+                  : Int
+                : Bool
+                #1
+                _int
+                  3114
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    z
+                  : Int
+                  #1
+                  _int
+                    84
+                  : Int
+                : Bool
+                #1
+                _int
+                  2116
+                : Int
+                )
+              : Object
+              #1
+              _assign
+                x
+                #1
+                _object
+                  y
+                : Int
+              : Int
+              #1
+              _assign
+                y
+                #1
+                _object
+                  z
+                : Int
+              : Int
+              #1
+              _assign
+                z
+                #1
+                _object
+                  x
+                : Int
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    8
+                  : Int
+                : Bool
+                #1
+                _int
+                  101
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    84
+                  : Int
+                : Bool
+                #1
+                _int
+                  102
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    z
+                  : Int
+                  #1
+                  _int
+                    8
+                  : Int
+                : Bool
+                #1
+                _int
+                  103
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _plus
+                    #1
+                    _object
+                      x
+                    : Int
+                    #1
+                    _object
+                      y
+                    : Int
+                  : Int
+                  #1
+                  _int
+                    92
+                  : Int
+                : Bool
+                #1
+                _int
+                  104
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    x
+                  : Int
+                  #1
+                  _int
+                    8
+                  : Int
+                : Bool
+                #1
+                _int
+                  105
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    y
+                  : Int
+                  #1
+                  _int
+                    84
+                  : Int
+                : Bool
+                #1
+                _int
+                  106
+                : Int
+                )
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #1
+    _method
+      setI
+      #1
+      _formal
+        newI
+        Int
+      Int
+      #1
+      _assign
+        i
+        #1
+        _object
+          newI
+        : Int
+      : Int
+    #1
+    _method
+      getI
+      Int
+      #1
+      _object
+        i
+      : Int
+    #1
+    _method
+      bigSelf
+      Object
+      #1
+      _let
+        v
+        Blah
+        #1
+        _no_expr
+        : _no_type
+        #1
+        _let
+          s
+          Blah
+          #1
+          _object
+            self
+          : SELF_TYPE
+          #1
+          _let
+            t
+            Blah
+            #1
+            _new
+              Blah
+            : Blah
+            #1
+            _block
+              #1
+              _dispatch
+                #1
+                _object
+                  io
+                : IO
+                out_string
+                (
+                #1
+                _string
+                  "bigSelf\n"
+                : String
+                )
+              : IO
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _isvoid
+                  #1
+                  _object
+                    v
+                  : Blah
+                : Bool
+                #1
+                _int
+                  310
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _comp
+                  #1
+                  _eq
+                    #1
+                    _object
+                      v
+                    : Blah
+                    #1
+                    _object
+                      s
+                    : Blah
+                  : Bool
+                : Bool
+                #1
+                _int
+                  311
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _comp
+                  #1
+                  _eq
+                    #1
+                    _object
+                      s
+                    : Blah
+                    #1
+                    _object
+                      t
+                    : Blah
+                  : Bool
+                : Bool
+                #1
+                _int
+                  312
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _comp
+                  #1
+                  _eq
+                    #1
+                    _object
+                      v
+                    : Blah
+                    #1
+                    _object
+                      t
+                    : Blah
+                  : Bool
+                : Bool
+                #1
+                _int
+                  313
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  s
+                : Blah
+                setI
+                (
+                #1
+                _int
+                  3
+                : Int
+                )
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  t
+                : Blah
+                setI
+                (
+                #1
+                _int
+                  4
+                : Int
+                )
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _comp
+                  #1
+                  _eq
+                    #1
+                    _dispatch
+                      #1
+                      _object
+                        s
+                      : Blah
+                      getI
+                      (
+                      )
+                    : Int
+                    #1
+                    _dispatch
+                      #1
+                      _object
+                        t
+                      : Blah
+                      getI
+                      (
+                      )
+                    : Int
+                  : Bool
+                : Bool
+                #1
+                _int
+                  320
+                : Int
+                )
+              : Object
+              #1
+              _assign
+                t
+                #1
+                _object
+                  self
+                : SELF_TYPE
+              : Blah
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _object
+                    s
+                  : Blah
+                  #1
+                  _object
+                    t
+                  : Blah
+                : Bool
+                #1
+                _int
+                  314
+                : Int
+                )
+              : Object
+              #1
+              _dispatch
+                #1
+                _object
+                  s
+                : Blah
+                setI
+                (
+                #1
+                _int
+                  5
+                : Int
+                )
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  t
+                : Blah
+                setI
+                (
+                #1
+                _int
+                  6
+                : Int
+                )
+              : Int
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                assert
+                (
+                #1
+                _eq
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      s
+                    : Blah
+                    getI
+                    (
+                    )
+                  : Int
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      t
+                    : Blah
+                    getI
+                    (
+                    )
+                  : Int
+                : Bool
+                #1
+                _int
+                  327
+                : Int
+                )
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #1
+    _method
+      bigStrCompare
+      Object
+      #1
+      _let
+        s
+        String
+        #1
+        _string
+          "foo"
+        : String
+        #1
+        _let
+          t
+          String
+          #1
+          _string
+            "bar"
+          : String
+          #1
+          _let
+            u
+            String
+            #1
+            _string
+              "foobar"
+            : String
+            #1
+            _let
+              v
+              String
+              #1
+              _no_expr
+              : _no_type
+              #1
+              _let
+                w
+                String
+                #1
+                _no_expr
+                : _no_type
+                #1
+                _block
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      io
+                    : IO
+                    out_string
+                    (
+                    #1
+                    _string
+                      "bigStrCompare\n"
+                    : String
+                    )
+                  : IO
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _comp
+                      #1
+                      _eq
+                        #1
+                        _object
+                          s
+                        : String
+                        #1
+                        _object
+                          t
+                        : String
+                      : Bool
+                    : Bool
+                    #1
+                    _int
+                      339
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _eq
+                      #1
+                      _object
+                        s
+                      : String
+                      #1
+                      _string
+                        "foo"
+                      : String
+                    : Bool
+                    #1
+                    _int
+                      340
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _eq
+                      #1
+                      _object
+                        t
+                      : String
+                      #1
+                      _string
+                        "bar"
+                      : String
+                    : Bool
+                    #1
+                    _int
+                      341
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _eq
+                      #1
+                      _object
+                        v
+                      : String
+                      #1
+                      _object
+                        w
+                      : String
+                    : Bool
+                    #1
+                    _int
+                      342
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _comp
+                      #1
+                      _eq
+                        #1
+                        _object
+                          v
+                        : String
+                        #1
+                        _object
+                          u
+                        : String
+                      : Bool
+                    : Bool
+                    #1
+                    _int
+                      346
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _assign
+                    v
+                    #1
+                    _dispatch
+                      #1
+                      _object
+                        u
+                      : String
+                      substr
+                      (
+                      #1
+                      _int
+                        0
+                      : Int
+                      #1
+                      _int
+                        3
+                      : Int
+                      )
+                    : String
+                  : String
+                  #1
+                  _assign
+                    w
+                    #1
+                    _dispatch
+                      #1
+                      _object
+                        u
+                      : String
+                      substr
+                      (
+                      #1
+                      _int
+                        3
+                      : Int
+                      #1
+                      _int
+                        3
+                      : Int
+                      )
+                    : String
+                  : String
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _comp
+                      #1
+                      _eq
+                        #1
+                        _object
+                          v
+                        : String
+                        #1
+                        _object
+                          w
+                        : String
+                      : Bool
+                    : Bool
+                    #1
+                    _int
+                      350
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _eq
+                      #1
+                      _object
+                        v
+                      : String
+                      #1
+                      _object
+                        s
+                      : String
+                    : Bool
+                    #1
+                    _int
+                      351
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _eq
+                      #1
+                      _object
+                        w
+                      : String
+                      #1
+                      _object
+                        t
+                      : String
+                    : Bool
+                    #1
+                    _int
+                      352
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _comp
+                      #1
+                      _eq
+                        #1
+                        _object
+                          v
+                        : String
+                        #1
+                        _object
+                          t
+                        : String
+                      : Bool
+                    : Bool
+                    #1
+                    _int
+                      353
+                    : Int
+                    )
+                  : Object
+                  #1
+                  _dispatch
+                    #1
+                    _object
+                      self
+                    : SELF_TYPE
+                    assert
+                    (
+                    #1
+                    _eq
+                      #1
+                      _dispatch
+                        #1
+                        _object
+                          s
+                        : String
+                        substr
+                        (
+                        #1
+                        _int
+                          1
+                        : Int
+                        #1
+                        _int
+                          1
+                        : Int
+                        )
+                      : String
+                      #1
+                      _dispatch
+                        #1
+                        _object
+                          s
+                        : String
+                        substr
+                        (
+                        #1
+                        _int
+                          2
+                        : Int
+                        #1
+                        _int
+                          1
+                        : Int
+                        )
+                      : String
+                    : Bool
+                    #1
+                    _int
+                      355
+                    : Int
+                    )
+                  : Object
+                : Object
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #1
+    _method
+      bigCase
+      Object
+      #1
+      _let
+        a
+        A
+        #1
+        _new
+          A
+        : A
+        #1
+        _let
+          b
+          B
+          #1
+          _new
+            B
+          : B
+          #1
+          _let
+            c
+            C
+            #1
+            _new
+              C
+            : C
+            #1
+            _let
+              p
+              P
+              #1
+              _new
+                P
+              : P
+              #1
+              _let
+                c1
+                C1
+                #1
+                _new
+                  C1
+                : C1
+                #1
+                _let
+                  c2
+                  C2
+                  #1
+                  _new
+                    C2
+                  : C2
+                  #1
+                  _let
+                    i
+                    Int
+                    #1
+                    _no_expr
+                    : _no_type
+                    #1
+                    _let
+                      o
+                      Object
+                      #1
+                      _no_expr
+                      : _no_type
+                      #1
+                      _block
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            io
+                          : IO
+                          out_string
+                          (
+                          #1
+                          _string
+                            "bigCase\n"
+                          : String
+                          )
+                        : IO
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            c1
+                          : C1
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              x
+                              A
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              y
+                              C1
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              z
+                              C2
+                              #1
+                              _int
+                                3
+                              : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              2
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            381
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            c1
+                          : C1
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              x
+                              A
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              y
+                              P
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              z
+                              C2
+                              #1
+                              _int
+                                3
+                              : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              2
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            390
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            c2
+                          : C2
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              x
+                              A
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              y
+                              P
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              z
+                              C2
+                              #1
+                              _int
+                                3
+                              : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              3
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            399
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            c1
+                          : C1
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              b
+                            : B
+                            #1
+                            _branch
+                              x
+                              A
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              y
+                              C1
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              z
+                              C2
+                              #1
+                              _int
+                                3
+                              : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              1
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            408
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            b
+                          : B
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              x
+                              A
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              x
+                              B
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              x
+                              C
+                              #1
+                              _int
+                                3
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              2
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            417
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            c
+                          : C
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              x
+                              A
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              x
+                              B
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              x
+                              C
+                              #1
+                              _int
+                                3
+                              : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              3
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            426
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            c1
+                          : C1
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              x
+                              A
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              x
+                              B
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              x
+                              C
+                              #1
+                              _int
+                                3
+                              : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              4
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            438
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _object
+                            b
+                          : B
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              4
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            444
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _bool
+                            1
+                          : Bool
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _object
+                              o
+                            : Object
+                            #1
+                            _branch
+                              x
+                              Bool
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              x
+                              B
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              x
+                              C
+                              #1
+                              _int
+                                3
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              1
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            453
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _int
+                            2
+                          : Int
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _int
+                              3
+                            : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              4
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            459
+                          : Int
+                          )
+                        : Object
+                        #1
+                        _assign
+                          o
+                          #1
+                          _string
+                            "foobar"
+                          : String
+                        : Object
+                        #1
+                        _assign
+                          i
+                          #1
+                          _typcase
+                            #1
+                            _dispatch
+                              #1
+                              _string
+                                "foobar"
+                              : String
+                              substr
+                              (
+                              #1
+                              _int
+                                2
+                              : Int
+                              #1
+                              _int
+                                2
+                              : Int
+                              )
+                            : String
+                            #1
+                            _branch
+                              x
+                              Bool
+                              #1
+                              _int
+                                1
+                              : Int
+                            #1
+                            _branch
+                              y
+                              String
+                              #1
+                              _int
+                                2
+                              : Int
+                            #1
+                            _branch
+                              x
+                              C
+                              #1
+                              _int
+                                3
+                              : Int
+                            #1
+                            _branch
+                              k
+                              Object
+                              #1
+                              _int
+                                4
+                              : Int
+                          : Int
+                        : Int
+                        #1
+                        _dispatch
+                          #1
+                          _object
+                            self
+                          : SELF_TYPE
+                          assert
+                          (
+                          #1
+                          _eq
+                            #1
+                            _object
+                              i
+                            : Int
+                            #1
+                            _int
+                              2
+                            : Int
+                          : Bool
+                          #1
+                          _int
+                            468
+                          : Int
+                          )
+                        : Object
+                      : Object
+                    : Object
+                  : Object
+                : Object
+              : Object
+            : Object
+          : Object
+        : Object
+      : Object
+    #1
+    _method
+      bigAttrAccess
+      Object
+      #1
+      _let
+        c
+        C2
+        #1
+        _new
+          C2
+        : C2
+        #1
+        _block
+          #1
+          _dispatch
+            #1
+            _object
+              io
+            : IO
+            out_string
+            (
+            #1
+            _string
+              "bigAttrAccess\n"
+            : String
+            )
+          : IO
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            assert
+            (
+            #1
+            _eq
+              #1
+              _dispatch
+                #1
+                _object
+                  c
+                : C2
+                getX
+                (
+                )
+              : Int
+              #1
+              _int
+                3
+              : Int
+            : Bool
+            #1
+            _int
+              496
+            : Int
+            )
+          : Object
+          #1
+          _dispatch
+            #1
+            _object
+              c
+            : C2
+            setX
+            (
+            #1
+            _int
+              5
+            : Int
+            )
+          : Int
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            assert
+            (
+            #1
+            _eq
+              #1
+              _dispatch
+                #1
+                _object
+                  c
+                : C2
+                getX
+                (
+                )
+              : Int
+              #1
+              _int
+                5
+              : Int
+            : Bool
+            #1
+            _int
+              498
+            : Int
+            )
+          : Object
+        : Object
+      : Object
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _method
+      e
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      f
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      g
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      i
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      j
+      Int
+      #1
+      _int
+        0
+      : Int
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _method
+      e
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      g
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      h
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      k
+      Int
+      #1
+      _int
+        0
+      : Int
+    )
+  #1
+  _class
+    C
+    B
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _method
+      e
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      h
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      i
+      Int
+      #1
+      _int
+        0
+      : Int
+    #1
+    _method
+      ell
+      Int
+      #1
+      _int
+        0
+      : Int
+    )
+  #1
+  _class
+    Base
+    Object
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _attr
+      a
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      b
+      String
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      c
+      Bool
+      #1
+      _no_expr
+      : _no_type
+    )
+  #1
+  _class
+    Grandparent
+    Base
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _attr
+      d
+      Base
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      e
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      f
+      Grandparent
+      #1
+      _no_expr
+      : _no_type
+    )
+  #1
+  _class
+    Parent
+    Grandparent
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _attr
+      g
+      SELF_TYPE
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      h
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      i
+      Bool
+      #1
+      _no_expr
+      : _no_type
+    )
+  #1
+  _class
+    Child
+    Parent
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _attr
+      j
+      Base
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      k
+      Grandparent
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      l
+      Main
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      m
+      String
+      #1
+      _no_expr
+      : _no_type
+    )
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//bigexample.cl"
+    (
+    #1
+    _method
+      main
+      IO
+      #1
+      _let
+        io
+        IO
+        #1
+        _new
+          IO
+        : IO
+        #1
+        _let
+          b
+          Blah
+          #1
+          _no_expr
+          : _no_type
+          #1
+          _block
+            #1
+            _static_dispatch
+              #1
+              _object
+                io
+              : IO
+              IO
+              out_string
+              (
+              #1
+              _string
+                "hello, world\n"
+              : String
+              )
+            : IO
+            #1
+            _dispatch
+              #1
+              _object
+                io
+              : IO
+              out_string
+              (
+              #1
+              _string
+                "printed via dynamic dispatch\n"
+              : String
+              )
+            : IO
+            #1
+            _static_dispatch
+              #1
+              _object
+                io
+              : IO
+              IO
+              out_string
+              (
+              #1
+              _string
+                "tested static dispatch and 'new IO'\n"
+              : String
+              )
+            : IO
+            #1
+            _let
+              i
+              Int
+              #1
+              _int
+                3
+              : Int
+              #1
+              _block
+                #1
+                _static_dispatch
+                  #1
+                  _object
+                    io
+                  : IO
+                  IO
+                  out_string
+                  (
+                  #1
+                  _string
+                    "an int: "
+                  : String
+                  )
+                : IO
+                #1
+                _static_dispatch
+                  #1
+                  _object
+                    io
+                  : IO
+                  IO
+                  out_int
+                  (
+                  #1
+                  _object
+                    i
+                  : Int
+                  )
+                : IO
+                #1
+                _static_dispatch
+                  #1
+                  _object
+                    io
+                  : IO
+                  IO
+                  out_string
+                  (
+                  #1
+                  _string
+                    "\n"
+                  : String
+                  )
+                : IO
+              : IO
+            : IO
+            #1
+            _dispatch
+              #1
+              _object
+                io
+              : IO
+              out_string
+              (
+              #1
+              _string
+                "gonna make a Blah\n"
+              : String
+              )
+            : IO
+            #1
+            _assign
+              b
+              #1
+              _new
+                Blah
+              : Blah
+            : Blah
+            #1
+            _dispatch
+              #1
+              _object
+                io
+              : IO
+              out_string
+              (
+              #1
+              _string
+                "gonna call doThemAll\n"
+              : String
+              )
+            : IO
+            #1
+            _dispatch
+              #1
+              _object
+                b
+              : Blah
+              doThemAll
+              (
+              )
+            : Int
+            #1
+            _dispatch
+              #1
+              _object
+                io
+              : IO
+              out_string
+              (
+              #1
+              _string
+                "looks ok!\n"
+              : String
+              )
+            : IO
+          : IO
+        : IO
+      : IO
+    )

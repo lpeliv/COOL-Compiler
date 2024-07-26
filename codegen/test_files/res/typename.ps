@@ -1,0 +1,168 @@
+#42
+_program
+  #5
+  _class
+    Base
+    IO
+    ".//test_files//typename.cl"
+    (
+    #7
+    _method
+      identify
+      #7
+      _formal
+        thing
+        Object
+      Object
+      #9
+      _block
+        #10
+        _dispatch
+          #10
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #10
+          _dispatch
+            #10
+            _object
+              thing
+            : _no_type
+            type_name
+            (
+            )
+          : _no_type
+          )
+        : _no_type
+        #11
+        _dispatch
+          #11
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #11
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    #15
+    _method
+      test
+      Object
+      #17
+      _block
+        #18
+        _dispatch
+          #18
+          _object
+            self
+          : _no_type
+          identify
+          (
+          #18
+          _new
+            Base
+          : _no_type
+          )
+        : _no_type
+        #19
+        _dispatch
+          #19
+          _object
+            self
+          : _no_type
+          identify
+          (
+          #19
+          _new
+            Derived
+          : _no_type
+          )
+        : _no_type
+        #20
+        _dispatch
+          #20
+          _object
+            self
+          : _no_type
+          identify
+          (
+          #20
+          _new
+            Main
+          : _no_type
+          )
+        : _no_type
+        #22
+        _let
+          poly
+          Base
+          #22
+          _new
+            Derived
+          : _no_type
+          #23
+          _dispatch
+            #23
+            _object
+              self
+            : _no_type
+            identify
+            (
+            #23
+            _object
+              poly
+            : _no_type
+            )
+          : _no_type
+        : _no_type
+        #25
+        _dispatch
+          #25
+          _object
+            self
+          : _no_type
+          identify
+          (
+          #25
+          _object
+            self
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    )
+  #31
+  _class
+    Derived
+    Base
+    ".//test_files//typename.cl"
+    (
+    )
+  #36
+  _class
+    Main
+    Object
+    ".//test_files//typename.cl"
+    (
+    #38
+    _method
+      main
+      Object
+      #40
+      _dispatch
+        #40
+        _new
+          Derived
+        : _no_type
+        test
+        (
+        )
+      : _no_type
+    )

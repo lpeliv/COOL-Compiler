@@ -1,0 +1,51 @@
+error in line# 1
+    parsed as: Int_protObj
+    should be: 2 is trivially prime.
+error in line# 1
+    parsed as: _int_tag
+    should be: 3 is prime.
+error in line# 1
+    parsed as: _string_tag
+    should be: 5 is prime.
+error in line# 1
+    parsed as: Main.main
+    should be: 7 is prime.
+error in line# 1
+    parsed as: String_protObj
+    should be: 11 is prime.
+error in line# 1
+    parsed as: _MemMgr_TEST
+    should be: 13 is prime.
+error in line# 1
+    parsed as: _MemMgr_COLLECTOR
+    should be: 17 is prime.
+error in line# 1
+    parsed as: class_nameTab
+    should be: 19 is prime.
+error in line# 1
+    parsed as: Int_init
+    should be: 23 is prime.
+error in line# 1
+    parsed as: String_init
+    should be: 29 is prime.
+error in line# 1
+    parsed as: Main_protObj
+    should be: 31 is prime.
+error in line# 1
+    parsed as: _MemMgr_INITIALIZER
+    should be: 37 is prime.
+error in line# 1
+    parsed as: main
+    should be: 41 is prime.
+error in line# 1
+    parsed as: Main_init
+    should be: 43 is prime.
+error in line# 1
+    parsed as: 
+    should be: 47 is prime.
+error in line# 1
+    parsed as: Instruction references undefined symbol at 0x004006d0
+    should be: 53 is prime.
+error in line# 1
+    parsed as: [0x004006d0]	0x3c010000  lui $1, 0 [_MemMgr_INITIALIZER] ; 1080: la	$t0 _MemMgr_INITIALIZER		# pointer to initialization
+    should be: 59 is prime.

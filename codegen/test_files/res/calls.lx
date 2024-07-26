@@ -1,0 +1,94 @@
+#name ".//test_files//calls.cl"
+#3 CLASS
+#3 TYPEID Main
+#3 '{'
+#4 OBJECTID io
+#4 ':'
+#4 TYPEID IO
+#4 ASSIGN
+#4 NEW
+#4 TYPEID IO
+#4 ';'
+#6 OBJECTID main
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#6 '{'
+#6 '{'
+#9 OBJECTID io
+#9 '.'
+#9 OBJECTID out_int
+#9 '('
+#9 OBJECTID f
+#9 '('
+#9 OBJECTID g
+#9 '('
+#9 INT_CONST 1
+#9 ')'
+#9 ','
+#9 OBJECTID h
+#9 '('
+#9 INT_CONST 2
+#9 ')'
+#9 ')'
+#9 ')'
+#9 ';'
+#10 OBJECTID io
+#10 '.'
+#10 OBJECTID out_string
+#10 '('
+#10 STR_CONST "\n"
+#10 ')'
+#10 ';'
+#11 '}'
+#11 '}'
+#11 ';'
+#13 OBJECTID f
+#13 '('
+#13 OBJECTID x
+#13 ':'
+#13 TYPEID Int
+#13 ','
+#13 OBJECTID y
+#13 ':'
+#13 TYPEID Int
+#13 ')'
+#13 ':'
+#13 TYPEID Int
+#13 '{'
+#13 OBJECTID x
+#13 '+'
+#13 OBJECTID y
+#13 '}'
+#13 ';'
+#14 OBJECTID g
+#14 '('
+#14 OBJECTID x
+#14 ':'
+#14 TYPEID Int
+#14 ')'
+#14 ':'
+#14 TYPEID Int
+#14 '{'
+#14 OBJECTID x
+#14 '+'
+#14 INT_CONST 5
+#14 '}'
+#14 ';'
+#15 OBJECTID h
+#15 '('
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID Int
+#15 ')'
+#15 ':'
+#15 TYPEID Int
+#15 '{'
+#15 OBJECTID x
+#15 '+'
+#15 INT_CONST 7
+#15 '}'
+#15 ';'
+#17 '}'
+#17 ';'

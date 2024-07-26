@@ -1,0 +1,63 @@
+#name ".//test_files//fibo.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID fibo
+#2 '('
+#2 OBJECTID i
+#2 ':'
+#2 TYPEID Int
+#2 ')'
+#2 ':'
+#2 TYPEID Int
+#2 '{'
+#3 IF
+#3 OBJECTID i
+#3 '='
+#3 INT_CONST 0
+#3 THEN
+#4 INT_CONST 0
+#5 ELSE
+#5 IF
+#5 OBJECTID i
+#5 '='
+#5 INT_CONST 1
+#5 THEN
+#6 INT_CONST 1
+#7 ELSE
+#8 OBJECTID fibo
+#8 '('
+#8 OBJECTID i
+#8 '-'
+#8 INT_CONST 1
+#8 ')'
+#8 '+'
+#8 OBJECTID fibo
+#8 '('
+#8 OBJECTID i
+#8 '-'
+#8 INT_CONST 2
+#8 ')'
+#9 FI
+#9 FI
+#10 '}'
+#10 ';'
+#12 OBJECTID main
+#12 '('
+#12 ')'
+#12 ':'
+#12 TYPEID Object
+#12 '{'
+#13 OBJECTID out_int
+#13 '('
+#13 OBJECTID fibo
+#13 '('
+#13 INT_CONST 15
+#13 ')'
+#13 ')'
+#14 '}'
+#14 ';'
+#15 '}'
+#15 ';'

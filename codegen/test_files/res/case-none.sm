@@ -1,0 +1,65 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//case-none.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        thing
+        Object
+        #1
+        _object
+          self
+        : SELF_TYPE
+        #1
+        _typcase
+          #1
+          _object
+            thing
+          : Object
+          #1
+          _branch
+            i
+            Int
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "int\n"
+              : String
+              )
+            : SELF_TYPE
+          #1
+          _branch
+            b
+            Bool
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "bool\n"
+              : String
+              )
+            : SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    )

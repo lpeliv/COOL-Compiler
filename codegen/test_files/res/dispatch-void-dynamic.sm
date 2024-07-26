@@ -1,0 +1,49 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//dispatch-void-dynamic.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        nothing
+        Object
+        #1
+        _loop
+          #1
+          _bool
+            0
+          : Bool
+          #1
+          _int
+            1
+          : Int
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              nothing
+            : Object
+            type_name
+            (
+            )
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )

@@ -1,0 +1,134 @@
+#name ".//test_files//exp.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID exp
+#2 '('
+#2 OBJECTID b
+#2 ':'
+#2 TYPEID Int
+#2 ','
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID Int
+#2 ')'
+#2 ':'
+#2 TYPEID Int
+#2 '{'
+#3 IF
+#3 '('
+#3 OBJECTID x
+#3 '='
+#3 INT_CONST 0
+#3 ')'
+#4 THEN
+#5 INT_CONST 1
+#6 ELSE
+#7 IF
+#7 '('
+#7 OBJECTID x
+#7 '='
+#7 '('
+#7 INT_CONST 2
+#7 '*'
+#7 '('
+#7 OBJECTID x
+#7 '/'
+#7 INT_CONST 2
+#7 ')'
+#7 ')'
+#7 ')'
+#8 THEN
+#9 LET
+#9 OBJECTID y
+#9 ':'
+#9 TYPEID Int
+#9 ASSIGN
+#9 OBJECTID exp
+#9 '('
+#9 OBJECTID b
+#9 ','
+#9 '('
+#9 OBJECTID x
+#9 '/'
+#9 INT_CONST 2
+#9 ')'
+#9 ')'
+#9 IN
+#10 OBJECTID y
+#10 '*'
+#10 OBJECTID y
+#11 ELSE
+#12 OBJECTID b
+#12 '*'
+#12 OBJECTID exp
+#12 '('
+#12 OBJECTID b
+#12 ','
+#12 OBJECTID x
+#12 '-'
+#12 INT_CONST 1
+#12 ')'
+#13 FI
+#14 FI
+#15 '}'
+#15 ';'
+#16 OBJECTID main
+#16 '('
+#16 ')'
+#16 ':'
+#16 TYPEID Object
+#16 '{'
+#16 '{'
+#17 OBJECTID out_int
+#17 '('
+#17 OBJECTID exp
+#17 '('
+#17 INT_CONST 2
+#17 ','
+#17 INT_CONST 7
+#17 ')'
+#17 ')'
+#17 ';'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "\n"
+#18 ')'
+#18 ';'
+#19 OBJECTID out_int
+#19 '('
+#19 OBJECTID exp
+#19 '('
+#19 INT_CONST 3
+#19 ','
+#19 INT_CONST 6
+#19 ')'
+#19 ')'
+#19 ';'
+#20 OBJECTID out_string
+#20 '('
+#20 STR_CONST "\n"
+#20 ')'
+#20 ';'
+#21 OBJECTID out_int
+#21 '('
+#21 OBJECTID exp
+#21 '('
+#21 INT_CONST 8
+#21 ','
+#21 INT_CONST 3
+#21 ')'
+#21 ')'
+#21 ';'
+#22 OBJECTID out_string
+#22 '('
+#22 STR_CONST "\n"
+#22 ')'
+#22 ';'
+#23 '}'
+#23 '}'
+#23 ';'
+#24 '}'
+#24 ';'

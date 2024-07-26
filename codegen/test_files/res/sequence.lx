@@ -1,0 +1,97 @@
+#name ".//test_files//sequence.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID a
+#2 ':'
+#2 TYPEID Int
+#2 ASSIGN
+#2 INT_CONST 0
+#2 ';'
+#3 OBJECTID b
+#3 ':'
+#3 TYPEID Int
+#3 ASSIGN
+#3 INT_CONST 1
+#3 ';'
+#4 OBJECTID main
+#4 '('
+#4 ')'
+#4 ':'
+#4 TYPEID Object
+#4 '{'
+#4 '{'
+#5 OBJECTID a
+#5 ASSIGN
+#5 OBJECTID b
+#5 '+'
+#5 INT_CONST 1
+#5 ';'
+#6 OBJECTID b
+#6 ASSIGN
+#6 OBJECTID a
+#6 '+'
+#6 INT_CONST 1
+#6 ';'
+#7 OBJECTID a
+#7 ASSIGN
+#7 OBJECTID b
+#7 '+'
+#7 INT_CONST 1
+#7 ';'
+#8 OBJECTID b
+#8 ASSIGN
+#8 OBJECTID a
+#8 '+'
+#8 INT_CONST 1
+#8 ';'
+#9 OBJECTID a
+#9 ASSIGN
+#9 OBJECTID b
+#9 '+'
+#9 INT_CONST 1
+#9 ';'
+#10 OBJECTID b
+#10 ASSIGN
+#10 OBJECTID a
+#10 '+'
+#10 INT_CONST 1
+#10 ';'
+#11 OBJECTID a
+#11 ASSIGN
+#11 OBJECTID b
+#11 '+'
+#11 INT_CONST 1
+#11 ';'
+#12 OBJECTID b
+#12 ASSIGN
+#12 OBJECTID a
+#12 '+'
+#12 INT_CONST 1
+#12 ';'
+#13 OBJECTID a
+#13 ASSIGN
+#13 OBJECTID b
+#13 '+'
+#13 INT_CONST 1
+#13 ';'
+#14 OBJECTID b
+#14 ASSIGN
+#14 OBJECTID a
+#14 '+'
+#14 INT_CONST 1
+#14 ';'
+#15 OBJECTID out_int
+#15 '('
+#15 OBJECTID a
+#15 '+'
+#15 OBJECTID b
+#15 ')'
+#15 ';'
+#16 '}'
+#16 '}'
+#16 ';'
+#17 '}'
+#17 ';'

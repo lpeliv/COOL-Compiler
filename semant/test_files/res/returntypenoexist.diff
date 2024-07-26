@@ -1,0 +1,54 @@
+error in line# 1
+    parsed as: Class Name: Main, Class Definition: 0x6412ad63a1e0
+    should be: : Undefined return type PinkElephant in method main.
+error in line# 2
+    parsed as: Class Name: Object, Class Definition: 0x6412ad63aea0
+    should be: : 'new' used with undefined class PinkElephant.
+error in line# 3
+    parsed as: Class Name: Bool, Class Definition: 0x6412ad63a220
+    should be: Compilation halted due to static semantic errors.
+error in line# 4
+    parsed as: Class Name: Int, Class Definition: 0x6412abeb48d0
+    should be: 
+error in line# 5
+    parsed as: Class Name: IO, Class Definition: 0x7ffcd1e1af40
+    should be: 
+error in line# 6
+    parsed as: Class Name: String, Class Definition: 0x6412ad63ab00
+    should be: 
+error in line# 7
+    parsed as: Class Object is inherited by:
+    should be: 
+error in line# 8
+    parsed as:   Main
+    should be: 
+error in line# 10
+    parsed as: _program
+    should be: 
+error in line# 12
+    parsed as:   _class
+    should be: 
+error in line# 13
+    parsed as:     Main
+    should be: 
+error in line# 14
+    parsed as:     Object
+    should be: 
+error in line# 15
+    parsed as:     filename
+    should be: 
+error in line# 16
+    parsed as:     (
+    should be: 
+error in line# 18
+    parsed as:     _method
+    should be: 
+error in line# 19
+    parsed as:       main
+    should be: 
+error in line# 20
+    parsed as:       PinkElephant
+    should be: 
+error in line# 22
+    parsed as:       _new
+    should be: 

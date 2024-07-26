@@ -1,0 +1,77 @@
+#name ".//test_files//let-nested.cl"
+#3 CLASS
+#3 TYPEID Main
+#3 INHERITS
+#3 TYPEID IO
+#4 '{'
+#5 OBJECTID print
+#5 '('
+#5 OBJECTID x
+#5 ':'
+#5 TYPEID Int
+#5 ')'
+#5 ':'
+#5 TYPEID Object
+#6 '{'
+#6 '{'
+#7 OBJECTID out_int
+#7 '('
+#7 OBJECTID x
+#7 ')'
+#7 ';'
+#8 OBJECTID out_string
+#8 '('
+#8 STR_CONST "\n"
+#8 ')'
+#8 ';'
+#9 '}'
+#10 '}'
+#10 ';'
+#12 OBJECTID main
+#12 '('
+#12 ')'
+#12 ':'
+#12 TYPEID Object
+#13 '{'
+#14 LET
+#14 OBJECTID foo
+#14 ':'
+#14 TYPEID Int
+#14 ASSIGN
+#14 INT_CONST 5
+#14 IN
+#15 LET
+#15 OBJECTID foo
+#15 ':'
+#15 TYPEID Int
+#15 ASSIGN
+#15 '~'
+#15 INT_CONST 1
+#15 IN
+#16 LET
+#16 OBJECTID foo
+#16 ':'
+#16 TYPEID Bool
+#16 IN
+#17 IF
+#17 NOT
+#17 OBJECTID foo
+#17 THEN
+#18 LET
+#18 OBJECTID foo
+#18 ':'
+#18 TYPEID Int
+#18 IN
+#19 OBJECTID print
+#19 '('
+#19 OBJECTID foo
+#19 '+'
+#19 INT_CONST 1
+#19 ')'
+#20 ELSE
+#21 INT_CONST 5
+#22 FI
+#23 '}'
+#23 ';'
+#24 '}'
+#24 ';'

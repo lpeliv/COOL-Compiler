@@ -1,0 +1,178 @@
+#40
+_program
+  #4
+  _class
+    P
+    Object
+    ".//test_files//recclass.cl"
+    (
+    #5
+    _attr
+      x
+      P
+      #5
+      _no_expr
+      : _no_type
+    #6
+    _method
+      foo
+      Object
+      #6
+      _block
+        #7
+        _assign
+          x
+          #7
+          _new
+            P
+          : _no_type
+        : _no_type
+        #8
+        _dispatch
+          #8
+          _object
+            self
+          : _no_type
+          abort
+          (
+          )
+        : _no_type
+      : _no_type
+    #10
+    _method
+      badGuy
+      Object
+      #11
+      _dispatch
+        #11
+        _object
+          x
+        : _no_type
+        foo
+        (
+        )
+      : _no_type
+    )
+  #15
+  _class
+    C
+    P
+    ".//test_files//recclass.cl"
+    (
+    #16
+    _method
+      foo
+      Object
+      #16
+      _block
+        #17
+        _dispatch
+          #17
+          _new
+            IO
+          : _no_type
+          out_string
+          (
+          #17
+          _string
+            "ok\n"
+          : _no_type
+          )
+        : _no_type
+        #18
+        _assign
+          x
+          #18
+          _new
+            C
+          : _no_type
+        : _no_type
+      : _no_type
+    )
+  #22
+  _class
+    Main
+    Object
+    ".//test_files//recclass.cl"
+    (
+    #23
+    _method
+      f1
+      #23
+      _formal
+        p
+        P
+      Object
+      #23
+      _block
+        #24
+        _cond
+          #24
+          _bool
+            0
+          : _no_type
+          #25
+          _assign
+            p
+            #25
+            _new
+              P
+            : _no_type
+          : _no_type
+          #27
+          _int
+            0
+          : _no_type
+        : _no_type
+        #29
+        _dispatch
+          #29
+          _object
+            p
+          : _no_type
+          foo
+          (
+          )
+        : _no_type
+      : _no_type
+    #32
+    _method
+      main
+      Object
+      #34
+      _let
+        c
+        C
+        #34
+        _new
+          C
+        : _no_type
+        #35
+        _block
+          #36
+          _dispatch
+            #36
+            _object
+              self
+            : _no_type
+            f1
+            (
+            #36
+            _object
+              c
+            : _no_type
+            )
+          : _no_type
+          #37
+          _dispatch
+            #37
+            _object
+              c
+            : _no_type
+            badGuy
+            (
+            )
+          : _no_type
+        : _no_type
+      : _no_type
+    )

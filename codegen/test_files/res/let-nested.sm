@@ -1,0 +1,124 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//let-nested.cl"
+    (
+    #1
+    _method
+      print
+      #1
+      _formal
+        x
+        Int
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            x
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        foo
+        Int
+        #1
+        _int
+          5
+        : Int
+        #1
+        _let
+          foo
+          Int
+          #1
+          _neg
+            #1
+            _int
+              1
+            : Int
+          : Int
+          #1
+          _let
+            foo
+            Bool
+            #1
+            _no_expr
+            : _no_type
+            #1
+            _cond
+              #1
+              _comp
+                #1
+                _object
+                  foo
+                : Bool
+              : Bool
+              #1
+              _let
+                foo
+                Int
+                #1
+                _no_expr
+                : _no_type
+                #1
+                _dispatch
+                  #1
+                  _object
+                    self
+                  : SELF_TYPE
+                  print
+                  (
+                  #1
+                  _plus
+                    #1
+                    _object
+                      foo
+                    : Int
+                    #1
+                    _int
+                      1
+                    : Int
+                  : Int
+                  )
+                : Object
+              : Object
+              #1
+              _int
+                5
+              : Int
+            : Object
+          : Object
+        : Object
+      : Object
+    )

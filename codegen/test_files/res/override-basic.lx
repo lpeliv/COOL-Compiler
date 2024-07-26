@@ -1,0 +1,155 @@
+#name ".//test_files//override-basic.cl"
+#4 CLASS
+#4 TYPEID Base
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID identify
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#6 '{'
+#6 '{'
+#7 OBJECTID out_string
+#7 '('
+#7 OBJECTID type_name
+#7 '('
+#7 ')'
+#7 ')'
+#7 ';'
+#8 OBJECTID self
+#8 '@'
+#8 TYPEID Base
+#8 '.'
+#8 OBJECTID out_string
+#8 '('
+#8 STR_CONST "\n"
+#8 ')'
+#8 ';'
+#8 '}'
+#9 '}'
+#9 ';'
+#10 '}'
+#10 ';'
+#13 CLASS
+#13 TYPEID Derived
+#13 INHERITS
+#13 TYPEID Base
+#14 '{'
+#15 OBJECTID out_string
+#15 '('
+#15 OBJECTID s
+#15 ':'
+#15 TYPEID String
+#15 ')'
+#15 ':'
+#15 TYPEID SELF_TYPE
+#16 '{'
+#17 '{'
+#18 OBJECTID self
+#18 '@'
+#18 TYPEID Base
+#18 '.'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "derived "
+#18 ')'
+#18 ';'
+#19 OBJECTID self
+#19 '@'
+#19 TYPEID Base
+#19 '.'
+#19 OBJECTID out_string
+#19 '('
+#19 OBJECTID s
+#19 ')'
+#19 ';'
+#20 OBJECTID self
+#20 '@'
+#20 TYPEID Base
+#20 '.'
+#20 OBJECTID out_string
+#20 '('
+#20 STR_CONST "\n"
+#20 ')'
+#20 ';'
+#21 '}'
+#22 '}'
+#22 ';'
+#23 '}'
+#23 ';'
+#26 CLASS
+#26 TYPEID Main
+#27 '{'
+#28 OBJECTID main
+#28 '('
+#28 ')'
+#28 ':'
+#28 TYPEID Object
+#29 '{'
+#30 '{'
+#31 LET
+#31 OBJECTID me
+#31 ':'
+#31 TYPEID Base
+#31 ASSIGN
+#31 NEW
+#31 TYPEID Base
+#31 IN
+#32 OBJECTID me
+#32 '@'
+#32 TYPEID Base
+#32 '.'
+#32 OBJECTID identify
+#32 '('
+#32 ')'
+#32 ';'
+#34 LET
+#34 OBJECTID me
+#34 ':'
+#34 TYPEID Base
+#34 ASSIGN
+#34 NEW
+#34 TYPEID Derived
+#34 IN
+#35 OBJECTID me
+#35 '@'
+#35 TYPEID Base
+#35 '.'
+#35 OBJECTID identify
+#35 '('
+#35 ')'
+#35 ';'
+#37 LET
+#37 OBJECTID me
+#37 ':'
+#37 TYPEID Derived
+#37 ASSIGN
+#37 NEW
+#37 TYPEID Derived
+#37 IN
+#38 '{'
+#39 OBJECTID me
+#39 '@'
+#39 TYPEID Base
+#39 '.'
+#39 OBJECTID identify
+#39 '('
+#39 ')'
+#39 ';'
+#40 OBJECTID me
+#40 '@'
+#40 TYPEID Derived
+#40 '.'
+#40 OBJECTID identify
+#40 '('
+#40 ')'
+#40 ';'
+#41 '}'
+#41 ';'
+#42 '}'
+#43 '}'
+#43 ';'
+#44 '}'
+#44 ';'

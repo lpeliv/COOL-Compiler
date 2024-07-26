@@ -1,0 +1,217 @@
+#name ".//test_files//bool.cl"
+#3 CLASS
+#3 TYPEID Main
+#3 '{'
+#4 OBJECTID main
+#4 '('
+#4 ')'
+#4 ':'
+#4 TYPEID Object
+#4 '{'
+#5 LET
+#6 OBJECTID t
+#6 ':'
+#6 TYPEID Bool
+#6 ASSIGN
+#6 BOOL_CONST true
+#6 ','
+#7 OBJECTID f
+#7 ':'
+#7 TYPEID Bool
+#7 ASSIGN
+#7 BOOL_CONST false
+#7 ','
+#8 OBJECTID t1
+#8 ':'
+#8 TYPEID Object
+#8 ASSIGN
+#8 OBJECTID t
+#8 ','
+#9 OBJECTID t2
+#9 ':'
+#9 TYPEID Object
+#9 ASSIGN
+#9 BOOL_CONST true
+#9 ','
+#10 OBJECTID f1
+#10 ':'
+#10 TYPEID Object
+#10 ASSIGN
+#10 OBJECTID f
+#10 ','
+#11 OBJECTID f2
+#11 ':'
+#11 TYPEID Object
+#11 ASSIGN
+#11 BOOL_CONST false
+#11 ','
+#12 OBJECTID b1
+#12 ':'
+#12 TYPEID Bool
+#12 ','
+#13 OBJECTID b2
+#13 ':'
+#13 TYPEID Object
+#13 ','
+#14 OBJECTID io
+#14 ':'
+#14 TYPEID IO
+#14 ASSIGN
+#14 NEW
+#14 TYPEID IO
+#15 IN
+#15 '{'
+#16 OBJECTID io
+#16 '.'
+#16 OBJECTID out_string
+#16 '('
+#16 STR_CONST "t: "
+#16 ')'
+#16 ';'
+#17 OBJECTID io
+#17 '.'
+#17 OBJECTID out_string
+#17 '('
+#17 OBJECTID t
+#17 '.'
+#17 OBJECTID type_name
+#17 '('
+#17 ')'
+#17 ')'
+#17 ';'
+#18 OBJECTID io
+#18 '.'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "\n"
+#18 ')'
+#18 ';'
+#20 OBJECTID b1
+#20 ASSIGN
+#20 OBJECTID t
+#20 ';'
+#21 OBJECTID io
+#21 '.'
+#21 OBJECTID out_string
+#21 '('
+#21 STR_CONST "b1: "
+#21 ')'
+#21 ';'
+#22 OBJECTID io
+#22 '.'
+#22 OBJECTID out_string
+#22 '('
+#22 OBJECTID b1
+#22 '.'
+#22 OBJECTID type_name
+#22 '('
+#22 ')'
+#22 ')'
+#22 ';'
+#23 OBJECTID io
+#23 '.'
+#23 OBJECTID out_string
+#23 '('
+#23 STR_CONST "\n"
+#23 ')'
+#23 ';'
+#25 OBJECTID b2
+#25 ASSIGN
+#25 OBJECTID t1
+#25 ';'
+#26 OBJECTID io
+#26 '.'
+#26 OBJECTID out_string
+#26 '('
+#26 STR_CONST "b2: "
+#26 ')'
+#26 ';'
+#27 OBJECTID io
+#27 '.'
+#27 OBJECTID out_string
+#27 '('
+#27 OBJECTID b2
+#27 '.'
+#27 OBJECTID type_name
+#27 '('
+#27 ')'
+#27 ')'
+#27 ';'
+#28 OBJECTID io
+#28 '.'
+#28 OBJECTID out_string
+#28 '('
+#28 STR_CONST "\n"
+#28 ')'
+#28 ';'
+#30 OBJECTID b1
+#30 ASSIGN
+#30 OBJECTID f
+#30 '.'
+#30 OBJECTID copy
+#30 '('
+#30 ')'
+#30 ';'
+#31 OBJECTID io
+#31 '.'
+#31 OBJECTID out_string
+#31 '('
+#31 STR_CONST "b1: "
+#31 ')'
+#31 ';'
+#32 OBJECTID io
+#32 '.'
+#32 OBJECTID out_string
+#32 '('
+#32 OBJECTID b1
+#32 '.'
+#32 OBJECTID type_name
+#32 '('
+#32 ')'
+#32 ')'
+#32 ';'
+#33 OBJECTID io
+#33 '.'
+#33 OBJECTID out_string
+#33 '('
+#33 STR_CONST "\n"
+#33 ')'
+#33 ';'
+#35 OBJECTID b2
+#35 ASSIGN
+#35 OBJECTID f2
+#35 '.'
+#35 OBJECTID copy
+#35 '('
+#35 ')'
+#35 ';'
+#36 OBJECTID io
+#36 '.'
+#36 OBJECTID out_string
+#36 '('
+#36 STR_CONST "b2: "
+#36 ')'
+#36 ';'
+#37 OBJECTID io
+#37 '.'
+#37 OBJECTID out_string
+#37 '('
+#37 OBJECTID b2
+#37 '.'
+#37 OBJECTID type_name
+#37 '('
+#37 ')'
+#37 ')'
+#37 ';'
+#38 OBJECTID io
+#38 '.'
+#38 OBJECTID out_string
+#38 '('
+#38 STR_CONST "\n"
+#38 ')'
+#38 ';'
+#39 '}'
+#40 '}'
+#40 ';'
+#41 '}'
+#41 ';'

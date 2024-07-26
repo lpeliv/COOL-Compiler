@@ -1,0 +1,58 @@
+Class Name: Main, Class Definition: 0x5676389591e0
+Class Name: Object, Class Definition: 0x56763895a230
+Class Name: Cow, Class Definition: 0x567638959370
+Class Name: Chicken, Class Definition: 0x567638959540
+Class Name: Bool, Class Definition: 0x5676389595a0
+Class Name: Int, Class Definition: 0x5676372398d0
+Class Name: IO, Class Definition: 0x7ffd753d1f20
+Class Name: String, Class Definition: 0x567638959e90
+Class Object is inherited by:
+  Main
+  Cow
+  Chicken
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//attrbadinit.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    Cow
+    Object
+    ".//test_files//attrbadinit.cl"
+    (
+    #1
+    _attr
+      moo
+      Object
+      #1
+      _no_expr
+      : _no_type
+    )
+  #1
+  _class
+    Chicken
+    Object
+    ".//test_files//attrbadinit.cl"
+    (
+    #1
+    _attr
+      sound
+      Object
+      #1
+      _object
+        moo
+      : _no_type
+    )

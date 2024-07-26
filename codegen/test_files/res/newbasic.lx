@@ -1,0 +1,94 @@
+#name ".//test_files//newbasic.cl"
+#5 CLASS
+#5 TYPEID Main
+#5 '{'
+#6 OBJECTID io
+#6 ':'
+#6 TYPEID IO
+#6 ASSIGN
+#6 NEW
+#6 TYPEID IO
+#6 ';'
+#8 OBJECTID main
+#8 '('
+#8 ')'
+#8 ':'
+#8 TYPEID Object
+#8 '{'
+#8 '{'
+#9 OBJECTID io
+#9 '.'
+#9 OBJECTID out_string
+#9 '('
+#9 '('
+#9 NOT
+#9 '('
+#9 NEW
+#9 TYPEID Bool
+#9 ')'
+#9 ')'
+#9 '.'
+#9 OBJECTID type_name
+#9 '('
+#9 ')'
+#9 ')'
+#9 ';'
+#10 OBJECTID io
+#10 '.'
+#10 OBJECTID out_string
+#10 '('
+#10 STR_CONST "\n"
+#10 ')'
+#10 ';'
+#12 OBJECTID io
+#12 '.'
+#12 OBJECTID out_int
+#12 '('
+#12 '('
+#12 NEW
+#12 TYPEID Int
+#12 ')'
+#12 '+'
+#12 INT_CONST 1
+#12 ')'
+#12 ';'
+#13 OBJECTID io
+#13 '.'
+#13 OBJECTID out_string
+#13 '('
+#13 STR_CONST "\n"
+#13 ')'
+#13 ';'
+#15 OBJECTID io
+#15 '.'
+#15 OBJECTID out_string
+#15 '('
+#15 '('
+#15 NEW
+#15 TYPEID String
+#15 ')'
+#15 '.'
+#15 OBJECTID substr
+#15 '('
+#15 INT_CONST 0
+#15 ','
+#15 INT_CONST 0
+#15 ')'
+#15 '.'
+#15 OBJECTID type_name
+#15 '('
+#15 ')'
+#15 ')'
+#15 ';'
+#16 OBJECTID io
+#16 '.'
+#16 OBJECTID out_string
+#16 '('
+#16 STR_CONST "\n"
+#16 ')'
+#16 ';'
+#17 '}'
+#17 '}'
+#17 ';'
+#18 '}'
+#18 ';'

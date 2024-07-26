@@ -1,0 +1,201 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//multiple-dispatch.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      f
+      #1
+      _formal
+        y
+        Int
+      SELF_TYPE
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _plus
+            #1
+            _object
+              x
+            : Int
+            #1
+            _object
+              y
+            : Int
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      g
+      #1
+      _formal
+        z
+        Int
+      Int
+      #1
+      _block
+        #1
+        _assign
+          x
+          #1
+          _plus
+            #1
+            _object
+              x
+            : Int
+            #1
+            _int
+              1
+            : Int
+          : Int
+        : Int
+        #1
+        _plus
+          #1
+          _object
+            z
+          : Int
+          #1
+          _object
+            x
+          : Int
+        : Int
+      : Int
+    #1
+    _method
+      main
+      Object
+      #1
+      _dispatch
+        #1
+        _dispatch
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            f
+            (
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              g
+              (
+              #1
+              _int
+                1
+              : Int
+              )
+            : Int
+            )
+          : SELF_TYPE
+          f
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            g
+            (
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              g
+              (
+              #1
+              _int
+                5
+              : Int
+              )
+            : Int
+            )
+          : Int
+          )
+        : SELF_TYPE
+        f
+        (
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          g
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            g
+            (
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              g
+              (
+              #1
+              _int
+                10
+              : Int
+              )
+            : Int
+            )
+          : Int
+          )
+        : Int
+        )
+      : SELF_TYPE
+    )

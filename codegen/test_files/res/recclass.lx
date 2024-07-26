@@ -1,0 +1,138 @@
+#name ".//test_files//recclass.cl"
+#4 CLASS
+#4 TYPEID P
+#4 '{'
+#5 OBJECTID x
+#5 ':'
+#5 TYPEID P
+#5 ';'
+#6 OBJECTID foo
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#6 '{'
+#6 '{'
+#7 OBJECTID x
+#7 ASSIGN
+#7 NEW
+#7 TYPEID P
+#7 ';'
+#8 OBJECTID abort
+#8 '('
+#8 ')'
+#8 ';'
+#9 '}'
+#9 '}'
+#9 ';'
+#10 OBJECTID badGuy
+#10 '('
+#10 ')'
+#10 ':'
+#10 TYPEID Object
+#10 '{'
+#11 OBJECTID x
+#11 '.'
+#11 OBJECTID foo
+#11 '('
+#11 ')'
+#12 '}'
+#12 ';'
+#13 '}'
+#13 ';'
+#15 CLASS
+#15 TYPEID C
+#15 INHERITS
+#15 TYPEID P
+#15 '{'
+#16 OBJECTID foo
+#16 '('
+#16 ')'
+#16 ':'
+#16 TYPEID Object
+#16 '{'
+#16 '{'
+#17 '('
+#17 NEW
+#17 TYPEID IO
+#17 ')'
+#17 '.'
+#17 OBJECTID out_string
+#17 '('
+#17 STR_CONST "ok\n"
+#17 ')'
+#17 ';'
+#18 OBJECTID x
+#18 ASSIGN
+#18 NEW
+#18 TYPEID C
+#18 ';'
+#19 '}'
+#19 '}'
+#19 ';'
+#20 '}'
+#20 ';'
+#22 CLASS
+#22 TYPEID Main
+#22 '{'
+#23 OBJECTID f1
+#23 '('
+#23 OBJECTID p
+#23 ':'
+#23 TYPEID P
+#23 ')'
+#23 ':'
+#23 TYPEID Object
+#23 '{'
+#23 '{'
+#24 IF
+#24 BOOL_CONST false
+#24 THEN
+#25 OBJECTID p
+#25 ASSIGN
+#25 NEW
+#25 TYPEID P
+#26 ELSE
+#27 INT_CONST 0
+#28 FI
+#28 ';'
+#29 OBJECTID p
+#29 '.'
+#29 OBJECTID foo
+#29 '('
+#29 ')'
+#29 ';'
+#30 '}'
+#30 '}'
+#30 ';'
+#32 OBJECTID main
+#32 '('
+#32 ')'
+#32 ':'
+#32 TYPEID Object
+#32 '{'
+#33 LET
+#34 OBJECTID c
+#34 ':'
+#34 TYPEID C
+#34 ASSIGN
+#34 NEW
+#34 TYPEID C
+#35 IN
+#35 '{'
+#36 OBJECTID f1
+#36 '('
+#36 OBJECTID c
+#36 ')'
+#36 ';'
+#37 OBJECTID c
+#37 '.'
+#37 OBJECTID badGuy
+#37 '('
+#37 ')'
+#37 ';'
+#38 '}'
+#39 '}'
+#39 ';'
+#40 '}'
+#40 ';'

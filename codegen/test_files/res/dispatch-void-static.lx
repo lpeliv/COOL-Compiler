@@ -1,0 +1,40 @@
+#name ".//test_files//dispatch-void-static.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID complain
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 OBJECTID out_string
+#8 '('
+#8 STR_CONST "bad\n"
+#8 ')'
+#9 '}'
+#9 ';'
+#11 OBJECTID main
+#11 '('
+#11 ')'
+#11 ':'
+#11 TYPEID Object
+#12 '{'
+#13 LET
+#13 OBJECTID nothing
+#13 ':'
+#13 TYPEID Main
+#13 IN
+#14 OBJECTID nothing
+#14 '@'
+#14 TYPEID Main
+#14 '.'
+#14 OBJECTID complain
+#14 '('
+#14 ')'
+#15 '}'
+#15 ';'
+#16 '}'
+#16 ';'

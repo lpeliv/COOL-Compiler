@@ -1,0 +1,2 @@
+#name ".//test_files//escapedeof.cl"
+#2 ERROR "EOF in string constant"

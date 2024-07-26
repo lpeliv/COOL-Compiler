@@ -1,0 +1,141 @@
+#name ".//test_files//scoping.cl"
+#1 CLASS
+#1 TYPEID Bob
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID Int
+#2 ';'
+#3 OBJECTID y
+#3 ':'
+#3 TYPEID Int
+#3 ASSIGN
+#3 INT_CONST 4
+#3 ';'
+#4 '}'
+#4 ';'
+#6 CLASS
+#6 TYPEID Main
+#6 INHERITS
+#6 TYPEID Bob
+#6 '{'
+#7 OBJECTID z
+#7 ':'
+#7 TYPEID Int
+#7 ASSIGN
+#7 INT_CONST 23
+#7 ';'
+#8 OBJECTID jack
+#8 '('
+#8 OBJECTID q
+#8 ':'
+#8 TYPEID Int
+#8 ','
+#8 OBJECTID z
+#8 ':'
+#8 TYPEID Int
+#8 ')'
+#8 ':'
+#8 TYPEID Int
+#9 '{'
+#9 '{'
+#10 LET
+#10 OBJECTID z
+#10 ':'
+#10 TYPEID Int
+#10 ASSIGN
+#10 OBJECTID z
+#10 '+'
+#10 OBJECTID y
+#10 IN
+#10 OBJECTID print_z
+#10 '('
+#10 OBJECTID z
+#10 ')'
+#10 ';'
+#11 OBJECTID y
+#11 ASSIGN
+#11 OBJECTID y
+#11 '+'
+#11 INT_CONST 4
+#11 ';'
+#12 LET
+#12 OBJECTID y
+#12 ':'
+#12 TYPEID Int
+#12 ASSIGN
+#12 OBJECTID z
+#12 '+'
+#12 OBJECTID y
+#12 IN
+#12 OBJECTID y
+#12 ';'
+#13 '}'
+#13 '}'
+#13 ';'
+#14 OBJECTID print_z
+#14 '('
+#14 OBJECTID z
+#14 ':'
+#14 TYPEID Int
+#14 ')'
+#14 ':'
+#14 TYPEID SELF_TYPE
+#15 '{'
+#15 '{'
+#16 OBJECTID out_string
+#16 '('
+#16 STR_CONST "z = "
+#16 ')'
+#16 ';'
+#17 OBJECTID out_int
+#17 '('
+#17 OBJECTID z
+#17 ')'
+#17 ';'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "\n"
+#18 ')'
+#18 ';'
+#19 '}'
+#19 '}'
+#19 ';'
+#20 OBJECTID main
+#20 '('
+#20 ')'
+#20 ':'
+#20 TYPEID Bob
+#21 '{'
+#21 '{'
+#22 OBJECTID print_z
+#22 '('
+#22 OBJECTID z
+#22 ')'
+#22 ';'
+#23 LET
+#23 OBJECTID z
+#23 ':'
+#23 TYPEID Int
+#23 ASSIGN
+#23 OBJECTID jack
+#23 '('
+#23 INT_CONST 5
+#23 ','
+#23 OBJECTID z
+#23 '+'
+#23 INT_CONST 2
+#23 ')'
+#23 IN
+#24 OBJECTID print_z
+#24 '('
+#24 OBJECTID z
+#24 ')'
+#24 ';'
+#25 '}'
+#25 '}'
+#25 ';'
+#26 '}'
+#26 ';'

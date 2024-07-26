@@ -1,0 +1,202 @@
+#44
+_program
+  #4
+  _class
+    Base
+    IO
+    ".//test_files//override-basic.cl"
+    (
+    #6
+    _method
+      identify
+      Object
+      #6
+      _block
+        #7
+        _dispatch
+          #7
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #7
+          _dispatch
+            #7
+            _object
+              self
+            : _no_type
+            type_name
+            (
+            )
+          : _no_type
+          )
+        : _no_type
+        #8
+        _static_dispatch
+          #8
+          _object
+            self
+          : _no_type
+          Base
+          out_string
+          (
+          #8
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    )
+  #13
+  _class
+    Derived
+    Base
+    ".//test_files//override-basic.cl"
+    (
+    #15
+    _method
+      out_string
+      #15
+      _formal
+        s
+        String
+      SELF_TYPE
+      #17
+      _block
+        #18
+        _static_dispatch
+          #18
+          _object
+            self
+          : _no_type
+          Base
+          out_string
+          (
+          #18
+          _string
+            "derived "
+          : _no_type
+          )
+        : _no_type
+        #19
+        _static_dispatch
+          #19
+          _object
+            self
+          : _no_type
+          Base
+          out_string
+          (
+          #19
+          _object
+            s
+          : _no_type
+          )
+        : _no_type
+        #20
+        _static_dispatch
+          #20
+          _object
+            self
+          : _no_type
+          Base
+          out_string
+          (
+          #20
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    )
+  #26
+  _class
+    Main
+    Object
+    ".//test_files//override-basic.cl"
+    (
+    #28
+    _method
+      main
+      Object
+      #30
+      _block
+        #31
+        _let
+          me
+          Base
+          #31
+          _new
+            Base
+          : _no_type
+          #32
+          _static_dispatch
+            #32
+            _object
+              me
+            : _no_type
+            Base
+            identify
+            (
+            )
+          : _no_type
+        : _no_type
+        #34
+        _let
+          me
+          Base
+          #34
+          _new
+            Derived
+          : _no_type
+          #35
+          _static_dispatch
+            #35
+            _object
+              me
+            : _no_type
+            Base
+            identify
+            (
+            )
+          : _no_type
+        : _no_type
+        #37
+        _let
+          me
+          Derived
+          #37
+          _new
+            Derived
+          : _no_type
+          #38
+          _block
+            #39
+            _static_dispatch
+              #39
+              _object
+                me
+              : _no_type
+              Base
+              identify
+              (
+              )
+            : _no_type
+            #40
+            _static_dispatch
+              #40
+              _object
+                me
+              : _no_type
+              Derived
+              identify
+              (
+              )
+            : _no_type
+          : _no_type
+        : _no_type
+      : _no_type
+    )

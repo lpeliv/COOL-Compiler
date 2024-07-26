@@ -1,0 +1,63 @@
+Class Name: Main, Class Definition: 0x58c6a5ea1370
+Class Name: Object, Class Definition: 0x58c6a5ea22a0
+Class Name: B, Class Definition: 0x58c6a5ea14a0
+Class Name: A, Class Definition: 0x58c6a5ea13f0
+Class Name: C, Class Definition: 0x58c6a5ea15b0
+Class Name: Bool, Class Definition: 0x58c6a5ea1610
+Class Name: Int, Class Definition: 0x58c6a4a6b8d0
+Class Name: IO, Class Definition: 0x7ffc8c9fbbb0
+Class Name: String, Class Definition: 0x58c6a5ea1f00
+Class Object is inherited by:
+  Main
+  A
+Class B is inherited by:
+  C
+Class A is inherited by:
+  B
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//letbadinit.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        x
+        B
+        #1
+        _new
+          A
+        : _no_type
+        #1
+        _int
+          10
+        : _no_type
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//letbadinit.cl"
+    (
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//letbadinit.cl"
+    (
+    )
+  #1
+  _class
+    C
+    B
+    ".//test_files//letbadinit.cl"
+    (
+    )

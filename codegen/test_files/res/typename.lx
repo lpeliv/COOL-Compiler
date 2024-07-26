@@ -1,0 +1,109 @@
+#name ".//test_files//typename.cl"
+#5 CLASS
+#5 TYPEID Base
+#5 INHERITS
+#5 TYPEID IO
+#6 '{'
+#7 OBJECTID identify
+#7 '('
+#7 OBJECTID thing
+#7 ':'
+#7 TYPEID Object
+#7 ')'
+#7 ':'
+#7 TYPEID Object
+#8 '{'
+#9 '{'
+#10 OBJECTID out_string
+#10 '('
+#10 OBJECTID thing
+#10 '.'
+#10 OBJECTID type_name
+#10 '('
+#10 ')'
+#10 ')'
+#10 ';'
+#11 OBJECTID out_string
+#11 '('
+#11 STR_CONST "\n"
+#11 ')'
+#11 ';'
+#12 '}'
+#13 '}'
+#13 ';'
+#15 OBJECTID test
+#15 '('
+#15 ')'
+#15 ':'
+#15 TYPEID Object
+#16 '{'
+#17 '{'
+#18 OBJECTID identify
+#18 '('
+#18 NEW
+#18 TYPEID Base
+#18 ')'
+#18 ';'
+#19 OBJECTID identify
+#19 '('
+#19 NEW
+#19 TYPEID Derived
+#19 ')'
+#19 ';'
+#20 OBJECTID identify
+#20 '('
+#20 NEW
+#20 TYPEID Main
+#20 ')'
+#20 ';'
+#22 LET
+#22 OBJECTID poly
+#22 ':'
+#22 TYPEID Base
+#22 ASSIGN
+#22 NEW
+#22 TYPEID Derived
+#22 IN
+#23 OBJECTID identify
+#23 '('
+#23 OBJECTID poly
+#23 ')'
+#23 ';'
+#25 OBJECTID identify
+#25 '('
+#25 OBJECTID self
+#25 ')'
+#25 ';'
+#26 '}'
+#27 '}'
+#27 ';'
+#28 '}'
+#28 ';'
+#31 CLASS
+#31 TYPEID Derived
+#31 INHERITS
+#31 TYPEID Base
+#32 '{'
+#33 '}'
+#33 ';'
+#36 CLASS
+#36 TYPEID Main
+#37 '{'
+#38 OBJECTID main
+#38 '('
+#38 ')'
+#38 ':'
+#38 TYPEID Object
+#39 '{'
+#40 '('
+#40 NEW
+#40 TYPEID Derived
+#40 ')'
+#40 '.'
+#40 OBJECTID test
+#40 '('
+#40 ')'
+#41 '}'
+#41 ';'
+#42 '}'
+#42 ';'

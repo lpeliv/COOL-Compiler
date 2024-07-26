@@ -1,0 +1,3 @@
+error in line# 1
+    parsed as: : Class Foo inherits from an undefined class Bazz.
+    should be: 

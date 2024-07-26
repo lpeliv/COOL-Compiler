@@ -1,0 +1,228 @@
+#1
+_program
+  #1
+  _class
+    A
+    IO
+    ".//test_files//init-default.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _cond
+        #1
+        _object
+          b
+        : Bool
+        #1
+        _int
+          1
+        : Int
+        #1
+        _neg
+          #1
+          _int
+            1
+          : Int
+        : Int
+      : Int
+    #1
+    _attr
+      b
+      Bool
+      #1
+      _bool
+        1
+      : Bool
+    #1
+    _attr
+      y
+      Int
+      #1
+      _plus
+        #1
+        _object
+          x
+        : Int
+        #1
+        _int
+          3
+        : Int
+      : Int
+    #1
+    _attr
+      z
+      Int
+      #1
+      _sub
+        #1
+        _object
+          z
+        : Int
+        #1
+        _int
+          5
+        : Int
+      : Int
+    #1
+    _method
+      print_attr
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "x: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            x
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\nb: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _cond
+            #1
+            _object
+              b
+            : Bool
+            #1
+            _string
+              "true"
+            : String
+            #1
+            _string
+              "false"
+            : String
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\ny: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            y
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\nz: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            z
+          : Int
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//init-default.cl"
+    (
+    #1
+    _attr
+      a
+      A
+      #1
+      _new
+        A
+      : A
+    #1
+    _method
+      main
+      Object
+      #1
+      _dispatch
+        #1
+        _object
+          a
+        : A
+        print_attr
+        (
+        )
+      : Object
+    )

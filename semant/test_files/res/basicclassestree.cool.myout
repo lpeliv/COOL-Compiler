@@ -1,0 +1,58 @@
+Class Name: Main, Class Definition: 0x64a9058e8240
+Class Name: Object, Class Definition: 0x64a9058e9350
+Class Name: Int, Class Definition: 0x64a903bcf8d0
+Class Name: A, Class Definition: 0x64a9058e86c0
+Class Name: Bool, Class Definition: 0x64a9058e8720
+Class Name: IO, Class Definition: 0x7ffd75feced0
+Class Name: String, Class Definition: 0x64a9058e8fb0
+Class Object is inherited by:
+  Main
+  A
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//basicclassestree.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//basicclassestree.cl"
+    (
+    #1
+    _attr
+      a
+      Object
+      #1
+      _int
+        0
+      : _no_type
+    #1
+    _attr
+      b
+      Object
+      #1
+      _string
+        ""
+      : _no_type
+    #1
+    _attr
+      c
+      Object
+      #1
+      _bool
+        1
+      : _no_type
+    )

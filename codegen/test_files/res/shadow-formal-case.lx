@@ -1,0 +1,52 @@
+#name ".//test_files//shadow-formal-case.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID method
+#6 '('
+#6 OBJECTID var
+#6 ':'
+#6 TYPEID String
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 CASE
+#8 STR_CONST "good"
+#8 OF
+#9 OBJECTID var
+#9 ':'
+#9 TYPEID String
+#9 DARROW
+#10 OBJECTID out_string
+#10 '('
+#10 OBJECTID var
+#10 ')'
+#10 ';'
+#11 ESAC
+#12 '}'
+#12 ';'
+#14 OBJECTID main
+#14 '('
+#14 ')'
+#14 ':'
+#14 TYPEID Object
+#15 '{'
+#16 '{'
+#17 OBJECTID method
+#17 '('
+#17 STR_CONST "bad"
+#17 ')'
+#17 ';'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "\n"
+#18 ')'
+#18 ';'
+#19 '}'
+#20 '}'
+#20 ';'
+#21 '}'
+#21 ';'

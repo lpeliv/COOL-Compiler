@@ -1,0 +1,86 @@
+#name ".//test_files//fact.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID fact
+#2 '('
+#2 OBJECTID n
+#2 ':'
+#2 TYPEID Int
+#2 ')'
+#2 ':'
+#2 TYPEID Int
+#2 '{'
+#3 IF
+#3 '('
+#3 OBJECTID n
+#3 '='
+#3 INT_CONST 0
+#3 ')'
+#4 THEN
+#5 INT_CONST 1
+#6 ELSE
+#7 OBJECTID n
+#7 '*'
+#7 OBJECTID fact
+#7 '('
+#7 OBJECTID n
+#7 '-'
+#7 INT_CONST 1
+#7 ')'
+#8 FI
+#9 '}'
+#9 ';'
+#10 OBJECTID main
+#10 '('
+#10 ')'
+#10 ':'
+#10 TYPEID Object
+#10 '{'
+#10 '{'
+#11 OBJECTID out_int
+#11 '('
+#11 OBJECTID fact
+#11 '('
+#11 INT_CONST 3
+#11 ')'
+#11 ')'
+#11 ';'
+#12 OBJECTID out_string
+#12 '('
+#12 STR_CONST "\n"
+#12 ')'
+#12 ';'
+#13 OBJECTID out_int
+#13 '('
+#13 OBJECTID fact
+#13 '('
+#13 INT_CONST 7
+#13 ')'
+#13 ')'
+#13 ';'
+#14 OBJECTID out_string
+#14 '('
+#14 STR_CONST "\n"
+#14 ')'
+#14 ';'
+#15 OBJECTID out_int
+#15 '('
+#15 OBJECTID fact
+#15 '('
+#15 INT_CONST 10
+#15 ')'
+#15 ')'
+#15 ';'
+#16 OBJECTID out_string
+#16 '('
+#16 STR_CONST "\n"
+#16 ')'
+#16 ';'
+#17 '}'
+#17 '}'
+#17 ';'
+#18 '}'
+#18 ';'

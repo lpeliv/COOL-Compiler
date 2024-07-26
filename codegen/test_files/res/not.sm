@@ -1,0 +1,306 @@
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//not.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        x
+        Int
+        #1
+        _int
+          0
+        : Int
+        #1
+        _let
+          b
+          Bool
+          #1
+          _no_expr
+          : _no_type
+          #1
+          _block
+            #1
+            _loop
+              #1
+              _lt
+                #1
+                _object
+                  x
+                : Int
+                #1
+                _int
+                  100
+                : Int
+              : Bool
+              #1
+              _block
+                #1
+                _eq
+                  #1
+                  _object
+                    b
+                  : Bool
+                  #1
+                  _comp
+                    #1
+                    _comp
+                      #1
+                      _comp
+                        #1
+                        _comp
+                          #1
+                          _comp
+                            #1
+                            _comp
+                              #1
+                              _comp
+                                #1
+                                _comp
+                                  #1
+                                  _comp
+                                    #1
+                                    _comp
+                                      #1
+                                      _comp
+                                        #1
+                                        _object
+                                          b
+                                        : Bool
+                                      : Bool
+                                    : Bool
+                                  : Bool
+                                : Bool
+                              : Bool
+                            : Bool
+                          : Bool
+                        : Bool
+                      : Bool
+                    : Bool
+                  : Bool
+                : Bool
+                #1
+                _eq
+                  #1
+                  _object
+                    b
+                  : Bool
+                  #1
+                  _comp
+                    #1
+                    _comp
+                      #1
+                      _comp
+                        #1
+                        _comp
+                          #1
+                          _comp
+                            #1
+                            _comp
+                              #1
+                              _comp
+                                #1
+                                _comp
+                                  #1
+                                  _comp
+                                    #1
+                                    _comp
+                                      #1
+                                      _comp
+                                        #1
+                                        _object
+                                          b
+                                        : Bool
+                                      : Bool
+                                    : Bool
+                                  : Bool
+                                : Bool
+                              : Bool
+                            : Bool
+                          : Bool
+                        : Bool
+                      : Bool
+                    : Bool
+                  : Bool
+                : Bool
+                #1
+                _eq
+                  #1
+                  _object
+                    b
+                  : Bool
+                  #1
+                  _comp
+                    #1
+                    _comp
+                      #1
+                      _comp
+                        #1
+                        _comp
+                          #1
+                          _comp
+                            #1
+                            _comp
+                              #1
+                              _comp
+                                #1
+                                _comp
+                                  #1
+                                  _comp
+                                    #1
+                                    _comp
+                                      #1
+                                      _comp
+                                        #1
+                                        _object
+                                          b
+                                        : Bool
+                                      : Bool
+                                    : Bool
+                                  : Bool
+                                : Bool
+                              : Bool
+                            : Bool
+                          : Bool
+                        : Bool
+                      : Bool
+                    : Bool
+                  : Bool
+                : Bool
+                #1
+                _eq
+                  #1
+                  _object
+                    b
+                  : Bool
+                  #1
+                  _comp
+                    #1
+                    _comp
+                      #1
+                      _comp
+                        #1
+                        _comp
+                          #1
+                          _comp
+                            #1
+                            _comp
+                              #1
+                              _comp
+                                #1
+                                _comp
+                                  #1
+                                  _comp
+                                    #1
+                                    _comp
+                                      #1
+                                      _comp
+                                        #1
+                                        _object
+                                          b
+                                        : Bool
+                                      : Bool
+                                    : Bool
+                                  : Bool
+                                : Bool
+                              : Bool
+                            : Bool
+                          : Bool
+                        : Bool
+                      : Bool
+                    : Bool
+                  : Bool
+                : Bool
+                #1
+                _eq
+                  #1
+                  _object
+                    b
+                  : Bool
+                  #1
+                  _comp
+                    #1
+                    _comp
+                      #1
+                      _comp
+                        #1
+                        _comp
+                          #1
+                          _comp
+                            #1
+                            _comp
+                              #1
+                              _comp
+                                #1
+                                _comp
+                                  #1
+                                  _comp
+                                    #1
+                                    _comp
+                                      #1
+                                      _comp
+                                        #1
+                                        _object
+                                          b
+                                        : Bool
+                                      : Bool
+                                    : Bool
+                                  : Bool
+                                : Bool
+                              : Bool
+                            : Bool
+                          : Bool
+                        : Bool
+                      : Bool
+                    : Bool
+                  : Bool
+                : Bool
+                #1
+                _assign
+                  x
+                  #1
+                  _plus
+                    #1
+                    _object
+                      x
+                    : Int
+                    #1
+                    _int
+                      1
+                    : Int
+                  : Int
+                : Int
+              : Int
+            : Object
+            #1
+            _cond
+              #1
+              _object
+                b
+              : Bool
+              #1
+              _dispatch
+                #1
+                _object
+                  self
+                : SELF_TYPE
+                abort
+                (
+                )
+              : Object
+              #1
+              _int
+                0
+              : Int
+            : Object
+          : Object
+        : Object
+      : Object
+    )

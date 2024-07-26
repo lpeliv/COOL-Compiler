@@ -1,0 +1,65 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//case-order.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        thing
+        Object
+        #1
+        _object
+          self
+        : SELF_TYPE
+        #1
+        _typcase
+          #1
+          _object
+            thing
+          : Object
+          #1
+          _branch
+            o
+            Object
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "object\n"
+              : String
+              )
+            : SELF_TYPE
+          #1
+          _branch
+            m
+            Main
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "main\n"
+              : String
+              )
+            : SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    )

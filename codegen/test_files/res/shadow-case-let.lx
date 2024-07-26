@@ -1,0 +1,44 @@
+#name ".//test_files//shadow-case-let.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID main
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 '{'
+#9 CASE
+#9 STR_CONST "bad"
+#9 OF
+#10 OBJECTID var
+#10 ':'
+#10 TYPEID String
+#10 DARROW
+#11 LET
+#11 OBJECTID var
+#11 ':'
+#11 TYPEID String
+#11 ASSIGN
+#11 STR_CONST "good"
+#11 IN
+#12 OBJECTID out_string
+#12 '('
+#12 OBJECTID var
+#12 ')'
+#12 ';'
+#13 ESAC
+#13 ';'
+#15 OBJECTID out_string
+#15 '('
+#15 STR_CONST "\n"
+#15 ')'
+#15 ';'
+#16 '}'
+#17 '}'
+#17 ';'
+#18 '}'
+#18 ';'

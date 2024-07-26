@@ -1,0 +1,33 @@
+Class Name: Main, Class Definition: 0x5f0396c7e300
+Class Name: Object, Class Definition: 0x5f0396c7ef00
+Class Name: Int, Class Definition: 0x5f0396b6a8d0
+Class Name: Bool, Class Definition: 0x5f0396c7e340
+Class Name: IO, Class Definition: 0x7fff2cfdef10
+Class Name: String, Class Definition: 0x5f0396c7eb60
+Class Object is inherited by:
+  Main
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//letself.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _let
+        self
+        Int
+        #1
+        _no_expr
+        : _no_type
+        #1
+        _int
+          0
+        : _no_type
+      : _no_type
+    )

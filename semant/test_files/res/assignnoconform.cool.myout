@@ -1,0 +1,62 @@
+Class Name: Main, Class Definition: 0x55f313a59470
+Class Name: Object, Class Definition: 0x55f313a5a290
+Class Name: A, Class Definition: 0x55f313a594f0
+Class Name: B, Class Definition: 0x55f313a595a0
+Class Name: Bool, Class Definition: 0x55f313a59600
+Class Name: Int, Class Definition: 0x55f31353d8d0
+Class Name: IO, Class Definition: 0x7ffe8e1431a0
+Class Name: String, Class Definition: 0x55f313a59ef0
+Class Object is inherited by:
+  Main
+  A
+Class A is inherited by:
+  B
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//assignnoconform.cl"
+    (
+    #1
+    _attr
+      a
+      A
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      b
+      B
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      main
+      Object
+      #1
+      _assign
+        b
+        #1
+        _new
+          A
+        : _no_type
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//assignnoconform.cl"
+    (
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//assignnoconform.cl"
+    (
+    )

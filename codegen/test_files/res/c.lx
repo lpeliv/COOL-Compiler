@@ -1,0 +1,1671 @@
+#name ".//test_files//c.cl"
+#2 CLASS
+#2 TYPEID EvalObject
+#2 INHERITS
+#2 TYPEID IO
+#2 '{'
+#3 OBJECTID eval
+#3 '('
+#3 ')'
+#3 ':'
+#3 TYPEID EvalObject
+#3 '{'
+#3 '{'
+#3 OBJECTID abort
+#3 '('
+#3 ')'
+#3 ';'
+#3 OBJECTID self
+#3 ';'
+#3 '}'
+#3 '}'
+#3 ';'
+#4 '}'
+#4 ';'
+#5 CLASS
+#5 TYPEID Closure
+#5 INHERITS
+#5 TYPEID EvalObject
+#5 '{'
+#6 OBJECTID parent
+#6 ':'
+#6 TYPEID Closure
+#6 ';'
+#7 OBJECTID x
+#7 ':'
+#7 TYPEID EvalObject
+#7 ';'
+#8 OBJECTID get_parent
+#8 '('
+#8 ')'
+#8 ':'
+#8 TYPEID Closure
+#8 '{'
+#8 OBJECTID parent
+#8 '}'
+#8 ';'
+#9 OBJECTID get_x
+#9 '('
+#9 ')'
+#9 ':'
+#9 TYPEID EvalObject
+#9 '{'
+#9 OBJECTID x
+#9 '}'
+#9 ';'
+#10 OBJECTID init
+#10 '('
+#10 OBJECTID p
+#10 ':'
+#10 TYPEID Closure
+#10 ')'
+#10 ':'
+#10 TYPEID Closure
+#10 '{'
+#10 '{'
+#10 OBJECTID parent
+#10 ASSIGN
+#10 OBJECTID p
+#10 ';'
+#10 OBJECTID self
+#10 ';'
+#10 '}'
+#10 '}'
+#10 ';'
+#11 OBJECTID apply
+#11 '('
+#11 OBJECTID y
+#11 ':'
+#11 TYPEID EvalObject
+#11 ')'
+#11 ':'
+#11 TYPEID EvalObject
+#11 '{'
+#11 '{'
+#11 OBJECTID abort
+#11 '('
+#11 ')'
+#11 ';'
+#11 OBJECTID self
+#11 ';'
+#11 '}'
+#11 '}'
+#11 ';'
+#12 '}'
+#12 ';'
+#13 CLASS
+#13 TYPEID Main
+#13 '{'
+#14 OBJECTID main
+#14 '('
+#14 ')'
+#14 ':'
+#14 TYPEID EvalObject
+#14 '{'
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 LET
+#15 OBJECTID x
+#15 ':'
+#15 TYPEID EvalObject
+#15 ASSIGN
+#15 '('
+#15 '('
+#15 NEW
+#15 TYPEID Closure0
+#15 ')'
+#15 '.'
+#15 OBJECTID init
+#15 '('
+#15 NEW
+#15 TYPEID Closure
+#15 ')'
+#15 ')'
+#15 ','
+#16 OBJECTID y
+#16 ':'
+#16 TYPEID EvalObject
+#16 ASSIGN
+#16 '('
+#16 '('
+#16 NEW
+#16 TYPEID Closure1
+#16 ')'
+#16 '.'
+#16 OBJECTID init
+#16 '('
+#16 NEW
+#16 TYPEID Closure
+#16 ')'
+#16 ')'
+#16 IN
+#17 CASE
+#17 OBJECTID x
+#17 OF
+#18 OBJECTID c
+#18 ':'
+#18 TYPEID Closure
+#18 DARROW
+#18 OBJECTID c
+#18 '.'
+#18 OBJECTID apply
+#18 '('
+#18 OBJECTID y
+#18 ')'
+#18 ';'
+#19 OBJECTID o
+#19 ':'
+#19 TYPEID Object
+#19 DARROW
+#19 '{'
+#19 OBJECTID abort
+#19 '('
+#19 ')'
+#19 ';'
+#19 NEW
+#19 TYPEID EvalObject
+#19 ';'
+#19 '}'
+#19 ';'
+#20 ESAC
+#20 ')'
+#20 ','
+#21 OBJECTID y
+#21 ':'
+#21 TYPEID EvalObject
+#21 ASSIGN
+#21 '('
+#21 '('
+#21 NEW
+#21 TYPEID Closure2
+#21 ')'
+#21 '.'
+#21 OBJECTID init
+#21 '('
+#21 NEW
+#21 TYPEID Closure
+#21 ')'
+#21 ')'
+#21 IN
+#22 CASE
+#22 OBJECTID x
+#22 OF
+#23 OBJECTID c
+#23 ':'
+#23 TYPEID Closure
+#23 DARROW
+#23 OBJECTID c
+#23 '.'
+#23 OBJECTID apply
+#23 '('
+#23 OBJECTID y
+#23 ')'
+#23 ';'
+#24 OBJECTID o
+#24 ':'
+#24 TYPEID Object
+#24 DARROW
+#24 '{'
+#24 OBJECTID abort
+#24 '('
+#24 ')'
+#24 ';'
+#24 NEW
+#24 TYPEID EvalObject
+#24 ';'
+#24 '}'
+#24 ';'
+#25 ESAC
+#25 ')'
+#25 ','
+#26 OBJECTID y
+#26 ':'
+#26 TYPEID EvalObject
+#26 ASSIGN
+#26 '('
+#26 '('
+#26 NEW
+#26 TYPEID Closure3
+#26 ')'
+#26 '.'
+#26 OBJECTID init
+#26 '('
+#26 NEW
+#26 TYPEID Closure
+#26 ')'
+#26 ')'
+#26 IN
+#27 CASE
+#27 OBJECTID x
+#27 OF
+#28 OBJECTID c
+#28 ':'
+#28 TYPEID Closure
+#28 DARROW
+#28 OBJECTID c
+#28 '.'
+#28 OBJECTID apply
+#28 '('
+#28 OBJECTID y
+#28 ')'
+#28 ';'
+#29 OBJECTID o
+#29 ':'
+#29 TYPEID Object
+#29 DARROW
+#29 '{'
+#29 OBJECTID abort
+#29 '('
+#29 ')'
+#29 ';'
+#29 NEW
+#29 TYPEID EvalObject
+#29 ';'
+#29 '}'
+#29 ';'
+#30 ESAC
+#30 ')'
+#30 ','
+#31 OBJECTID y
+#31 ':'
+#31 TYPEID EvalObject
+#31 ASSIGN
+#31 '('
+#31 '('
+#31 NEW
+#31 TYPEID Closure4
+#31 ')'
+#31 '.'
+#31 OBJECTID init
+#31 '('
+#31 NEW
+#31 TYPEID Closure
+#31 ')'
+#31 ')'
+#31 IN
+#32 CASE
+#32 OBJECTID x
+#32 OF
+#33 OBJECTID c
+#33 ':'
+#33 TYPEID Closure
+#33 DARROW
+#33 OBJECTID c
+#33 '.'
+#33 OBJECTID apply
+#33 '('
+#33 OBJECTID y
+#33 ')'
+#33 ';'
+#34 OBJECTID o
+#34 ':'
+#34 TYPEID Object
+#34 DARROW
+#34 '{'
+#34 OBJECTID abort
+#34 '('
+#34 ')'
+#34 ';'
+#34 NEW
+#34 TYPEID EvalObject
+#34 ';'
+#34 '}'
+#34 ';'
+#35 ESAC
+#35 ')'
+#35 ','
+#36 OBJECTID y
+#36 ':'
+#36 TYPEID EvalObject
+#36 ASSIGN
+#36 '('
+#36 '('
+#36 NEW
+#36 TYPEID Closure5
+#36 ')'
+#36 '.'
+#36 OBJECTID init
+#36 '('
+#36 NEW
+#36 TYPEID Closure
+#36 ')'
+#36 ')'
+#36 IN
+#37 CASE
+#37 OBJECTID x
+#37 OF
+#38 OBJECTID c
+#38 ':'
+#38 TYPEID Closure
+#38 DARROW
+#38 OBJECTID c
+#38 '.'
+#38 OBJECTID apply
+#38 '('
+#38 OBJECTID y
+#38 ')'
+#38 ';'
+#39 OBJECTID o
+#39 ':'
+#39 TYPEID Object
+#39 DARROW
+#39 '{'
+#39 OBJECTID abort
+#39 '('
+#39 ')'
+#39 ';'
+#39 NEW
+#39 TYPEID EvalObject
+#39 ';'
+#39 '}'
+#39 ';'
+#40 ESAC
+#40 ')'
+#40 ','
+#41 OBJECTID y
+#41 ':'
+#41 TYPEID EvalObject
+#41 ASSIGN
+#41 '('
+#41 '('
+#41 NEW
+#41 TYPEID Closure6
+#41 ')'
+#41 '.'
+#41 OBJECTID init
+#41 '('
+#41 NEW
+#41 TYPEID Closure
+#41 ')'
+#41 ')'
+#41 IN
+#42 CASE
+#42 OBJECTID x
+#42 OF
+#43 OBJECTID c
+#43 ':'
+#43 TYPEID Closure
+#43 DARROW
+#43 OBJECTID c
+#43 '.'
+#43 OBJECTID apply
+#43 '('
+#43 OBJECTID y
+#43 ')'
+#43 ';'
+#44 OBJECTID o
+#44 ':'
+#44 TYPEID Object
+#44 DARROW
+#44 '{'
+#44 OBJECTID abort
+#44 '('
+#44 ')'
+#44 ';'
+#44 NEW
+#44 TYPEID EvalObject
+#44 ';'
+#44 '}'
+#44 ';'
+#45 ESAC
+#45 ')'
+#45 ','
+#46 OBJECTID y
+#46 ':'
+#46 TYPEID EvalObject
+#46 ASSIGN
+#46 '('
+#46 '('
+#46 NEW
+#46 TYPEID Closure7
+#46 ')'
+#46 '.'
+#46 OBJECTID init
+#46 '('
+#46 NEW
+#46 TYPEID Closure
+#46 ')'
+#46 ')'
+#46 IN
+#47 CASE
+#47 OBJECTID x
+#47 OF
+#48 OBJECTID c
+#48 ':'
+#48 TYPEID Closure
+#48 DARROW
+#48 OBJECTID c
+#48 '.'
+#48 OBJECTID apply
+#48 '('
+#48 OBJECTID y
+#48 ')'
+#48 ';'
+#49 OBJECTID o
+#49 ':'
+#49 TYPEID Object
+#49 DARROW
+#49 '{'
+#49 OBJECTID abort
+#49 '('
+#49 ')'
+#49 ';'
+#49 NEW
+#49 TYPEID EvalObject
+#49 ';'
+#49 '}'
+#49 ';'
+#50 ESAC
+#50 ')'
+#50 ','
+#51 OBJECTID y
+#51 ':'
+#51 TYPEID EvalObject
+#51 ASSIGN
+#51 '('
+#51 '('
+#51 NEW
+#51 TYPEID Closure8
+#51 ')'
+#51 '.'
+#51 OBJECTID init
+#51 '('
+#51 NEW
+#51 TYPEID Closure
+#51 ')'
+#51 ')'
+#51 IN
+#52 CASE
+#52 OBJECTID x
+#52 OF
+#53 OBJECTID c
+#53 ':'
+#53 TYPEID Closure
+#53 DARROW
+#53 OBJECTID c
+#53 '.'
+#53 OBJECTID apply
+#53 '('
+#53 OBJECTID y
+#53 ')'
+#53 ';'
+#54 OBJECTID o
+#54 ':'
+#54 TYPEID Object
+#54 DARROW
+#54 '{'
+#54 OBJECTID abort
+#54 '('
+#54 ')'
+#54 ';'
+#54 NEW
+#54 TYPEID EvalObject
+#54 ';'
+#54 '}'
+#54 ';'
+#55 ESAC
+#55 ')'
+#56 '}'
+#56 ';'
+#57 '}'
+#57 ';'
+#58 CLASS
+#58 TYPEID Closure8
+#58 INHERITS
+#58 TYPEID Closure
+#58 '{'
+#59 OBJECTID apply
+#59 '('
+#59 OBJECTID y
+#59 ':'
+#59 TYPEID EvalObject
+#59 ')'
+#59 ':'
+#59 TYPEID EvalObject
+#59 '{'
+#60 '{'
+#60 OBJECTID out_string
+#60 '('
+#60 STR_CONST "Applying closure 8\n"
+#60 ')'
+#60 ';'
+#61 OBJECTID x
+#61 ASSIGN
+#61 OBJECTID y
+#61 ';'
+#62 OBJECTID get_x
+#62 '('
+#62 ')'
+#62 ';'
+#62 '}'
+#62 '}'
+#62 ';'
+#63 '}'
+#63 ';'
+#64 CLASS
+#64 TYPEID Closure7
+#64 INHERITS
+#64 TYPEID Closure
+#64 '{'
+#65 OBJECTID apply
+#65 '('
+#65 OBJECTID y
+#65 ':'
+#65 TYPEID EvalObject
+#65 ')'
+#65 ':'
+#65 TYPEID EvalObject
+#65 '{'
+#66 '{'
+#66 OBJECTID out_string
+#66 '('
+#66 STR_CONST "Applying closure 7\n"
+#66 ')'
+#66 ';'
+#67 OBJECTID x
+#67 ASSIGN
+#67 OBJECTID y
+#67 ';'
+#68 '('
+#68 '('
+#68 NEW
+#68 TYPEID Closure9
+#68 ')'
+#68 '.'
+#68 OBJECTID init
+#68 '('
+#68 OBJECTID self
+#68 ')'
+#68 ')'
+#68 ';'
+#68 '}'
+#68 '}'
+#68 ';'
+#69 '}'
+#69 ';'
+#70 CLASS
+#70 TYPEID Closure9
+#70 INHERITS
+#70 TYPEID Closure
+#70 '{'
+#71 OBJECTID apply
+#71 '('
+#71 OBJECTID y
+#71 ':'
+#71 TYPEID EvalObject
+#71 ')'
+#71 ':'
+#71 TYPEID EvalObject
+#71 '{'
+#72 '{'
+#72 OBJECTID out_string
+#72 '('
+#72 STR_CONST "Applying closure 9\n"
+#72 ')'
+#72 ';'
+#73 OBJECTID x
+#73 ASSIGN
+#73 OBJECTID y
+#73 ';'
+#74 OBJECTID get_parent
+#74 '('
+#74 ')'
+#74 '.'
+#74 OBJECTID get_x
+#74 '('
+#74 ')'
+#74 ';'
+#74 '}'
+#74 '}'
+#74 ';'
+#75 '}'
+#75 ';'
+#76 CLASS
+#76 TYPEID Closure6
+#76 INHERITS
+#76 TYPEID Closure
+#76 '{'
+#77 OBJECTID apply
+#77 '('
+#77 OBJECTID y
+#77 ':'
+#77 TYPEID EvalObject
+#77 ')'
+#77 ':'
+#77 TYPEID EvalObject
+#77 '{'
+#78 '{'
+#78 OBJECTID out_string
+#78 '('
+#78 STR_CONST "Applying closure 6\n"
+#78 ')'
+#78 ';'
+#79 OBJECTID x
+#79 ASSIGN
+#79 OBJECTID y
+#79 ';'
+#80 OBJECTID get_x
+#80 '('
+#80 ')'
+#80 ';'
+#80 '}'
+#80 '}'
+#80 ';'
+#81 '}'
+#81 ';'
+#82 CLASS
+#82 TYPEID Closure5
+#82 INHERITS
+#82 TYPEID Closure
+#82 '{'
+#83 OBJECTID apply
+#83 '('
+#83 OBJECTID y
+#83 ':'
+#83 TYPEID EvalObject
+#83 ')'
+#83 ':'
+#83 TYPEID EvalObject
+#83 '{'
+#84 '{'
+#84 OBJECTID out_string
+#84 '('
+#84 STR_CONST "Applying closure 5\n"
+#84 ')'
+#84 ';'
+#85 OBJECTID x
+#85 ASSIGN
+#85 OBJECTID y
+#85 ';'
+#86 '('
+#86 '('
+#86 NEW
+#86 TYPEID Closure10
+#86 ')'
+#86 '.'
+#86 OBJECTID init
+#86 '('
+#86 OBJECTID self
+#86 ')'
+#86 ')'
+#86 ';'
+#86 '}'
+#86 '}'
+#86 ';'
+#87 '}'
+#87 ';'
+#88 CLASS
+#88 TYPEID Closure10
+#88 INHERITS
+#88 TYPEID Closure
+#88 '{'
+#89 OBJECTID apply
+#89 '('
+#89 OBJECTID y
+#89 ':'
+#89 TYPEID EvalObject
+#89 ')'
+#89 ':'
+#89 TYPEID EvalObject
+#89 '{'
+#90 '{'
+#90 OBJECTID out_string
+#90 '('
+#90 STR_CONST "Applying closure 10\n"
+#90 ')'
+#90 ';'
+#91 OBJECTID x
+#91 ASSIGN
+#91 OBJECTID y
+#91 ';'
+#92 '('
+#92 '('
+#92 NEW
+#92 TYPEID Closure11
+#92 ')'
+#92 '.'
+#92 OBJECTID init
+#92 '('
+#92 OBJECTID self
+#92 ')'
+#92 ')'
+#92 ';'
+#92 '}'
+#92 '}'
+#92 ';'
+#93 '}'
+#93 ';'
+#94 CLASS
+#94 TYPEID Closure11
+#94 INHERITS
+#94 TYPEID Closure
+#94 '{'
+#95 OBJECTID apply
+#95 '('
+#95 OBJECTID y
+#95 ':'
+#95 TYPEID EvalObject
+#95 ')'
+#95 ':'
+#95 TYPEID EvalObject
+#95 '{'
+#96 '{'
+#96 OBJECTID out_string
+#96 '('
+#96 STR_CONST "Applying closure 11\n"
+#96 ')'
+#96 ';'
+#97 OBJECTID x
+#97 ASSIGN
+#97 OBJECTID y
+#97 ';'
+#98 '('
+#98 LET
+#98 OBJECTID x
+#98 ':'
+#98 TYPEID EvalObject
+#98 ASSIGN
+#98 '('
+#98 LET
+#98 OBJECTID x
+#98 ':'
+#98 TYPEID EvalObject
+#98 ASSIGN
+#98 OBJECTID get_parent
+#98 '('
+#98 ')'
+#98 '.'
+#98 OBJECTID get_parent
+#98 '('
+#98 ')'
+#98 '.'
+#98 OBJECTID get_x
+#98 '('
+#98 ')'
+#98 ','
+#99 OBJECTID y
+#99 ':'
+#99 TYPEID EvalObject
+#99 ASSIGN
+#99 OBJECTID get_x
+#99 '('
+#99 ')'
+#99 IN
+#100 CASE
+#100 OBJECTID x
+#100 OF
+#101 OBJECTID c
+#101 ':'
+#101 TYPEID Closure
+#101 DARROW
+#101 OBJECTID c
+#101 '.'
+#101 OBJECTID apply
+#101 '('
+#101 OBJECTID y
+#101 ')'
+#101 ';'
+#102 OBJECTID o
+#102 ':'
+#102 TYPEID Object
+#102 DARROW
+#102 '{'
+#102 OBJECTID abort
+#102 '('
+#102 ')'
+#102 ';'
+#102 NEW
+#102 TYPEID EvalObject
+#102 ';'
+#102 '}'
+#102 ';'
+#103 ESAC
+#103 ')'
+#103 ','
+#104 OBJECTID y
+#104 ':'
+#104 TYPEID EvalObject
+#104 ASSIGN
+#104 '('
+#104 LET
+#104 OBJECTID x
+#104 ':'
+#104 TYPEID EvalObject
+#104 ASSIGN
+#104 OBJECTID get_parent
+#104 '('
+#104 ')'
+#104 '.'
+#104 OBJECTID get_x
+#104 '('
+#104 ')'
+#104 ','
+#105 OBJECTID y
+#105 ':'
+#105 TYPEID EvalObject
+#105 ASSIGN
+#105 OBJECTID get_x
+#105 '('
+#105 ')'
+#105 IN
+#106 CASE
+#106 OBJECTID x
+#106 OF
+#107 OBJECTID c
+#107 ':'
+#107 TYPEID Closure
+#107 DARROW
+#107 OBJECTID c
+#107 '.'
+#107 OBJECTID apply
+#107 '('
+#107 OBJECTID y
+#107 ')'
+#107 ';'
+#108 OBJECTID o
+#108 ':'
+#108 TYPEID Object
+#108 DARROW
+#108 '{'
+#108 OBJECTID abort
+#108 '('
+#108 ')'
+#108 ';'
+#108 NEW
+#108 TYPEID EvalObject
+#108 ';'
+#108 '}'
+#108 ';'
+#109 ESAC
+#109 ')'
+#109 IN
+#110 CASE
+#110 OBJECTID x
+#110 OF
+#111 OBJECTID c
+#111 ':'
+#111 TYPEID Closure
+#111 DARROW
+#111 OBJECTID c
+#111 '.'
+#111 OBJECTID apply
+#111 '('
+#111 OBJECTID y
+#111 ')'
+#111 ';'
+#112 OBJECTID o
+#112 ':'
+#112 TYPEID Object
+#112 DARROW
+#112 '{'
+#112 OBJECTID abort
+#112 '('
+#112 ')'
+#112 ';'
+#112 NEW
+#112 TYPEID EvalObject
+#112 ';'
+#112 '}'
+#112 ';'
+#113 ESAC
+#113 ')'
+#113 ';'
+#113 '}'
+#113 '}'
+#113 ';'
+#114 '}'
+#114 ';'
+#115 CLASS
+#115 TYPEID Closure4
+#115 INHERITS
+#115 TYPEID Closure
+#115 '{'
+#116 OBJECTID apply
+#116 '('
+#116 OBJECTID y
+#116 ':'
+#116 TYPEID EvalObject
+#116 ')'
+#116 ':'
+#116 TYPEID EvalObject
+#116 '{'
+#117 '{'
+#117 OBJECTID out_string
+#117 '('
+#117 STR_CONST "Applying closure 4\n"
+#117 ')'
+#117 ';'
+#118 OBJECTID x
+#118 ASSIGN
+#118 OBJECTID y
+#118 ';'
+#119 '('
+#119 '('
+#119 NEW
+#119 TYPEID Closure12
+#119 ')'
+#119 '.'
+#119 OBJECTID init
+#119 '('
+#119 OBJECTID self
+#119 ')'
+#119 ')'
+#119 ';'
+#119 '}'
+#119 '}'
+#119 ';'
+#120 '}'
+#120 ';'
+#121 CLASS
+#121 TYPEID Closure12
+#121 INHERITS
+#121 TYPEID Closure
+#121 '{'
+#122 OBJECTID apply
+#122 '('
+#122 OBJECTID y
+#122 ':'
+#122 TYPEID EvalObject
+#122 ')'
+#122 ':'
+#122 TYPEID EvalObject
+#122 '{'
+#123 '{'
+#123 OBJECTID out_string
+#123 '('
+#123 STR_CONST "Applying closure 12\n"
+#123 ')'
+#123 ';'
+#124 OBJECTID x
+#124 ASSIGN
+#124 OBJECTID y
+#124 ';'
+#125 OBJECTID get_parent
+#125 '('
+#125 ')'
+#125 '.'
+#125 OBJECTID get_x
+#125 '('
+#125 ')'
+#125 ';'
+#125 '}'
+#125 '}'
+#125 ';'
+#126 '}'
+#126 ';'
+#127 CLASS
+#127 TYPEID Closure3
+#127 INHERITS
+#127 TYPEID Closure
+#127 '{'
+#128 OBJECTID apply
+#128 '('
+#128 OBJECTID y
+#128 ':'
+#128 TYPEID EvalObject
+#128 ')'
+#128 ':'
+#128 TYPEID EvalObject
+#128 '{'
+#129 '{'
+#129 OBJECTID out_string
+#129 '('
+#129 STR_CONST "Applying closure 3\n"
+#129 ')'
+#129 ';'
+#130 OBJECTID x
+#130 ASSIGN
+#130 OBJECTID y
+#130 ';'
+#131 '('
+#131 '('
+#131 NEW
+#131 TYPEID Closure13
+#131 ')'
+#131 '.'
+#131 OBJECTID init
+#131 '('
+#131 OBJECTID self
+#131 ')'
+#131 ')'
+#131 ';'
+#131 '}'
+#131 '}'
+#131 ';'
+#132 '}'
+#132 ';'
+#133 CLASS
+#133 TYPEID Closure13
+#133 INHERITS
+#133 TYPEID Closure
+#133 '{'
+#134 OBJECTID apply
+#134 '('
+#134 OBJECTID y
+#134 ':'
+#134 TYPEID EvalObject
+#134 ')'
+#134 ':'
+#134 TYPEID EvalObject
+#134 '{'
+#135 '{'
+#135 OBJECTID out_string
+#135 '('
+#135 STR_CONST "Applying closure 13\n"
+#135 ')'
+#135 ';'
+#136 OBJECTID x
+#136 ASSIGN
+#136 OBJECTID y
+#136 ';'
+#137 '('
+#137 '('
+#137 NEW
+#137 TYPEID Closure14
+#137 ')'
+#137 '.'
+#137 OBJECTID init
+#137 '('
+#137 OBJECTID self
+#137 ')'
+#137 ')'
+#137 ';'
+#137 '}'
+#137 '}'
+#137 ';'
+#138 '}'
+#138 ';'
+#139 CLASS
+#139 TYPEID Closure14
+#139 INHERITS
+#139 TYPEID Closure
+#139 '{'
+#140 OBJECTID apply
+#140 '('
+#140 OBJECTID y
+#140 ':'
+#140 TYPEID EvalObject
+#140 ')'
+#140 ':'
+#140 TYPEID EvalObject
+#140 '{'
+#141 '{'
+#141 OBJECTID out_string
+#141 '('
+#141 STR_CONST "Applying closure 14\n"
+#141 ')'
+#141 ';'
+#142 OBJECTID x
+#142 ASSIGN
+#142 OBJECTID y
+#142 ';'
+#143 '('
+#143 LET
+#143 OBJECTID x
+#143 ':'
+#143 TYPEID EvalObject
+#143 ASSIGN
+#143 '('
+#143 LET
+#143 OBJECTID x
+#143 ':'
+#143 TYPEID EvalObject
+#143 ASSIGN
+#143 OBJECTID get_parent
+#143 '('
+#143 ')'
+#143 '.'
+#143 OBJECTID get_parent
+#143 '('
+#143 ')'
+#143 '.'
+#143 OBJECTID get_x
+#143 '('
+#143 ')'
+#143 ','
+#144 OBJECTID y
+#144 ':'
+#144 TYPEID EvalObject
+#144 ASSIGN
+#144 OBJECTID get_x
+#144 '('
+#144 ')'
+#144 IN
+#145 CASE
+#145 OBJECTID x
+#145 OF
+#146 OBJECTID c
+#146 ':'
+#146 TYPEID Closure
+#146 DARROW
+#146 OBJECTID c
+#146 '.'
+#146 OBJECTID apply
+#146 '('
+#146 OBJECTID y
+#146 ')'
+#146 ';'
+#147 OBJECTID o
+#147 ':'
+#147 TYPEID Object
+#147 DARROW
+#147 '{'
+#147 OBJECTID abort
+#147 '('
+#147 ')'
+#147 ';'
+#147 NEW
+#147 TYPEID EvalObject
+#147 ';'
+#147 '}'
+#147 ';'
+#148 ESAC
+#148 ')'
+#148 ','
+#149 OBJECTID y
+#149 ':'
+#149 TYPEID EvalObject
+#149 ASSIGN
+#149 '('
+#149 LET
+#149 OBJECTID x
+#149 ':'
+#149 TYPEID EvalObject
+#149 ASSIGN
+#149 OBJECTID get_parent
+#149 '('
+#149 ')'
+#149 '.'
+#149 OBJECTID get_x
+#149 '('
+#149 ')'
+#149 ','
+#150 OBJECTID y
+#150 ':'
+#150 TYPEID EvalObject
+#150 ASSIGN
+#150 OBJECTID get_x
+#150 '('
+#150 ')'
+#150 IN
+#151 CASE
+#151 OBJECTID x
+#151 OF
+#152 OBJECTID c
+#152 ':'
+#152 TYPEID Closure
+#152 DARROW
+#152 OBJECTID c
+#152 '.'
+#152 OBJECTID apply
+#152 '('
+#152 OBJECTID y
+#152 ')'
+#152 ';'
+#153 OBJECTID o
+#153 ':'
+#153 TYPEID Object
+#153 DARROW
+#153 '{'
+#153 OBJECTID abort
+#153 '('
+#153 ')'
+#153 ';'
+#153 NEW
+#153 TYPEID EvalObject
+#153 ';'
+#153 '}'
+#153 ';'
+#154 ESAC
+#154 ')'
+#154 IN
+#155 CASE
+#155 OBJECTID x
+#155 OF
+#156 OBJECTID c
+#156 ':'
+#156 TYPEID Closure
+#156 DARROW
+#156 OBJECTID c
+#156 '.'
+#156 OBJECTID apply
+#156 '('
+#156 OBJECTID y
+#156 ')'
+#156 ';'
+#157 OBJECTID o
+#157 ':'
+#157 TYPEID Object
+#157 DARROW
+#157 '{'
+#157 OBJECTID abort
+#157 '('
+#157 ')'
+#157 ';'
+#157 NEW
+#157 TYPEID EvalObject
+#157 ';'
+#157 '}'
+#157 ';'
+#158 ESAC
+#158 ')'
+#158 ';'
+#158 '}'
+#158 '}'
+#158 ';'
+#159 '}'
+#159 ';'
+#160 CLASS
+#160 TYPEID Closure2
+#160 INHERITS
+#160 TYPEID Closure
+#160 '{'
+#161 OBJECTID apply
+#161 '('
+#161 OBJECTID y
+#161 ':'
+#161 TYPEID EvalObject
+#161 ')'
+#161 ':'
+#161 TYPEID EvalObject
+#161 '{'
+#162 '{'
+#162 OBJECTID out_string
+#162 '('
+#162 STR_CONST "Applying closure 2\n"
+#162 ')'
+#162 ';'
+#163 OBJECTID x
+#163 ASSIGN
+#163 OBJECTID y
+#163 ';'
+#164 '('
+#164 '('
+#164 NEW
+#164 TYPEID Closure15
+#164 ')'
+#164 '.'
+#164 OBJECTID init
+#164 '('
+#164 OBJECTID self
+#164 ')'
+#164 ')'
+#164 ';'
+#164 '}'
+#164 '}'
+#164 ';'
+#165 '}'
+#165 ';'
+#166 CLASS
+#166 TYPEID Closure15
+#166 INHERITS
+#166 TYPEID Closure
+#166 '{'
+#167 OBJECTID apply
+#167 '('
+#167 OBJECTID y
+#167 ':'
+#167 TYPEID EvalObject
+#167 ')'
+#167 ':'
+#167 TYPEID EvalObject
+#167 '{'
+#168 '{'
+#168 OBJECTID out_string
+#168 '('
+#168 STR_CONST "Applying closure 15\n"
+#168 ')'
+#168 ';'
+#169 OBJECTID x
+#169 ASSIGN
+#169 OBJECTID y
+#169 ';'
+#170 '('
+#170 '('
+#170 NEW
+#170 TYPEID Closure16
+#170 ')'
+#170 '.'
+#170 OBJECTID init
+#170 '('
+#170 OBJECTID self
+#170 ')'
+#170 ')'
+#170 ';'
+#170 '}'
+#170 '}'
+#170 ';'
+#171 '}'
+#171 ';'
+#172 CLASS
+#172 TYPEID Closure16
+#172 INHERITS
+#172 TYPEID Closure
+#172 '{'
+#173 OBJECTID apply
+#173 '('
+#173 OBJECTID y
+#173 ':'
+#173 TYPEID EvalObject
+#173 ')'
+#173 ':'
+#173 TYPEID EvalObject
+#173 '{'
+#174 '{'
+#174 OBJECTID out_string
+#174 '('
+#174 STR_CONST "Applying closure 16\n"
+#174 ')'
+#174 ';'
+#175 OBJECTID x
+#175 ASSIGN
+#175 OBJECTID y
+#175 ';'
+#176 '('
+#176 LET
+#176 OBJECTID x
+#176 ':'
+#176 TYPEID EvalObject
+#176 ASSIGN
+#176 '('
+#176 LET
+#176 OBJECTID x
+#176 ':'
+#176 TYPEID EvalObject
+#176 ASSIGN
+#176 OBJECTID get_parent
+#176 '('
+#176 ')'
+#176 '.'
+#176 OBJECTID get_parent
+#176 '('
+#176 ')'
+#176 '.'
+#176 OBJECTID get_x
+#176 '('
+#176 ')'
+#176 ','
+#177 OBJECTID y
+#177 ':'
+#177 TYPEID EvalObject
+#177 ASSIGN
+#177 OBJECTID get_x
+#177 '('
+#177 ')'
+#177 IN
+#178 CASE
+#178 OBJECTID x
+#178 OF
+#179 OBJECTID c
+#179 ':'
+#179 TYPEID Closure
+#179 DARROW
+#179 OBJECTID c
+#179 '.'
+#179 OBJECTID apply
+#179 '('
+#179 OBJECTID y
+#179 ')'
+#179 ';'
+#180 OBJECTID o
+#180 ':'
+#180 TYPEID Object
+#180 DARROW
+#180 '{'
+#180 OBJECTID abort
+#180 '('
+#180 ')'
+#180 ';'
+#180 NEW
+#180 TYPEID EvalObject
+#180 ';'
+#180 '}'
+#180 ';'
+#181 ESAC
+#181 ')'
+#181 ','
+#182 OBJECTID y
+#182 ':'
+#182 TYPEID EvalObject
+#182 ASSIGN
+#182 '('
+#182 LET
+#182 OBJECTID x
+#182 ':'
+#182 TYPEID EvalObject
+#182 ASSIGN
+#182 OBJECTID get_parent
+#182 '('
+#182 ')'
+#182 '.'
+#182 OBJECTID get_x
+#182 '('
+#182 ')'
+#182 ','
+#183 OBJECTID y
+#183 ':'
+#183 TYPEID EvalObject
+#183 ASSIGN
+#183 OBJECTID get_x
+#183 '('
+#183 ')'
+#183 IN
+#184 CASE
+#184 OBJECTID x
+#184 OF
+#185 OBJECTID c
+#185 ':'
+#185 TYPEID Closure
+#185 DARROW
+#185 OBJECTID c
+#185 '.'
+#185 OBJECTID apply
+#185 '('
+#185 OBJECTID y
+#185 ')'
+#185 ';'
+#186 OBJECTID o
+#186 ':'
+#186 TYPEID Object
+#186 DARROW
+#186 '{'
+#186 OBJECTID abort
+#186 '('
+#186 ')'
+#186 ';'
+#186 NEW
+#186 TYPEID EvalObject
+#186 ';'
+#186 '}'
+#186 ';'
+#187 ESAC
+#187 ')'
+#187 IN
+#188 CASE
+#188 OBJECTID x
+#188 OF
+#189 OBJECTID c
+#189 ':'
+#189 TYPEID Closure
+#189 DARROW
+#189 OBJECTID c
+#189 '.'
+#189 OBJECTID apply
+#189 '('
+#189 OBJECTID y
+#189 ')'
+#189 ';'
+#190 OBJECTID o
+#190 ':'
+#190 TYPEID Object
+#190 DARROW
+#190 '{'
+#190 OBJECTID abort
+#190 '('
+#190 ')'
+#190 ';'
+#190 NEW
+#190 TYPEID EvalObject
+#190 ';'
+#190 '}'
+#190 ';'
+#191 ESAC
+#191 ')'
+#191 ';'
+#191 '}'
+#191 '}'
+#191 ';'
+#192 '}'
+#192 ';'
+#193 CLASS
+#193 TYPEID Closure1
+#193 INHERITS
+#193 TYPEID Closure
+#193 '{'
+#194 OBJECTID apply
+#194 '('
+#194 OBJECTID y
+#194 ':'
+#194 TYPEID EvalObject
+#194 ')'
+#194 ':'
+#194 TYPEID EvalObject
+#194 '{'
+#195 '{'
+#195 OBJECTID out_string
+#195 '('
+#195 STR_CONST "Applying closure 1\n"
+#195 ')'
+#195 ';'
+#196 OBJECTID x
+#196 ASSIGN
+#196 OBJECTID y
+#196 ';'
+#197 '('
+#197 '('
+#197 NEW
+#197 TYPEID Closure17
+#197 ')'
+#197 '.'
+#197 OBJECTID init
+#197 '('
+#197 OBJECTID self
+#197 ')'
+#197 ')'
+#197 ';'
+#197 '}'
+#197 '}'
+#197 ';'
+#198 '}'
+#198 ';'
+#199 CLASS
+#199 TYPEID Closure17
+#199 INHERITS
+#199 TYPEID Closure
+#199 '{'
+#200 OBJECTID apply
+#200 '('
+#200 OBJECTID y
+#200 ':'
+#200 TYPEID EvalObject
+#200 ')'
+#200 ':'
+#200 TYPEID EvalObject
+#200 '{'
+#201 '{'
+#201 OBJECTID out_string
+#201 '('
+#201 STR_CONST "Applying closure 17\n"
+#201 ')'
+#201 ';'
+#202 OBJECTID x
+#202 ASSIGN
+#202 OBJECTID y
+#202 ';'
+#203 OBJECTID get_parent
+#203 '('
+#203 ')'
+#203 '.'
+#203 OBJECTID get_x
+#203 '('
+#203 ')'
+#203 ';'
+#203 '}'
+#203 '}'
+#203 ';'
+#204 '}'
+#204 ';'
+#205 CLASS
+#205 TYPEID Closure0
+#205 INHERITS
+#205 TYPEID Closure
+#205 '{'
+#206 OBJECTID apply
+#206 '('
+#206 OBJECTID y
+#206 ':'
+#206 TYPEID EvalObject
+#206 ')'
+#206 ':'
+#206 TYPEID EvalObject
+#206 '{'
+#207 '{'
+#207 OBJECTID out_string
+#207 '('
+#207 STR_CONST "Applying closure 0\n"
+#207 ')'
+#207 ';'
+#208 OBJECTID x
+#208 ASSIGN
+#208 OBJECTID y
+#208 ';'
+#209 OBJECTID get_x
+#209 '('
+#209 ')'
+#209 ';'
+#209 '}'
+#209 '}'
+#209 ';'
+#210 '}'
+#210 ';'

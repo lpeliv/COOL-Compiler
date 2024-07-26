@@ -1,0 +1,94 @@
+Class Name: Main, Class Definition: 0x58d34f6c5b40
+Class Name: IO, Class Definition: 0x7ffdb7a48db0
+Class Name: Int, Class Definition: 0x58d34dd998d0
+Class Name: String, Class Definition: 0x58d34f6c6160
+Class Name: Object, Class Definition: 0x58d34f6c6500
+Class Name: Bool, Class Definition: 0x58d34f6c5b80
+Class IO is inherited by:
+  Main
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//io.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      y
+      String
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #1
+          _string
+            "test"
+          : _no_type
+          )
+        : _no_type
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : _no_type
+          out_int
+          (
+          #1
+          _int
+            5
+          : _no_type
+          )
+        : _no_type
+        #1
+        _assign
+          y
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : _no_type
+            in_string
+            (
+            )
+          : _no_type
+        : _no_type
+        #1
+        _assign
+          x
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : _no_type
+            in_int
+            (
+            )
+          : _no_type
+        : _no_type
+      : _no_type
+    )

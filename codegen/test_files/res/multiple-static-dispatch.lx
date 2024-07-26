@@ -1,0 +1,162 @@
+#name ".//test_files//multiple-static-dispatch.cl"
+#1 CLASS
+#1 TYPEID A
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID x
+#2 ':'
+#2 TYPEID Int
+#2 ASSIGN
+#2 INT_CONST 1
+#2 ';'
+#3 OBJECTID f
+#3 '('
+#3 OBJECTID y
+#3 ':'
+#3 TYPEID Int
+#3 ')'
+#3 ':'
+#3 TYPEID SELF_TYPE
+#3 '{'
+#3 '{'
+#4 OBJECTID x
+#4 ASSIGN
+#4 OBJECTID x
+#4 '+'
+#4 OBJECTID y
+#4 ';'
+#5 OBJECTID out_int
+#5 '('
+#5 OBJECTID x
+#5 ')'
+#5 ';'
+#6 OBJECTID out_string
+#6 '('
+#6 STR_CONST "\n"
+#6 ')'
+#6 ';'
+#7 OBJECTID self
+#7 ';'
+#8 '}'
+#8 '}'
+#8 ';'
+#9 OBJECTID g
+#9 '('
+#9 OBJECTID y
+#9 ':'
+#9 TYPEID Int
+#9 ')'
+#9 ':'
+#9 TYPEID SELF_TYPE
+#9 '{'
+#9 '{'
+#10 OBJECTID x
+#10 ASSIGN
+#10 OBJECTID x
+#10 '-'
+#10 OBJECTID y
+#10 ';'
+#11 OBJECTID out_int
+#11 '('
+#11 OBJECTID x
+#11 ')'
+#11 ';'
+#12 OBJECTID out_string
+#12 '('
+#12 STR_CONST "\n"
+#12 ')'
+#12 ';'
+#13 OBJECTID self
+#13 ';'
+#14 '}'
+#14 '}'
+#14 ';'
+#15 '}'
+#15 ';'
+#17 CLASS
+#17 TYPEID B
+#17 INHERITS
+#17 TYPEID A
+#17 '{'
+#18 OBJECTID f
+#18 '('
+#18 OBJECTID y
+#18 ':'
+#18 TYPEID Int
+#18 ')'
+#18 ':'
+#18 TYPEID SELF_TYPE
+#18 '{'
+#18 '{'
+#19 OBJECTID x
+#19 ASSIGN
+#19 OBJECTID x
+#19 '*'
+#19 OBJECTID y
+#19 ';'
+#20 OBJECTID out_int
+#20 '('
+#20 OBJECTID x
+#20 ')'
+#20 ';'
+#21 OBJECTID out_string
+#21 '('
+#21 STR_CONST "\n"
+#21 ')'
+#21 ';'
+#22 OBJECTID self
+#22 ';'
+#23 '}'
+#23 '}'
+#23 ';'
+#24 '}'
+#24 ';'
+#26 CLASS
+#26 TYPEID Main
+#26 INHERITS
+#26 TYPEID IO
+#26 '{'
+#27 OBJECTID b
+#27 ':'
+#27 TYPEID B
+#27 ASSIGN
+#27 NEW
+#27 TYPEID B
+#27 ';'
+#28 OBJECTID main
+#28 '('
+#28 ')'
+#28 ':'
+#28 TYPEID Object
+#28 '{'
+#29 OBJECTID b
+#29 '.'
+#29 OBJECTID g
+#29 '('
+#29 '~'
+#29 INT_CONST 4
+#29 ')'
+#29 '@'
+#29 TYPEID A
+#29 '.'
+#29 OBJECTID f
+#29 '('
+#29 INT_CONST 8
+#29 ')'
+#29 '.'
+#29 OBJECTID f
+#29 '('
+#29 INT_CONST 5
+#29 ')'
+#29 '@'
+#29 TYPEID A
+#29 '.'
+#29 OBJECTID g
+#29 '('
+#29 INT_CONST 3
+#29 ')'
+#30 '}'
+#30 ';'
+#31 '}'
+#31 ';'

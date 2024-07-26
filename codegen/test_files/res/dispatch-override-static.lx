@@ -1,0 +1,113 @@
+#name ".//test_files//dispatch-override-static.cl"
+#5 CLASS
+#5 TYPEID Base
+#5 INHERITS
+#5 TYPEID IO
+#6 '{'
+#7 OBJECTID identify
+#7 '('
+#7 ')'
+#7 ':'
+#7 TYPEID Object
+#8 '{'
+#9 OBJECTID out_string
+#9 '('
+#9 STR_CONST "base\n"
+#9 ')'
+#10 '}'
+#10 ';'
+#11 '}'
+#11 ';'
+#14 CLASS
+#14 TYPEID Derived
+#14 INHERITS
+#14 TYPEID Base
+#15 '{'
+#16 OBJECTID identify
+#16 '('
+#16 ')'
+#16 ':'
+#16 TYPEID Object
+#17 '{'
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "derived\n"
+#18 ')'
+#19 '}'
+#19 ';'
+#20 '}'
+#20 ';'
+#23 CLASS
+#23 TYPEID Main
+#24 '{'
+#25 OBJECTID main
+#25 '('
+#25 ')'
+#25 ':'
+#25 TYPEID Object
+#26 '{'
+#27 '{'
+#28 LET
+#28 OBJECTID me
+#28 ':'
+#28 TYPEID Base
+#28 ASSIGN
+#28 NEW
+#28 TYPEID Base
+#28 IN
+#29 OBJECTID me
+#29 '@'
+#29 TYPEID Base
+#29 '.'
+#29 OBJECTID identify
+#29 '('
+#29 ')'
+#29 ';'
+#31 LET
+#31 OBJECTID me
+#31 ':'
+#31 TYPEID Base
+#31 ASSIGN
+#31 NEW
+#31 TYPEID Derived
+#31 IN
+#32 OBJECTID me
+#32 '@'
+#32 TYPEID Base
+#32 '.'
+#32 OBJECTID identify
+#32 '('
+#32 ')'
+#32 ';'
+#34 LET
+#34 OBJECTID me
+#34 ':'
+#34 TYPEID Derived
+#34 ASSIGN
+#34 NEW
+#34 TYPEID Derived
+#34 IN
+#35 '{'
+#36 OBJECTID me
+#36 '@'
+#36 TYPEID Base
+#36 '.'
+#36 OBJECTID identify
+#36 '('
+#36 ')'
+#36 ';'
+#37 OBJECTID me
+#37 '@'
+#37 TYPEID Derived
+#37 '.'
+#37 OBJECTID identify
+#37 '('
+#37 ')'
+#37 ';'
+#38 '}'
+#38 ';'
+#39 '}'
+#40 '}'
+#40 ';'
+#41 '}'
+#41 ';'

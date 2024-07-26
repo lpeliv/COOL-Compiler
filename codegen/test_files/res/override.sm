@@ -1,0 +1,610 @@
+#1
+_program
+  #1
+  _class
+    A
+    Object
+    ".//test_files//override.cl"
+    (
+    #1
+    _method
+      f
+      Int
+      #1
+      _int
+        1
+      : Int
+    #1
+    _method
+      g
+      Int
+      #1
+      _int
+        2
+      : Int
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//override.cl"
+    (
+    #1
+    _method
+      g
+      Int
+      #1
+      _int
+        3
+      : Int
+    )
+  #1
+  _class
+    C
+    B
+    ".//test_files//override.cl"
+    (
+    #1
+    _method
+      f
+      Int
+      #1
+      _int
+        4
+      : Int
+    )
+  #1
+  _class
+    D
+    C
+    ".//test_files//override.cl"
+    (
+    #1
+    _method
+      f
+      Int
+      #1
+      _int
+        5
+      : Int
+    #1
+    _method
+      g
+      Int
+      #1
+      _int
+        6
+      : Int
+    )
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//override.cl"
+    (
+    #1
+    _attr
+      a
+      A
+      #1
+      _new
+        A
+      : A
+    #1
+    _attr
+      b
+      B
+      #1
+      _new
+        B
+      : B
+    #1
+    _attr
+      c
+      C
+      #1
+      _new
+        C
+      : C
+    #1
+    _attr
+      d
+      D
+      #1
+      _new
+        D
+      : D
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              a
+            : A
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              a
+            : A
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              b
+            : B
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              b
+            : B
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              c
+            : C
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              c
+            : C
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              d
+            : D
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              d
+            : D
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              a
+            : A
+            A
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              a
+            : A
+            A
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              b
+            : B
+            A
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              b
+            : B
+            A
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              c
+            : C
+            B
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              c
+            : C
+            B
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              d
+            : D
+            C
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _static_dispatch
+            #1
+            _object
+              d
+            : D
+            C
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _assign
+          a
+          #1
+          _new
+            B
+          : B
+        : A
+        #1
+        _assign
+          b
+          #1
+          _new
+            C
+          : C
+        : B
+        #1
+        _assign
+          c
+          #1
+          _new
+            D
+          : D
+        : C
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              a
+            : A
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              a
+            : A
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              b
+            : B
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              b
+            : B
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              c
+            : C
+            f
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              c
+            : C
+            g
+            (
+            )
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )

@@ -1,0 +1,151 @@
+#name ".//test_files//copy-self-init.cl"
+#3 CLASS
+#3 TYPEID Base
+#3 INHERITS
+#3 TYPEID IO
+#4 '{'
+#5 OBJECTID baseAttr
+#5 ':'
+#5 TYPEID Int
+#5 ASSIGN
+#5 '{'
+#5 OBJECTID report
+#5 '('
+#5 INT_CONST 1
+#5 ')'
+#5 ';'
+#5 INT_CONST 1
+#5 ';'
+#5 '}'
+#5 ';'
+#7 OBJECTID report
+#7 '('
+#7 OBJECTID value
+#7 ':'
+#7 TYPEID Int
+#7 ')'
+#7 ':'
+#7 TYPEID SELF_TYPE
+#8 '{'
+#9 '{'
+#10 OBJECTID out_int
+#10 '('
+#10 OBJECTID value
+#10 ')'
+#10 ';'
+#11 OBJECTID out_string
+#11 '('
+#11 STR_CONST "\n"
+#11 ')'
+#11 ';'
+#12 OBJECTID self
+#12 ';'
+#13 '}'
+#14 '}'
+#14 ';'
+#16 OBJECTID duplicate
+#16 '('
+#16 ')'
+#16 ':'
+#16 TYPEID Base
+#17 '{'
+#18 OBJECTID copy
+#18 '('
+#18 ')'
+#19 '}'
+#19 ';'
+#20 '}'
+#20 ';'
+#23 CLASS
+#23 TYPEID Derived
+#23 INHERITS
+#23 TYPEID Base
+#24 '{'
+#25 OBJECTID derivedAttr
+#25 ':'
+#25 TYPEID Int
+#25 ASSIGN
+#25 '{'
+#25 OBJECTID report
+#25 '('
+#25 INT_CONST 2
+#25 ')'
+#25 ';'
+#25 INT_CONST 2
+#25 ';'
+#25 '}'
+#25 ';'
+#27 OBJECTID report
+#27 '('
+#27 OBJECTID value
+#27 ':'
+#27 TYPEID Int
+#27 ')'
+#27 ':'
+#27 TYPEID SELF_TYPE
+#28 '{'
+#29 '{'
+#30 OBJECTID out_string
+#30 '('
+#30 STR_CONST "old: "
+#30 ')'
+#30 ';'
+#31 OBJECTID out_int
+#31 '('
+#31 OBJECTID derivedAttr
+#31 ')'
+#31 ';'
+#32 OBJECTID out_string
+#32 '('
+#32 STR_CONST ".  new: "
+#32 ')'
+#32 ';'
+#33 OBJECTID derivedAttr
+#33 ASSIGN
+#33 OBJECTID value
+#33 ';'
+#34 OBJECTID self
+#34 '@'
+#34 TYPEID Base
+#34 '.'
+#34 OBJECTID report
+#34 '('
+#34 OBJECTID derivedAttr
+#34 ')'
+#34 ';'
+#35 '}'
+#36 '}'
+#36 ';'
+#37 '}'
+#37 ';'
+#40 CLASS
+#40 TYPEID Main
+#41 '{'
+#42 OBJECTID main
+#42 '('
+#42 ')'
+#42 ':'
+#42 TYPEID Object
+#43 '{'
+#44 '('
+#44 NEW
+#44 TYPEID Derived
+#44 ')'
+#44 '.'
+#44 OBJECTID report
+#44 '('
+#44 INT_CONST 5
+#44 ')'
+#45 '.'
+#45 OBJECTID duplicate
+#45 '('
+#45 ')'
+#45 '.'
+#45 OBJECTID report
+#45 '('
+#45 INT_CONST 29
+#45 ')'
+#46 '}'
+#46 ';'
+#47 '}'
+#47 ';'

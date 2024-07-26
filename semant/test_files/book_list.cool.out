@@ -1,0 +1,653 @@
+#1
+_program
+  #1
+  _class
+    Book
+    IO
+    "good.cl"
+    (
+    #1
+    _attr
+      title
+      String
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      author
+      String
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      initBook
+      #1
+      _formal
+        title_p
+        String
+      #1
+      _formal
+        author_p
+        String
+      Book
+      #1
+      _block
+        #1
+        _assign
+          title
+          #1
+          _object
+            title_p
+          : String
+        : String
+        #1
+        _assign
+          author
+          #1
+          _object
+            author_p
+          : String
+        : String
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      print
+      Book
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _dispatch
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "title:      "
+              : String
+              )
+            : SELF_TYPE
+            out_string
+            (
+            #1
+            _object
+              title
+            : String
+            )
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _dispatch
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "author:     "
+              : String
+              )
+            : SELF_TYPE
+            out_string
+            (
+            #1
+            _object
+              author
+            : String
+            )
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #1
+  _class
+    Article
+    Book
+    "good.cl"
+    (
+    #1
+    _attr
+      per_title
+      String
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      initArticle
+      #1
+      _formal
+        title_p
+        String
+      #1
+      _formal
+        author_p
+        String
+      #1
+      _formal
+        per_title_p
+        String
+      Article
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          initBook
+          (
+          #1
+          _object
+            title_p
+          : String
+          #1
+          _object
+            author_p
+          : String
+          )
+        : Book
+        #1
+        _assign
+          per_title
+          #1
+          _object
+            per_title_p
+          : String
+        : String
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      print
+      Book
+      #1
+      _block
+        #1
+        _static_dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          Book
+          print
+          (
+          )
+        : Book
+        #1
+        _dispatch
+          #1
+          _dispatch
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "periodical:  "
+              : String
+              )
+            : SELF_TYPE
+            out_string
+            (
+            #1
+            _object
+              per_title
+            : String
+            )
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #1
+  _class
+    BookList
+    IO
+    "good.cl"
+    (
+    #1
+    _method
+      isNil
+      Bool
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #1
+        _bool
+          1
+        : Bool
+      : Bool
+    #1
+    _method
+      cons
+      #1
+      _formal
+        hd
+        Book
+      Cons
+      #1
+      _let
+        new_cell
+        Cons
+        #1
+        _new
+          Cons
+        : Cons
+        #1
+        _dispatch
+          #1
+          _object
+            new_cell
+          : Cons
+          init
+          (
+          #1
+          _object
+            hd
+          : Book
+          #1
+          _object
+            self
+          : SELF_TYPE
+          )
+        : Cons
+      : Cons
+    #1
+    _method
+      car
+      Book
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #1
+        _new
+          Book
+        : Book
+      : Book
+    #1
+    _method
+      cdr
+      BookList
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          abort
+          (
+          )
+        : Object
+        #1
+        _new
+          BookList
+        : BookList
+      : BookList
+    #1
+    _method
+      print_list
+      Object
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        abort
+        (
+        )
+      : Object
+    )
+  #1
+  _class
+    Cons
+    BookList
+    "good.cl"
+    (
+    #1
+    _attr
+      xcar
+      Book
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _attr
+      xcdr
+      BookList
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      isNil
+      Bool
+      #1
+      _bool
+        0
+      : Bool
+    #1
+    _method
+      init
+      #1
+      _formal
+        hd
+        Book
+      #1
+      _formal
+        tl
+        BookList
+      Cons
+      #1
+      _block
+        #1
+        _assign
+          xcar
+          #1
+          _object
+            hd
+          : Book
+        : Book
+        #1
+        _assign
+          xcdr
+          #1
+          _object
+            tl
+          : BookList
+        : BookList
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      car
+      Book
+      #1
+      _object
+        xcar
+      : Book
+    #1
+    _method
+      cdr
+      BookList
+      #1
+      _object
+        xcdr
+      : BookList
+    #1
+    _method
+      print_list
+      Object
+      #1
+      _block
+        #1
+        _typcase
+          #1
+          _dispatch
+            #1
+            _object
+              xcar
+            : Book
+            print
+            (
+            )
+          : Book
+          #1
+          _branch
+            dummy
+            Book
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "- dynamic type was Book -\n"
+              : String
+              )
+            : SELF_TYPE
+          #1
+          _branch
+            dummy
+            Article
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_string
+              (
+              #1
+              _string
+                "- dynamic type was Article -\n"
+              : String
+              )
+            : SELF_TYPE
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            xcdr
+          : BookList
+          print_list
+          (
+          )
+        : Object
+      : Object
+    )
+  #1
+  _class
+    Nil
+    BookList
+    "good.cl"
+    (
+    #1
+    _method
+      isNil
+      Bool
+      #1
+      _bool
+        1
+      : Bool
+    #1
+    _method
+      print_list
+      Object
+      #1
+      _bool
+        1
+      : Bool
+    )
+  #1
+  _class
+    Main
+    Object
+    "good.cl"
+    (
+    #1
+    _attr
+      books
+      BookList
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        a_book
+        Book
+        #1
+        _dispatch
+          #1
+          _new
+            Book
+          : Book
+          initBook
+          (
+          #1
+          _string
+            "Compilers, Principles, Techniques, and Tools"
+          : String
+          #1
+          _string
+            "Aho, Sethi, and Ullman"
+          : String
+          )
+        : Book
+        #1
+        _let
+          an_article
+          Article
+          #1
+          _dispatch
+            #1
+            _new
+              Article
+            : Article
+            initArticle
+            (
+            #1
+            _string
+              "The Top 100 CD_ROMs"
+            : String
+            #1
+            _string
+              "Ulanoff"
+            : String
+            #1
+            _string
+              "PC Magazine"
+            : String
+            )
+          : Article
+          #1
+          _block
+            #1
+            _assign
+              books
+              #1
+              _dispatch
+                #1
+                _dispatch
+                  #1
+                  _new
+                    Nil
+                  : Nil
+                  cons
+                  (
+                  #1
+                  _object
+                    a_book
+                  : Book
+                  )
+                : Cons
+                cons
+                (
+                #1
+                _object
+                  an_article
+                : Article
+                )
+              : Cons
+            : BookList
+            #1
+            _dispatch
+              #1
+              _object
+                books
+              : BookList
+              print_list
+              (
+              )
+            : Object
+          : Object
+        : Object
+      : Object
+    )

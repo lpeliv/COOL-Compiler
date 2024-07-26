@@ -1,0 +1,240 @@
+#1
+_program
+  #1
+  _class
+    Base
+    IO
+    ".//test_files//copy-self-init.cl"
+    (
+    #1
+    _attr
+      baseAttr
+      Int
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          report
+          (
+          #1
+          _int
+            1
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _int
+          1
+        : Int
+      : Int
+    #1
+    _method
+      report
+      #1
+      _formal
+        value
+        Int
+      SELF_TYPE
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            value
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _object
+          self
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      duplicate
+      Base
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : SELF_TYPE
+        copy
+        (
+        )
+      : SELF_TYPE
+    )
+  #1
+  _class
+    Derived
+    Base
+    ".//test_files//copy-self-init.cl"
+    (
+    #1
+    _attr
+      derivedAttr
+      Int
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          report
+          (
+          #1
+          _int
+            2
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _int
+          2
+        : Int
+      : Int
+    #1
+    _method
+      report
+      #1
+      _formal
+        value
+        Int
+      SELF_TYPE
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "old: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            derivedAttr
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            ".  new: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _assign
+          derivedAttr
+          #1
+          _object
+            value
+          : Int
+        : Int
+        #1
+        _static_dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          Base
+          report
+          (
+          #1
+          _object
+            derivedAttr
+          : Int
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//copy-self-init.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _dispatch
+        #1
+        _dispatch
+          #1
+          _dispatch
+            #1
+            _new
+              Derived
+            : Derived
+            report
+            (
+            #1
+            _int
+              5
+            : Int
+            )
+          : Derived
+          duplicate
+          (
+          )
+        : Base
+        report
+        (
+        #1
+        _int
+          29
+        : Int
+        )
+      : Base
+    )

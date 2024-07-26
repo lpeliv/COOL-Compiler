@@ -1,0 +1,46 @@
+#name ".//test_files//mod-param.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID a
+#2 ':'
+#2 TYPEID Int
+#2 ';'
+#3 OBJECTID f
+#3 '('
+#3 OBJECTID i
+#3 ':'
+#3 TYPEID Int
+#3 ')'
+#3 ':'
+#3 TYPEID Object
+#3 '{'
+#3 OBJECTID i
+#3 ASSIGN
+#3 INT_CONST 1
+#3 '}'
+#3 ';'
+#4 OBJECTID main
+#4 '('
+#4 ')'
+#4 ':'
+#4 TYPEID Object
+#4 '{'
+#4 '{'
+#4 OBJECTID f
+#4 '('
+#4 OBJECTID a
+#4 ')'
+#4 ';'
+#4 OBJECTID out_int
+#4 '('
+#4 OBJECTID a
+#4 ')'
+#4 ';'
+#4 '}'
+#4 '}'
+#4 ';'
+#5 '}'
+#5 ';'

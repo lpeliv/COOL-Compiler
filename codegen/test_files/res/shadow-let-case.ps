@@ -1,0 +1,64 @@
+#18
+_program
+  #4
+  _class
+    Main
+    IO
+    ".//test_files//shadow-let-case.cl"
+    (
+    #6
+    _method
+      main
+      Object
+      #8
+      _block
+        #9
+        _let
+          var
+          String
+          #9
+          _string
+            "bad"
+          : _no_type
+          #10
+          _typcase
+            #10
+            _string
+              "good"
+            : _no_type
+            #11
+            _branch
+              var
+              String
+              #12
+              _dispatch
+                #12
+                _object
+                  self
+                : _no_type
+                out_string
+                (
+                #12
+                _object
+                  var
+                : _no_type
+                )
+              : _no_type
+          : _no_type
+        : _no_type
+        #15
+        _dispatch
+          #15
+          _object
+            self
+          : _no_type
+          out_string
+          (
+          #15
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    )

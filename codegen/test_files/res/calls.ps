@@ -1,0 +1,147 @@
+#17
+_program
+  #3
+  _class
+    Main
+    Object
+    ".//test_files//calls.cl"
+    (
+    #4
+    _attr
+      io
+      IO
+      #4
+      _new
+        IO
+      : _no_type
+    #6
+    _method
+      main
+      Object
+      #6
+      _block
+        #9
+        _dispatch
+          #9
+          _object
+            io
+          : _no_type
+          out_int
+          (
+          #9
+          _dispatch
+            #9
+            _object
+              self
+            : _no_type
+            f
+            (
+            #9
+            _dispatch
+              #9
+              _object
+                self
+              : _no_type
+              g
+              (
+              #9
+              _int
+                1
+              : _no_type
+              )
+            : _no_type
+            #9
+            _dispatch
+              #9
+              _object
+                self
+              : _no_type
+              h
+              (
+              #9
+              _int
+                2
+              : _no_type
+              )
+            : _no_type
+            )
+          : _no_type
+          )
+        : _no_type
+        #10
+        _dispatch
+          #10
+          _object
+            io
+          : _no_type
+          out_string
+          (
+          #10
+          _string
+            "\n"
+          : _no_type
+          )
+        : _no_type
+      : _no_type
+    #13
+    _method
+      f
+      #13
+      _formal
+        x
+        Int
+      #13
+      _formal
+        y
+        Int
+      Int
+      #13
+      _plus
+        #13
+        _object
+          x
+        : _no_type
+        #13
+        _object
+          y
+        : _no_type
+      : _no_type
+    #14
+    _method
+      g
+      #14
+      _formal
+        x
+        Int
+      Int
+      #14
+      _plus
+        #14
+        _object
+          x
+        : _no_type
+        #14
+        _int
+          5
+        : _no_type
+      : _no_type
+    #15
+    _method
+      h
+      #15
+      _formal
+        x
+        Int
+      Int
+      #15
+      _plus
+        #15
+        _object
+          x
+        : _no_type
+        #15
+        _int
+          7
+        : _no_type
+      : _no_type
+    )

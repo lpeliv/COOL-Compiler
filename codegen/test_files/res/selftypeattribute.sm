@@ -1,0 +1,135 @@
+#1
+_program
+  #1
+  _class
+    A
+    Object
+    ".//test_files//selftypeattribute.cl"
+    (
+    #1
+    _attr
+      x
+      SELF_TYPE
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      init
+      Object
+      #1
+      _assign
+        x
+        #1
+        _new
+          SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      foo
+      Int
+      #1
+      _int
+        1
+      : Int
+    #1
+    _method
+      getx
+      A
+      #1
+      _object
+        x
+      : SELF_TYPE
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//selftypeattribute.cl"
+    (
+    #1
+    _method
+      foo
+      Int
+      #1
+      _int
+        2
+      : Int
+    )
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//selftypeattribute.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _let
+          a
+          A
+          #1
+          _new
+            B
+          : B
+          #1
+          _block
+            #1
+            _dispatch
+              #1
+              _object
+                a
+              : A
+              init
+              (
+              )
+            : Object
+            #1
+            _dispatch
+              #1
+              _object
+                self
+              : SELF_TYPE
+              out_int
+              (
+              #1
+              _dispatch
+                #1
+                _dispatch
+                  #1
+                  _object
+                    a
+                  : A
+                  getx
+                  (
+                  )
+                : A
+                foo
+                (
+                )
+              : Int
+              )
+            : SELF_TYPE
+          : SELF_TYPE
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    )

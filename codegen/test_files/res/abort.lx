@@ -1,0 +1,22 @@
+#name ".//test_files//abort.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 '{'
+#2 OBJECTID main
+#2 '('
+#2 ')'
+#2 ':'
+#2 TYPEID Int
+#2 '{'
+#2 '{'
+#2 OBJECTID abort
+#2 '('
+#2 ')'
+#2 ';'
+#2 INT_CONST 0
+#2 ';'
+#2 '}'
+#2 '}'
+#2 ';'
+#3 '}'
+#3 ';'

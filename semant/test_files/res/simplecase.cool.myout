@@ -1,0 +1,79 @@
+Class Name: Main, Class Definition: 0x59cafda25240
+Class Name: Object, Class Definition: 0x59cafda26520
+Class Name: Int, Class Definition: 0x59cafd1dd8d0
+Class Name: A, Class Definition: 0x59cafda25950
+Class Name: Bool, Class Definition: 0x59cafda259b0
+Class Name: String, Class Definition: 0x59cafda26180
+Class Name: IO, Class Definition: 0x7ffc63601c80
+Class Object is inherited by:
+  Main
+  A
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//simplecase.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//simplecase.cl"
+    (
+    #1
+    _attr
+      moo
+      Object
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      boo
+      Object
+      #1
+      _block
+        #1
+        _typcase
+          #1
+          _object
+            moo
+          : _no_type
+          #1
+          _branch
+            i
+            Int
+            #1
+            _object
+              i
+            : _no_type
+          #1
+          _branch
+            b
+            Bool
+            #1
+            _object
+              b
+            : _no_type
+          #1
+          _branch
+            s
+            String
+            #1
+            _object
+              s
+            : _no_type
+        : _no_type
+      : _no_type
+    )

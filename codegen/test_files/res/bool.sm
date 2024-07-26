@@ -1,0 +1,379 @@
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//bool.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        t
+        Bool
+        #1
+        _bool
+          1
+        : Bool
+        #1
+        _let
+          f
+          Bool
+          #1
+          _bool
+            0
+          : Bool
+          #1
+          _let
+            t1
+            Object
+            #1
+            _object
+              t
+            : Bool
+            #1
+            _let
+              t2
+              Object
+              #1
+              _bool
+                1
+              : Bool
+              #1
+              _let
+                f1
+                Object
+                #1
+                _object
+                  f
+                : Bool
+                #1
+                _let
+                  f2
+                  Object
+                  #1
+                  _bool
+                    0
+                  : Bool
+                  #1
+                  _let
+                    b1
+                    Bool
+                    #1
+                    _no_expr
+                    : _no_type
+                    #1
+                    _let
+                      b2
+                      Object
+                      #1
+                      _no_expr
+                      : _no_type
+                      #1
+                      _let
+                        io
+                        IO
+                        #1
+                        _new
+                          IO
+                        : IO
+                        #1
+                        _block
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "t: "
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                t
+                              : Bool
+                              type_name
+                              (
+                              )
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "\n"
+                            : String
+                            )
+                          : IO
+                          #1
+                          _assign
+                            b1
+                            #1
+                            _object
+                              t
+                            : Bool
+                          : Bool
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "b1: "
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                b1
+                              : Bool
+                              type_name
+                              (
+                              )
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "\n"
+                            : String
+                            )
+                          : IO
+                          #1
+                          _assign
+                            b2
+                            #1
+                            _object
+                              t1
+                            : Object
+                          : Object
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "b2: "
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                b2
+                              : Object
+                              type_name
+                              (
+                              )
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "\n"
+                            : String
+                            )
+                          : IO
+                          #1
+                          _assign
+                            b1
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                f
+                              : Bool
+                              copy
+                              (
+                              )
+                            : Bool
+                          : Bool
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "b1: "
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                b1
+                              : Bool
+                              type_name
+                              (
+                              )
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "\n"
+                            : String
+                            )
+                          : IO
+                          #1
+                          _assign
+                            b2
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                f2
+                              : Object
+                              copy
+                              (
+                              )
+                            : Object
+                          : Object
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "b2: "
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _dispatch
+                              #1
+                              _object
+                                b2
+                              : Object
+                              type_name
+                              (
+                              )
+                            : String
+                            )
+                          : IO
+                          #1
+                          _dispatch
+                            #1
+                            _object
+                              io
+                            : IO
+                            out_string
+                            (
+                            #1
+                            _string
+                              "\n"
+                            : String
+                            )
+                          : IO
+                        : IO
+                      : IO
+                    : IO
+                  : IO
+                : IO
+              : IO
+            : IO
+          : IO
+        : IO
+      : IO
+    )

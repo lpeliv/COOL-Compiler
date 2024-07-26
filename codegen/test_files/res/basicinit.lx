@@ -1,0 +1,73 @@
+#name ".//test_files//basicinit.cl"
+#1 CLASS
+#1 TYPEID Main
+#1 INHERITS
+#1 TYPEID IO
+#1 '{'
+#2 OBJECTID i
+#2 ':'
+#2 TYPEID Int
+#2 ';'
+#3 OBJECTID s
+#3 ':'
+#3 TYPEID String
+#3 ';'
+#4 OBJECTID b
+#4 ':'
+#4 TYPEID Bool
+#4 ';'
+#5 OBJECTID io
+#5 ':'
+#5 TYPEID IO
+#5 ';'
+#7 OBJECTID main
+#7 '('
+#7 ')'
+#7 ':'
+#7 TYPEID Object
+#7 '{'
+#7 '{'
+#8 OBJECTID out_int
+#8 '('
+#8 OBJECTID i
+#8 ')'
+#8 ';'
+#9 OBJECTID out_string
+#9 '('
+#9 OBJECTID s
+#9 ')'
+#9 ';'
+#10 IF
+#10 OBJECTID b
+#10 THEN
+#11 OBJECTID out_string
+#11 '('
+#11 STR_CONST "true"
+#11 ')'
+#12 ELSE
+#13 OBJECTID out_string
+#13 '('
+#13 STR_CONST "false"
+#13 ')'
+#14 FI
+#14 ';'
+#15 IF
+#15 ISVOID
+#15 OBJECTID io
+#15 THEN
+#16 OBJECTID out_string
+#16 '('
+#16 STR_CONST "void"
+#16 ')'
+#17 ELSE
+#18 OBJECTID out_string
+#18 '('
+#18 STR_CONST "not void"
+#18 ')'
+#19 FI
+#19 ';'
+#20 '}'
+#20 '}'
+#20 ';'
+#21 '}'
+#21 ';'

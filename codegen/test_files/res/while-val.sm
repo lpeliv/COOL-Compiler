@@ -1,0 +1,65 @@
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//while-val.cl"
+    (
+    #1
+    _attr
+      x
+      Int
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      main
+      Object
+      #1
+      _dispatch
+        #1
+        _new
+          IO
+        : IO
+        out_string
+        (
+        #1
+        _dispatch
+          #1
+          _loop
+            #1
+            _lt
+              #1
+              _object
+                x
+              : Int
+              #1
+              _int
+                10
+              : Int
+            : Bool
+            #1
+            _assign
+              x
+              #1
+              _plus
+                #1
+                _object
+                  x
+                : Int
+                #1
+                _int
+                  1
+                : Int
+              : Int
+            : Int
+          : Object
+          type_name
+          (
+          )
+        : String
+        )
+      : IO
+    )

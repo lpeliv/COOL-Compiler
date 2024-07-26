@@ -1,0 +1,2 @@
+.//test_files//inheritsselftype.cl:1: Cannot inherit from SELF_TYPE.
+Compilation halted due to static semantic errors.

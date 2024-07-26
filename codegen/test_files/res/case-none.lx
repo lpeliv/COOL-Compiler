@@ -1,0 +1,45 @@
+#name ".//test_files//case-none.cl"
+#4 CLASS
+#4 TYPEID Main
+#4 INHERITS
+#4 TYPEID IO
+#5 '{'
+#6 OBJECTID main
+#6 '('
+#6 ')'
+#6 ':'
+#6 TYPEID Object
+#7 '{'
+#8 LET
+#8 OBJECTID thing
+#8 ':'
+#8 TYPEID Object
+#8 ASSIGN
+#8 OBJECTID self
+#8 IN
+#9 CASE
+#9 OBJECTID thing
+#9 OF
+#10 OBJECTID i
+#10 ':'
+#10 TYPEID Int
+#10 DARROW
+#10 OBJECTID out_string
+#10 '('
+#10 STR_CONST "int\n"
+#10 ')'
+#10 ';'
+#11 OBJECTID b
+#11 ':'
+#11 TYPEID Bool
+#11 DARROW
+#11 OBJECTID out_string
+#11 '('
+#11 STR_CONST "bool\n"
+#11 ')'
+#11 ';'
+#12 ESAC
+#13 '}'
+#13 ';'
+#14 '}'
+#14 ';'

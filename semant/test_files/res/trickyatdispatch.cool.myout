@@ -1,0 +1,91 @@
+Class Name: Main, Class Definition: 0x61199db14240
+Class Name: Object, Class Definition: 0x61199db156c0
+Class Name: Int, Class Definition: 0x61199bc008d0
+Class Name: A, Class Definition: 0x61199db14470
+Class Name: B, Class Definition: 0x61199db14730
+Class Name: String, Class Definition: 0x61199db15320
+Class Name: C, Class Definition: 0x61199db14a90
+Class Name: Bool, Class Definition: 0x61199db14af0
+Class Name: IO, Class Definition: 0x7ffe3af9c3b0
+Class Object is inherited by:
+  Main
+  A
+  C
+Class A is inherited by:
+  B
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//trickyatdispatch.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//trickyatdispatch.cl"
+    (
+    #1
+    _method
+      inky
+      Int
+      #1
+      _int
+        1
+      : _no_type
+    )
+  #1
+  _class
+    B
+    A
+    ".//test_files//trickyatdispatch.cl"
+    (
+    #1
+    _method
+      binky
+      String
+      #1
+      _string
+        "hello"
+      : _no_type
+    )
+  #1
+  _class
+    C
+    Object
+    ".//test_files//trickyatdispatch.cl"
+    (
+    #1
+    _attr
+      b
+      B
+      #1
+      _no_expr
+      : _no_type
+    #1
+    _method
+      winky
+      Int
+      #1
+      _static_dispatch
+        #1
+        _object
+          b
+        : _no_type
+        B
+        inky
+        (
+        )
+      : _no_type
+    )

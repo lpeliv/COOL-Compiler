@@ -1,0 +1,40 @@
+Class Name: Main, Class Definition: 0x56f812c3e3d0
+Class Name: Object, Class Definition: 0x56f812c3f030
+Class Name: Int, Class Definition: 0x56f810eb88d0
+Class Name: Bool, Class Definition: 0x56f812c3e410
+Class Name: IO, Class Definition: 0x7ffd52e2ca70
+Class Name: String, Class Definition: 0x56f812c3ec90
+Class Object is inherited by:
+  Main
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//outofscope.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _block
+        #1
+        _let
+          x
+          Int
+          #1
+          _no_expr
+          : _no_type
+          #1
+          _int
+            10
+          : _no_type
+        : _no_type
+        #1
+        _object
+          x
+        : _no_type
+      : _no_type
+    )

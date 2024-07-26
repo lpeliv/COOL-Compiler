@@ -1,0 +1,6 @@
+#name ".//test_files//escapedunprintables.cl"
+#2 STR_CONST "This is a tab:\t"
+#4 STR_CONST "This is a backspace:\b"
+#6 STR_CONST "This is a formfeed:\f"
+#7 STR_CONST "This is a carriage return:\015"
+#8 STR_CONST "This is an escape:\033"

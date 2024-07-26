@@ -1,0 +1,74 @@
+#name ".//test_files//new-self-dispatch.cl"
+#5 CLASS
+#5 TYPEID Base
+#5 INHERITS
+#5 TYPEID IO
+#6 '{'
+#7 OBJECTID identify
+#7 '('
+#7 ')'
+#7 ':'
+#7 TYPEID Object
+#8 '{'
+#9 OBJECTID out_string
+#9 '('
+#9 STR_CONST "base\n"
+#9 ')'
+#10 '}'
+#10 ';'
+#12 OBJECTID duplicate
+#12 '('
+#12 ')'
+#12 ':'
+#12 TYPEID Base
+#13 '{'
+#14 NEW
+#14 TYPEID SELF_TYPE
+#15 '}'
+#15 ';'
+#16 '}'
+#16 ';'
+#19 CLASS
+#19 TYPEID Derived
+#19 INHERITS
+#19 TYPEID Base
+#20 '{'
+#21 OBJECTID identify
+#21 '('
+#21 ')'
+#21 ':'
+#21 TYPEID Object
+#22 '{'
+#23 OBJECTID out_string
+#23 '('
+#23 STR_CONST "derived\n"
+#23 ')'
+#24 '}'
+#24 ';'
+#25 '}'
+#25 ';'
+#28 CLASS
+#28 TYPEID Main
+#29 '{'
+#30 OBJECTID main
+#30 '('
+#30 ')'
+#30 ':'
+#30 TYPEID Object
+#31 '{'
+#32 '('
+#32 NEW
+#32 TYPEID Derived
+#32 ')'
+#32 '.'
+#32 OBJECTID duplicate
+#32 '('
+#32 ')'
+#32 '.'
+#32 OBJECTID identify
+#32 '('
+#32 ')'
+#33 '}'
+#33 ';'
+#34 '}'
+#34 ';'

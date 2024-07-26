@@ -1,0 +1,2 @@
+.//test_files//redefinedclass.cl:1: Class A was previously defined.
+Compilation halted due to static semantic errors.

@@ -1,0 +1,168 @@
+#1
+_program
+  #1
+  _class
+    Base
+    IO
+    ".//test_files//typename.cl"
+    (
+    #1
+    _method
+      identify
+      #1
+      _formal
+        thing
+        Object
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _dispatch
+            #1
+            _object
+              thing
+            : Object
+            type_name
+            (
+            )
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      test
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          identify
+          (
+          #1
+          _new
+            Base
+          : Base
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          identify
+          (
+          #1
+          _new
+            Derived
+          : Derived
+          )
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          identify
+          (
+          #1
+          _new
+            Main
+          : Main
+          )
+        : Object
+        #1
+        _let
+          poly
+          Base
+          #1
+          _new
+            Derived
+          : Derived
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            identify
+            (
+            #1
+            _object
+              poly
+            : Base
+            )
+          : Object
+        : Object
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          identify
+          (
+          #1
+          _object
+            self
+          : SELF_TYPE
+          )
+        : Object
+      : Object
+    )
+  #1
+  _class
+    Derived
+    Base
+    ".//test_files//typename.cl"
+    (
+    )
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//typename.cl"
+    (
+    #1
+    _method
+      main
+      Object
+      #1
+      _dispatch
+        #1
+        _new
+          Derived
+        : Derived
+        test
+        (
+        )
+      : Object
+    )

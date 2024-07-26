@@ -1,0 +1,100 @@
+Class Name: Main, Class Definition: 0x58fb241c1240
+Class Name: Object, Class Definition: 0x58fb241c25c0
+Class Name: Int, Class Definition: 0x58fb228c08d0
+Class Name: A, Class Definition: 0x58fb241c1990
+Class Name: Bool, Class Definition: 0x58fb241c19f0
+Class Name: IO, Class Definition: 0x7ffe1083f1f0
+Class Name: String, Class Definition: 0x58fb241c2220
+Class Object is inherited by:
+  Main
+  A
+#1
+_program
+  #1
+  _class
+    Main
+    Object
+    ".//test_files//cycleinmethods.cl"
+    (
+    #1
+    _method
+      main
+      Int
+      #1
+      _int
+        0
+      : _no_type
+    )
+  #1
+  _class
+    A
+    Object
+    ".//test_files//cycleinmethods.cl"
+    (
+    #1
+    _method
+      f
+      #1
+      _formal
+        a
+        Int
+      Int
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : _no_type
+        g
+        (
+        #1
+        _int
+          0
+        : _no_type
+        )
+      : _no_type
+    #1
+    _method
+      g
+      #1
+      _formal
+        a
+        Int
+      Int
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : _no_type
+        h
+        (
+        #1
+        _int
+          0
+        : _no_type
+        )
+      : _no_type
+    #1
+    _method
+      h
+      #1
+      _formal
+        a
+        Int
+      Int
+      #1
+      _dispatch
+        #1
+        _object
+          self
+        : _no_type
+        f
+        (
+        #1
+        _int
+          0
+        : _no_type
+        )
+      : _no_type
+    )

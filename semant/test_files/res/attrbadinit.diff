@@ -1,0 +1,135 @@
+error in line# 1
+    parsed as: Class Name: Main, Class Definition: 0x5676389591e0
+    should be: : Undeclared identifier moo.
+error in line# 2
+    parsed as: Class Name: Object, Class Definition: 0x56763895a230
+    should be: Compilation halted due to static semantic errors.
+error in line# 3
+    parsed as: Class Name: Cow, Class Definition: 0x567638959370
+    should be: 
+error in line# 4
+    parsed as: Class Name: Chicken, Class Definition: 0x567638959540
+    should be: 
+error in line# 5
+    parsed as: Class Name: Bool, Class Definition: 0x5676389595a0
+    should be: 
+error in line# 6
+    parsed as: Class Name: Int, Class Definition: 0x5676372398d0
+    should be: 
+error in line# 7
+    parsed as: Class Name: IO, Class Definition: 0x7ffd753d1f20
+    should be: 
+error in line# 8
+    parsed as: Class Name: String, Class Definition: 0x567638959e90
+    should be: 
+error in line# 9
+    parsed as: Class Object is inherited by:
+    should be: 
+error in line# 10
+    parsed as:   Main
+    should be: 
+error in line# 11
+    parsed as:   Cow
+    should be: 
+error in line# 12
+    parsed as:   Chicken
+    should be: 
+error in line# 14
+    parsed as: _program
+    should be: 
+error in line# 16
+    parsed as:   _class
+    should be: 
+error in line# 17
+    parsed as:     Main
+    should be: 
+error in line# 18
+    parsed as:     Object
+    should be: 
+error in line# 19
+    parsed as:     filename
+    should be: 
+error in line# 20
+    parsed as:     (
+    should be: 
+error in line# 22
+    parsed as:     _method
+    should be: 
+error in line# 23
+    parsed as:       main
+    should be: 
+error in line# 24
+    parsed as:       Object
+    should be: 
+error in line# 26
+    parsed as:       _int
+    should be: 
+error in line# 27
+    parsed as:         0
+    should be: 
+error in line# 28
+    parsed as:       : _no_type
+    should be: 
+error in line# 29
+    parsed as:     )
+    should be: 
+error in line# 31
+    parsed as:   _class
+    should be: 
+error in line# 32
+    parsed as:     Cow
+    should be: 
+error in line# 33
+    parsed as:     Object
+    should be: 
+error in line# 34
+    parsed as:     filename
+    should be: 
+error in line# 35
+    parsed as:     (
+    should be: 
+error in line# 37
+    parsed as:     _attr
+    should be: 
+error in line# 38
+    parsed as:       moo
+    should be: 
+error in line# 39
+    parsed as:       Object
+    should be: 
+error in line# 41
+    parsed as:       _no_expr
+    should be: 
+error in line# 42
+    parsed as:       : _no_type
+    should be: 
+error in line# 43
+    parsed as:     )
+    should be: 
+error in line# 45
+    parsed as:   _class
+    should be: 
+error in line# 46
+    parsed as:     Chicken
+    should be: 
+error in line# 47
+    parsed as:     Object
+    should be: 
+error in line# 48
+    parsed as:     filename
+    should be: 
+error in line# 49
+    parsed as:     (
+    should be: 
+error in line# 51
+    parsed as:     _attr
+    should be: 
+error in line# 52
+    parsed as:       sound
+    should be: 
+error in line# 53
+    parsed as:       Object
+    should be: 
+error in line# 55
+    parsed as:       _object
+    should be: 

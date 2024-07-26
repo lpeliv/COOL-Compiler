@@ -1,0 +1,150 @@
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    ".//test_files//assignment-val.cl"
+    (
+    #1
+    _method
+      f
+      #1
+      _formal
+        x
+        Int
+      #1
+      _formal
+        y
+        Int
+      Object
+      #1
+      _block
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "x: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            x
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\ny: "
+          : String
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_int
+          (
+          #1
+          _object
+            y
+          : Int
+          )
+        : SELF_TYPE
+        #1
+        _dispatch
+          #1
+          _object
+            self
+          : SELF_TYPE
+          out_string
+          (
+          #1
+          _string
+            "\n"
+          : String
+          )
+        : SELF_TYPE
+      : SELF_TYPE
+    #1
+    _method
+      main
+      Object
+      #1
+      _let
+        x
+        Int
+        #1
+        _int
+          2
+        : Int
+        #1
+        _block
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            f
+            (
+            #1
+            _assign
+              x
+              #1
+              _int
+                3
+              : Int
+            : Int
+            #1
+            _assign
+              x
+              #1
+              _int
+                4
+              : Int
+            : Int
+            )
+          : Object
+          #1
+          _dispatch
+            #1
+            _object
+              self
+            : SELF_TYPE
+            out_int
+            (
+            #1
+            _object
+              x
+            : Int
+            )
+          : SELF_TYPE
+        : SELF_TYPE
+      : SELF_TYPE
+    )
