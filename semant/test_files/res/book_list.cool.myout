@@ -1,24 +1,20 @@
-Class Name: Book, Class Definition: 0x5e7ec4657ed0
-Class Name: IO, Class Definition: 0x7ffc5188cf00
-Class Name: String, Class Definition: 0x5e7ec465be80
-Class Name: Article, Class Definition: 0x5e7ec4658a60
-Class Name: BookList, Class Definition: 0x5e7ec4659a00
-Class Name: Bool, Class Definition: 0x5e7ec465b7d0
-Class Name: Cons, Class Definition: 0x5e7ec465a930
-Class Name: Object, Class Definition: 0x5e7ec465c220
-Class Name: Nil, Class Definition: 0x5e7ec465abb0
-Class Name: Main, Class Definition: 0x5e7ec465b770
-Class Name: Int, Class Definition: 0x5e7ec368a8d0
-Class Book is inherited by:
-  Article
-Class IO is inherited by:
-  Book
-  BookList
-Class BookList is inherited by:
-  Cons
-  Nil
-Class Object is inherited by:
-  Main
+Class Name: Book, Class Definition: 0x64f0e1500ed0
+Class Name: IO, Class Definition: 0x7ffced3c0130
+Class Name: String, Class Definition: 0x64f0e1504e80
+Class Name: Article, Class Definition: 0x64f0e1501a60
+Class Name: BookList, Class Definition: 0x64f0e1502a00
+Class Name: Bool, Class Definition: 0x64f0e15047d0
+Class Name: Cons, Class Definition: 0x64f0e1503930
+Class Name: Object, Class Definition: 0x64f0e1505220
+Class Name: Nil, Class Definition: 0x64f0e1503bb0
+Class Name: Main, Class Definition: 0x64f0e1504770
+Class Name: Int, Class Definition: 0x64f0e0c9d8d4
+Class Book inherits from IO | 
+Class Article inherits from Book | IO | 
+Class BookList inherits from IO | 
+Class Cons inherits from IO | BookList | 
+Class Nil inherits from IO | BookList | 
+Class Main inherits from Object | 
 #1
 _program
   #1

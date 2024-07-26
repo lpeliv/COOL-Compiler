@@ -1,17 +1,14 @@
-Class Name: List, Class Definition: 0x59d6b945bc30
-Class Name: Object, Class Definition: 0x59d6b945e320
-Class Name: Bool, Class Definition: 0x59d6b945d930
-Class Name: Int, Class Definition: 0x59d6b75028d0
-Class Name: Cons, Class Definition: 0x59d6b945c4a0
-Class Name: Main, Class Definition: 0x59d6b945d8d0
-Class Name: IO, Class Definition: 0x7ffc02006820
-Class Name: String, Class Definition: 0x59d6b945df80
-Class List is inherited by:
-  Cons
-Class Object is inherited by:
-  List
-Class IO is inherited by:
-  Main
+Class Name: List, Class Definition: 0x58d957b4fc30
+Class Name: Object, Class Definition: 0x58d957b52320
+Class Name: Bool, Class Definition: 0x58d957b51930
+Class Name: Int, Class Definition: 0x58d9570248d4
+Class Name: Cons, Class Definition: 0x58d957b504a0
+Class Name: Main, Class Definition: 0x58d957b518d0
+Class Name: IO, Class Definition: 0x7fffd421ba20
+Class Name: String, Class Definition: 0x58d957b51f80
+Class List inherits from Object | 
+Class Cons inherits from List | Object | 
+Class Main inherits from IO | 
 #1
 _program
   #1

@@ -1,3 +1,153 @@
 error in line# 1
-    parsed as: : Class A inherits from an undefined class B.
+    parsed as: Class Name: A, Class Definition: 0x5ddaa09e91a0
+    should be: 
+error in line# 2
+    parsed as: Class Name: B, Class Definition: 0x5ddaa09e9330
+    should be: _program
+error in line# 3
+    parsed as: Class Name: Int, Class Definition: 0x5ddaa06b18d4
+    should be: 
+error in line# 4
+    parsed as: Class Name: Object, Class Definition: 0x5ddaa09ea220
+    should be:   _class
+error in line# 5
+    parsed as: Class Name: Main, Class Definition: 0x5ddaa09e9590
+    should be:     A
+error in line# 6
+    parsed as: Class Name: Bool, Class Definition: 0x5ddaa09e95f0
+    should be:     B
+error in line# 7
+    parsed as: Class Name: IO, Class Definition: 0x7ffdf695dd50
+    should be:     filename
+error in line# 8
+    parsed as: Class Name: String, Class Definition: 0x5ddaa09e9e80
+    should be:     (
+error in line# 9
+    parsed as: Class A inherits from B | Object | 
+    should be: 
+error in line# 10
+    parsed as: Class B inherits from Object | 
+    should be:     _attr
+error in line# 11
+    parsed as: Class Main inherits from Object | 
+    should be:       foo
+error in line# 12
+    parsed as: 
+    should be:       Int
+error in line# 13
+    parsed as: _program
+    should be: 
+error in line# 14
+    parsed as: 
+    should be:       _no_expr
+error in line# 15
+    parsed as:   _class
+    should be:       : _no_type
+error in line# 16
+    parsed as:     A
+    should be:     )
+error in line# 17
+    parsed as:     B
+    should be: 
+error in line# 18
+    parsed as:     filename
+    should be:   _class
+error in line# 19
+    parsed as:     (
+    should be:     B
+error in line# 20
+    parsed as: 
+    should be:     Object
+error in line# 21
+    parsed as:     _attr
+    should be:     filename
+error in line# 22
+    parsed as:       foo
+    should be:     (
+error in line# 23
+    parsed as:       Int
+    should be: 
+error in line# 24
+    parsed as: 
+    should be:     _attr
+error in line# 25
+    parsed as:       _no_expr
+    should be:       bar
+error in line# 26
+    parsed as:       : _no_type
+    should be:       Int
+error in line# 27
+    parsed as:     )
+    should be: 
+error in line# 28
+    parsed as: 
+    should be:       _no_expr
+error in line# 29
+    parsed as:   _class
+    should be:       : _no_type
+error in line# 30
+    parsed as:     B
+    should be:     )
+error in line# 31
+    parsed as:     Object
+    should be: 
+error in line# 32
+    parsed as:     filename
+    should be:   _class
+error in line# 33
+    parsed as:     (
+    should be:     Main
+error in line# 34
+    parsed as: 
+    should be:     Object
+error in line# 35
+    parsed as:     _attr
+    should be:     filename
+error in line# 36
+    parsed as:       bar
+    should be:     (
+error in line# 37
+    parsed as:       Int
+    should be: 
+error in line# 38
+    parsed as: 
+    should be:     _method
+error in line# 39
+    parsed as:       _no_expr
+    should be:       main
+error in line# 40
+    parsed as:       : _no_type
+    should be:       Int
+error in line# 41
+    parsed as:     )
+    should be: 
+error in line# 42
+    parsed as: 
+    should be:       _int
+error in line# 43
+    parsed as:   _class
+    should be:         6
+error in line# 44
+    parsed as:     Main
+    should be:       : Int
+error in line# 45
+    parsed as:     Object
+    should be:     )
+error in line# 46
+    parsed as:     filename
+    should be: 
+error in line# 47
+    parsed as:     (
+    should be: 
+error in line# 49
+    parsed as:     _method
+    should be: 
+error in line# 50
+    parsed as:       main
+    should be: 
+error in line# 51
+    parsed as:       Int
+    should be: 
+error in line# 53
+    parsed as:       _int
     should be: 

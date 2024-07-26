@@ -1,11 +1,10 @@
-Class Name: Main, Class Definition: 0x6412ad63a1e0
-Class Name: Object, Class Definition: 0x6412ad63aea0
-Class Name: Bool, Class Definition: 0x6412ad63a220
-Class Name: Int, Class Definition: 0x6412abeb48d0
-Class Name: IO, Class Definition: 0x7ffcd1e1af40
-Class Name: String, Class Definition: 0x6412ad63ab00
-Class Object is inherited by:
-  Main
+Class Name: Main, Class Definition: 0x64e257c311e0
+Class Name: Object, Class Definition: 0x64e257c31ea0
+Class Name: Bool, Class Definition: 0x64e257c31220
+Class Name: Int, Class Definition: 0x64e2560508d4
+Class Name: IO, Class Definition: 0x7ffe848b8e60
+Class Name: String, Class Definition: 0x64e257c31b00
+Class Main inherits from Object | 
 #1
 _program
   #1

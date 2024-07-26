@@ -1,201 +1,210 @@
 error in line# 1
-    parsed as: Class Name: Main, Class Definition: 0x6228a5e0c240
+    parsed as: Class Name: Main, Class Definition: 0x5f9c9a9ea240
     should be: 
 error in line# 2
-    parsed as: Class Name: Object, Class Definition: 0x6228a5e0d520
+    parsed as: Class Name: Object, Class Definition: 0x5f9c9a9eb520
     should be: _program
 error in line# 3
-    parsed as: Class Name: Int, Class Definition: 0x6228a47fd8d0
+    parsed as: Class Name: Int, Class Definition: 0x5f9c996788d4
     should be: 
 error in line# 4
-    parsed as: Class Name: A, Class Definition: 0x6228a5e0c320
+    parsed as: Class Name: A, Class Definition: 0x5f9c9a9ea320
     should be:   _class
 error in line# 5
-    parsed as: Class Name: B, Class Definition: 0x6228a5e0c430
+    parsed as: Class Name: B, Class Definition: 0x5f9c9a9ea430
     should be:     Main
 error in line# 6
-    parsed as: Class Name: C, Class Definition: 0x6228a5e0c8f0
+    parsed as: Class Name: C, Class Definition: 0x5f9c9a9ea8f0
     should be:     Object
 error in line# 7
-    parsed as: Class Name: Bool, Class Definition: 0x6228a5e0c950
+    parsed as: Class Name: Bool, Class Definition: 0x5f9c9a9ea950
     should be:     filename
 error in line# 8
-    parsed as: Class Name: IO, Class Definition: 0x7ffc52092c90
+    parsed as: Class Name: IO, Class Definition: 0x7fff189fb8f0
     should be:     (
 error in line# 9
-    parsed as: Class Name: String, Class Definition: 0x6228a5e0d180
+    parsed as: Class Name: String, Class Definition: 0x5f9c9a9eb180
     should be: 
 error in line# 10
-    parsed as: Class Object is inherited by:
+    parsed as: Class Main inherits from Object | 
     should be:     _method
 error in line# 11
-    parsed as:   Main
+    parsed as: Class A inherits from Object | 
     should be:       main
 error in line# 12
-    parsed as:   A
+    parsed as: Class B inherits from Object | 
     should be:       Int
 error in line# 13
-    parsed as:   B
+    parsed as: Class C inherits from Object | 
     should be: 
 error in line# 14
-    parsed as:   C
+    parsed as: 
     should be:       _int
 error in line# 15
-    parsed as: 
+    parsed as: _program
     should be:         0
 error in line# 16
-    parsed as: _program
+    parsed as: 
     should be:       : Int
 error in line# 17
-    parsed as: 
+    parsed as:   _class
     should be:     )
 error in line# 18
-    parsed as:   _class
+    parsed as:     Main
     should be: 
 error in line# 19
-    parsed as:     Main
+    parsed as:     Object
     should be:   _class
 error in line# 20
-    parsed as:     Object
+    parsed as:     filename
     should be:     A
 error in line# 21
-    parsed as:     filename
+    parsed as:     (
     should be:     Object
 error in line# 22
-    parsed as:     (
+    parsed as: 
     should be:     filename
 error in line# 23
-    parsed as: 
+    parsed as:     _method
     should be:     (
 error in line# 24
-    parsed as:     _method
+    parsed as:       main
     should be:     )
 error in line# 25
-    parsed as:       main
+    parsed as:       Int
     should be: 
 error in line# 26
-    parsed as:       Int
+    parsed as: 
     should be:   _class
 error in line# 27
-    parsed as: 
+    parsed as:       _int
     should be:     B
 error in line# 28
-    parsed as:       _int
+    parsed as:         0
     should be:     Object
 error in line# 29
-    parsed as:         0
+    parsed as:       : _no_type
     should be:     filename
 error in line# 30
-    parsed as:       : _no_type
-    should be:     (
-error in line# 34
-    parsed as:     A
-    should be:     C
-error in line# 38
     parsed as:     )
-    should be: 
-error in line# 39
+    should be:     (
+error in line# 31
     parsed as: 
+    should be:     )
+error in line# 32
+    parsed as:   _class
+    should be: 
+error in line# 33
+    parsed as:     A
+    should be:   _class
+error in line# 34
+    parsed as:     Object
+    should be:     C
+error in line# 35
+    parsed as:     filename
+    should be:     Object
+error in line# 36
+    parsed as:     (
+    should be:     filename
+error in line# 37
+    parsed as:     )
+    should be:     (
+error in line# 39
+    parsed as:   _class
     should be:     _attr
 error in line# 40
-    parsed as:   _class
+    parsed as:     B
     should be:       a
 error in line# 41
-    parsed as:     B
+    parsed as:     Object
     should be:       A
 error in line# 42
-    parsed as:     Object
+    parsed as:     filename
     should be: 
 error in line# 43
-    parsed as:     filename
+    parsed as:     (
     should be:       _no_expr
 error in line# 44
-    parsed as:     (
-    should be:       : _no_type
-error in line# 45
     parsed as:     )
-    should be: 
+    should be:       : _no_type
 error in line# 46
-    parsed as: 
+    parsed as:   _class
     should be:     _attr
 error in line# 47
-    parsed as:   _class
+    parsed as:     C
     should be:       b
 error in line# 48
-    parsed as:     C
+    parsed as:     Object
     should be:       B
 error in line# 49
-    parsed as:     Object
+    parsed as:     filename
     should be: 
 error in line# 50
-    parsed as:     filename
+    parsed as:     (
     should be:       _no_expr
 error in line# 51
-    parsed as:     (
+    parsed as: 
     should be:       : _no_type
-error in line# 53
+error in line# 52
     parsed as:     _attr
+    should be: 
+error in line# 53
+    parsed as:       a
     should be:     _method
 error in line# 54
-    parsed as:       a
+    parsed as:       A
     should be:       compare
 error in line# 55
-    parsed as:       A
-    should be:       Bool
-error in line# 57
-    parsed as:       _no_expr
-    should be:       _eq
-error in line# 58
-    parsed as:       : _no_type
-    should be: 
-error in line# 59
     parsed as: 
+    should be:       Bool
+error in line# 56
+    parsed as:       _no_expr
+    should be: 
+error in line# 57
+    parsed as:       : _no_type
+    should be:       _eq
+error in line# 59
+    parsed as:     _attr
     should be:         _object
 error in line# 60
-    parsed as:     _attr
+    parsed as:       b
     should be:           a
 error in line# 61
-    parsed as:       b
-    should be:         : A
-error in line# 62
     parsed as:       B
-    should be: 
+    should be:         : A
 error in line# 63
-    parsed as: 
+    parsed as:       _no_expr
     should be:         _object
 error in line# 64
-    parsed as:       _no_expr
+    parsed as:       : _no_type
     should be:           b
 error in line# 65
-    parsed as:       : _no_type
+    parsed as: 
     should be:         : B
 error in line# 66
-    parsed as: 
+    parsed as:     _method
     should be:       : Bool
 error in line# 67
-    parsed as:     _method
+    parsed as:       compare
     should be:     )
 error in line# 68
-    parsed as:       compare
-    should be: 
-error in line# 69
     parsed as:       Bool
     should be: 
-error in line# 71
+error in line# 70
     parsed as:       _eq
     should be: 
-error in line# 73
+error in line# 72
     parsed as:         _object
     should be: 
-error in line# 74
+error in line# 73
     parsed as:           a
     should be: 
-error in line# 75
+error in line# 74
     parsed as:         : _no_type
     should be: 
-error in line# 77
+error in line# 76
     parsed as:         _object
     should be: 
-error in line# 78
+error in line# 77
     parsed as:           b
     should be: 

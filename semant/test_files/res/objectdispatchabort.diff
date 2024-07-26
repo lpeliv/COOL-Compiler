@@ -1,123 +1,123 @@
 error in line# 1
-    parsed as: Class Name: A, Class Definition: 0x642a03b0c240
+    parsed as: Class Name: A, Class Definition: 0x559db2948240
     should be: 
 error in line# 2
-    parsed as: Class Name: Object, Class Definition: 0x642a03b0d100
+    parsed as: Class Name: Object, Class Definition: 0x559db2949100
     should be: _program
 error in line# 3
-    parsed as: Class Name: Main, Class Definition: 0x642a03b0c4d0
+    parsed as: Class Name: Main, Class Definition: 0x559db29484d0
     should be: 
 error in line# 4
-    parsed as: Class Name: Int, Class Definition: 0x642a02b158d0
+    parsed as: Class Name: Int, Class Definition: 0x559db15f58d4
     should be:   _class
 error in line# 5
-    parsed as: Class Name: Bool, Class Definition: 0x642a03b0c530
+    parsed as: Class Name: Bool, Class Definition: 0x559db2948530
     should be:     A
 error in line# 6
-    parsed as: Class Name: IO, Class Definition: 0x7ffca197ae40
+    parsed as: Class Name: IO, Class Definition: 0x7ffc29d9e5f0
     should be:     Object
 error in line# 7
-    parsed as: Class Name: String, Class Definition: 0x642a03b0cd60
+    parsed as: Class Name: String, Class Definition: 0x559db2948d60
     should be:     filename
 error in line# 8
-    parsed as: Class Object is inherited by:
+    parsed as: Class A inherits from Object | 
     should be:     (
 error in line# 9
-    parsed as:   A
+    parsed as: Class Main inherits from Object | 
     should be: 
 error in line# 10
-    parsed as:   Main
+    parsed as: 
     should be:     _method
 error in line# 11
-    parsed as: 
+    parsed as: _program
     should be:       foo
 error in line# 12
-    parsed as: _program
+    parsed as: 
     should be:       Object
-error in line# 14
+error in line# 13
     parsed as:   _class
+    should be: 
+error in line# 14
+    parsed as:     A
     should be:       _dispatch
 error in line# 15
-    parsed as:     A
+    parsed as:     Object
     should be: 
 error in line# 16
-    parsed as:     Object
+    parsed as:     filename
     should be:         _new
 error in line# 17
-    parsed as:     filename
+    parsed as:     (
     should be:           Object
 error in line# 18
-    parsed as:     (
+    parsed as: 
     should be:         : Object
 error in line# 19
-    parsed as: 
+    parsed as:     _method
     should be:         abort
 error in line# 20
-    parsed as:     _method
+    parsed as:       foo
     should be:         (
 error in line# 21
-    parsed as:       foo
+    parsed as:       Object
     should be:         )
 error in line# 22
-    parsed as:       Object
+    parsed as: 
     should be:       : Object
 error in line# 23
-    parsed as: 
-    should be:     )
-error in line# 24
     parsed as:       _dispatch
-    should be: 
+    should be:     )
 error in line# 25
-    parsed as: 
+    parsed as:         _new
     should be:   _class
 error in line# 26
-    parsed as:         _new
+    parsed as:           Object
     should be:     Main
 error in line# 27
-    parsed as:           Object
+    parsed as:         : _no_type
     should be:     Object
 error in line# 28
-    parsed as:         : _no_type
+    parsed as:         abort
     should be:     filename
 error in line# 29
-    parsed as:         abort
+    parsed as:         (
     should be:     (
 error in line# 30
-    parsed as:         (
+    parsed as:         )
     should be: 
 error in line# 31
-    parsed as:         )
+    parsed as:       : _no_type
     should be:     _method
 error in line# 32
-    parsed as:       : _no_type
+    parsed as:     )
     should be:       main
 error in line# 33
-    parsed as:     )
+    parsed as: 
     should be:       Int
-error in line# 35
+error in line# 34
     parsed as:   _class
+    should be: 
+error in line# 35
+    parsed as:     Main
     should be:       _int
 error in line# 36
-    parsed as:     Main
+    parsed as:     Object
     should be:         6
 error in line# 37
-    parsed as:     Object
+    parsed as:     filename
     should be:       : Int
 error in line# 38
-    parsed as:     filename
-    should be:     )
-error in line# 39
     parsed as:     (
-    should be: 
-error in line# 41
+    should be:     )
+error in line# 40
     parsed as:     _method
     should be: 
-error in line# 42
+error in line# 41
     parsed as:       main
     should be: 
-error in line# 43
+error in line# 42
     parsed as:       Int
     should be: 
-error in line# 45
+error in line# 44
     parsed as:       _int
     should be: 

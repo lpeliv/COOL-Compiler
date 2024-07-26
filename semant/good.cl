@@ -21,6 +21,10 @@ Class Main {
 	};
 };
 
-Class A {
+Class A inherits B{
 	c: Int;
+};
+
+Class F inherits A{
+	d: Int;
 };

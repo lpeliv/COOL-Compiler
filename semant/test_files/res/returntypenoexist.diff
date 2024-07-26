@@ -1,54 +1,51 @@
 error in line# 1
-    parsed as: Class Name: Main, Class Definition: 0x6412ad63a1e0
+    parsed as: Class Name: Main, Class Definition: 0x64e257c311e0
     should be: : Undefined return type PinkElephant in method main.
 error in line# 2
-    parsed as: Class Name: Object, Class Definition: 0x6412ad63aea0
+    parsed as: Class Name: Object, Class Definition: 0x64e257c31ea0
     should be: : 'new' used with undefined class PinkElephant.
 error in line# 3
-    parsed as: Class Name: Bool, Class Definition: 0x6412ad63a220
+    parsed as: Class Name: Bool, Class Definition: 0x64e257c31220
     should be: Compilation halted due to static semantic errors.
 error in line# 4
-    parsed as: Class Name: Int, Class Definition: 0x6412abeb48d0
+    parsed as: Class Name: Int, Class Definition: 0x64e2560508d4
     should be: 
 error in line# 5
-    parsed as: Class Name: IO, Class Definition: 0x7ffcd1e1af40
+    parsed as: Class Name: IO, Class Definition: 0x7ffe848b8e60
     should be: 
 error in line# 6
-    parsed as: Class Name: String, Class Definition: 0x6412ad63ab00
+    parsed as: Class Name: String, Class Definition: 0x64e257c31b00
     should be: 
 error in line# 7
-    parsed as: Class Object is inherited by:
+    parsed as: Class Main inherits from Object | 
     should be: 
-error in line# 8
-    parsed as:   Main
-    should be: 
-error in line# 10
+error in line# 9
     parsed as: _program
     should be: 
-error in line# 12
+error in line# 11
     parsed as:   _class
     should be: 
-error in line# 13
+error in line# 12
     parsed as:     Main
     should be: 
-error in line# 14
+error in line# 13
     parsed as:     Object
     should be: 
-error in line# 15
+error in line# 14
     parsed as:     filename
     should be: 
-error in line# 16
+error in line# 15
     parsed as:     (
     should be: 
-error in line# 18
+error in line# 17
     parsed as:     _method
     should be: 
-error in line# 19
+error in line# 18
     parsed as:       main
     should be: 
-error in line# 20
+error in line# 19
     parsed as:       PinkElephant
     should be: 
-error in line# 22
+error in line# 21
     parsed as:       _new
     should be: 

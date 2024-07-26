@@ -1,93 +1,90 @@
 error in line# 1
-    parsed as: Class Name: Main, Class Definition: 0x619084f1f350
+    parsed as: Class Name: Main, Class Definition: 0x60aa2f8c7350
     should be: 
 error in line# 2
-    parsed as: Class Name: IO, Class Definition: 0x7fff33fc05e0
+    parsed as: Class Name: IO, Class Definition: 0x7ffcfd8e2440
     should be: _program
 error in line# 3
-    parsed as: Class Name: Object, Class Definition: 0x619084f1ff50
+    parsed as: Class Name: Object, Class Definition: 0x60aa2f8c7f50
     should be: 
 error in line# 4
-    parsed as: Class Name: Int, Class Definition: 0x6190839198d0
+    parsed as: Class Name: Int, Class Definition: 0x60aa2db178d4
     should be:   _class
 error in line# 5
-    parsed as: Class Name: Bool, Class Definition: 0x619084f1f390
+    parsed as: Class Name: Bool, Class Definition: 0x60aa2f8c7390
     should be:     Main
 error in line# 6
-    parsed as: Class Name: String, Class Definition: 0x619084f1fbb0
+    parsed as: Class Name: String, Class Definition: 0x60aa2f8c7bb0
     should be:     IO
 error in line# 7
-    parsed as: Class IO is inherited by:
+    parsed as: Class Main inherits from IO | 
     should be:     filename
 error in line# 8
-    parsed as:   Main
+    parsed as: 
     should be:     (
-error in line# 10
+error in line# 9
     parsed as: _program
+    should be: 
+error in line# 10
+    parsed as: 
     should be:     _method
 error in line# 11
-    parsed as: 
+    parsed as:   _class
     should be:       main
 error in line# 12
-    parsed as:   _class
+    parsed as:     Main
     should be:       Object
 error in line# 13
-    parsed as:     Main
+    parsed as:     IO
     should be: 
 error in line# 14
-    parsed as:     IO
+    parsed as:     filename
     should be:       _block
 error in line# 15
-    parsed as:     filename
+    parsed as:     (
     should be: 
 error in line# 16
-    parsed as:     (
+    parsed as: 
     should be:         _let
 error in line# 17
-    parsed as: 
+    parsed as:     _method
     should be:           x
 error in line# 18
-    parsed as:     _method
+    parsed as:       main
     should be:           Int
 error in line# 19
-    parsed as:       main
+    parsed as:       Object
     should be: 
 error in line# 20
-    parsed as:       Object
+    parsed as: 
     should be:           _no_expr
 error in line# 21
-    parsed as: 
-    should be:           : _no_type
-error in line# 22
     parsed as:       _block
-    should be: 
+    should be:           : _no_type
 error in line# 23
-    parsed as: 
+    parsed as:         _let
     should be:           _object
 error in line# 24
-    parsed as:         _let
+    parsed as:           x
     should be:             x
 error in line# 25
-    parsed as:           x
+    parsed as:           Int
     should be:           : Int
 error in line# 26
-    parsed as:           Int
+    parsed as: 
     should be:         : Int
 error in line# 27
-    parsed as: 
+    parsed as:           _no_expr
     should be:       : Int
 error in line# 28
-    parsed as:           _no_expr
-    should be:     )
-error in line# 29
     parsed as:           : _no_type
-    should be: 
-error in line# 31
+    should be:     )
+error in line# 30
     parsed as:           _object
     should be: 
-error in line# 32
+error in line# 31
     parsed as:             x
     should be: 
-error in line# 33
+error in line# 32
     parsed as:           : _no_type
     should be: 

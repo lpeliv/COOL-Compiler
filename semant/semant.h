@@ -4,6 +4,7 @@
 #include <assert.h>
 #include <iostream>
 #include <map>
+#include <set>
 #include <vector>
 #include "cool-tree.h"
 #include "stringtab.h"
@@ -40,7 +41,10 @@ private:
   /*------------------------------------------------*/
   /* Graf nasljeđivanja */
   /*------------------------------------------------*/
-  std::map<Symbol, std::vector<Symbol>> inheritance_graph;
+  std::map<Symbol, std::set<Symbol>> inheritance_graph;
+
+  void collect_ancestors(Symbol class_name, std::set<Symbol>& ancestors);
+  bool detect_cycle(Symbol class_name, std::set<Symbol>& visited, std::set<Symbol>& rec_stack);
 
 public:
   ClassTable(Classes);

@@ -1,14 +1,12 @@
-Class Name: CellularAutomaton, Class Definition: 0x56f5286fda50
-Class Name: IO, Class Definition: 0x7ffd03dba7f0
-Class Name: String, Class Definition: 0x56f5286feb50
-Class Name: Int, Class Definition: 0x56f527a2c8d0
-Class Name: Main, Class Definition: 0x56f5286fe560
-Class Name: Object, Class Definition: 0x56f5286feef0
-Class Name: Bool, Class Definition: 0x56f5286fe5c0
-Class IO is inherited by:
-  CellularAutomaton
-Class Object is inherited by:
-  Main
+Class Name: CellularAutomaton, Class Definition: 0x594184e64a50
+Class Name: IO, Class Definition: 0x7ffd1b0b15c0
+Class Name: String, Class Definition: 0x594184e65b50
+Class Name: Int, Class Definition: 0x5941835018d4
+Class Name: Main, Class Definition: 0x594184e65560
+Class Name: Object, Class Definition: 0x594184e65ef0
+Class Name: Bool, Class Definition: 0x594184e655c0
+Class CellularAutomaton inherits from IO | 
+Class Main inherits from Object | 
 #1
 _program
   #1

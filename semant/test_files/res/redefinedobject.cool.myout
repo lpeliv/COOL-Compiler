@@ -1,2 +1,4 @@
 .//test_files//redefinedobject.cl:1: Class Object cannot be redefined.
+Class Main is in a cycle inheritance.
+.//test_files//redefinedobject.cl:1: Class Object cannot inherit from itself.
 Compilation halted due to static semantic errors.

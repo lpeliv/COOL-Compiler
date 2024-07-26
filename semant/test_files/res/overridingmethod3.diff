@@ -1,165 +1,153 @@
 error in line# 1
-    parsed as: Class Name: Main, Class Definition: 0x64971cf47240
+    parsed as: Class Name: Main, Class Definition: 0x601ccdfde240
     should be: 
 error in line# 2
-    parsed as: Class Name: Object, Class Definition: 0x64971cf48240
+    parsed as: Class Name: Object, Class Definition: 0x601ccdfdf240
     should be: _program
 error in line# 3
-    parsed as: Class Name: Int, Class Definition: 0x64971ba1e8d0
+    parsed as: Class Name: Int, Class Definition: 0x601ccd5b98d4
     should be: 
 error in line# 4
-    parsed as: Class Name: A, Class Definition: 0x64971cf474d0
+    parsed as: Class Name: A, Class Definition: 0x601ccdfde4d0
     should be:   _class
 error in line# 5
-    parsed as: Class Name: B, Class Definition: 0x64971cf47670
+    parsed as: Class Name: B, Class Definition: 0x601ccdfde670
     should be:     Main
 error in line# 6
-    parsed as: Class Name: Bool, Class Definition: 0x64971cf476d0
+    parsed as: Class Name: Bool, Class Definition: 0x601ccdfde6d0
     should be:     Object
 error in line# 7
-    parsed as: Class Name: IO, Class Definition: 0x7ffe38973f30
+    parsed as: Class Name: IO, Class Definition: 0x7ffd39ca9470
     should be:     filename
 error in line# 8
-    parsed as: Class Name: String, Class Definition: 0x64971cf47ea0
+    parsed as: Class Name: String, Class Definition: 0x601ccdfdeea0
     should be:     (
 error in line# 9
-    parsed as: Class Object is inherited by:
+    parsed as: Class Main inherits from Object | 
     should be: 
 error in line# 10
-    parsed as:   Main
+    parsed as: Class A inherits from Object | 
     should be:     _method
 error in line# 11
-    parsed as:   A
+    parsed as: Class B inherits from Object | A | 
     should be:       main
 error in line# 12
-    parsed as: Class A is inherited by:
+    parsed as: 
     should be:       Int
 error in line# 13
-    parsed as:   B
+    parsed as: _program
     should be: 
 error in line# 14
     parsed as: 
     should be:       _int
 error in line# 15
-    parsed as: _program
+    parsed as:   _class
     should be:         0
 error in line# 16
-    parsed as: 
+    parsed as:     Main
     should be:       : Int
 error in line# 17
-    parsed as:   _class
+    parsed as:     Object
     should be:     )
 error in line# 18
-    parsed as:     Main
+    parsed as:     filename
     should be: 
 error in line# 19
-    parsed as:     Object
+    parsed as:     (
     should be:   _class
 error in line# 20
-    parsed as:     filename
+    parsed as: 
     should be:     A
 error in line# 21
-    parsed as:     (
+    parsed as:     _method
     should be:     Object
 error in line# 22
-    parsed as: 
+    parsed as:       main
     should be:     filename
 error in line# 23
-    parsed as:     _method
-    should be:     (
-error in line# 24
-    parsed as:       main
-    should be: 
-error in line# 25
     parsed as:       Int
+    should be:     (
+error in line# 25
+    parsed as:       _int
     should be:     _method
 error in line# 26
-    parsed as: 
+    parsed as:         0
     should be:       inky
 error in line# 27
-    parsed as:       _int
+    parsed as:       : _no_type
     should be:       SELF_TYPE
 error in line# 28
-    parsed as:         0
+    parsed as:     )
     should be: 
 error in line# 29
-    parsed as:       : _no_type
+    parsed as: 
     should be:       _object
 error in line# 30
-    parsed as:     )
+    parsed as:   _class
     should be:         self
 error in line# 31
-    parsed as: 
+    parsed as:     A
     should be:       : SELF_TYPE
 error in line# 32
-    parsed as:   _class
+    parsed as:     Object
     should be:     )
 error in line# 33
-    parsed as:     A
+    parsed as:     filename
     should be: 
 error in line# 34
-    parsed as:     Object
+    parsed as:     (
     should be:   _class
 error in line# 35
-    parsed as:     filename
+    parsed as: 
     should be:     B
 error in line# 36
-    parsed as:     (
+    parsed as:     _method
     should be:     A
 error in line# 37
-    parsed as: 
+    parsed as:       inky
     should be:     filename
 error in line# 38
-    parsed as:     _method
-    should be:     (
-error in line# 39
-    parsed as:       inky
-    should be: 
-error in line# 40
     parsed as:       SELF_TYPE
+    should be:     (
+error in line# 40
+    parsed as:       _object
     should be:     _method
 error in line# 41
-    parsed as: 
+    parsed as:         self
     should be:       inky
 error in line# 42
-    parsed as:       _object
+    parsed as:       : _no_type
     should be:       SELF_TYPE
 error in line# 43
-    parsed as:         self
+    parsed as:     )
     should be: 
 error in line# 44
-    parsed as:       : _no_type
+    parsed as: 
     should be:       _new
 error in line# 45
-    parsed as:     )
+    parsed as:   _class
     should be:         SELF_TYPE
 error in line# 46
-    parsed as: 
+    parsed as:     B
     should be:       : SELF_TYPE
 error in line# 47
-    parsed as:   _class
+    parsed as:     A
     should be:     )
 error in line# 48
-    parsed as:     B
-    should be: 
-error in line# 49
-    parsed as:     A
-    should be: 
-error in line# 50
     parsed as:     filename
     should be: 
-error in line# 51
+error in line# 49
     parsed as:     (
     should be: 
-error in line# 53
+error in line# 51
     parsed as:     _method
     should be: 
-error in line# 54
+error in line# 52
     parsed as:       inky
     should be: 
-error in line# 55
+error in line# 53
     parsed as:       SELF_TYPE
     should be: 
-error in line# 57
+error in line# 55
     parsed as:       _new
     should be: 

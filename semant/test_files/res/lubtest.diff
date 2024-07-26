@@ -1,405 +1,396 @@
 error in line# 1
-    parsed as: Class Name: Main, Class Definition: 0x580e37d6c240
+    parsed as: Class Name: Main, Class Definition: 0x566a2c02c240
     should be: : Inferred return type Z of method h does not conform to declared return type B.
 error in line# 2
-    parsed as: Class Name: Object, Class Definition: 0x580e37d6dfb0
+    parsed as: Class Name: Object, Class Definition: 0x566a2c02dfb0
     should be: Compilation halted due to static semantic errors.
 error in line# 3
-    parsed as: Class Name: Int, Class Definition: 0x580e36e158d0
+    parsed as: Class Name: Int, Class Definition: 0x566a2b8958d4
     should be: 
 error in line# 4
-    parsed as: Class Name: Z, Class Definition: 0x580e37d6c320
+    parsed as: Class Name: Z, Class Definition: 0x566a2c02c320
     should be: 
 error in line# 5
-    parsed as: Class Name: A, Class Definition: 0x580e37d6c430
+    parsed as: Class Name: A, Class Definition: 0x566a2c02c430
     should be: 
 error in line# 6
-    parsed as: Class Name: B, Class Definition: 0x580e37d6c540
+    parsed as: Class Name: B, Class Definition: 0x566a2c02c540
     should be: 
 error in line# 7
-    parsed as: Class Name: C, Class Definition: 0x580e37d6c650
+    parsed as: Class Name: C, Class Definition: 0x566a2c02c650
     should be: 
 error in line# 8
-    parsed as: Class Name: D, Class Definition: 0x580e37d6c760
+    parsed as: Class Name: D, Class Definition: 0x566a2c02c760
     should be: 
 error in line# 9
-    parsed as: Class Name: Test, Class Definition: 0x580e37d6d320
+    parsed as: Class Name: Test, Class Definition: 0x566a2c02d320
     should be: 
 error in line# 10
-    parsed as: Class Name: Bool, Class Definition: 0x580e37d6d380
+    parsed as: Class Name: Bool, Class Definition: 0x566a2c02d380
     should be: 
 error in line# 11
-    parsed as: Class Name: IO, Class Definition: 0x7fff62b989d0
+    parsed as: Class Name: IO, Class Definition: 0x7fff304a7770
     should be: 
 error in line# 12
-    parsed as: Class Name: String, Class Definition: 0x580e37d6dc10
+    parsed as: Class Name: String, Class Definition: 0x566a2c02dc10
     should be: 
 error in line# 13
-    parsed as: Class Object is inherited by:
+    parsed as: Class Main inherits from Object | 
     should be: 
 error in line# 14
-    parsed as:   Main
+    parsed as: Class Z inherits from Object | 
     should be: 
 error in line# 15
-    parsed as:   Z
+    parsed as: Class A inherits from Object | Z | 
     should be: 
 error in line# 16
-    parsed as:   Test
+    parsed as: Class B inherits from Object | Z | 
     should be: 
 error in line# 17
-    parsed as: Class Z is inherited by:
+    parsed as: Class C inherits from Object | Z | B | 
     should be: 
 error in line# 18
-    parsed as:   A
+    parsed as: Class D inherits from Object | Z | B | 
     should be: 
 error in line# 19
-    parsed as:   B
-    should be: 
-error in line# 20
-    parsed as: Class B is inherited by:
+    parsed as: Class Test inherits from Object | 
     should be: 
 error in line# 21
-    parsed as:   C
-    should be: 
-error in line# 22
-    parsed as:   D
-    should be: 
-error in line# 24
     parsed as: _program
     should be: 
-error in line# 26
+error in line# 23
     parsed as:   _class
     should be: 
-error in line# 27
+error in line# 24
     parsed as:     Main
     should be: 
-error in line# 28
+error in line# 25
     parsed as:     Object
+    should be: 
+error in line# 26
+    parsed as:     filename
+    should be: 
+error in line# 27
+    parsed as:     (
     should be: 
 error in line# 29
-    parsed as:     filename
+    parsed as:     _method
     should be: 
 error in line# 30
-    parsed as:     (
-    should be: 
-error in line# 32
-    parsed as:     _method
-    should be: 
-error in line# 33
     parsed as:       main
     should be: 
-error in line# 34
+error in line# 31
     parsed as:       Int
     should be: 
-error in line# 36
+error in line# 33
     parsed as:       _int
     should be: 
-error in line# 37
+error in line# 34
     parsed as:         0
     should be: 
-error in line# 38
+error in line# 35
     parsed as:       : _no_type
+    should be: 
+error in line# 36
+    parsed as:     )
+    should be: 
+error in line# 38
+    parsed as:   _class
     should be: 
 error in line# 39
-    parsed as:     )
+    parsed as:     Z
+    should be: 
+error in line# 40
+    parsed as:     Object
     should be: 
 error in line# 41
-    parsed as:   _class
+    parsed as:     filename
     should be: 
 error in line# 42
-    parsed as:     Z
+    parsed as:     (
     should be: 
 error in line# 43
-    parsed as:     Object
-    should be: 
-error in line# 44
-    parsed as:     filename
+    parsed as:     )
     should be: 
 error in line# 45
-    parsed as:     (
+    parsed as:   _class
     should be: 
 error in line# 46
-    parsed as:     )
-    should be: 
-error in line# 48
-    parsed as:   _class
-    should be: 
-error in line# 49
     parsed as:     A
     should be: 
-error in line# 50
+error in line# 47
     parsed as:     Z
     should be: 
-error in line# 51
+error in line# 48
     parsed as:     filename
+    should be: 
+error in line# 49
+    parsed as:     (
+    should be: 
+error in line# 50
+    parsed as:     )
     should be: 
 error in line# 52
-    parsed as:     (
+    parsed as:   _class
     should be: 
 error in line# 53
-    parsed as:     )
-    should be: 
-error in line# 55
-    parsed as:   _class
-    should be: 
-error in line# 56
     parsed as:     B
     should be: 
-error in line# 57
+error in line# 54
     parsed as:     Z
     should be: 
-error in line# 58
+error in line# 55
     parsed as:     filename
+    should be: 
+error in line# 56
+    parsed as:     (
+    should be: 
+error in line# 57
+    parsed as:     )
     should be: 
 error in line# 59
-    parsed as:     (
+    parsed as:   _class
     should be: 
 error in line# 60
-    parsed as:     )
-    should be: 
-error in line# 62
-    parsed as:   _class
-    should be: 
-error in line# 63
     parsed as:     C
     should be: 
-error in line# 64
+error in line# 61
     parsed as:     B
     should be: 
-error in line# 65
+error in line# 62
     parsed as:     filename
+    should be: 
+error in line# 63
+    parsed as:     (
+    should be: 
+error in line# 64
+    parsed as:     )
     should be: 
 error in line# 66
-    parsed as:     (
+    parsed as:   _class
     should be: 
 error in line# 67
-    parsed as:     )
-    should be: 
-error in line# 69
-    parsed as:   _class
-    should be: 
-error in line# 70
     parsed as:     D
     should be: 
-error in line# 71
+error in line# 68
     parsed as:     B
     should be: 
-error in line# 72
+error in line# 69
     parsed as:     filename
     should be: 
-error in line# 73
+error in line# 70
     parsed as:     (
     should be: 
-error in line# 74
+error in line# 71
     parsed as:     )
     should be: 
-error in line# 76
+error in line# 73
     parsed as:   _class
     should be: 
-error in line# 77
+error in line# 74
     parsed as:     Test
     should be: 
-error in line# 78
+error in line# 75
     parsed as:     Object
     should be: 
-error in line# 79
+error in line# 76
     parsed as:     filename
     should be: 
-error in line# 80
+error in line# 77
     parsed as:     (
     should be: 
-error in line# 82
+error in line# 79
     parsed as:     _attr
     should be: 
-error in line# 83
+error in line# 80
     parsed as:       a
     should be: 
-error in line# 84
+error in line# 81
     parsed as:       A
     should be: 
-error in line# 86
+error in line# 83
     parsed as:       _no_expr
+    should be: 
+error in line# 84
+    parsed as:       : _no_type
+    should be: 
+error in line# 86
+    parsed as:     _attr
     should be: 
 error in line# 87
-    parsed as:       : _no_type
-    should be: 
-error in line# 89
-    parsed as:     _attr
-    should be: 
-error in line# 90
     parsed as:       b
     should be: 
-error in line# 91
+error in line# 88
     parsed as:       B
     should be: 
-error in line# 93
+error in line# 90
     parsed as:       _no_expr
+    should be: 
+error in line# 91
+    parsed as:       : _no_type
+    should be: 
+error in line# 93
+    parsed as:     _attr
     should be: 
 error in line# 94
-    parsed as:       : _no_type
-    should be: 
-error in line# 96
-    parsed as:     _attr
-    should be: 
-error in line# 97
     parsed as:       c
     should be: 
-error in line# 98
+error in line# 95
     parsed as:       C
     should be: 
-error in line# 100
+error in line# 97
     parsed as:       _no_expr
+    should be: 
+error in line# 98
+    parsed as:       : _no_type
+    should be: 
+error in line# 100
+    parsed as:     _attr
     should be: 
 error in line# 101
-    parsed as:       : _no_type
-    should be: 
-error in line# 103
-    parsed as:     _attr
-    should be: 
-error in line# 104
     parsed as:       d
     should be: 
-error in line# 105
+error in line# 102
     parsed as:       D
     should be: 
-error in line# 107
+error in line# 104
     parsed as:       _no_expr
     should be: 
-error in line# 108
+error in line# 105
     parsed as:       : _no_type
     should be: 
-error in line# 110
+error in line# 107
     parsed as:     _attr
     should be: 
-error in line# 111
+error in line# 108
     parsed as:       z
     should be: 
-error in line# 112
+error in line# 109
     parsed as:       Z
     should be: 
-error in line# 114
+error in line# 111
     parsed as:       _no_expr
     should be: 
-error in line# 115
+error in line# 112
     parsed as:       : _no_type
     should be: 
-error in line# 117
+error in line# 114
     parsed as:     _method
     should be: 
-error in line# 118
+error in line# 115
     parsed as:       f
     should be: 
-error in line# 119
+error in line# 116
     parsed as:       Z
     should be: 
-error in line# 121
+error in line# 118
     parsed as:       _cond
     should be: 
-error in line# 123
+error in line# 120
     parsed as:         _bool
     should be: 
-error in line# 124
+error in line# 121
     parsed as:           1
     should be: 
-error in line# 125
+error in line# 122
     parsed as:         : _no_type
     should be: 
-error in line# 127
+error in line# 124
     parsed as:         _object
     should be: 
-error in line# 128
+error in line# 125
     parsed as:           a
     should be: 
+error in line# 126
+    parsed as:         : _no_type
+    should be: 
+error in line# 128
+    parsed as:         _object
+    should be: 
 error in line# 129
+    parsed as:           b
+    should be: 
+error in line# 130
     parsed as:         : _no_type
     should be: 
 error in line# 131
-    parsed as:         _object
-    should be: 
-error in line# 132
-    parsed as:           b
-    should be: 
-error in line# 133
-    parsed as:         : _no_type
-    should be: 
-error in line# 134
     parsed as:       : _no_type
     should be: 
-error in line# 136
+error in line# 133
     parsed as:     _method
     should be: 
-error in line# 137
+error in line# 134
     parsed as:       g
     should be: 
-error in line# 138
+error in line# 135
     parsed as:       Object
     should be: 
-error in line# 140
+error in line# 137
     parsed as:       _cond
     should be: 
-error in line# 142
+error in line# 139
     parsed as:         _bool
     should be: 
-error in line# 143
+error in line# 140
     parsed as:           1
     should be: 
-error in line# 144
+error in line# 141
     parsed as:         : _no_type
     should be: 
-error in line# 146
+error in line# 143
     parsed as:         _object
     should be: 
-error in line# 147
+error in line# 144
     parsed as:           a
     should be: 
+error in line# 145
+    parsed as:         : _no_type
+    should be: 
+error in line# 147
+    parsed as:         _object
+    should be: 
 error in line# 148
+    parsed as:           b
+    should be: 
+error in line# 149
     parsed as:         : _no_type
     should be: 
 error in line# 150
-    parsed as:         _object
-    should be: 
-error in line# 151
-    parsed as:           b
-    should be: 
-error in line# 152
-    parsed as:         : _no_type
-    should be: 
-error in line# 153
     parsed as:       : _no_type
     should be: 
-error in line# 155
+error in line# 152
     parsed as:     _method
     should be: 
-error in line# 156
+error in line# 153
     parsed as:       h
     should be: 
-error in line# 157
+error in line# 154
     parsed as:       B
     should be: 
-error in line# 159
+error in line# 156
     parsed as:       _cond
     should be: 
-error in line# 161
+error in line# 158
     parsed as:         _bool
     should be: 
-error in line# 162
+error in line# 159
     parsed as:           1
     should be: 
-error in line# 163
+error in line# 160
     parsed as:         : _no_type
     should be: 
-error in line# 165
+error in line# 162
     parsed as:         _object
     should be: 
-error in line# 166
+error in line# 163
     parsed as:           c
     should be: 
-error in line# 167
+error in line# 164
     parsed as:         : _no_type
     should be: 
-error in line# 169
+error in line# 166
     parsed as:         _object
     should be: 
-error in line# 170
+error in line# 167
     parsed as:           a
     should be: 

@@ -1,15 +1,14 @@
-Class Name: Main, Class Definition: 0x5676389591e0
-Class Name: Object, Class Definition: 0x56763895a230
-Class Name: Cow, Class Definition: 0x567638959370
-Class Name: Chicken, Class Definition: 0x567638959540
-Class Name: Bool, Class Definition: 0x5676389595a0
-Class Name: Int, Class Definition: 0x5676372398d0
-Class Name: IO, Class Definition: 0x7ffd753d1f20
-Class Name: String, Class Definition: 0x567638959e90
-Class Object is inherited by:
-  Main
-  Cow
-  Chicken
+Class Name: Main, Class Definition: 0x5803862571e0
+Class Name: Object, Class Definition: 0x580386258230
+Class Name: Cow, Class Definition: 0x580386257370
+Class Name: Chicken, Class Definition: 0x580386257540
+Class Name: Bool, Class Definition: 0x5803862575a0
+Class Name: Int, Class Definition: 0x580385f378d4
+Class Name: IO, Class Definition: 0x7ffd456a90c0
+Class Name: String, Class Definition: 0x580386257e90
+Class Main inherits from Object | 
+Class Cow inherits from Object | 
+Class Chicken inherits from Object | 
 #1
 _program
   #1

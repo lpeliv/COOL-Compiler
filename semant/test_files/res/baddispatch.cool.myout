@@ -1,18 +1,16 @@
-Class Name: Main, Class Definition: 0x5e1a7840a1e0
-Class Name: Object, Class Definition: 0x5e1a7840b540
-Class Name: Animal, Class Definition: 0x5e1a7840a2c0
-Class Name: Cow, Class Definition: 0x5e1a7840a580
-Class Name: String, Class Definition: 0x5e1a7840b1a0
-Class Name: Blerg, Class Definition: 0x5e1a7840a8b0
-Class Name: Bool, Class Definition: 0x5e1a7840a910
-Class Name: Int, Class Definition: 0x5e1a775928d0
-Class Name: IO, Class Definition: 0x7ffde6ef7540
-Class Object is inherited by:
-  Main
-  Animal
-  Blerg
-Class Animal is inherited by:
-  Cow
+Class Name: Main, Class Definition: 0x56316a2381e0
+Class Name: Object, Class Definition: 0x56316a239540
+Class Name: Animal, Class Definition: 0x56316a2382c0
+Class Name: Cow, Class Definition: 0x56316a238580
+Class Name: String, Class Definition: 0x56316a2391a0
+Class Name: Blerg, Class Definition: 0x56316a2388b0
+Class Name: Bool, Class Definition: 0x56316a238910
+Class Name: Int, Class Definition: 0x56316a16d8d4
+Class Name: IO, Class Definition: 0x7ffea1f725d0
+Class Main inherits from Object | 
+Class Animal inherits from Object | 
+Class Cow inherits from Object | Animal | 
+Class Blerg inherits from Object | 
 #1
 _program
   #1

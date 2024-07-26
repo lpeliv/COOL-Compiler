@@ -90,11 +90,11 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
 
     /* Fill this in */
     install_basic_classes();
-    
+
     /*------------------------------------------------*/
     /* Provjera klasa */
     /*------------------------------------------------*/
-
+    
     for (int i = classes->first(); classes->more(i); i = classes->next(i)) {
         Class_ current_class = classes->nth(i);
         Symbol class_name = current_class->fetchName();
@@ -106,7 +106,7 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
         if (class_name == Object) {
             semant_error(current_class) << "Class Object cannot be redefined.\n";
             continue;
-        } 
+        }
         else if (class_name == SELF_TYPE) {
             semant_error(current_class) << "Class name cannot be SELF_TYPE.\n";
             continue;
@@ -122,29 +122,13 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
         else  if( class_table.lookup(class_name) != NULL ){
             semant_error(current_class) << "Class " << class_name << " was previously defined." << endl;
             continue;
-        } 
+        }
 
         /*------------------------------------------------*/
         /* Provjera valjanosti parent klasa */
         /*------------------------------------------------*/ 
         else if (parent_name == Bool || parent_name == Str || parent_name == Int || parent_name == SELF_TYPE) {
             semant_error(current_class) << "Cannot inherit from " << parent_name << ".\n";
-            continue;
-        }
-
-        /*------------------------------------------------*/
-        /* Provjera nasljeđivanja samog sebe */
-        /*------------------------------------------------*/ 
-        else if (class_name == parent_name) {
-            semant_error(current_class) << "Class " << class_name << " cannot inherit from itself.\n";
-            continue;
-        }
-
-        /*------------------------------------------------*/
-        /* Provjera nasljeđivanja od nepostojeće klase */
-        /*------------------------------------------------*/ 
-        else if (class_table.lookup(parent_name) == NULL && parent_name != No_class) {
-            semant_error(current_class) << "Class " << class_name << " inherits from an undefined class " << parent_name << ".\n";
             continue;
         }
 
@@ -165,6 +149,22 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
         Class_ current_class = classes->nth(i);
         Symbol class_name = current_class->fetchName();
         Symbol parent_name = current_class->fetchParent();
+
+        /*------------------------------------------------*/
+        /* Provjera nasljeđivanja samog sebe */
+        /*------------------------------------------------*/ 
+        if (class_name == parent_name) {
+            semant_error(current_class) << "Class " << class_name << " cannot inherit from itself.\n";
+            continue;
+        }
+
+        /*------------------------------------------------*/
+        /* Provjera nasljeđivanja od nepostojeće klase */
+        /*------------------------------------------------*/ 
+        else if (class_table.lookup(parent_name) == NULL && parent_name != No_class) {
+            semant_error(current_class) << "Class " << class_name << " inherits from an undefined class " << parent_name << ".\n";
+            continue;
+        }
     }
     
     /*------------------------------------------------*/
@@ -434,8 +434,26 @@ void ClassTable::build_inheritance_graph(Classes classes) {
         Symbol parent_name = current_class->fetchParent();
         
         if (parent_name != No_class) {
-            inheritance_graph[parent_name].push_back(class_name);
+            inheritance_graph[class_name].insert(parent_name);
         }
+    }
+
+    std::set<Symbol> visited;
+    std::set<Symbol> rec_stack;
+
+    for (const auto& pair : inheritance_graph) {
+        Symbol class_name = pair.first;
+        if (detect_cycle(class_name, visited, rec_stack)) {
+            semant_error() << "Class " << class_name << " is in a cycle inheritance.\n";
+            return;
+        }
+    }
+
+    for (const auto& pair : inheritance_graph) {
+        Symbol class_name = pair.first;
+        std::set<Symbol> all_ancestors;
+        collect_ancestors(class_name, all_ancestors);
+        inheritance_graph[class_name].insert(all_ancestors.begin(), all_ancestors.end());
     }
 }
 
@@ -444,9 +462,49 @@ void ClassTable::build_inheritance_graph(Classes classes) {
 /*------------------------------------------------*/ 
 void ClassTable::print_inheritance_graph() {
     for (const auto& pair : inheritance_graph) {
-        cerr << "Class " << pair.first << " is inherited by:\n";
-        for (const Symbol& subclass : pair.second) {
-            cerr << "  " << subclass << "\n";
+        cerr << "Class " << pair.first << " inherits from ";
+        for (const auto& ancestor : pair.second) {
+            cerr << ancestor << " | ";
+        }
+        cerr << "\n";
+    }
+}
+
+/*------------------------------------------------*/
+/* Pomoćna funkcija za skupljanje predaka */
+/*------------------------------------------------*/ 
+void ClassTable::collect_ancestors(Symbol class_name, std::set<Symbol>& ancestors) {
+    if (inheritance_graph.find(class_name) != inheritance_graph.end()) {
+        for (const Symbol& parent : inheritance_graph[class_name]) {
+            if (ancestors.find(parent) == ancestors.end()) {
+                ancestors.insert(parent);
+                collect_ancestors(parent, ancestors);
+            }
         }
     }
+}
+
+/*------------------------------------------------*/
+/* Pomoćna funkcija za provjeru cikličnosti */
+/*------------------------------------------------*/ 
+bool ClassTable::detect_cycle(Symbol class_name, std::set<Symbol>& visited, std::set<Symbol>& rec_stack) {
+    if (rec_stack.find(class_name) != rec_stack.end()) {
+        return true;
+    }
+    
+    if (visited.find(class_name) == visited.end()) {
+        visited.insert(class_name);
+        rec_stack.insert(class_name);
+        
+        if (inheritance_graph.find(class_name) != inheritance_graph.end()) {
+            for (const Symbol& parent : inheritance_graph[class_name]) {
+                if (detect_cycle(parent, visited, rec_stack)) {
+                    return true;
+                }
+            }
+        }
+    }
+    
+    rec_stack.erase(class_name);
+    return false;
 }

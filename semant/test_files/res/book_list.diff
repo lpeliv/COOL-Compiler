@@ -1,134 +1,125 @@
 error in line# 1
-    parsed as: Class Name: Book, Class Definition: 0x5e7ec4657ed0
+    parsed as: Class Name: Book, Class Definition: 0x64f0e1500ed0
     should be: 
 error in line# 2
-    parsed as: Class Name: IO, Class Definition: 0x7ffc5188cf00
+    parsed as: Class Name: IO, Class Definition: 0x7ffced3c0130
     should be: _program
 error in line# 3
-    parsed as: Class Name: String, Class Definition: 0x5e7ec465be80
+    parsed as: Class Name: String, Class Definition: 0x64f0e1504e80
     should be: 
 error in line# 4
-    parsed as: Class Name: Article, Class Definition: 0x5e7ec4658a60
+    parsed as: Class Name: Article, Class Definition: 0x64f0e1501a60
     should be:   _class
 error in line# 5
-    parsed as: Class Name: BookList, Class Definition: 0x5e7ec4659a00
+    parsed as: Class Name: BookList, Class Definition: 0x64f0e1502a00
     should be:     Book
 error in line# 6
-    parsed as: Class Name: Bool, Class Definition: 0x5e7ec465b7d0
+    parsed as: Class Name: Bool, Class Definition: 0x64f0e15047d0
     should be:     IO
 error in line# 7
-    parsed as: Class Name: Cons, Class Definition: 0x5e7ec465a930
+    parsed as: Class Name: Cons, Class Definition: 0x64f0e1503930
     should be:     filename
 error in line# 8
-    parsed as: Class Name: Object, Class Definition: 0x5e7ec465c220
+    parsed as: Class Name: Object, Class Definition: 0x64f0e1505220
     should be:     (
 error in line# 9
-    parsed as: Class Name: Nil, Class Definition: 0x5e7ec465abb0
+    parsed as: Class Name: Nil, Class Definition: 0x64f0e1503bb0
     should be: 
 error in line# 10
-    parsed as: Class Name: Main, Class Definition: 0x5e7ec465b770
+    parsed as: Class Name: Main, Class Definition: 0x64f0e1504770
     should be:     _attr
 error in line# 11
-    parsed as: Class Name: Int, Class Definition: 0x5e7ec368a8d0
+    parsed as: Class Name: Int, Class Definition: 0x64f0e0c9d8d4
     should be:       title
 error in line# 12
-    parsed as: Class Book is inherited by:
+    parsed as: Class Book inherits from IO | 
     should be:       String
 error in line# 13
-    parsed as:   Article
+    parsed as: Class Article inherits from Book | IO | 
     should be: 
 error in line# 14
-    parsed as: Class IO is inherited by:
+    parsed as: Class BookList inherits from IO | 
     should be:       _no_expr
 error in line# 15
-    parsed as:   Book
+    parsed as: Class Cons inherits from IO | BookList | 
     should be:       : _no_type
 error in line# 16
-    parsed as:   BookList
+    parsed as: Class Nil inherits from IO | BookList | 
     should be: 
 error in line# 17
-    parsed as: Class BookList is inherited by:
+    parsed as: Class Main inherits from Object | 
     should be:     _attr
 error in line# 18
-    parsed as:   Cons
+    parsed as: 
     should be:       author
 error in line# 19
-    parsed as:   Nil
+    parsed as: _program
     should be:       String
-error in line# 20
-    parsed as: Class Object is inherited by:
-    should be: 
 error in line# 21
-    parsed as:   Main
+    parsed as:   _class
     should be:       _no_expr
 error in line# 22
-    parsed as: 
+    parsed as:     Book
     should be:       : _no_type
 error in line# 23
-    parsed as: _program
+    parsed as:     IO
     should be: 
 error in line# 24
-    parsed as: 
+    parsed as:     filename
     should be:     _method
 error in line# 25
-    parsed as:   _class
+    parsed as:     (
     should be:       initBook
-error in line# 26
-    parsed as:     Book
-    should be: 
 error in line# 27
-    parsed as:     IO
+    parsed as:     _attr
     should be:       _formal
 error in line# 28
-    parsed as:     filename
+    parsed as:       title
     should be:         title_p
 error in line# 29
-    parsed as:     (
+    parsed as:       String
     should be:         String
 error in line# 31
-    parsed as:     _attr
+    parsed as:       _no_expr
     should be:       _formal
 error in line# 32
-    parsed as:       title
+    parsed as:       : _no_type
     should be:         author_p
 error in line# 33
-    parsed as:       String
+    parsed as: 
     should be:         String
 error in line# 34
-    parsed as: 
+    parsed as:     _attr
     should be:       Book
 error in line# 35
-    parsed as:       _no_expr
+    parsed as:       author
     should be: 
 error in line# 36
-    parsed as:       : _no_type
+    parsed as:       String
     should be:       _block
 error in line# 38
-    parsed as:     _attr
+    parsed as:       _no_expr
     should be:         _assign
 error in line# 39
-    parsed as:       author
+    parsed as:       : _no_type
     should be:           title
-error in line# 40
-    parsed as:       String
-    should be: 
 error in line# 41
-    parsed as: 
+    parsed as:     _method
     should be:           _object
 error in line# 42
-    parsed as:       _no_expr
+    parsed as:       initBook
     should be:             title_p
 error in line# 43
-    parsed as:       : _no_type
+    parsed as: 
     should be:           : String
 error in line# 44
-    parsed as: 
+    parsed as:       _formal
     should be:         : String
 error in line# 45
-    parsed as:     _method
+    parsed as:         title_p
     should be: 
 error in line# 46
-    parsed as:       initBook
+    parsed as:         String
     should be:         _assign
 error in line# 47
     parsed as: 
@@ -137,373 +128,373 @@ error in line# 48
     parsed as:       _formal
     should be: 
 error in line# 49
-    parsed as:         title_p
+    parsed as:         author_p
     should be:           _object
 error in line# 50
     parsed as:         String
     should be:             author_p
 error in line# 51
-    parsed as: 
+    parsed as:       Book
     should be:           : String
 error in line# 52
-    parsed as:       _formal
+    parsed as: 
     should be:         : String
 error in line# 53
-    parsed as:         author_p
+    parsed as:       _block
     should be: 
 error in line# 54
-    parsed as:         String
+    parsed as: 
     should be:         _object
 error in line# 55
-    parsed as:       Book
+    parsed as:         _assign
     should be:           self
 error in line# 56
-    parsed as: 
+    parsed as:           title
     should be:         : SELF_TYPE
 error in line# 57
-    parsed as:       _block
+    parsed as: 
     should be:       : SELF_TYPE
+error in line# 58
+    parsed as:           _object
+    should be: 
 error in line# 59
-    parsed as:         _assign
+    parsed as:             title_p
     should be:     _method
 error in line# 60
-    parsed as:           title
+    parsed as:           : _no_type
     should be:       print
 error in line# 61
-    parsed as: 
+    parsed as:         : _no_type
     should be:       Book
-error in line# 62
-    parsed as:           _object
-    should be: 
 error in line# 63
-    parsed as:             title_p
+    parsed as:         _assign
     should be:       _block
 error in line# 64
-    parsed as:           : _no_type
-    should be: 
-error in line# 65
-    parsed as:         : _no_type
-    should be:         _dispatch
-error in line# 67
-    parsed as:         _assign
-    should be:           _dispatch
-error in line# 68
     parsed as:           author
     should be: 
-error in line# 69
+error in line# 65
     parsed as: 
-    should be:             _dispatch
-error in line# 70
+    should be:         _dispatch
+error in line# 66
     parsed as:           _object
     should be: 
-error in line# 71
+error in line# 67
     parsed as:             author_p
+    should be:           _dispatch
+error in line# 68
+    parsed as:           : _no_type
+    should be: 
+error in line# 69
+    parsed as:         : _no_type
+    should be:             _dispatch
+error in line# 71
+    parsed as:         _object
     should be:               _object
 error in line# 72
-    parsed as:           : _no_type
+    parsed as:           self
     should be:                 self
 error in line# 73
     parsed as:         : _no_type
     should be:               : SELF_TYPE
 error in line# 74
-    parsed as: 
+    parsed as:       : _no_type
     should be:               out_string
 error in line# 75
-    parsed as:         _object
+    parsed as: 
     should be:               (
 error in line# 76
-    parsed as:           self
+    parsed as:     _method
     should be: 
 error in line# 77
-    parsed as:         : _no_type
+    parsed as:       print
     should be:               _string
 error in line# 78
-    parsed as:       : _no_type
+    parsed as:       Book
     should be:                 "title:      "
 error in line# 79
     parsed as: 
     should be:               : String
 error in line# 80
-    parsed as:     _method
+    parsed as:       _block
     should be:               )
 error in line# 81
-    parsed as:       print
+    parsed as: 
     should be:             : SELF_TYPE
 error in line# 82
-    parsed as:       Book
+    parsed as:         _dispatch
     should be:             out_string
 error in line# 83
     parsed as: 
     should be:             (
 error in line# 84
-    parsed as:       _block
+    parsed as:           _dispatch
     should be: 
 error in line# 85
     parsed as: 
     should be:             _object
 error in line# 86
-    parsed as:         _dispatch
+    parsed as:             _dispatch
     should be:               title
 error in line# 87
     parsed as: 
     should be:             : String
 error in line# 88
-    parsed as:           _dispatch
+    parsed as:               _object
     should be:             )
 error in line# 89
-    parsed as: 
+    parsed as:                 self
     should be:           : SELF_TYPE
 error in line# 90
-    parsed as:             _dispatch
+    parsed as:               : _no_type
     should be:           out_string
 error in line# 91
-    parsed as: 
+    parsed as:               out_string
     should be:           (
 error in line# 92
-    parsed as:               _object
+    parsed as:               (
     should be: 
 error in line# 93
-    parsed as:                 self
+    parsed as: 
     should be:           _string
 error in line# 94
-    parsed as:               : _no_type
+    parsed as:               _string
     should be:             "\n"
 error in line# 95
-    parsed as:               out_string
+    parsed as:                 "title:      "
     should be:           : String
 error in line# 96
-    parsed as:               (
+    parsed as:               : _no_type
     should be:           )
 error in line# 97
-    parsed as: 
+    parsed as:               )
     should be:         : SELF_TYPE
 error in line# 98
-    parsed as:               _string
+    parsed as:             : _no_type
     should be: 
 error in line# 99
-    parsed as:                 "title:      "
+    parsed as:             out_string
     should be:         _dispatch
 error in line# 100
-    parsed as:               : _no_type
-    should be: 
-error in line# 101
-    parsed as:               )
-    should be:           _dispatch
-error in line# 102
-    parsed as:             : _no_type
-    should be: 
-error in line# 103
-    parsed as:             out_string
-    should be:             _dispatch
-error in line# 104
     parsed as:             (
     should be: 
-error in line# 105
+error in line# 101
     parsed as: 
+    should be:           _dispatch
+error in line# 102
+    parsed as:             _object
+    should be: 
+error in line# 103
+    parsed as:               title
+    should be:             _dispatch
+error in line# 104
+    parsed as:             : _no_type
+    should be: 
+error in line# 105
+    parsed as:             )
     should be:               _object
 error in line# 106
-    parsed as:             _object
+    parsed as:           : _no_type
     should be:                 self
 error in line# 107
-    parsed as:               title
+    parsed as:           out_string
     should be:               : SELF_TYPE
 error in line# 108
-    parsed as:             : _no_type
+    parsed as:           (
     should be:               out_string
 error in line# 109
-    parsed as:             )
+    parsed as: 
     should be:               (
 error in line# 110
-    parsed as:           : _no_type
+    parsed as:           _string
     should be: 
 error in line# 111
-    parsed as:           out_string
+    parsed as:             "\n"
     should be:               _string
 error in line# 112
-    parsed as:           (
+    parsed as:           : _no_type
     should be:                 "author:     "
 error in line# 113
-    parsed as: 
+    parsed as:           )
     should be:               : String
 error in line# 114
-    parsed as:           _string
+    parsed as:         : _no_type
     should be:               )
 error in line# 115
-    parsed as:             "\n"
+    parsed as: 
     should be:             : SELF_TYPE
 error in line# 116
-    parsed as:           : _no_type
+    parsed as:         _dispatch
     should be:             out_string
 error in line# 117
-    parsed as:           )
+    parsed as: 
     should be:             (
 error in line# 118
-    parsed as:         : _no_type
+    parsed as:           _dispatch
     should be: 
 error in line# 119
     parsed as: 
     should be:             _object
 error in line# 120
-    parsed as:         _dispatch
+    parsed as:             _dispatch
     should be:               author
 error in line# 121
     parsed as: 
     should be:             : String
 error in line# 122
-    parsed as:           _dispatch
+    parsed as:               _object
     should be:             )
 error in line# 123
-    parsed as: 
+    parsed as:                 self
     should be:           : SELF_TYPE
 error in line# 124
-    parsed as:             _dispatch
+    parsed as:               : _no_type
     should be:           out_string
 error in line# 125
-    parsed as: 
+    parsed as:               out_string
     should be:           (
 error in line# 126
-    parsed as:               _object
+    parsed as:               (
     should be: 
 error in line# 127
-    parsed as:                 self
+    parsed as: 
     should be:           _string
 error in line# 128
-    parsed as:               : _no_type
+    parsed as:               _string
     should be:             "\n"
 error in line# 129
-    parsed as:               out_string
+    parsed as:                 "author:     "
     should be:           : String
 error in line# 130
-    parsed as:               (
+    parsed as:               : _no_type
     should be:           )
 error in line# 131
-    parsed as: 
-    should be:         : SELF_TYPE
-error in line# 132
-    parsed as:               _string
-    should be: 
-error in line# 133
-    parsed as:                 "author:     "
-    should be:         _object
-error in line# 134
-    parsed as:               : _no_type
-    should be:           self
-error in line# 135
     parsed as:               )
     should be:         : SELF_TYPE
-error in line# 136
+error in line# 132
     parsed as:             : _no_type
+    should be: 
+error in line# 133
+    parsed as:             out_string
+    should be:         _object
+error in line# 134
+    parsed as:             (
+    should be:           self
+error in line# 135
+    parsed as: 
+    should be:         : SELF_TYPE
+error in line# 136
+    parsed as:             _object
     should be:       : SELF_TYPE
 error in line# 137
-    parsed as:             out_string
+    parsed as:               author
     should be:     )
 error in line# 138
-    parsed as:             (
+    parsed as:             : _no_type
     should be: 
 error in line# 139
-    parsed as: 
+    parsed as:             )
     should be:   _class
 error in line# 140
-    parsed as:             _object
+    parsed as:           : _no_type
     should be:     Article
 error in line# 141
-    parsed as:               author
+    parsed as:           out_string
     should be:     Book
 error in line# 142
-    parsed as:             : _no_type
+    parsed as:           (
     should be:     filename
 error in line# 143
-    parsed as:             )
+    parsed as: 
     should be:     (
 error in line# 144
-    parsed as:           : _no_type
-    should be: 
-error in line# 145
-    parsed as:           out_string
-    should be:     _attr
-error in line# 146
-    parsed as:           (
-    should be:       per_title
-error in line# 147
-    parsed as: 
-    should be:       String
-error in line# 148
     parsed as:           _string
     should be: 
-error in line# 149
+error in line# 145
     parsed as:             "\n"
+    should be:     _attr
+error in line# 146
+    parsed as:           : _no_type
+    should be:       per_title
+error in line# 147
+    parsed as:           )
+    should be:       String
+error in line# 148
+    parsed as:         : _no_type
+    should be: 
+error in line# 149
+    parsed as: 
     should be:       _no_expr
 error in line# 150
-    parsed as:           : _no_type
+    parsed as:         _object
     should be:       : _no_type
 error in line# 151
-    parsed as:           )
+    parsed as:           self
     should be: 
 error in line# 152
     parsed as:         : _no_type
     should be:     _method
 error in line# 153
-    parsed as: 
+    parsed as:       : _no_type
     should be:       initArticle
 error in line# 154
-    parsed as:         _object
-    should be: 
-error in line# 155
-    parsed as:           self
-    should be:       _formal
-error in line# 156
-    parsed as:         : _no_type
-    should be:         title_p
-error in line# 157
-    parsed as:       : _no_type
-    should be:         String
-error in line# 158
     parsed as:     )
     should be: 
-error in line# 159
+error in line# 155
     parsed as: 
     should be:       _formal
-error in line# 160
+error in line# 156
     parsed as:   _class
-    should be:         author_p
-error in line# 161
+    should be:         title_p
+error in line# 157
     parsed as:     Article
     should be:         String
-error in line# 162
+error in line# 158
     parsed as:     Book
     should be: 
-error in line# 163
+error in line# 159
     parsed as:     filename
     should be:       _formal
-error in line# 164
+error in line# 160
     parsed as:     (
+    should be:         author_p
+error in line# 161
+    parsed as: 
+    should be:         String
+error in line# 162
+    parsed as:     _attr
+    should be: 
+error in line# 163
+    parsed as:       per_title
+    should be:       _formal
+error in line# 164
+    parsed as:       String
     should be:         per_title_p
 error in line# 165
     parsed as: 
     should be:         String
 error in line# 166
-    parsed as:     _attr
+    parsed as:       _no_expr
     should be:       Article
 error in line# 167
-    parsed as:       per_title
-    should be: 
-error in line# 168
-    parsed as:       String
-    should be:       _block
-error in line# 170
-    parsed as:       _no_expr
-    should be:         _dispatch
-error in line# 171
     parsed as:       : _no_type
     should be: 
-error in line# 172
+error in line# 168
     parsed as: 
+    should be:       _block
+error in line# 169
+    parsed as:     _method
+    should be: 
+error in line# 170
+    parsed as:       initArticle
+    should be:         _dispatch
+error in line# 172
+    parsed as:       _formal
     should be:           _object
 error in line# 173
-    parsed as:     _method
+    parsed as:         title_p
     should be:             self
 error in line# 174
-    parsed as:       initArticle
+    parsed as:         String
     should be:           : SELF_TYPE
 error in line# 175
     parsed as: 
@@ -512,7 +503,7 @@ error in line# 176
     parsed as:       _formal
     should be:           (
 error in line# 177
-    parsed as:         title_p
+    parsed as:         author_p
     should be: 
 error in line# 178
     parsed as:         String
@@ -524,52 +515,55 @@ error in line# 180
     parsed as:       _formal
     should be:           : String
 error in line# 181
-    parsed as:         author_p
+    parsed as:         per_title_p
     should be: 
 error in line# 182
     parsed as:         String
     should be:           _object
 error in line# 183
-    parsed as: 
+    parsed as:       Article
     should be:             author_p
 error in line# 184
-    parsed as:       _formal
+    parsed as: 
     should be:           : String
 error in line# 185
-    parsed as:         per_title_p
+    parsed as:       _block
     should be:           )
 error in line# 186
-    parsed as:         String
+    parsed as: 
     should be:         : Book
 error in line# 187
-    parsed as:       Article
+    parsed as:         _dispatch
     should be: 
 error in line# 188
     parsed as: 
     should be:         _assign
 error in line# 189
-    parsed as:       _block
+    parsed as:           _object
     should be:           per_title
+error in line# 190
+    parsed as:             self
+    should be: 
 error in line# 191
-    parsed as:         _dispatch
+    parsed as:           : _no_type
     should be:           _object
 error in line# 192
-    parsed as: 
+    parsed as:           initBook
     should be:             per_title_p
 error in line# 193
-    parsed as:           _object
+    parsed as:           (
     should be:           : String
 error in line# 194
-    parsed as:             self
+    parsed as: 
     should be:         : String
 error in line# 195
-    parsed as:           : _no_type
+    parsed as:           _object
     should be: 
 error in line# 196
-    parsed as:           initBook
+    parsed as:             title_p
     should be:         _object
 error in line# 197
-    parsed as:           (
+    parsed as:           : _no_type
     should be:           self
 error in line# 198
     parsed as: 
@@ -578,364 +572,367 @@ error in line# 199
     parsed as:           _object
     should be:       : SELF_TYPE
 error in line# 200
-    parsed as:             title_p
+    parsed as:             author_p
     should be: 
 error in line# 201
     parsed as:           : _no_type
     should be:     _method
 error in line# 202
-    parsed as: 
+    parsed as:           )
     should be:       print
 error in line# 203
-    parsed as:           _object
+    parsed as:         : _no_type
     should be:       Book
-error in line# 204
-    parsed as:             author_p
-    should be: 
 error in line# 205
-    parsed as:           : _no_type
+    parsed as:         _assign
     should be:       _block
 error in line# 206
-    parsed as:           )
+    parsed as:           per_title
     should be: 
 error in line# 207
-    parsed as:         : _no_type
+    parsed as: 
     should be:         _static_dispatch
+error in line# 208
+    parsed as:           _object
+    should be: 
 error in line# 209
-    parsed as:         _assign
+    parsed as:             per_title_p
     should be:           _object
 error in line# 210
-    parsed as:           per_title
+    parsed as:           : _no_type
     should be:             self
 error in line# 211
-    parsed as: 
+    parsed as:         : _no_type
     should be:           : SELF_TYPE
 error in line# 212
-    parsed as:           _object
+    parsed as: 
     should be:           Book
 error in line# 213
-    parsed as:             per_title_p
+    parsed as:         _object
     should be:           print
 error in line# 214
-    parsed as:           : _no_type
+    parsed as:           self
     should be:           (
 error in line# 215
     parsed as:         : _no_type
     should be:           )
 error in line# 216
-    parsed as: 
+    parsed as:       : _no_type
     should be:         : Book
-error in line# 217
-    parsed as:         _object
-    should be: 
 error in line# 218
-    parsed as:           self
+    parsed as:     _method
     should be:         _dispatch
 error in line# 219
-    parsed as:         : _no_type
-    should be: 
-error in line# 220
-    parsed as:       : _no_type
-    should be:           _dispatch
-error in line# 222
-    parsed as:     _method
-    should be:             _dispatch
-error in line# 223
     parsed as:       print
     should be: 
-error in line# 224
+error in line# 220
     parsed as:       Book
+    should be:           _dispatch
+error in line# 222
+    parsed as:       _block
+    should be:             _dispatch
+error in line# 224
+    parsed as:         _static_dispatch
     should be:               _object
 error in line# 225
     parsed as: 
     should be:                 self
 error in line# 226
-    parsed as:       _block
+    parsed as:           _object
     should be:               : SELF_TYPE
 error in line# 227
-    parsed as: 
+    parsed as:             self
     should be:               out_string
 error in line# 228
-    parsed as:         _static_dispatch
+    parsed as:           : _no_type
     should be:               (
+error in line# 229
+    parsed as:           Book
+    should be: 
 error in line# 230
-    parsed as:           _object
+    parsed as:           print
     should be:               _string
 error in line# 231
-    parsed as:             self
+    parsed as:           (
     should be:                 "periodical:  "
 error in line# 232
-    parsed as:           : _no_type
+    parsed as:           )
     should be:               : String
 error in line# 233
-    parsed as:           Book
+    parsed as:         : _no_type
     should be:               )
 error in line# 234
-    parsed as:           print
+    parsed as: 
     should be:             : SELF_TYPE
 error in line# 235
-    parsed as:           (
+    parsed as:         _dispatch
     should be:             out_string
 error in line# 236
-    parsed as:           )
+    parsed as: 
     should be:             (
 error in line# 237
-    parsed as:         : _no_type
+    parsed as:           _dispatch
     should be: 
 error in line# 238
     parsed as: 
     should be:             _object
 error in line# 239
-    parsed as:         _dispatch
+    parsed as:             _dispatch
     should be:               per_title
 error in line# 240
     parsed as: 
     should be:             : String
 error in line# 241
-    parsed as:           _dispatch
+    parsed as:               _object
     should be:             )
 error in line# 242
-    parsed as: 
+    parsed as:                 self
     should be:           : SELF_TYPE
 error in line# 243
-    parsed as:             _dispatch
+    parsed as:               : _no_type
     should be:           out_string
 error in line# 244
-    parsed as: 
+    parsed as:               out_string
     should be:           (
 error in line# 245
-    parsed as:               _object
+    parsed as:               (
     should be: 
 error in line# 246
-    parsed as:                 self
+    parsed as: 
     should be:           _string
 error in line# 247
-    parsed as:               : _no_type
+    parsed as:               _string
     should be:             "\n"
 error in line# 248
-    parsed as:               out_string
+    parsed as:                 "periodical:  "
     should be:           : String
 error in line# 249
-    parsed as:               (
+    parsed as:               : _no_type
     should be:           )
 error in line# 250
-    parsed as: 
-    should be:         : SELF_TYPE
-error in line# 251
-    parsed as:               _string
-    should be: 
-error in line# 252
-    parsed as:                 "periodical:  "
-    should be:         _object
-error in line# 253
-    parsed as:               : _no_type
-    should be:           self
-error in line# 254
     parsed as:               )
     should be:         : SELF_TYPE
-error in line# 255
+error in line# 251
     parsed as:             : _no_type
+    should be: 
+error in line# 252
+    parsed as:             out_string
+    should be:         _object
+error in line# 253
+    parsed as:             (
+    should be:           self
+error in line# 254
+    parsed as: 
+    should be:         : SELF_TYPE
+error in line# 255
+    parsed as:             _object
     should be:       : SELF_TYPE
 error in line# 256
-    parsed as:             out_string
+    parsed as:               per_title
     should be:     )
 error in line# 257
-    parsed as:             (
+    parsed as:             : _no_type
     should be: 
 error in line# 258
-    parsed as: 
+    parsed as:             )
     should be:   _class
 error in line# 259
-    parsed as:             _object
+    parsed as:           : _no_type
     should be:     BookList
 error in line# 260
-    parsed as:               per_title
+    parsed as:           out_string
     should be:     IO
 error in line# 261
-    parsed as:             : _no_type
+    parsed as:           (
     should be:     filename
 error in line# 262
-    parsed as:             )
+    parsed as: 
     should be:     (
 error in line# 263
-    parsed as:           : _no_type
-    should be: 
-error in line# 264
-    parsed as:           out_string
-    should be:     _method
-error in line# 265
-    parsed as:           (
-    should be:       isNil
-error in line# 266
-    parsed as: 
-    should be:       Bool
-error in line# 267
     parsed as:           _string
     should be: 
-error in line# 268
+error in line# 264
     parsed as:             "\n"
+    should be:     _method
+error in line# 265
+    parsed as:           : _no_type
+    should be:       isNil
+error in line# 266
+    parsed as:           )
+    should be:       Bool
+error in line# 267
+    parsed as:         : _no_type
+    should be: 
+error in line# 268
+    parsed as: 
     should be:       _block
 error in line# 269
-    parsed as:           : _no_type
+    parsed as:         _object
     should be: 
 error in line# 270
-    parsed as:           )
+    parsed as:           self
     should be:         _dispatch
 error in line# 271
     parsed as:         : _no_type
     should be: 
 error in line# 272
-    parsed as: 
+    parsed as:       : _no_type
     should be:           _object
 error in line# 273
-    parsed as:         _object
+    parsed as:     )
     should be:             self
 error in line# 274
-    parsed as:           self
+    parsed as: 
     should be:           : SELF_TYPE
 error in line# 275
-    parsed as:         : _no_type
+    parsed as:   _class
     should be:           abort
 error in line# 276
-    parsed as:       : _no_type
+    parsed as:     BookList
     should be:           (
 error in line# 277
-    parsed as:     )
+    parsed as:     IO
     should be:           )
 error in line# 278
-    parsed as: 
+    parsed as:     filename
     should be:         : Object
 error in line# 279
-    parsed as:   _class
+    parsed as:     (
     should be: 
 error in line# 280
-    parsed as:     BookList
+    parsed as: 
     should be:         _bool
 error in line# 281
-    parsed as:     IO
+    parsed as:     _method
     should be:           1
 error in line# 282
-    parsed as:     filename
+    parsed as:       isNil
     should be:         : Bool
 error in line# 283
-    parsed as:     (
+    parsed as:       Bool
     should be:       : Bool
+error in line# 285
+    parsed as:       _block
+    should be:     _method
 error in line# 286
-    parsed as:       isNil
+    parsed as: 
     should be:       cons
 error in line# 287
-    parsed as:       Bool
+    parsed as:         _dispatch
     should be: 
 error in line# 288
     parsed as: 
     should be:       _formal
 error in line# 289
-    parsed as:       _block
+    parsed as:           _object
     should be:         hd
 error in line# 290
-    parsed as: 
+    parsed as:             self
     should be:         Book
 error in line# 291
-    parsed as:         _dispatch
-    should be:       Cons
-error in line# 293
-    parsed as:           _object
-    should be:       _let
-error in line# 294
-    parsed as:             self
-    should be:         new_cell
-error in line# 295
     parsed as:           : _no_type
-    should be:         Cons
-error in line# 296
+    should be:       Cons
+error in line# 292
     parsed as:           abort
     should be: 
-error in line# 297
+error in line# 293
     parsed as:           (
+    should be:       _let
+error in line# 294
+    parsed as:           )
+    should be:         new_cell
+error in line# 295
+    parsed as:         : _no_type
+    should be:         Cons
+error in line# 297
+    parsed as:         _bool
     should be:         _new
 error in line# 298
-    parsed as:           )
+    parsed as:           1
     should be:           Cons
 error in line# 299
     parsed as:         : _no_type
     should be:         : Cons
+error in line# 300
+    parsed as:       : _no_type
+    should be: 
 error in line# 301
-    parsed as:         _bool
+    parsed as: 
     should be:         _dispatch
 error in line# 302
-    parsed as:           1
+    parsed as:     _method
     should be: 
 error in line# 303
-    parsed as:         : _no_type
+    parsed as:       cons
     should be:           _object
 error in line# 304
-    parsed as:       : _no_type
+    parsed as: 
     should be:             new_cell
 error in line# 305
-    parsed as: 
+    parsed as:       _formal
     should be:           : Cons
 error in line# 306
-    parsed as:     _method
+    parsed as:         hd
     should be:           init
 error in line# 307
-    parsed as:       cons
+    parsed as:         Book
     should be:           (
+error in line# 308
+    parsed as:       Cons
+    should be: 
 error in line# 309
-    parsed as:       _formal
+    parsed as: 
     should be:           _object
 error in line# 310
-    parsed as:         hd
+    parsed as:       _let
     should be:             hd
 error in line# 311
-    parsed as:         Book
+    parsed as:         new_cell
     should be:           : Book
 error in line# 312
-    parsed as:       Cons
+    parsed as:         Cons
     should be: 
 error in line# 313
     parsed as: 
     should be:           _object
 error in line# 314
-    parsed as:       _let
+    parsed as:         _new
     should be:             self
 error in line# 315
-    parsed as:         new_cell
+    parsed as:           Cons
     should be:           : SELF_TYPE
 error in line# 316
-    parsed as:         Cons
+    parsed as:         : _no_type
     should be:           )
 error in line# 317
     parsed as: 
     should be:         : Cons
 error in line# 318
-    parsed as:         _new
+    parsed as:         _dispatch
     should be:       : Cons
-error in line# 319
-    parsed as:           Cons
-    should be: 
 error in line# 320
-    parsed as:         : _no_type
+    parsed as:           _object
     should be:     _method
 error in line# 321
-    parsed as: 
+    parsed as:             new_cell
     should be:       car
 error in line# 322
-    parsed as:         _dispatch
-    should be:       Book
-error in line# 324
-    parsed as:           _object
-    should be:       _block
-error in line# 325
-    parsed as:             new_cell
-    should be: 
-error in line# 326
     parsed as:           : _no_type
-    should be:         _dispatch
-error in line# 327
+    should be:       Book
+error in line# 323
     parsed as:           init
     should be: 
-error in line# 328
+error in line# 324
     parsed as:           (
+    should be:       _block
+error in line# 326
+    parsed as:           _object
+    should be:         _dispatch
+error in line# 327
+    parsed as:             hd
+    should be: 
+error in line# 328
+    parsed as:           : _no_type
     should be:           _object
 error in line# 329
     parsed as: 
@@ -944,226 +941,271 @@ error in line# 330
     parsed as:           _object
     should be:           : SELF_TYPE
 error in line# 331
-    parsed as:             hd
+    parsed as:             self
     should be:           abort
 error in line# 332
     parsed as:           : _no_type
     should be:           (
-error in line# 333
-    parsed as: 
-    should be:           )
 error in line# 334
-    parsed as:           _object
+    parsed as:         : _no_type
     should be:         : Object
 error in line# 335
-    parsed as:             self
+    parsed as:       : _no_type
     should be: 
 error in line# 336
-    parsed as:           : _no_type
+    parsed as: 
     should be:         _new
 error in line# 337
-    parsed as:           )
+    parsed as:     _method
     should be:           Book
 error in line# 338
-    parsed as:         : _no_type
+    parsed as:       car
     should be:         : Book
 error in line# 339
-    parsed as:       : _no_type
+    parsed as:       Book
     should be:       : Book
+error in line# 341
+    parsed as:       _block
+    should be:     _method
 error in line# 342
-    parsed as:       car
+    parsed as: 
     should be:       cdr
 error in line# 343
-    parsed as:       Book
+    parsed as:         _dispatch
     should be:       BookList
-error in line# 351
+error in line# 345
+    parsed as:           _object
+    should be:       _block
+error in line# 346
+    parsed as:             self
+    should be: 
+error in line# 347
     parsed as:           : _no_type
+    should be:         _dispatch
+error in line# 348
+    parsed as:           abort
+    should be: 
+error in line# 349
+    parsed as:           (
+    should be:           _object
+error in line# 350
+    parsed as:           )
+    should be:             self
+error in line# 351
+    parsed as:         : _no_type
     should be:           : SELF_TYPE
+error in line# 352
+    parsed as: 
+    should be:           abort
+error in line# 353
+    parsed as:         _new
+    should be:           (
+error in line# 354
+    parsed as:           Book
+    should be:           )
 error in line# 355
     parsed as:         : _no_type
     should be:         : Object
+error in line# 356
+    parsed as:       : _no_type
+    should be: 
+error in line# 357
+    parsed as: 
+    should be:         _new
 error in line# 358
-    parsed as:           Book
+    parsed as:     _method
     should be:           BookList
 error in line# 359
-    parsed as:         : _no_type
+    parsed as:       cdr
     should be:         : BookList
 error in line# 360
-    parsed as:       : _no_type
+    parsed as:       BookList
     should be:       : BookList
+error in line# 362
+    parsed as:       _block
+    should be:     _method
 error in line# 363
-    parsed as:       cdr
+    parsed as: 
     should be:       print_list
 error in line# 364
-    parsed as:       BookList
+    parsed as:         _dispatch
     should be:       Object
 error in line# 366
-    parsed as:       _block
+    parsed as:           _object
     should be:       _dispatch
+error in line# 367
+    parsed as:             self
+    should be: 
 error in line# 368
-    parsed as:         _dispatch
+    parsed as:           : _no_type
     should be:         _object
 error in line# 369
-    parsed as: 
+    parsed as:           abort
     should be:           self
 error in line# 370
-    parsed as:           _object
+    parsed as:           (
     should be:         : SELF_TYPE
 error in line# 371
-    parsed as:             self
+    parsed as:           )
     should be:         abort
 error in line# 372
-    parsed as:           : _no_type
+    parsed as:         : _no_type
     should be:         (
 error in line# 373
-    parsed as:           abort
+    parsed as: 
     should be:         )
 error in line# 374
-    parsed as:           (
+    parsed as:         _new
     should be:       : Object
 error in line# 375
-    parsed as:           )
+    parsed as:           BookList
     should be:     )
 error in line# 376
     parsed as:         : _no_type
     should be: 
 error in line# 377
-    parsed as: 
+    parsed as:       : _no_type
     should be:   _class
 error in line# 378
-    parsed as:         _new
+    parsed as: 
     should be:     Cons
 error in line# 379
-    parsed as:           BookList
+    parsed as:     _method
     should be:     BookList
 error in line# 380
-    parsed as:         : _no_type
+    parsed as:       print_list
     should be:     filename
 error in line# 381
-    parsed as:       : _no_type
+    parsed as:       Object
     should be:     (
 error in line# 383
-    parsed as:     _method
+    parsed as:       _dispatch
     should be:     _attr
 error in line# 384
-    parsed as:       print_list
+    parsed as: 
     should be:       xcar
 error in line# 385
-    parsed as:       Object
+    parsed as:         _object
     should be:       Book
+error in line# 386
+    parsed as:           self
+    should be: 
 error in line# 387
-    parsed as:       _dispatch
+    parsed as:         : _no_type
     should be:       _no_expr
 error in line# 388
-    parsed as: 
+    parsed as:         abort
     should be:       : _no_type
 error in line# 389
-    parsed as:         _object
-    should be: 
-error in line# 390
-    parsed as:           self
-    should be:     _attr
-error in line# 391
-    parsed as:         : _no_type
-    should be:       xcdr
-error in line# 392
-    parsed as:         abort
-    should be:       BookList
-error in line# 393
     parsed as:         (
     should be: 
-error in line# 394
+error in line# 390
     parsed as:         )
-    should be:       _no_expr
-error in line# 396
+    should be:     _attr
+error in line# 391
+    parsed as:       : _no_type
+    should be:       xcdr
+error in line# 392
     parsed as:     )
-    should be: 
-error in line# 397
-    parsed as: 
-    should be:     _method
-error in line# 398
+    should be:       BookList
+error in line# 394
     parsed as:   _class
-    should be:       isNil
-error in line# 399
+    should be:       _no_expr
+error in line# 395
     parsed as:     Cons
-    should be:       Bool
-error in line# 400
+    should be:       : _no_type
+error in line# 396
     parsed as:     BookList
     should be: 
-error in line# 401
+error in line# 397
     parsed as:     filename
+    should be:     _method
+error in line# 398
+    parsed as:     (
+    should be:       isNil
+error in line# 399
+    parsed as: 
+    should be:       Bool
+error in line# 400
+    parsed as:     _attr
+    should be: 
+error in line# 401
+    parsed as:       xcar
     should be:       _bool
 error in line# 402
-    parsed as:     (
+    parsed as:       Book
     should be:         0
 error in line# 403
     parsed as: 
     should be:       : Bool
 error in line# 404
-    parsed as:     _attr
+    parsed as:       _no_expr
     should be: 
 error in line# 405
-    parsed as:       xcar
+    parsed as:       : _no_type
     should be:     _method
 error in line# 406
-    parsed as:       Book
+    parsed as: 
     should be:       init
+error in line# 407
+    parsed as:     _attr
+    should be: 
 error in line# 408
-    parsed as:       _no_expr
+    parsed as:       xcdr
     should be:       _formal
 error in line# 409
-    parsed as:       : _no_type
+    parsed as:       BookList
     should be:         hd
 error in line# 410
     parsed as: 
     should be:         Book
 error in line# 411
-    parsed as:     _attr
+    parsed as:       _no_expr
     should be: 
 error in line# 412
-    parsed as:       xcdr
+    parsed as:       : _no_type
     should be:       _formal
 error in line# 413
-    parsed as:       BookList
+    parsed as: 
     should be:         tl
 error in line# 414
-    parsed as: 
+    parsed as:     _method
     should be:         BookList
 error in line# 415
-    parsed as:       _no_expr
+    parsed as:       isNil
     should be:       Cons
 error in line# 416
-    parsed as:       : _no_type
+    parsed as:       Bool
     should be: 
 error in line# 417
     parsed as: 
     should be:       _block
 error in line# 418
-    parsed as:     _method
+    parsed as:       _bool
     should be: 
 error in line# 419
-    parsed as:       isNil
+    parsed as:         0
     should be:         _assign
 error in line# 420
-    parsed as:       Bool
+    parsed as:       : _no_type
     should be:           xcar
 error in line# 422
-    parsed as:       _bool
+    parsed as:     _method
     should be:           _object
 error in line# 423
-    parsed as:         0
+    parsed as:       init
     should be:             hd
 error in line# 424
-    parsed as:       : _no_type
+    parsed as: 
     should be:           : Book
 error in line# 425
-    parsed as: 
+    parsed as:       _formal
     should be:         : Book
 error in line# 426
-    parsed as:     _method
+    parsed as:         hd
     should be: 
 error in line# 427
-    parsed as:       init
+    parsed as:         Book
     should be:         _assign
 error in line# 428
     parsed as: 
@@ -1172,484 +1214,481 @@ error in line# 429
     parsed as:       _formal
     should be: 
 error in line# 430
-    parsed as:         hd
+    parsed as:         tl
     should be:           _object
 error in line# 431
-    parsed as:         Book
+    parsed as:         BookList
     should be:             tl
 error in line# 432
-    parsed as: 
+    parsed as:       Cons
     should be:           : BookList
 error in line# 433
-    parsed as:       _formal
+    parsed as: 
     should be:         : BookList
 error in line# 434
-    parsed as:         tl
+    parsed as:       _block
     should be: 
 error in line# 435
-    parsed as:         BookList
+    parsed as: 
     should be:         _object
 error in line# 436
-    parsed as:       Cons
+    parsed as:         _assign
     should be:           self
 error in line# 437
-    parsed as: 
+    parsed as:           xcar
     should be:         : SELF_TYPE
 error in line# 438
-    parsed as:       _block
+    parsed as: 
     should be:       : SELF_TYPE
+error in line# 439
+    parsed as:           _object
+    should be: 
 error in line# 440
-    parsed as:         _assign
+    parsed as:             hd
     should be:     _method
 error in line# 441
-    parsed as:           xcar
+    parsed as:           : _no_type
     should be:       car
 error in line# 442
-    parsed as: 
+    parsed as:         : _no_type
     should be:       Book
-error in line# 443
-    parsed as:           _object
-    should be: 
 error in line# 444
-    parsed as:             hd
+    parsed as:         _assign
     should be:       _object
 error in line# 445
-    parsed as:           : _no_type
+    parsed as:           xcdr
     should be:         xcar
 error in line# 446
-    parsed as:         : _no_type
-    should be:       : Book
-error in line# 448
-    parsed as:         _assign
-    should be:     _method
-error in line# 449
-    parsed as:           xcdr
-    should be:       cdr
-error in line# 450
     parsed as: 
-    should be:       BookList
-error in line# 451
+    should be:       : Book
+error in line# 447
     parsed as:           _object
     should be: 
-error in line# 452
+error in line# 448
     parsed as:             tl
+    should be:     _method
+error in line# 449
+    parsed as:           : _no_type
+    should be:       cdr
+error in line# 450
+    parsed as:         : _no_type
+    should be:       BookList
+error in line# 452
+    parsed as:         _object
     should be:       _object
 error in line# 453
-    parsed as:           : _no_type
+    parsed as:           self
     should be:         xcdr
 error in line# 454
     parsed as:         : _no_type
     should be:       : BookList
+error in line# 455
+    parsed as:       : _no_type
+    should be: 
 error in line# 456
-    parsed as:         _object
+    parsed as: 
     should be:     _method
 error in line# 457
-    parsed as:           self
+    parsed as:     _method
     should be:       print_list
 error in line# 458
-    parsed as:         : _no_type
+    parsed as:       car
     should be:       Object
 error in line# 459
-    parsed as:       : _no_type
+    parsed as:       Book
     should be: 
 error in line# 460
     parsed as: 
     should be:       _block
 error in line# 461
-    parsed as:     _method
+    parsed as:       _object
     should be: 
 error in line# 462
-    parsed as:       car
+    parsed as:         xcar
     should be:         _typcase
 error in line# 463
-    parsed as:       Book
+    parsed as:       : _no_type
     should be: 
 error in line# 464
     parsed as: 
     should be:           _dispatch
 error in line# 465
-    parsed as:       _object
+    parsed as:     _method
     should be: 
 error in line# 466
-    parsed as:         xcar
+    parsed as:       cdr
     should be:             _object
 error in line# 467
-    parsed as:       : _no_type
+    parsed as:       BookList
     should be:               xcar
 error in line# 468
     parsed as: 
     should be:             : Book
 error in line# 469
-    parsed as:     _method
+    parsed as:       _object
     should be:             print
 error in line# 470
-    parsed as:       cdr
+    parsed as:         xcdr
     should be:             (
 error in line# 471
-    parsed as:       BookList
+    parsed as:       : _no_type
     should be:             )
 error in line# 472
     parsed as: 
     should be:           : Book
 error in line# 473
-    parsed as:       _object
+    parsed as:     _method
     should be: 
 error in line# 474
-    parsed as:         xcdr
+    parsed as:       print_list
     should be:           _branch
 error in line# 475
-    parsed as:       : _no_type
+    parsed as:       Object
     should be:             dummy
 error in line# 476
     parsed as: 
     should be:             Book
 error in line# 477
-    parsed as:     _method
+    parsed as:       _block
     should be: 
 error in line# 478
-    parsed as:       print_list
+    parsed as: 
     should be:             _dispatch
 error in line# 479
-    parsed as:       Object
+    parsed as:         _typcase
     should be: 
 error in line# 480
     parsed as: 
     should be:               _object
 error in line# 481
-    parsed as:       _block
+    parsed as:           _dispatch
     should be:                 self
 error in line# 482
     parsed as: 
     should be:               : SELF_TYPE
 error in line# 483
-    parsed as:         _typcase
+    parsed as:             _object
     should be:               out_string
 error in line# 484
-    parsed as: 
+    parsed as:               xcar
     should be:               (
 error in line# 485
-    parsed as:           _dispatch
+    parsed as:             : _no_type
     should be: 
 error in line# 486
-    parsed as: 
+    parsed as:             print
     should be:               _string
 error in line# 487
-    parsed as:             _object
+    parsed as:             (
     should be:                 "- dynamic type was Book -\n"
 error in line# 488
-    parsed as:               xcar
+    parsed as:             )
     should be:               : String
 error in line# 489
-    parsed as:             : _no_type
+    parsed as:           : _no_type
     should be:               )
 error in line# 490
-    parsed as:             print
+    parsed as: 
     should be:             : SELF_TYPE
 error in line# 491
-    parsed as:             (
+    parsed as:           _branch
     should be: 
 error in line# 492
-    parsed as:             )
+    parsed as:             dummy
     should be:           _branch
 error in line# 493
-    parsed as:           : _no_type
+    parsed as:             Book
     should be:             dummy
 error in line# 494
     parsed as: 
     should be:             Article
 error in line# 495
-    parsed as:           _branch
+    parsed as:             _dispatch
     should be: 
 error in line# 496
-    parsed as:             dummy
+    parsed as: 
     should be:             _dispatch
 error in line# 497
-    parsed as:             Book
+    parsed as:               _object
     should be: 
 error in line# 498
-    parsed as: 
+    parsed as:                 self
     should be:               _object
 error in line# 499
-    parsed as:             _dispatch
+    parsed as:               : _no_type
     should be:                 self
 error in line# 500
-    parsed as: 
+    parsed as:               out_string
     should be:               : SELF_TYPE
 error in line# 501
-    parsed as:               _object
+    parsed as:               (
     should be:               out_string
 error in line# 502
-    parsed as:                 self
+    parsed as: 
     should be:               (
 error in line# 503
-    parsed as:               : _no_type
+    parsed as:               _string
     should be: 
 error in line# 504
-    parsed as:               out_string
+    parsed as:                 "- dynamic type was Book -\n"
     should be:               _string
 error in line# 505
-    parsed as:               (
+    parsed as:               : _no_type
     should be:                 "- dynamic type was Article -\n"
 error in line# 506
-    parsed as: 
+    parsed as:               )
     should be:               : String
 error in line# 507
-    parsed as:               _string
+    parsed as:             : _no_type
     should be:               )
 error in line# 508
-    parsed as:                 "- dynamic type was Book -\n"
+    parsed as: 
     should be:             : SELF_TYPE
 error in line# 509
-    parsed as:               : _no_type
+    parsed as:           _branch
     should be:         : SELF_TYPE
 error in line# 510
-    parsed as:               )
+    parsed as:             dummy
     should be: 
 error in line# 511
-    parsed as:             : _no_type
+    parsed as:             Article
     should be:         _dispatch
 error in line# 513
-    parsed as:           _branch
+    parsed as:             _dispatch
     should be:           _object
 error in line# 514
-    parsed as:             dummy
+    parsed as: 
     should be:             xcdr
 error in line# 515
-    parsed as:             Article
+    parsed as:               _object
     should be:           : BookList
 error in line# 516
-    parsed as: 
+    parsed as:                 self
     should be:           print_list
 error in line# 517
-    parsed as:             _dispatch
+    parsed as:               : _no_type
     should be:           (
 error in line# 518
-    parsed as: 
+    parsed as:               out_string
     should be:           )
 error in line# 519
-    parsed as:               _object
+    parsed as:               (
     should be:         : Object
 error in line# 520
-    parsed as:                 self
+    parsed as: 
     should be:       : Object
 error in line# 521
-    parsed as:               : _no_type
+    parsed as:               _string
     should be:     )
 error in line# 522
-    parsed as:               out_string
+    parsed as:                 "- dynamic type was Article -\n"
     should be: 
 error in line# 523
-    parsed as:               (
+    parsed as:               : _no_type
     should be:   _class
 error in line# 524
-    parsed as: 
+    parsed as:               )
     should be:     Nil
 error in line# 525
-    parsed as:               _string
+    parsed as:             : _no_type
     should be:     BookList
 error in line# 526
-    parsed as:                 "- dynamic type was Article -\n"
+    parsed as:         : _no_type
     should be:     filename
 error in line# 527
-    parsed as:               : _no_type
+    parsed as: 
     should be:     (
 error in line# 528
-    parsed as:               )
-    should be: 
-error in line# 529
-    parsed as:             : _no_type
-    should be:     _method
-error in line# 530
-    parsed as:         : _no_type
-    should be:       isNil
-error in line# 531
-    parsed as: 
-    should be:       Bool
-error in line# 532
     parsed as:         _dispatch
     should be: 
-error in line# 533
+error in line# 529
     parsed as: 
-    should be:       _bool
-error in line# 534
+    should be:     _method
+error in line# 530
     parsed as:           _object
-    should be:         1
-error in line# 535
+    should be:       isNil
+error in line# 531
     parsed as:             xcdr
-    should be:       : Bool
-error in line# 536
+    should be:       Bool
+error in line# 532
     parsed as:           : _no_type
     should be: 
-error in line# 537
+error in line# 533
     parsed as:           print_list
-    should be:     _method
-error in line# 538
+    should be:       _bool
+error in line# 534
     parsed as:           (
-    should be:       print_list
-error in line# 539
+    should be:         1
+error in line# 535
     parsed as:           )
-    should be:       Object
-error in line# 540
+    should be:       : Bool
+error in line# 536
     parsed as:         : _no_type
     should be: 
-error in line# 541
+error in line# 537
     parsed as:       : _no_type
+    should be:     _method
+error in line# 538
+    parsed as:     )
+    should be:       print_list
+error in line# 539
+    parsed as: 
+    should be:       Object
+error in line# 540
+    parsed as:   _class
+    should be: 
+error in line# 541
+    parsed as:     Nil
     should be:       _bool
 error in line# 542
-    parsed as:     )
+    parsed as:     BookList
     should be:         1
 error in line# 543
-    parsed as: 
+    parsed as:     filename
     should be:       : Bool
 error in line# 544
-    parsed as:   _class
+    parsed as:     (
     should be:     )
-error in line# 545
-    parsed as:     Nil
-    should be: 
 error in line# 546
-    parsed as:     BookList
+    parsed as:     _method
     should be:   _class
 error in line# 547
-    parsed as:     filename
+    parsed as:       isNil
     should be:     Main
 error in line# 548
-    parsed as:     (
+    parsed as:       Bool
     should be:     Object
 error in line# 549
     parsed as: 
     should be:     filename
 error in line# 550
-    parsed as:     _method
+    parsed as:       _bool
     should be:     (
 error in line# 551
-    parsed as:       isNil
+    parsed as:         1
     should be: 
 error in line# 552
-    parsed as:       Bool
+    parsed as:       : _no_type
     should be:     _attr
 error in line# 553
     parsed as: 
     should be:       books
 error in line# 554
-    parsed as:       _bool
+    parsed as:     _method
     should be:       BookList
 error in line# 555
-    parsed as:         1
+    parsed as:       print_list
     should be: 
 error in line# 556
-    parsed as:       : _no_type
+    parsed as:       Object
     should be:       _no_expr
 error in line# 557
     parsed as: 
     should be:       : _no_type
 error in line# 558
-    parsed as:     _method
-    should be: 
-error in line# 559
-    parsed as:       print_list
-    should be:     _method
-error in line# 560
-    parsed as:       Object
-    should be:       main
-error in line# 561
-    parsed as: 
-    should be:       Object
-error in line# 562
     parsed as:       _bool
     should be: 
-error in line# 563
+error in line# 559
     parsed as:         1
+    should be:     _method
+error in line# 560
+    parsed as:       : _no_type
+    should be:       main
+error in line# 561
+    parsed as:     )
+    should be:       Object
+error in line# 563
+    parsed as:   _class
     should be:       _let
 error in line# 564
-    parsed as:       : _no_type
+    parsed as:     Main
     should be:         a_book
 error in line# 565
-    parsed as:     )
-    should be:         Book
-error in line# 567
-    parsed as:   _class
-    should be:         _dispatch
-error in line# 568
-    parsed as:     Main
-    should be: 
-error in line# 569
     parsed as:     Object
+    should be:         Book
+error in line# 566
+    parsed as:     filename
+    should be: 
+error in line# 567
+    parsed as:     (
+    should be:         _dispatch
+error in line# 569
+    parsed as:     _attr
     should be:           _new
 error in line# 570
-    parsed as:     filename
+    parsed as:       books
     should be:             Book
 error in line# 571
-    parsed as:     (
+    parsed as:       BookList
     should be:           : Book
 error in line# 572
     parsed as: 
     should be:           initBook
 error in line# 573
-    parsed as:     _attr
+    parsed as:       _no_expr
     should be:           (
 error in line# 574
-    parsed as:       books
+    parsed as:       : _no_type
     should be: 
 error in line# 575
-    parsed as:       BookList
+    parsed as: 
     should be:           _string
 error in line# 576
-    parsed as: 
+    parsed as:     _method
     should be:             "Compilers, Principles, Techniques, and Tools"
 error in line# 577
-    parsed as:       _no_expr
+    parsed as:       main
     should be:           : String
 error in line# 578
-    parsed as:       : _no_type
+    parsed as:       Object
     should be: 
 error in line# 579
     parsed as: 
     should be:           _string
 error in line# 580
-    parsed as:     _method
+    parsed as:       _let
     should be:             "Aho, Sethi, and Ullman"
 error in line# 581
-    parsed as:       main
+    parsed as:         a_book
     should be:           : String
 error in line# 582
-    parsed as:       Object
+    parsed as:         Book
     should be:           )
 error in line# 583
     parsed as: 
     should be:         : Book
 error in line# 584
-    parsed as:       _let
-    should be: 
-error in line# 585
-    parsed as:         a_book
-    should be:         _let
-error in line# 586
-    parsed as:         Book
-    should be:           an_article
-error in line# 587
-    parsed as: 
-    should be:           Article
-error in line# 588
     parsed as:         _dispatch
     should be: 
-error in line# 589
+error in line# 585
     parsed as: 
+    should be:         _let
+error in line# 586
+    parsed as:           _new
+    should be:           an_article
+error in line# 587
+    parsed as:             Book
+    should be:           Article
+error in line# 588
+    parsed as:           : _no_type
+    should be: 
+error in line# 589
+    parsed as:           initBook
     should be:           _dispatch
 error in line# 590
-    parsed as:           _new
+    parsed as:           (
     should be: 
 error in line# 591
-    parsed as:             Book
+    parsed as: 
     should be:             _new
 error in line# 592
-    parsed as:           : _no_type
+    parsed as:           _string
     should be:               Article
 error in line# 593
-    parsed as:           initBook
+    parsed as:             "Compilers, Principles, Techniques, and Tools"
     should be:             : Article
 error in line# 594
-    parsed as:           (
+    parsed as:           : _no_type
     should be:             initArticle
 error in line# 595
     parsed as: 
@@ -1658,70 +1697,70 @@ error in line# 596
     parsed as:           _string
     should be: 
 error in line# 597
-    parsed as:             "Compilers, Principles, Techniques, and Tools"
+    parsed as:             "Aho, Sethi, and Ullman"
     should be:             _string
 error in line# 598
     parsed as:           : _no_type
     should be:               "The Top 100 CD_ROMs"
 error in line# 599
-    parsed as: 
-    should be:             : String
-error in line# 600
-    parsed as:           _string
-    should be: 
-error in line# 601
-    parsed as:             "Aho, Sethi, and Ullman"
-    should be:             _string
-error in line# 602
-    parsed as:           : _no_type
-    should be:               "Ulanoff"
-error in line# 603
     parsed as:           )
     should be:             : String
-error in line# 604
+error in line# 600
     parsed as:         : _no_type
+    should be: 
+error in line# 601
+    parsed as: 
+    should be:             _string
+error in line# 602
+    parsed as:         _let
+    should be:               "Ulanoff"
+error in line# 603
+    parsed as:           an_article
+    should be:             : String
+error in line# 604
+    parsed as:           Article
     should be: 
 error in line# 605
     parsed as: 
     should be:             _string
 error in line# 606
-    parsed as:         _let
+    parsed as:           _dispatch
     should be:               "PC Magazine"
 error in line# 607
-    parsed as:           an_article
+    parsed as: 
     should be:             : String
 error in line# 608
-    parsed as:           Article
+    parsed as:             _new
     should be:             )
 error in line# 609
-    parsed as: 
+    parsed as:               Article
     should be:           : Article
 error in line# 610
-    parsed as:           _dispatch
+    parsed as:             : _no_type
     should be: 
 error in line# 611
-    parsed as: 
+    parsed as:             initArticle
     should be:           _block
 error in line# 612
-    parsed as:             _new
+    parsed as:             (
     should be: 
 error in line# 613
-    parsed as:               Article
+    parsed as: 
     should be:             _assign
 error in line# 614
-    parsed as:             : _no_type
+    parsed as:             _string
     should be:               books
 error in line# 615
-    parsed as:             initArticle
+    parsed as:               "The Top 100 CD_ROMs"
     should be: 
 error in line# 616
-    parsed as:             (
+    parsed as:             : _no_type
     should be:               _dispatch
 error in line# 618
     parsed as:             _string
     should be:                 _dispatch
 error in line# 619
-    parsed as:               "The Top 100 CD_ROMs"
+    parsed as:               "Ulanoff"
     should be: 
 error in line# 620
     parsed as:             : _no_type
@@ -1733,140 +1772,134 @@ error in line# 622
     parsed as:             _string
     should be:                   : Nil
 error in line# 623
-    parsed as:               "Ulanoff"
+    parsed as:               "PC Magazine"
     should be:                   cons
 error in line# 624
     parsed as:             : _no_type
     should be:                   (
+error in line# 625
+    parsed as:             )
+    should be: 
 error in line# 626
-    parsed as:             _string
+    parsed as:           : _no_type
     should be:                   _object
 error in line# 627
-    parsed as:               "PC Magazine"
+    parsed as: 
     should be:                     a_book
 error in line# 628
-    parsed as:             : _no_type
+    parsed as:           _block
     should be:                   : Book
 error in line# 629
-    parsed as:             )
+    parsed as: 
     should be:                   )
 error in line# 630
-    parsed as:           : _no_type
+    parsed as:             _assign
     should be:                 : Cons
 error in line# 631
-    parsed as: 
+    parsed as:               books
     should be:                 cons
 error in line# 632
-    parsed as:           _block
+    parsed as: 
     should be:                 (
+error in line# 633
+    parsed as:               _dispatch
+    should be: 
 error in line# 634
-    parsed as:             _assign
+    parsed as: 
     should be:                 _object
 error in line# 635
-    parsed as:               books
+    parsed as:                 _dispatch
     should be:                   an_article
 error in line# 636
     parsed as: 
     should be:                 : Article
 error in line# 637
-    parsed as:               _dispatch
+    parsed as:                   _new
     should be:                 )
 error in line# 638
-    parsed as: 
+    parsed as:                     Nil
     should be:               : Cons
 error in line# 639
-    parsed as:                 _dispatch
-    should be:             : BookList
-error in line# 641
-    parsed as:                   _new
-    should be:             _dispatch
-error in line# 642
-    parsed as:                     Nil
-    should be: 
-error in line# 643
     parsed as:                   : _no_type
+    should be:             : BookList
+error in line# 640
+    parsed as:                   cons
+    should be: 
+error in line# 641
+    parsed as:                   (
+    should be:             _dispatch
+error in line# 643
+    parsed as:                   _object
     should be:               _object
 error in line# 644
-    parsed as:                   cons
+    parsed as:                     a_book
     should be:                 books
 error in line# 645
-    parsed as:                   (
+    parsed as:                   : _no_type
     should be:               : BookList
 error in line# 646
-    parsed as: 
+    parsed as:                   )
     should be:               print_list
 error in line# 647
-    parsed as:                   _object
+    parsed as:                 : _no_type
     should be:               (
 error in line# 648
-    parsed as:                     a_book
+    parsed as:                 cons
     should be:               )
 error in line# 649
-    parsed as:                   : _no_type
+    parsed as:                 (
     should be:             : Object
 error in line# 650
-    parsed as:                   )
+    parsed as: 
     should be:           : Object
 error in line# 651
-    parsed as:                 : _no_type
+    parsed as:                 _object
     should be:         : Object
 error in line# 652
-    parsed as:                 cons
+    parsed as:                   an_article
     should be:       : Object
 error in line# 653
-    parsed as:                 (
-    should be:     )
-error in line# 654
-    parsed as: 
-    should be:     )
-error in line# 655
-    parsed as:                 _object
-    should be:     )
-error in line# 656
-    parsed as:                   an_article
-    should be:     )
-error in line# 657
     parsed as:                 : _no_type
     should be:     )
-error in line# 658
+error in line# 654
     parsed as:                 )
     should be:     )
-error in line# 659
+error in line# 655
     parsed as:               : _no_type
     should be:     )
-error in line# 660
+error in line# 656
     parsed as:             : _no_type
     should be:     )
-error in line# 661
+error in line# 657
     parsed as: 
     should be:     )
-error in line# 662
+error in line# 658
     parsed as:             _dispatch
     should be:     )
-error in line# 663
+error in line# 659
     parsed as: 
     should be:     )
-error in line# 664
+error in line# 660
     parsed as:               _object
     should be:     )
-error in line# 665
+error in line# 661
     parsed as:                 books
     should be:     )
-error in line# 666
+error in line# 662
     parsed as:               : _no_type
     should be:     )
-error in line# 667
+error in line# 663
     parsed as:               print_list
     should be:     )
-error in line# 668
+error in line# 664
     parsed as:               (
     should be:     )
-error in line# 669
+error in line# 665
     parsed as:               )
     should be:     )
-error in line# 670
+error in line# 666
     parsed as:             : _no_type
     should be:     )
-error in line# 671
+error in line# 667
     parsed as:           : _no_type
     should be:     )

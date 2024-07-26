@@ -1,24 +1,20 @@
-Class Name: Main, Class Definition: 0x595601179240
-Class Name: Object, Class Definition: 0x59560117a690
-Class Name: Int, Class Definition: 0x5955ff7e68d0
-Class Name: A, Class Definition: 0x595601179320
-Class Name: B, Class Definition: 0x595601179430
-Class Name: C, Class Definition: 0x595601179540
-Class Name: D, Class Definition: 0x595601179830
-Class Name: E, Class Definition: 0x595601179a00
-Class Name: Bool, Class Definition: 0x595601179a60
-Class Name: IO, Class Definition: 0x7ffcdce5b980
-Class Name: String, Class Definition: 0x59560117a2f0
-Class Object is inherited by:
-  Main
-  A
-  D
-Class A is inherited by:
-  B
-Class B is inherited by:
-  C
-Class D is inherited by:
-  E
+Class Name: Main, Class Definition: 0x61525eec8240
+Class Name: Object, Class Definition: 0x61525eec9690
+Class Name: Int, Class Definition: 0x61525e06b8d4
+Class Name: A, Class Definition: 0x61525eec8320
+Class Name: B, Class Definition: 0x61525eec8430
+Class Name: C, Class Definition: 0x61525eec8540
+Class Name: D, Class Definition: 0x61525eec8830
+Class Name: E, Class Definition: 0x61525eec8a00
+Class Name: Bool, Class Definition: 0x61525eec8a60
+Class Name: IO, Class Definition: 0x7fff3db81ab0
+Class Name: String, Class Definition: 0x61525eec92f0
+Class Main inherits from Object | 
+Class A inherits from Object | 
+Class B inherits from Object | A | 
+Class C inherits from Object | A | B | 
+Class D inherits from Object | 
+Class E inherits from Object | D | 
 #1
 _program
   #1
