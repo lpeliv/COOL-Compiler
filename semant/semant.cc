@@ -186,6 +186,7 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
     /*------------------------------------------------*/
     populate_class_map(classes);
 
+
     /*------------------------------------------------*/
     /* Izlazak iz scope-a */
     /*------------------------------------------------*/ 
@@ -381,9 +382,11 @@ void program_class::semant()
 
     /*------------------------------------------------*/
     /* Ispis klasa i pokazivača njihovih definicija */
-    /*------------------------------------------------*/ 
-    classtable->dump_class_map();
-    classtable->print_inheritance_graph();
+    /*------------------------------------------------*/
+    if(PRINT == 1){ 
+        classtable->dump_class_map();
+        classtable->print_inheritance_graph();
+    }
 }
 
 void ClassTable::populate_class_map(Classes classes) {

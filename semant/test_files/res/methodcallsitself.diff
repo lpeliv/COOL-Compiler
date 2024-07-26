@@ -1,450 +1,60 @@
-error in line# 1
-    parsed as: Class Name: Main, Class Definition: 0x5cd53277c240
-    should be: 
-error in line# 2
-    parsed as: Class Name: Object, Class Definition: 0x5cd53277da90
-    should be: _program
-error in line# 3
-    parsed as: Class Name: Int, Class Definition: 0x5cd531b5c8d4
-    should be: 
-error in line# 4
-    parsed as: Class Name: A, Class Definition: 0x5cd53277ce60
-    should be:   _class
-error in line# 5
-    parsed as: Class Name: Bool, Class Definition: 0x5cd53277cec0
-    should be:     Main
-error in line# 6
-    parsed as: Class Name: IO, Class Definition: 0x7ffe78b2b220
-    should be:     Object
-error in line# 7
-    parsed as: Class Name: String, Class Definition: 0x5cd53277d6f0
-    should be:     filename
-error in line# 8
-    parsed as: Class Main inherits from Object | 
-    should be:     (
-error in line# 9
-    parsed as: Class A inherits from Object | 
-    should be: 
-error in line# 10
-    parsed as: 
-    should be:     _method
-error in line# 11
-    parsed as: _program
-    should be:       main
-error in line# 12
-    parsed as: 
-    should be:       Int
-error in line# 13
-    parsed as:   _class
-    should be: 
-error in line# 14
-    parsed as:     Main
-    should be:       _int
-error in line# 15
-    parsed as:     Object
-    should be:         0
 error in line# 16
-    parsed as:     filename
-    should be:       : Int
-error in line# 17
-    parsed as:     (
-    should be:     )
-error in line# 19
-    parsed as:     _method
-    should be:   _class
-error in line# 20
-    parsed as:       main
-    should be:     A
-error in line# 21
-    parsed as:       Int
-    should be:     Object
-error in line# 22
-    parsed as: 
-    should be:     filename
-error in line# 23
-    parsed as:       _int
-    should be:     (
-error in line# 24
-    parsed as:         0
-    should be: 
-error in line# 25
     parsed as:       : _no_type
-    should be:     _method
-error in line# 26
-    parsed as:     )
-    should be:       f
-error in line# 27
-    parsed as: 
-    should be:       Int
-error in line# 28
-    parsed as:   _class
-    should be: 
-error in line# 29
-    parsed as:     A
-    should be:       _dispatch
-error in line# 30
-    parsed as:     Object
-    should be: 
-error in line# 31
-    parsed as:     filename
-    should be:         _object
-error in line# 32
-    parsed as:     (
-    should be:           self
+    should be:       : Int
 error in line# 33
-    parsed as: 
+    parsed as:         : _no_type
     should be:         : SELF_TYPE
-error in line# 34
-    parsed as:     _method
-    should be:         f
-error in line# 35
-    parsed as:       f
-    should be:         (
-error in line# 36
-    parsed as:       Int
-    should be:         )
 error in line# 37
-    parsed as: 
-    should be:       : Int
-error in line# 38
-    parsed as:       _dispatch
-    should be: 
-error in line# 39
-    parsed as: 
-    should be:     _method
-error in line# 40
-    parsed as:         _object
-    should be:       g
-error in line# 41
-    parsed as:           self
-    should be: 
-error in line# 42
-    parsed as:         : _no_type
-    should be:       _formal
-error in line# 43
-    parsed as:         f
-    should be:         a
-error in line# 44
-    parsed as:         (
-    should be:         Int
-error in line# 45
-    parsed as:         )
-    should be:       Int
-error in line# 46
     parsed as:       : _no_type
-    should be: 
-error in line# 47
-    parsed as: 
-    should be:       _dispatch
-error in line# 48
-    parsed as:     _method
-    should be: 
-error in line# 49
-    parsed as:       g
-    should be:         _object
-error in line# 50
-    parsed as: 
-    should be:           self
+    should be:       : Int
 error in line# 51
-    parsed as:       _formal
+    parsed as:         : _no_type
     should be:         : SELF_TYPE
-error in line# 52
-    parsed as:         a
-    should be:         g
-error in line# 53
-    parsed as:         Int
-    should be:         (
-error in line# 54
-    parsed as:       Int
-    should be: 
-error in line# 55
-    parsed as: 
-    should be:         _dispatch
-error in line# 56
-    parsed as:       _dispatch
-    should be: 
-error in line# 57
-    parsed as: 
-    should be:           _object
-error in line# 58
-    parsed as:         _object
-    should be:             self
 error in line# 59
-    parsed as:           self
+    parsed as:           : _no_type
     should be:           : SELF_TYPE
-error in line# 60
-    parsed as:         : _no_type
-    should be:           g
-error in line# 61
-    parsed as:         g
-    should be:           (
-error in line# 62
-    parsed as:         (
-    should be: 
-error in line# 63
-    parsed as: 
-    should be:           _dispatch
-error in line# 64
-    parsed as:         _dispatch
-    should be: 
-error in line# 65
-    parsed as: 
-    should be:             _object
-error in line# 66
-    parsed as:           _object
-    should be:               self
 error in line# 67
-    parsed as:             self
+    parsed as:             : _no_type
     should be:             : SELF_TYPE
-error in line# 68
-    parsed as:           : _no_type
-    should be:             f
-error in line# 69
-    parsed as:           g
-    should be:             (
-error in line# 70
-    parsed as:           (
-    should be:             )
 error in line# 71
-    parsed as: 
+    parsed as:           : _no_type
     should be:           : Int
-error in line# 72
-    parsed as:           _dispatch
-    should be:           )
 error in line# 73
-    parsed as: 
+    parsed as:         : _no_type
     should be:         : Int
-error in line# 74
-    parsed as:             _object
-    should be:         )
 error in line# 75
-    parsed as:               self
-    should be:       : Int
-error in line# 76
-    parsed as:             : _no_type
-    should be: 
-error in line# 77
-    parsed as:             f
-    should be:     _method
-error in line# 78
-    parsed as:             (
-    should be:       h
-error in line# 79
-    parsed as:             )
-    should be: 
-error in line# 80
-    parsed as:           : _no_type
-    should be:       _formal
-error in line# 81
-    parsed as:           )
-    should be:         a
-error in line# 82
-    parsed as:         : _no_type
-    should be:         Int
-error in line# 83
-    parsed as:         )
-    should be: 
-error in line# 84
     parsed as:       : _no_type
-    should be:       _formal
-error in line# 85
-    parsed as: 
-    should be:         b
-error in line# 86
-    parsed as:     _method
-    should be:         Int
-error in line# 87
-    parsed as:       h
-    should be:       Int
-error in line# 89
-    parsed as:       _formal
-    should be:       _dispatch
-error in line# 90
-    parsed as:         a
-    should be: 
-error in line# 91
-    parsed as:         Int
-    should be:         _object
-error in line# 92
-    parsed as: 
-    should be:           self
-error in line# 93
-    parsed as:       _formal
-    should be:         : SELF_TYPE
-error in line# 94
-    parsed as:         b
-    should be:         h
-error in line# 95
-    parsed as:         Int
-    should be:         (
-error in line# 96
-    parsed as:       Int
-    should be: 
-error in line# 97
-    parsed as: 
-    should be:         _dispatch
-error in line# 98
-    parsed as:       _dispatch
-    should be: 
-error in line# 99
-    parsed as: 
-    should be:           _object
-error in line# 100
-    parsed as:         _object
-    should be:             self
-error in line# 101
-    parsed as:           self
-    should be:           : SELF_TYPE
-error in line# 102
-    parsed as:         : _no_type
-    should be:           h
-error in line# 103
-    parsed as:         h
-    should be:           (
-error in line# 104
-    parsed as:         (
-    should be: 
-error in line# 105
-    parsed as: 
-    should be:           _int
-error in line# 106
-    parsed as:         _dispatch
-    should be:             0
-error in line# 107
-    parsed as: 
-    should be:           : Int
-error in line# 108
-    parsed as:           _object
-    should be: 
-error in line# 109
-    parsed as:             self
-    should be:           _int
-error in line# 110
-    parsed as:           : _no_type
-    should be:             0
-error in line# 111
-    parsed as:           h
-    should be:           : Int
-error in line# 112
-    parsed as:           (
-    should be:           )
-error in line# 113
-    parsed as: 
-    should be:         : Int
-error in line# 114
-    parsed as:           _int
-    should be: 
-error in line# 115
-    parsed as:             0
-    should be:         _dispatch
-error in line# 116
-    parsed as:           : _no_type
-    should be: 
-error in line# 117
-    parsed as: 
-    should be:           _object
-error in line# 118
-    parsed as:           _int
-    should be:             self
-error in line# 119
-    parsed as:             0
-    should be:           : SELF_TYPE
-error in line# 120
-    parsed as:           : _no_type
-    should be:           h
-error in line# 121
-    parsed as:           )
-    should be:           (
-error in line# 122
-    parsed as:         : _no_type
-    should be: 
-error in line# 123
-    parsed as: 
-    should be:           _dispatch
-error in line# 124
-    parsed as:         _dispatch
-    should be: 
-error in line# 125
-    parsed as: 
-    should be:             _object
-error in line# 126
-    parsed as:           _object
-    should be:               self
-error in line# 127
-    parsed as:             self
-    should be:             : SELF_TYPE
-error in line# 128
-    parsed as:           : _no_type
-    should be:             f
-error in line# 129
-    parsed as:           h
-    should be:             (
-error in line# 130
-    parsed as:           (
-    should be:             )
-error in line# 131
-    parsed as: 
-    should be:           : Int
-error in line# 132
-    parsed as:           _dispatch
-    should be: 
-error in line# 133
-    parsed as: 
-    should be:           _dispatch
-error in line# 134
-    parsed as:             _object
-    should be: 
-error in line# 135
-    parsed as:               self
-    should be:             _object
-error in line# 136
-    parsed as:             : _no_type
-    should be:               self
-error in line# 137
-    parsed as:             f
-    should be:             : SELF_TYPE
-error in line# 138
-    parsed as:             (
-    should be:             f
-error in line# 139
-    parsed as:             )
-    should be:             (
-error in line# 140
-    parsed as:           : _no_type
-    should be:             )
-error in line# 141
-    parsed as: 
-    should be:           : Int
-error in line# 142
-    parsed as:           _dispatch
-    should be:           )
-error in line# 143
-    parsed as: 
-    should be:         : Int
-error in line# 144
-    parsed as:             _object
-    should be:         )
-error in line# 145
-    parsed as:               self
     should be:       : Int
-error in line# 146
-    parsed as:             : _no_type
-    should be:     )
-error in line# 147
-    parsed as:             f
-    should be: 
-error in line# 148
-    parsed as:             (
-    should be: 
-error in line# 149
-    parsed as:             )
-    should be: 
-error in line# 150
-    parsed as:           : _no_type
-    should be: 
-error in line# 151
-    parsed as:           )
-    should be: 
-error in line# 152
+error in line# 93
     parsed as:         : _no_type
-    should be: 
+    should be:         : SELF_TYPE
+error in line# 101
+    parsed as:           : _no_type
+    should be:           : SELF_TYPE
+error in line# 107
+    parsed as:           : _no_type
+    should be:           : Int
+error in line# 111
+    parsed as:           : _no_type
+    should be:           : Int
+error in line# 113
+    parsed as:         : _no_type
+    should be:         : Int
+error in line# 119
+    parsed as:           : _no_type
+    should be:           : SELF_TYPE
+error in line# 127
+    parsed as:             : _no_type
+    should be:             : SELF_TYPE
+error in line# 131
+    parsed as:           : _no_type
+    should be:           : Int
+error in line# 137
+    parsed as:             : _no_type
+    should be:             : SELF_TYPE
+error in line# 141
+    parsed as:           : _no_type
+    should be:           : Int
+error in line# 143
+    parsed as:         : _no_type
+    should be:         : Int

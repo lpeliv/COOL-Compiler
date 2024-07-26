@@ -1,1743 +1,369 @@
-error in line# 1
-    parsed as: Class Name: CellularAutomaton, Class Definition: 0x594184e64a50
-    should be: 
-error in line# 2
-    parsed as: Class Name: IO, Class Definition: 0x7ffd1b0b15c0
-    should be: _program
-error in line# 3
-    parsed as: Class Name: String, Class Definition: 0x594184e65b50
-    should be: 
-error in line# 4
-    parsed as: Class Name: Int, Class Definition: 0x5941835018d4
-    should be:   _class
-error in line# 5
-    parsed as: Class Name: Main, Class Definition: 0x594184e65560
-    should be:     CellularAutomaton
-error in line# 6
-    parsed as: Class Name: Object, Class Definition: 0x594184e65ef0
-    should be:     IO
-error in line# 7
-    parsed as: Class Name: Bool, Class Definition: 0x594184e655c0
-    should be:     filename
-error in line# 8
-    parsed as: Class CellularAutomaton inherits from IO | 
-    should be:     (
-error in line# 9
-    parsed as: Class Main inherits from Object | 
-    should be: 
-error in line# 10
-    parsed as: 
-    should be:     _attr
-error in line# 11
-    parsed as: _program
-    should be:       population_map
-error in line# 12
-    parsed as: 
-    should be:       String
-error in line# 13
-    parsed as:   _class
-    should be: 
-error in line# 14
-    parsed as:     CellularAutomaton
-    should be:       _no_expr
-error in line# 15
-    parsed as:     IO
-    should be:       : _no_type
-error in line# 16
-    parsed as:     filename
-    should be: 
-error in line# 17
-    parsed as:     (
-    should be:     _method
-error in line# 18
-    parsed as: 
-    should be:       init
-error in line# 19
-    parsed as:     _attr
-    should be: 
-error in line# 20
-    parsed as:       population_map
-    should be:       _formal
-error in line# 21
-    parsed as:       String
-    should be:         map
-error in line# 22
-    parsed as: 
-    should be:         String
-error in line# 23
-    parsed as:       _no_expr
-    should be:       SELF_TYPE
-error in line# 24
-    parsed as:       : _no_type
-    should be: 
-error in line# 25
-    parsed as: 
-    should be:       _block
-error in line# 26
-    parsed as:     _method
-    should be: 
-error in line# 27
-    parsed as:       init
-    should be:         _assign
-error in line# 28
-    parsed as: 
-    should be:           population_map
-error in line# 29
-    parsed as:       _formal
-    should be: 
-error in line# 30
-    parsed as:         map
-    should be:           _object
-error in line# 31
-    parsed as:         String
-    should be:             map
 error in line# 32
-    parsed as:       SELF_TYPE
+    parsed as:           : _no_type
     should be:           : String
 error in line# 33
-    parsed as: 
+    parsed as:         : _no_type
     should be:         : String
-error in line# 34
-    parsed as:       _block
-    should be: 
-error in line# 35
-    parsed as: 
-    should be:         _object
-error in line# 36
-    parsed as:         _assign
-    should be:           self
 error in line# 37
-    parsed as:           population_map
+    parsed as:         : _no_type
     should be:         : SELF_TYPE
 error in line# 38
-    parsed as: 
-    should be:       : SELF_TYPE
-error in line# 39
-    parsed as:           _object
-    should be: 
-error in line# 40
-    parsed as:             map
-    should be:     _method
-error in line# 41
-    parsed as:           : _no_type
-    should be:       print
-error in line# 42
-    parsed as:         : _no_type
-    should be:       SELF_TYPE
-error in line# 44
-    parsed as:         _object
-    should be:       _block
-error in line# 45
-    parsed as:           self
-    should be: 
-error in line# 46
-    parsed as:         : _no_type
-    should be:         _dispatch
-error in line# 47
     parsed as:       : _no_type
-    should be: 
-error in line# 48
-    parsed as: 
-    should be:           _object
-error in line# 49
-    parsed as:     _method
-    should be:             self
+    should be:       : SELF_TYPE
 error in line# 50
-    parsed as:       print
-    should be:           : SELF_TYPE
-error in line# 51
-    parsed as:       SELF_TYPE
-    should be:           out_string
-error in line# 52
-    parsed as: 
-    should be:           (
-error in line# 53
-    parsed as:       _block
-    should be: 
-error in line# 54
-    parsed as: 
-    should be:           _dispatch
-error in line# 55
-    parsed as:         _dispatch
-    should be: 
-error in line# 56
-    parsed as: 
-    should be:             _object
-error in line# 57
-    parsed as:           _object
-    should be:               population_map
-error in line# 58
-    parsed as:             self
-    should be:             : String
-error in line# 59
     parsed as:           : _no_type
-    should be:             concat
-error in line# 60
-    parsed as:           out_string
-    should be:             (
-error in line# 61
-    parsed as:           (
-    should be: 
-error in line# 62
-    parsed as: 
-    should be:             _string
-error in line# 63
-    parsed as:           _dispatch
-    should be:               "\n"
-error in line# 64
-    parsed as: 
-    should be:             : String
-error in line# 65
-    parsed as:             _object
-    should be:             )
-error in line# 66
-    parsed as:               population_map
-    should be:           : String
-error in line# 67
+    should be:           : SELF_TYPE
+error in line# 58
     parsed as:             : _no_type
-    should be:           )
+    should be:             : String
+error in line# 64
+    parsed as:             : _no_type
+    should be:             : String
+error in line# 66
+    parsed as:           : _no_type
+    should be:           : String
 error in line# 68
-    parsed as:             concat
+    parsed as:         : _no_type
     should be:         : SELF_TYPE
-error in line# 69
-    parsed as:             (
-    should be: 
-error in line# 70
-    parsed as: 
-    should be:         _object
-error in line# 71
-    parsed as:             _string
-    should be:           self
 error in line# 72
-    parsed as:               "\n"
+    parsed as:         : _no_type
     should be:         : SELF_TYPE
 error in line# 73
-    parsed as:             : _no_type
+    parsed as:       : _no_type
     should be:       : SELF_TYPE
-error in line# 74
-    parsed as:             )
-    should be: 
-error in line# 75
-    parsed as:           : _no_type
-    should be:     _method
-error in line# 76
-    parsed as:           )
-    should be:       num_cells
-error in line# 77
-    parsed as:         : _no_type
-    should be:       Int
-error in line# 79
-    parsed as:         _object
-    should be:       _dispatch
-error in line# 80
-    parsed as:           self
-    should be: 
-error in line# 81
-    parsed as:         : _no_type
-    should be:         _object
-error in line# 82
-    parsed as:       : _no_type
-    should be:           population_map
 error in line# 83
-    parsed as: 
+    parsed as:         : _no_type
     should be:         : String
-error in line# 84
-    parsed as:     _method
-    should be:         length
-error in line# 85
-    parsed as:       num_cells
-    should be:         (
-error in line# 86
-    parsed as:       Int
-    should be:         )
 error in line# 87
-    parsed as: 
+    parsed as:       : _no_type
     should be:       : Int
-error in line# 88
-    parsed as:       _dispatch
-    should be: 
-error in line# 89
-    parsed as: 
-    should be:     _method
-error in line# 90
-    parsed as:         _object
-    should be:       cell
-error in line# 91
-    parsed as:           population_map
-    should be: 
-error in line# 92
-    parsed as:         : _no_type
-    should be:       _formal
-error in line# 93
-    parsed as:         length
-    should be:         position
-error in line# 94
-    parsed as:         (
-    should be:         Int
-error in line# 95
-    parsed as:         )
-    should be:       String
-error in line# 96
-    parsed as:       : _no_type
-    should be: 
-error in line# 97
-    parsed as: 
-    should be:       _dispatch
-error in line# 98
-    parsed as:     _method
-    should be: 
-error in line# 99
-    parsed as:       cell
-    should be:         _object
-error in line# 100
-    parsed as: 
-    should be:           population_map
 error in line# 101
-    parsed as:       _formal
+    parsed as:         : _no_type
     should be:         : String
-error in line# 102
-    parsed as:         position
-    should be:         substr
-error in line# 103
-    parsed as:         Int
-    should be:         (
-error in line# 104
-    parsed as:       String
-    should be: 
-error in line# 105
-    parsed as: 
-    should be:         _object
-error in line# 106
-    parsed as:       _dispatch
-    should be:           position
 error in line# 107
-    parsed as: 
-    should be:         : Int
-error in line# 108
-    parsed as:         _object
-    should be: 
-error in line# 109
-    parsed as:           population_map
-    should be:         _int
-error in line# 110
     parsed as:         : _no_type
-    should be:           1
+    should be:         : Int
 error in line# 111
-    parsed as:         substr
+    parsed as:         : _no_type
     should be:         : Int
-error in line# 112
-    parsed as:         (
-    should be:         )
 error in line# 113
-    parsed as: 
-    should be:       : String
-error in line# 114
-    parsed as:         _object
-    should be: 
-error in line# 115
-    parsed as:           position
-    should be:     _method
-error in line# 116
-    parsed as:         : _no_type
-    should be:       cell_left_neighbor
-error in line# 118
-    parsed as:         _int
-    should be:       _formal
-error in line# 119
-    parsed as:           1
-    should be:         position
-error in line# 120
-    parsed as:         : _no_type
-    should be:         Int
-error in line# 121
-    parsed as:         )
-    should be:       String
-error in line# 122
     parsed as:       : _no_type
-    should be: 
-error in line# 123
-    parsed as: 
-    should be:       _cond
-error in line# 124
-    parsed as:     _method
-    should be: 
-error in line# 125
-    parsed as:       cell_left_neighbor
-    should be:         _eq
-error in line# 127
-    parsed as:       _formal
-    should be:           _object
-error in line# 128
-    parsed as:         position
-    should be:             position
+    should be:       : String
 error in line# 129
-    parsed as:         Int
+    parsed as:           : _no_type
     should be:           : Int
-error in line# 130
-    parsed as:       String
-    should be: 
-error in line# 131
-    parsed as: 
-    should be:           _int
-error in line# 132
-    parsed as:       _cond
-    should be:             0
 error in line# 133
-    parsed as: 
+    parsed as:           : _no_type
     should be:           : Int
 error in line# 134
-    parsed as:         _eq
-    should be:         : Bool
-error in line# 136
-    parsed as:           _object
-    should be:         _dispatch
-error in line# 137
-    parsed as:             position
-    should be: 
-error in line# 138
-    parsed as:           : _no_type
-    should be:           _object
-error in line# 139
-    parsed as: 
-    should be:             self
-error in line# 140
-    parsed as:           _int
-    should be:           : SELF_TYPE
-error in line# 141
-    parsed as:             0
-    should be:           cell
-error in line# 142
-    parsed as:           : _no_type
-    should be:           (
-error in line# 143
     parsed as:         : _no_type
-    should be: 
-error in line# 144
-    parsed as: 
-    should be:           _sub
-error in line# 145
-    parsed as:         _dispatch
-    should be: 
-error in line# 146
-    parsed as: 
-    should be:             _dispatch
-error in line# 147
-    parsed as:           _object
-    should be: 
-error in line# 148
-    parsed as:             self
-    should be:               _object
-error in line# 149
+    should be:         : Bool
+error in line# 140
     parsed as:           : _no_type
-    should be:                 self
+    should be:           : SELF_TYPE
 error in line# 150
-    parsed as:           cell
+    parsed as:               : _no_type
     should be:               : SELF_TYPE
-error in line# 151
-    parsed as:           (
-    should be:               num_cells
-error in line# 152
-    parsed as: 
-    should be:               (
-error in line# 153
-    parsed as:           _sub
-    should be:               )
 error in line# 154
-    parsed as: 
+    parsed as:             : _no_type
     should be:             : Int
-error in line# 155
-    parsed as:             _dispatch
-    should be: 
-error in line# 156
-    parsed as: 
-    should be:             _int
-error in line# 157
-    parsed as:               _object
-    should be:               1
 error in line# 158
-    parsed as:                 self
+    parsed as:             : _no_type
     should be:             : Int
 error in line# 159
-    parsed as:               : _no_type
+    parsed as:           : _no_type
     should be:           : Int
-error in line# 160
-    parsed as:               num_cells
-    should be:           )
 error in line# 161
-    parsed as:               (
-    should be:         : String
-error in line# 162
-    parsed as:               )
-    should be: 
-error in line# 163
-    parsed as:             : _no_type
-    should be:         _dispatch
-error in line# 165
-    parsed as:             _int
-    should be:           _object
-error in line# 166
-    parsed as:               1
-    should be:             self
-error in line# 167
-    parsed as:             : _no_type
-    should be:           : SELF_TYPE
-error in line# 168
-    parsed as:           : _no_type
-    should be:           cell
-error in line# 169
-    parsed as:           )
-    should be:           (
-error in line# 170
     parsed as:         : _no_type
-    should be: 
-error in line# 171
-    parsed as: 
-    should be:           _sub
-error in line# 172
-    parsed as:         _dispatch
-    should be: 
-error in line# 173
-    parsed as: 
-    should be:             _object
-error in line# 174
-    parsed as:           _object
-    should be:               position
-error in line# 175
-    parsed as:             self
-    should be:             : Int
-error in line# 176
+    should be:         : String
+error in line# 167
     parsed as:           : _no_type
-    should be: 
-error in line# 177
-    parsed as:           cell
-    should be:             _int
-error in line# 178
-    parsed as:           (
-    should be:               1
+    should be:           : SELF_TYPE
+error in line# 175
+    parsed as:             : _no_type
+    should be:             : Int
 error in line# 179
-    parsed as: 
+    parsed as:             : _no_type
     should be:             : Int
 error in line# 180
-    parsed as:           _sub
+    parsed as:           : _no_type
     should be:           : Int
-error in line# 181
-    parsed as: 
-    should be:           )
 error in line# 182
-    parsed as:             _object
+    parsed as:         : _no_type
     should be:         : String
 error in line# 183
-    parsed as:               position
-    should be:       : String
-error in line# 184
-    parsed as:             : _no_type
-    should be: 
-error in line# 185
-    parsed as: 
-    should be:     _method
-error in line# 186
-    parsed as:             _int
-    should be:       cell_right_neighbor
-error in line# 187
-    parsed as:               1
-    should be: 
-error in line# 188
-    parsed as:             : _no_type
-    should be:       _formal
-error in line# 189
-    parsed as:           : _no_type
-    should be:         position
-error in line# 190
-    parsed as:           )
-    should be:         Int
-error in line# 191
-    parsed as:         : _no_type
-    should be:       String
-error in line# 192
     parsed as:       : _no_type
-    should be: 
-error in line# 193
-    parsed as: 
-    should be:       _cond
-error in line# 194
-    parsed as:     _method
-    should be: 
-error in line# 195
-    parsed as:       cell_right_neighbor
-    should be:         _eq
-error in line# 197
-    parsed as:       _formal
-    should be:           _object
-error in line# 198
-    parsed as:         position
-    should be:             position
+    should be:       : String
 error in line# 199
-    parsed as:         Int
-    should be:           : Int
-error in line# 200
-    parsed as:       String
-    should be: 
-error in line# 201
-    parsed as: 
-    should be:           _sub
-error in line# 202
-    parsed as:       _cond
-    should be: 
-error in line# 203
-    parsed as: 
-    should be:             _dispatch
-error in line# 204
-    parsed as:         _eq
-    should be: 
-error in line# 205
-    parsed as: 
-    should be:               _object
-error in line# 206
-    parsed as:           _object
-    should be:                 self
-error in line# 207
-    parsed as:             position
-    should be:               : SELF_TYPE
-error in line# 208
     parsed as:           : _no_type
-    should be:               num_cells
-error in line# 209
-    parsed as: 
-    should be:               (
-error in line# 210
-    parsed as:           _sub
-    should be:               )
+    should be:           : Int
+error in line# 207
+    parsed as:               : _no_type
+    should be:               : SELF_TYPE
 error in line# 211
-    parsed as: 
+    parsed as:             : _no_type
     should be:             : Int
-error in line# 212
-    parsed as:             _dispatch
-    should be: 
-error in line# 213
-    parsed as: 
-    should be:             _int
-error in line# 214
-    parsed as:               _object
-    should be:               1
 error in line# 215
-    parsed as:                 self
+    parsed as:             : _no_type
     should be:             : Int
 error in line# 216
-    parsed as:               : _no_type
+    parsed as:           : _no_type
     should be:           : Int
 error in line# 217
-    parsed as:               num_cells
+    parsed as:         : _no_type
     should be:         : Bool
-error in line# 218
-    parsed as:               (
-    should be: 
-error in line# 219
-    parsed as:               )
-    should be:         _dispatch
-error in line# 220
-    parsed as:             : _no_type
-    should be: 
-error in line# 221
-    parsed as: 
-    should be:           _object
-error in line# 222
-    parsed as:             _int
-    should be:             self
 error in line# 223
-    parsed as:               1
-    should be:           : SELF_TYPE
-error in line# 224
-    parsed as:             : _no_type
-    should be:           cell
-error in line# 225
     parsed as:           : _no_type
-    should be:           (
-error in line# 226
-    parsed as:         : _no_type
-    should be: 
-error in line# 227
-    parsed as: 
-    should be:           _int
-error in line# 228
-    parsed as:         _dispatch
-    should be:             0
+    should be:           : SELF_TYPE
 error in line# 229
-    parsed as: 
+    parsed as:           : _no_type
     should be:           : Int
-error in line# 230
-    parsed as:           _object
-    should be:           )
 error in line# 231
-    parsed as:             self
-    should be:         : String
-error in line# 232
-    parsed as:           : _no_type
-    should be: 
-error in line# 233
-    parsed as:           cell
-    should be:         _dispatch
-error in line# 234
-    parsed as:           (
-    should be: 
-error in line# 235
-    parsed as: 
-    should be:           _object
-error in line# 236
-    parsed as:           _int
-    should be:             self
-error in line# 237
-    parsed as:             0
-    should be:           : SELF_TYPE
-error in line# 238
-    parsed as:           : _no_type
-    should be:           cell
-error in line# 239
-    parsed as:           )
-    should be:           (
-error in line# 240
     parsed as:         : _no_type
-    should be: 
-error in line# 241
-    parsed as: 
-    should be:           _plus
-error in line# 242
-    parsed as:         _dispatch
-    should be: 
-error in line# 243
-    parsed as: 
-    should be:             _object
-error in line# 244
-    parsed as:           _object
-    should be:               position
-error in line# 245
-    parsed as:             self
-    should be:             : Int
-error in line# 246
+    should be:         : String
+error in line# 237
     parsed as:           : _no_type
-    should be: 
-error in line# 247
-    parsed as:           cell
-    should be:             _int
-error in line# 248
-    parsed as:           (
-    should be:               1
+    should be:           : SELF_TYPE
+error in line# 245
+    parsed as:             : _no_type
+    should be:             : Int
 error in line# 249
-    parsed as: 
+    parsed as:             : _no_type
     should be:             : Int
 error in line# 250
-    parsed as:           _plus
+    parsed as:           : _no_type
     should be:           : Int
-error in line# 251
-    parsed as: 
-    should be:           )
 error in line# 252
-    parsed as:             _object
+    parsed as:         : _no_type
     should be:         : String
 error in line# 253
-    parsed as:               position
-    should be:       : String
-error in line# 254
-    parsed as:             : _no_type
-    should be: 
-error in line# 255
-    parsed as: 
-    should be:     _method
-error in line# 256
-    parsed as:             _int
-    should be:       cell_at_next_evolution
-error in line# 257
-    parsed as:               1
-    should be: 
-error in line# 258
-    parsed as:             : _no_type
-    should be:       _formal
-error in line# 259
-    parsed as:           : _no_type
-    should be:         position
-error in line# 260
-    parsed as:           )
-    should be:         Int
-error in line# 261
-    parsed as:         : _no_type
-    should be:       String
-error in line# 262
     parsed as:       : _no_type
-    should be: 
-error in line# 263
-    parsed as: 
-    should be:       _cond
-error in line# 264
-    parsed as:     _method
-    should be: 
-error in line# 265
-    parsed as:       cell_at_next_evolution
-    should be:         _eq
-error in line# 267
-    parsed as:       _formal
-    should be:           _plus
-error in line# 268
-    parsed as:         position
-    should be: 
-error in line# 269
-    parsed as:         Int
-    should be:             _plus
-error in line# 270
-    parsed as:       String
-    should be: 
-error in line# 271
-    parsed as: 
-    should be:               _cond
-error in line# 272
-    parsed as:       _cond
-    should be: 
-error in line# 273
-    parsed as: 
-    should be:                 _eq
-error in line# 274
-    parsed as:         _eq
-    should be: 
-error in line# 275
-    parsed as: 
-    should be:                   _dispatch
-error in line# 276
-    parsed as:           _plus
-    should be: 
-error in line# 277
-    parsed as: 
-    should be:                     _object
-error in line# 278
-    parsed as:             _plus
-    should be:                       self
+    should be:       : String
 error in line# 279
-    parsed as: 
-    should be:                     : SELF_TYPE
-error in line# 280
-    parsed as:               _cond
-    should be:                     cell
-error in line# 281
-    parsed as: 
-    should be:                     (
-error in line# 282
-    parsed as:                 _eq
-    should be: 
-error in line# 283
-    parsed as: 
-    should be:                     _object
-error in line# 284
-    parsed as:                   _dispatch
-    should be:                       position
-error in line# 285
-    parsed as: 
-    should be:                     : Int
-error in line# 286
-    parsed as:                     _object
-    should be:                     )
-error in line# 287
-    parsed as:                       self
-    should be:                   : String
-error in line# 288
     parsed as:                     : _no_type
-    should be: 
-error in line# 289
-    parsed as:                     cell
-    should be:                   _string
-error in line# 290
-    parsed as:                     (
-    should be:                     "X"
+    should be:                     : SELF_TYPE
+error in line# 285
+    parsed as:                     : _no_type
+    should be:                     : Int
+error in line# 287
+    parsed as:                   : _no_type
+    should be:                   : String
 error in line# 291
-    parsed as: 
+    parsed as:                   : _no_type
     should be:                   : String
 error in line# 292
-    parsed as:                     _object
+    parsed as:                 : _no_type
     should be:                 : Bool
-error in line# 293
-    parsed as:                       position
-    should be: 
-error in line# 294
-    parsed as:                     : _no_type
-    should be:                 _int
-error in line# 295
-    parsed as:                     )
-    should be:                   1
 error in line# 296
-    parsed as:                   : _no_type
+    parsed as:                 : _no_type
     should be:                 : Int
-error in line# 298
-    parsed as:                   _string
-    should be:                 _int
-error in line# 299
-    parsed as:                     "X"
-    should be:                   0
 error in line# 300
-    parsed as:                   : _no_type
+    parsed as:                 : _no_type
     should be:                 : Int
 error in line# 301
-    parsed as:                 : _no_type
-    should be:               : Int
-error in line# 303
-    parsed as:                 _int
-    should be:               _cond
-error in line# 304
-    parsed as:                   1
-    should be: 
-error in line# 305
-    parsed as:                 : _no_type
-    should be:                 _eq
-error in line# 307
-    parsed as:                 _int
-    should be:                   _dispatch
-error in line# 308
-    parsed as:                   0
-    should be: 
-error in line# 309
-    parsed as:                 : _no_type
-    should be:                     _object
-error in line# 310
     parsed as:               : _no_type
-    should be:                       self
+    should be:               : Int
 error in line# 311
-    parsed as: 
-    should be:                     : SELF_TYPE
-error in line# 312
-    parsed as:               _cond
-    should be:                     cell_left_neighbor
-error in line# 313
-    parsed as: 
-    should be:                     (
-error in line# 314
-    parsed as:                 _eq
-    should be: 
-error in line# 315
-    parsed as: 
-    should be:                     _object
-error in line# 316
-    parsed as:                   _dispatch
-    should be:                       position
-error in line# 317
-    parsed as: 
-    should be:                     : Int
-error in line# 318
-    parsed as:                     _object
-    should be:                     )
-error in line# 319
-    parsed as:                       self
-    should be:                   : String
-error in line# 320
     parsed as:                     : _no_type
-    should be: 
-error in line# 321
-    parsed as:                     cell_left_neighbor
-    should be:                   _string
-error in line# 322
-    parsed as:                     (
-    should be:                     "X"
+    should be:                     : SELF_TYPE
+error in line# 317
+    parsed as:                     : _no_type
+    should be:                     : Int
+error in line# 319
+    parsed as:                   : _no_type
+    should be:                   : String
 error in line# 323
-    parsed as: 
+    parsed as:                   : _no_type
     should be:                   : String
 error in line# 324
-    parsed as:                     _object
+    parsed as:                 : _no_type
     should be:                 : Bool
-error in line# 325
-    parsed as:                       position
-    should be: 
-error in line# 326
-    parsed as:                     : _no_type
-    should be:                 _int
-error in line# 327
-    parsed as:                     )
-    should be:                   1
 error in line# 328
-    parsed as:                   : _no_type
+    parsed as:                 : _no_type
     should be:                 : Int
-error in line# 330
-    parsed as:                   _string
-    should be:                 _int
-error in line# 331
-    parsed as:                     "X"
-    should be:                   0
 error in line# 332
-    parsed as:                   : _no_type
+    parsed as:                 : _no_type
     should be:                 : Int
 error in line# 333
-    parsed as:                 : _no_type
+    parsed as:               : _no_type
     should be:               : Int
 error in line# 334
-    parsed as: 
-    should be:             : Int
-error in line# 335
-    parsed as:                 _int
-    should be: 
-error in line# 336
-    parsed as:                   1
-    should be:             _cond
-error in line# 337
-    parsed as:                 : _no_type
-    should be: 
-error in line# 338
-    parsed as: 
-    should be:               _eq
-error in line# 339
-    parsed as:                 _int
-    should be: 
-error in line# 340
-    parsed as:                   0
-    should be:                 _dispatch
-error in line# 341
-    parsed as:                 : _no_type
-    should be: 
-error in line# 342
-    parsed as:               : _no_type
-    should be:                   _object
-error in line# 343
     parsed as:             : _no_type
-    should be:                     self
+    should be:             : Int
 error in line# 344
-    parsed as: 
-    should be:                   : SELF_TYPE
-error in line# 345
-    parsed as:             _cond
-    should be:                   cell_right_neighbor
-error in line# 346
-    parsed as: 
-    should be:                   (
-error in line# 347
-    parsed as:               _eq
-    should be: 
-error in line# 348
-    parsed as: 
-    should be:                   _object
-error in line# 349
-    parsed as:                 _dispatch
-    should be:                     position
-error in line# 350
-    parsed as: 
-    should be:                   : Int
-error in line# 351
-    parsed as:                   _object
-    should be:                   )
-error in line# 352
-    parsed as:                     self
-    should be:                 : String
-error in line# 353
     parsed as:                   : _no_type
-    should be: 
-error in line# 354
-    parsed as:                   cell_right_neighbor
-    should be:                 _string
-error in line# 355
-    parsed as:                   (
-    should be:                   "X"
+    should be:                   : SELF_TYPE
+error in line# 350
+    parsed as:                   : _no_type
+    should be:                   : Int
+error in line# 352
+    parsed as:                 : _no_type
+    should be:                 : String
 error in line# 356
-    parsed as: 
+    parsed as:                 : _no_type
     should be:                 : String
 error in line# 357
-    parsed as:                   _object
+    parsed as:               : _no_type
     should be:               : Bool
-error in line# 358
-    parsed as:                     position
-    should be: 
-error in line# 359
-    parsed as:                   : _no_type
-    should be:               _int
-error in line# 360
-    parsed as:                   )
-    should be:                 1
 error in line# 361
-    parsed as:                 : _no_type
+    parsed as:               : _no_type
     should be:               : Int
-error in line# 363
-    parsed as:                 _string
-    should be:               _int
-error in line# 364
-    parsed as:                   "X"
-    should be:                 0
 error in line# 365
-    parsed as:                 : _no_type
+    parsed as:               : _no_type
     should be:               : Int
 error in line# 366
-    parsed as:               : _no_type
+    parsed as:             : _no_type
     should be:             : Int
 error in line# 367
-    parsed as: 
+    parsed as:           : _no_type
     should be:           : Int
-error in line# 368
-    parsed as:               _int
-    should be: 
-error in line# 369
-    parsed as:                 1
-    should be:           _int
-error in line# 370
-    parsed as:               : _no_type
-    should be:             1
 error in line# 371
-    parsed as: 
+    parsed as:           : _no_type
     should be:           : Int
 error in line# 372
-    parsed as:               _int
+    parsed as:         : _no_type
     should be:         : Bool
-error in line# 373
-    parsed as:                 0
-    should be: 
-error in line# 374
-    parsed as:               : _no_type
-    should be:         _string
-error in line# 375
-    parsed as:             : _no_type
-    should be:           "X"
 error in line# 376
-    parsed as:           : _no_type
+    parsed as:         : _no_type
     should be:         : String
-error in line# 378
-    parsed as:           _int
-    should be:         _string
-error in line# 379
-    parsed as:             1
-    should be:           "."
 error in line# 380
-    parsed as:           : _no_type
+    parsed as:         : _no_type
     should be:         : String
 error in line# 381
-    parsed as:         : _no_type
-    should be:       : String
-error in line# 383
-    parsed as:         _string
-    should be:     _method
-error in line# 384
-    parsed as:           "X"
-    should be:       evolve
-error in line# 385
-    parsed as:         : _no_type
-    should be:       SELF_TYPE
-error in line# 387
-    parsed as:         _string
-    should be:       _let
-error in line# 388
-    parsed as:           "."
-    should be:         position
-error in line# 389
-    parsed as:         : _no_type
-    should be:         Int
-error in line# 390
     parsed as:       : _no_type
-    should be: 
-error in line# 391
-    parsed as: 
-    should be:         _no_expr
-error in line# 392
-    parsed as:     _method
-    should be:         : _no_type
-error in line# 393
-    parsed as:       evolve
-    should be: 
-error in line# 394
-    parsed as:       SELF_TYPE
-    should be:         _let
-error in line# 395
-    parsed as: 
-    should be:           num
-error in line# 396
-    parsed as:       _let
-    should be:           Int
-error in line# 397
-    parsed as:         position
-    should be: 
-error in line# 398
-    parsed as:         Int
-    should be:           _dispatch
-error in line# 400
-    parsed as:         _no_expr
-    should be:             _object
-error in line# 401
-    parsed as:         : _no_type
-    should be:               self
+    should be:       : String
 error in line# 402
-    parsed as: 
+    parsed as:             : _no_type
     should be:             : SELF_TYPE
-error in line# 403
-    parsed as:         _let
-    should be:             num_cells
-error in line# 404
-    parsed as:           num
-    should be:             (
-error in line# 405
-    parsed as:           Int
-    should be:             )
 error in line# 406
-    parsed as: 
-    should be:           : Int
-error in line# 407
-    parsed as:           _dispatch
-    should be: 
-error in line# 408
-    parsed as: 
-    should be:           _let
-error in line# 409
-    parsed as:             _object
-    should be:             temp
-error in line# 410
-    parsed as:               self
-    should be:             String
-error in line# 411
-    parsed as:             : _no_type
-    should be: 
-error in line# 412
-    parsed as:             num_cells
-    should be:             _no_expr
-error in line# 413
-    parsed as:             (
-    should be:             : _no_type
-error in line# 414
-    parsed as:             )
-    should be: 
-error in line# 415
     parsed as:           : _no_type
-    should be:             _block
-error in line# 417
-    parsed as:           _let
-    should be:               _loop
-error in line# 418
-    parsed as:             temp
-    should be: 
-error in line# 419
-    parsed as:             String
-    should be:                 _lt
-error in line# 421
-    parsed as:             _no_expr
-    should be:                   _object
-error in line# 422
-    parsed as:             : _no_type
-    should be:                     position
+    should be:           : Int
 error in line# 423
-    parsed as: 
+    parsed as:                   : _no_type
     should be:                   : Int
-error in line# 424
-    parsed as:             _block
-    should be: 
-error in line# 425
-    parsed as: 
-    should be:                   _object
-error in line# 426
-    parsed as:               _loop
-    should be:                     num
 error in line# 427
-    parsed as: 
+    parsed as:                   : _no_type
     should be:                   : Int
 error in line# 428
-    parsed as:                 _lt
-    should be:                 : Bool
-error in line# 430
-    parsed as:                   _object
-    should be:                 _block
-error in line# 431
-    parsed as:                     position
-    should be: 
-error in line# 432
-    parsed as:                   : _no_type
-    should be:                   _assign
-error in line# 433
-    parsed as: 
-    should be:                     temp
-error in line# 434
-    parsed as:                   _object
-    should be: 
-error in line# 435
-    parsed as:                     num
-    should be:                     _dispatch
-error in line# 436
-    parsed as:                   : _no_type
-    should be: 
-error in line# 437
     parsed as:                 : _no_type
-    should be:                       _object
-error in line# 438
-    parsed as: 
-    should be:                         temp
+    should be:                 : Bool
 error in line# 439
-    parsed as:                 _block
-    should be:                       : String
-error in line# 440
-    parsed as: 
-    should be:                       concat
-error in line# 441
-    parsed as:                   _assign
-    should be:                       (
-error in line# 442
-    parsed as:                     temp
-    should be: 
-error in line# 443
-    parsed as: 
-    should be:                       _dispatch
-error in line# 444
-    parsed as:                     _dispatch
-    should be: 
-error in line# 445
-    parsed as: 
-    should be:                         _object
-error in line# 446
-    parsed as:                       _object
-    should be:                           self
-error in line# 447
-    parsed as:                         temp
-    should be:                         : SELF_TYPE
-error in line# 448
     parsed as:                       : _no_type
-    should be:                         cell_at_next_evolution
-error in line# 449
-    parsed as:                       concat
-    should be:                         (
-error in line# 450
-    parsed as:                       (
-    should be: 
-error in line# 451
-    parsed as: 
-    should be:                         _object
-error in line# 452
-    parsed as:                       _dispatch
-    should be:                           position
-error in line# 453
-    parsed as: 
-    should be:                         : Int
-error in line# 454
-    parsed as:                         _object
-    should be:                         )
-error in line# 455
-    parsed as:                           self
     should be:                       : String
-error in line# 456
+error in line# 447
     parsed as:                         : _no_type
-    should be:                       )
+    should be:                         : SELF_TYPE
+error in line# 453
+    parsed as:                         : _no_type
+    should be:                         : Int
+error in line# 455
+    parsed as:                       : _no_type
+    should be:                       : String
 error in line# 457
-    parsed as:                         cell_at_next_evolution
+    parsed as:                     : _no_type
     should be:                     : String
 error in line# 458
-    parsed as:                         (
-    should be:                   : String
-error in line# 460
-    parsed as:                         _object
-    should be:                   _assign
-error in line# 461
-    parsed as:                           position
-    should be:                     position
-error in line# 462
-    parsed as:                         : _no_type
-    should be: 
-error in line# 463
-    parsed as:                         )
-    should be:                     _plus
-error in line# 464
-    parsed as:                       : _no_type
-    should be: 
-error in line# 465
-    parsed as:                       )
-    should be:                       _object
-error in line# 466
-    parsed as:                     : _no_type
-    should be:                         position
-error in line# 467
     parsed as:                   : _no_type
+    should be:                   : String
+error in line# 467
+    parsed as:                       : _no_type
     should be:                       : Int
-error in line# 469
-    parsed as:                   _assign
-    should be:                       _int
-error in line# 470
-    parsed as:                     position
-    should be:                         1
 error in line# 471
-    parsed as: 
+    parsed as:                       : _no_type
     should be:                       : Int
 error in line# 472
-    parsed as:                     _plus
+    parsed as:                     : _no_type
     should be:                     : Int
 error in line# 473
-    parsed as: 
+    parsed as:                   : _no_type
     should be:                   : Int
 error in line# 474
-    parsed as:                       _object
+    parsed as:                 : _no_type
     should be:                 : Int
 error in line# 475
-    parsed as:                         position
+    parsed as:               : _no_type
     should be:               : Object
-error in line# 476
-    parsed as:                       : _no_type
-    should be: 
-error in line# 477
-    parsed as: 
-    should be:               _assign
-error in line# 478
-    parsed as:                       _int
-    should be:                 population_map
-error in line# 479
-    parsed as:                         1
-    should be: 
-error in line# 480
-    parsed as:                       : _no_type
-    should be:                 _object
-error in line# 481
-    parsed as:                     : _no_type
-    should be:                   temp
 error in line# 482
-    parsed as:                   : _no_type
+    parsed as:                 : _no_type
     should be:                 : String
 error in line# 483
-    parsed as:                 : _no_type
-    should be:               : String
-error in line# 484
     parsed as:               : _no_type
-    should be: 
-error in line# 485
-    parsed as: 
-    should be:               _object
-error in line# 486
-    parsed as:               _assign
-    should be:                 self
+    should be:               : String
 error in line# 487
-    parsed as:                 population_map
+    parsed as:               : _no_type
     should be:               : SELF_TYPE
 error in line# 488
-    parsed as: 
+    parsed as:             : _no_type
     should be:             : SELF_TYPE
 error in line# 489
-    parsed as:                 _object
+    parsed as:           : _no_type
     should be:           : SELF_TYPE
 error in line# 490
-    parsed as:                   temp
+    parsed as:         : _no_type
     should be:         : SELF_TYPE
 error in line# 491
-    parsed as:                 : _no_type
+    parsed as:       : _no_type
     should be:       : SELF_TYPE
-error in line# 492
-    parsed as:               : _no_type
-    should be:     )
-error in line# 494
-    parsed as:               _object
-    should be:   _class
-error in line# 495
-    parsed as:                 self
-    should be:     Main
-error in line# 496
-    parsed as:               : _no_type
-    should be:     Object
-error in line# 497
-    parsed as:             : _no_type
-    should be:     filename
-error in line# 498
-    parsed as:           : _no_type
-    should be:     (
-error in line# 499
-    parsed as:         : _no_type
-    should be: 
-error in line# 500
-    parsed as:       : _no_type
-    should be:     _attr
-error in line# 501
-    parsed as:     )
-    should be:       cells
-error in line# 502
-    parsed as: 
-    should be:       CellularAutomaton
-error in line# 503
-    parsed as:   _class
-    should be: 
-error in line# 504
-    parsed as:     Main
-    should be:       _no_expr
-error in line# 505
-    parsed as:     Object
-    should be:       : _no_type
-error in line# 506
-    parsed as:     filename
-    should be: 
-error in line# 507
-    parsed as:     (
-    should be:     _method
-error in line# 508
-    parsed as: 
-    should be:       main
-error in line# 509
-    parsed as:     _attr
-    should be:       SELF_TYPE
-error in line# 510
-    parsed as:       cells
-    should be: 
-error in line# 511
-    parsed as:       CellularAutomaton
-    should be:       _block
-error in line# 513
-    parsed as:       _no_expr
-    should be:         _assign
-error in line# 514
-    parsed as:       : _no_type
-    should be:           cells
-error in line# 516
-    parsed as:     _method
-    should be:           _dispatch
-error in line# 517
-    parsed as:       main
-    should be: 
-error in line# 518
-    parsed as:       SELF_TYPE
-    should be:             _new
-error in line# 519
-    parsed as: 
-    should be:               CellularAutomaton
 error in line# 520
-    parsed as:       _block
+    parsed as:             : _no_type
     should be:             : CellularAutomaton
-error in line# 521
-    parsed as: 
-    should be:             init
-error in line# 522
-    parsed as:         _assign
-    should be:             (
-error in line# 523
-    parsed as:           cells
-    should be: 
-error in line# 524
-    parsed as: 
-    should be:             _string
-error in line# 525
-    parsed as:           _dispatch
-    should be:               "         X         "
 error in line# 526
-    parsed as: 
+    parsed as:             : _no_type
     should be:             : String
-error in line# 527
-    parsed as:             _new
-    should be:             )
 error in line# 528
-    parsed as:               CellularAutomaton
+    parsed as:           : _no_type
     should be:           : CellularAutomaton
 error in line# 529
-    parsed as:             : _no_type
+    parsed as:         : _no_type
     should be:         : CellularAutomaton
-error in line# 530
-    parsed as:             init
-    should be: 
-error in line# 531
-    parsed as:             (
-    should be:         _dispatch
-error in line# 533
-    parsed as:             _string
-    should be:           _object
-error in line# 534
-    parsed as:               "         X         "
-    should be:             cells
 error in line# 535
-    parsed as:             : _no_type
+    parsed as:           : _no_type
     should be:           : CellularAutomaton
-error in line# 536
-    parsed as:             )
-    should be:           print
-error in line# 537
-    parsed as:           : _no_type
-    should be:           (
-error in line# 538
-    parsed as:         : _no_type
-    should be:           )
 error in line# 539
-    parsed as: 
-    should be:         : CellularAutomaton
-error in line# 540
-    parsed as:         _dispatch
-    should be: 
-error in line# 541
-    parsed as: 
-    should be:         _let
-error in line# 542
-    parsed as:           _object
-    should be:           countdown
-error in line# 543
-    parsed as:             cells
-    should be:           Int
-error in line# 544
-    parsed as:           : _no_type
-    should be: 
-error in line# 545
-    parsed as:           print
-    should be:           _int
-error in line# 546
-    parsed as:           (
-    should be:             20
-error in line# 547
-    parsed as:           )
-    should be:           : Int
-error in line# 548
     parsed as:         : _no_type
-    should be: 
-error in line# 549
-    parsed as: 
-    should be:           _loop
-error in line# 550
-    parsed as:         _let
-    should be: 
-error in line# 551
-    parsed as:           countdown
-    should be:             _lt
-error in line# 552
-    parsed as:           Int
-    should be: 
-error in line# 553
-    parsed as: 
-    should be:               _int
-error in line# 554
-    parsed as:           _int
-    should be:                 0
-error in line# 555
-    parsed as:             20
-    should be:               : Int
-error in line# 556
+    should be:         : CellularAutomaton
+error in line# 547
     parsed as:           : _no_type
-    should be: 
-error in line# 557
-    parsed as: 
-    should be:               _object
-error in line# 558
-    parsed as:           _loop
-    should be:                 countdown
+    should be:           : Int
+error in line# 555
+    parsed as:               : _no_type
+    should be:               : Int
 error in line# 559
-    parsed as: 
+    parsed as:               : _no_type
     should be:               : Int
 error in line# 560
-    parsed as:             _lt
-    should be:             : Bool
-error in line# 562
-    parsed as:               _int
-    should be:             _block
-error in line# 563
-    parsed as:                 0
-    should be: 
-error in line# 564
-    parsed as:               : _no_type
-    should be:               _dispatch
-error in line# 566
-    parsed as:               _object
-    should be:                 _object
-error in line# 567
-    parsed as:                 countdown
-    should be:                   cells
-error in line# 568
-    parsed as:               : _no_type
-    should be:                 : CellularAutomaton
-error in line# 569
     parsed as:             : _no_type
-    should be:                 evolve
-error in line# 570
-    parsed as: 
-    should be:                 (
-error in line# 571
-    parsed as:             _block
-    should be:                 )
-error in line# 572
-    parsed as: 
-    should be:               : CellularAutomaton
-error in line# 573
-    parsed as:               _dispatch
-    should be: 
-error in line# 574
-    parsed as: 
-    should be:               _dispatch
-error in line# 575
-    parsed as:                 _object
-    should be: 
-error in line# 576
-    parsed as:                   cells
-    should be:                 _object
-error in line# 577
+    should be:             : Bool
+error in line# 568
     parsed as:                 : _no_type
-    should be:                   cells
-error in line# 578
-    parsed as:                 evolve
     should be:                 : CellularAutomaton
-error in line# 579
-    parsed as:                 (
-    should be:                 print
-error in line# 580
-    parsed as:                 )
-    should be:                 (
-error in line# 581
+error in line# 572
     parsed as:               : _no_type
-    should be:                 )
-error in line# 582
-    parsed as: 
     should be:               : CellularAutomaton
-error in line# 583
-    parsed as:               _dispatch
-    should be: 
-error in line# 584
-    parsed as: 
-    should be:               _assign
-error in line# 585
-    parsed as:                 _object
-    should be:                 countdown
-error in line# 586
-    parsed as:                   cells
-    should be: 
-error in line# 587
+error in line# 578
     parsed as:                 : _no_type
-    should be:                 _sub
-error in line# 588
-    parsed as:                 print
-    should be: 
-error in line# 589
-    parsed as:                 (
-    should be:                   _object
-error in line# 590
-    parsed as:                 )
-    should be:                     countdown
-error in line# 591
+    should be:                 : CellularAutomaton
+error in line# 582
     parsed as:               : _no_type
+    should be:               : CellularAutomaton
+error in line# 591
+    parsed as:                   : _no_type
     should be:                   : Int
-error in line# 593
-    parsed as:               _assign
-    should be:                   _int
-error in line# 594
-    parsed as:                 countdown
-    should be:                     1
 error in line# 595
-    parsed as: 
+    parsed as:                   : _no_type
     should be:                   : Int
 error in line# 596
-    parsed as:                 _sub
+    parsed as:                 : _no_type
     should be:                 : Int
 error in line# 597
-    parsed as: 
+    parsed as:               : _no_type
     should be:               : Int
 error in line# 598
-    parsed as:                   _object
+    parsed as:             : _no_type
     should be:             : Int
 error in line# 599
-    parsed as:                     countdown
+    parsed as:           : _no_type
     should be:           : Object
 error in line# 600
-    parsed as:                   : _no_type
-    should be:         : Object
-error in line# 602
-    parsed as:                   _int
-    should be:         _object
-error in line# 603
-    parsed as:                     1
-    should be:           self
-error in line# 604
-    parsed as:                   : _no_type
-    should be:         : SELF_TYPE
-error in line# 605
-    parsed as:                 : _no_type
-    should be:       : SELF_TYPE
-error in line# 606
-    parsed as:               : _no_type
-    should be:     )
-error in line# 607
-    parsed as:             : _no_type
-    should be: 
-error in line# 608
-    parsed as:           : _no_type
-    should be: 
-error in line# 609
     parsed as:         : _no_type
-    should be: 
-error in line# 611
-    parsed as:         _object
-    should be: 
-error in line# 612
-    parsed as:           self
-    should be: 
+    should be:         : Object
