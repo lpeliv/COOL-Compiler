@@ -373,6 +373,12 @@ void program_class::semant()
     /* ClassTable constructor may do some semantic analysis */
     ClassTable *classtable = new ClassTable(classes);
     
+    /*------------------------------------------------*/
+    /* Dodavanje članova za sve klase iz tablice klasa */
+    /*------------------------------------------------*/
+    for(int i = classes->first(); classes->more(i); i = classes->next(i)) {
+        classes->nth(i)->walk_down_add(classtable);
+    }
     /* some semantic analysis code may go here */
 
     if (classtable->errors()) {
@@ -431,6 +437,12 @@ void ClassTable::dump_class_map() {
 /* Izgradnja grafa nasljeđivanja */
 /*------------------------------------------------*/ 
 void ClassTable::build_inheritance_graph(Classes classes) {
+
+    inheritance_graph[Int].insert(Object);
+    inheritance_graph[Bool].insert(Object);
+    inheritance_graph[Str].insert(Object);
+    inheritance_graph[IO].insert(Object);
+
     for (int i = classes->first(); classes->more(i); i = classes->next(i)) {
         Class_ current_class = classes->nth(i);
         Symbol class_name = current_class->fetchName();

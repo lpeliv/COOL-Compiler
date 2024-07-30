@@ -11,7 +11,7 @@
 
 #include "tree.h"
 #include "cool-tree.handcode.h"
-#define PRINT 0
+#define PRINT 1
 
 // define the class for phylum
 // define simple phylum - Program
