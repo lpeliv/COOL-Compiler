@@ -41,7 +41,7 @@ public:
    /*------------------------------------------------*/
    virtual Symbol fetchName() = 0;
    virtual Symbol fetchParent() = 0;
-
+   
 #ifdef Class__EXTRAS
    Class__EXTRAS
 #endif

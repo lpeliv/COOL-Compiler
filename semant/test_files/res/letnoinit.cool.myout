@@ -1,3 +1,14 @@
+TestClass Name: Main, Class Definition: 0x5748b1334350
+Class Name: IO, Class Definition: 0x7ffd542e5e50
+Class Name: Object, Class Definition: 0x5748b1334f50
+Class Name: Int, Class Definition: 0x5748affe997a
+Class Name: Bool, Class Definition: 0x5748b1334390
+Class Name: String, Class Definition: 0x5748b1334bb0
+Class Main inherits from IO | Object | 
+Class IO inherits from Object | 
+Class Int inherits from Object | 
+Class Bool inherits from Object | 
+Class String inherits from Object | 
 #1
 _program
   #1

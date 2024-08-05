@@ -1,2 +1,2 @@
 .//test_files//missingclass.cl:1: Class A inherits from an undefined class D.
-Compilation halted due to static semantic errors.
+TestTestCompilation halted due to static semantic errors.

@@ -1,3 +1,22 @@
+TestTestTestTestTestClass Name: Foo, Class Definition: 0x5dd4170f6de0
+Class Name: Bazz, Class Definition: 0x5dd4170f8490
+Class Name: Razz, Class Definition: 0x5dd4170f7890
+Class Name: Bar, Class Definition: 0x5dd4170f7150
+Class Name: Int, Class Definition: 0x5dd41612397a
+Class Name: Object, Class Definition: 0x5dd4170f9520
+Class Name: IO, Class Definition: 0x7ffc2059c3d0
+Class Name: Main, Class Definition: 0x5dd4170f8a10
+Class Name: String, Class Definition: 0x5dd4170f9180
+Class Name: Bool, Class Definition: 0x5dd4170f8a70
+Class Foo inherits from Bazz | Object | IO | 
+Class Bazz inherits from Object | IO | 
+Class Razz inherits from Foo | Bazz | Object | IO | 
+Class Bar inherits from Foo | Bazz | Razz | Object | IO | 
+Class Int inherits from Object | 
+Class IO inherits from Object | 
+Class Main inherits from Object | 
+Class String inherits from Object | 
+Class Bool inherits from Object | 
 #1
 _program
   #1

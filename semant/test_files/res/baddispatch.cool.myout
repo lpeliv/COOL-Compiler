@@ -1,3 +1,20 @@
+TestTestTestTestClass Name: Main, Class Definition: 0x5e82fc85a1e0
+Class Name: Object, Class Definition: 0x5e82fc85b540
+Class Name: Animal, Class Definition: 0x5e82fc85a2c0
+Class Name: Cow, Class Definition: 0x5e82fc85a580
+Class Name: String, Class Definition: 0x5e82fc85b1a0
+Class Name: Blerg, Class Definition: 0x5e82fc85a8b0
+Class Name: Bool, Class Definition: 0x5e82fc85a910
+Class Name: Int, Class Definition: 0x5e82fb58197a
+Class Name: IO, Class Definition: 0x7ffc3895bcc0
+Class Main inherits from Object | 
+Class Animal inherits from Object | 
+Class Cow inherits from Object | Animal | 
+Class String inherits from Object | 
+Class Blerg inherits from Object | 
+Class Bool inherits from Object | 
+Class Int inherits from Object | 
+Class IO inherits from Object | 
 #1
 _program
   #1

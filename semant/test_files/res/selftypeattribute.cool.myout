@@ -1,3 +1,18 @@
+TestTestTestClass Name: A, Class Definition: 0x5fc261ba3650
+Class Name: Object, Class Definition: 0x5fc261ba4b60
+Class Name: Int, Class Definition: 0x5fc26068497a
+Class Name: B, Class Definition: 0x5fc261ba3820
+Class Name: Main, Class Definition: 0x5fc261ba40b0
+Class Name: IO, Class Definition: 0x7ffcbfc0f400
+Class Name: Bool, Class Definition: 0x5fc261ba4110
+Class Name: String, Class Definition: 0x5fc261ba47c0
+Class A inherits from Object | 
+Class Int inherits from Object | 
+Class B inherits from A | Object | 
+Class Main inherits from Object | IO | 
+Class IO inherits from Object | 
+Class Bool inherits from Object | 
+Class String inherits from Object | 
 #1
 _program
   #1

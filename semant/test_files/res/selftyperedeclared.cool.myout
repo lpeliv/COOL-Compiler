@@ -1,2 +1,2 @@
 .//test_files//selftyperedeclared.cl:1: Class name cannot be SELF_TYPE.
-Compilation halted due to static semantic errors.
+TestTestCompilation halted due to static semantic errors.

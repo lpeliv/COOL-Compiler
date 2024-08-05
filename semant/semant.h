@@ -31,7 +31,7 @@ private:
   /*------------------------------------------------*/
   /* Tablica simbola */
   /*------------------------------------------------*/
-  SymbolTable<Symbol, Class_> class_table;
+  SymbolTable<Symbol, Class_> symbol_table;
 
   /*------------------------------------------------*/
   /* Mapa klasi */
@@ -56,7 +56,7 @@ public:
   /*------------------------------------------------*/
   /* Metoda pristupa tablici simbola */
   /*------------------------------------------------*/
-  SymbolTable<Symbol, Class_>& get_class_table() { return class_table; }
+  SymbolTable<Symbol, Class_>& get_class_table() { return symbol_table; }
   
   /*------------------------------------------------*/
   /* Metoda popunjavanja i odbacivanja mapa klasi */
@@ -69,7 +69,16 @@ public:
   /*------------------------------------------------*/
   void build_inheritance_graph(Classes classes);
   void print_inheritance_graph();
+
 };
+
+/*------------------------------------------------*/
+/* Definicija walk_down_add metode */
+/*------------------------------------------------*/
+void class__class::walk_down_add(ClassTable *ct) {
+  Symbol class_name = this->fetchName();
+  cerr << "Test " << class_name << "\n";
+}
 
 #endif
 

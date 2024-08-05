@@ -1,2 +1,2 @@
 .//test_files//badredefineint.cl:1: Redefinition of Int is not allowed.
-Compilation halted due to static semantic errors.
+TestTestCompilation halted due to static semantic errors.

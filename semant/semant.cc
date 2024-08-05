@@ -86,7 +86,7 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
     /*------------------------------------------------*/
     /* Ulazak u scope */
     /*------------------------------------------------*/ 
-    class_table.enterscope();
+    symbol_table.enterscope();
 
     /* Fill this in */
     install_basic_classes();
@@ -119,7 +119,7 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
             continue;
         }
 
-        else  if( class_table.lookup(class_name) != NULL ){
+        else  if( symbol_table.lookup(class_name) != NULL ){
             semant_error(current_class) << "Class " << class_name << " was previously defined." << endl;
             continue;
         }
@@ -132,7 +132,7 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
             continue;
         }
 
-       class_table.addid(class_name, &current_class);
+       symbol_table.addid(class_name, &current_class);
 
     
     }
@@ -161,7 +161,7 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
         /*------------------------------------------------*/
         /* Provjera nasljeđivanja od nepostojeće klase */
         /*------------------------------------------------*/ 
-        else if (class_table.lookup(parent_name) == NULL && parent_name != No_class) {
+        else if (symbol_table.lookup(parent_name) == NULL && parent_name != No_class) {
             semant_error(current_class) << "Class " << class_name << " inherits from an undefined class " << parent_name << ".\n";
             continue;
         }
@@ -190,7 +190,7 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
     /*------------------------------------------------*/
     /* Izlazak iz scope-a */
     /*------------------------------------------------*/ 
-    class_table.exitscope();
+    symbol_table.exitscope();
 }
 
 void ClassTable::install_basic_classes() {
@@ -231,7 +231,7 @@ void ClassTable::install_basic_classes() {
     /*------------------------------------------------*/
     /* Dodavanje Object_class-a u tablicu simbola */
     /*------------------------------------------------*/
-    class_table.addid(Object, &Object_class);
+    symbol_table.addid(Object, &Object_class);
     
     // 
     // The IO class inherits from Object. Its methods are
@@ -258,7 +258,7 @@ void ClassTable::install_basic_classes() {
     /* Dodavanje IO_class-a u tablicu simbola */
     /*------------------------------------------------*/
     
-    class_table.addid(IO, &IO_class);
+    symbol_table.addid(IO, &IO_class);
     //
     // The Int class has no methods and only a single attribute, the
     // "val" for the integer. 
@@ -272,7 +272,7 @@ void ClassTable::install_basic_classes() {
     /*------------------------------------------------*/
     /* Dodavanje Int_class-a u tablicu simbola */
     /*------------------------------------------------*/ 
-    class_table.addid(Int, &Int_class);
+    symbol_table.addid(Int, &Int_class);
     
     //
     // Bool also has only the "val" slot.
@@ -283,7 +283,7 @@ void ClassTable::install_basic_classes() {
     /*------------------------------------------------*/
     /* Dodavanje Bool_class-a u tablicu simbola */
     /*------------------------------------------------*/ 
-    class_table.addid(Bool, &Bool_class);
+    symbol_table.addid(Bool, &Bool_class);
 
     //
     // The class Str has a number of slots and operations:
@@ -316,7 +316,7 @@ void ClassTable::install_basic_classes() {
     /*------------------------------------------------*/
     /* Dodavanje String_class-a u tablicu simbola */
     /*------------------------------------------------*/ 
-    class_table.addid(Str, &Str_class);
+    symbol_table.addid(Str, &Str_class);
 }
 
 ////////////////////////////////////////////////////////////////////
@@ -379,6 +379,7 @@ void program_class::semant()
     for(int i = classes->first(); classes->more(i); i = classes->next(i)) {
         classes->nth(i)->walk_down_add(classtable);
     }
+
     /* some semantic analysis code may go here */
 
     if (classtable->errors()) {
@@ -390,7 +391,7 @@ void program_class::semant()
     /* Ispis klasa i pokazivača njihovih definicija */
     /*------------------------------------------------*/
     if(PRINT == 1){ 
-        classtable->dump_class_map();
+        //classtable->dump_class_map();
         classtable->print_inheritance_graph();
     }
 }
@@ -400,11 +401,11 @@ void ClassTable::populate_class_map(Classes classes) {
     /*------------------------------------------------*/
     /* Dodavanje osnovnih klasa u mapu */
     /*------------------------------------------------*/ 
-    class_map[Object] = *class_table.lookup(Object);
-    class_map[IO] = *class_table.lookup(IO);
-    class_map[Int] = *class_table.lookup(Int);
-    class_map[Bool] = *class_table.lookup(Bool);
-    class_map[Str] = *class_table.lookup(Str);
+    class_map[Object] = *symbol_table.lookup(Object);
+    class_map[IO] = *symbol_table.lookup(IO);
+    class_map[Int] = *symbol_table.lookup(Int);
+    class_map[Bool] = *symbol_table.lookup(Bool);
+    class_map[Str] = *symbol_table.lookup(Str);
 
     /*------------------------------------------------*/
     /* Dodavanje korisnikovih klasa u mapu */
@@ -484,6 +485,7 @@ void ClassTable::print_inheritance_graph() {
         cerr << "\n";
     }
 }
+
 
 /*------------------------------------------------*/
 /* Pomoćna funkcija za skupljanje predaka */
