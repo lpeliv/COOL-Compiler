@@ -1,2 +1,24 @@
 .//test_files//selftyperedeclared.cl:1: Class name cannot be SELF_TYPE.
-TestTestCompilation halted due to static semantic errors.
+
+Scope: 
+  Main
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
+
+Scope: 
+Class SELF_TYPE: SELF added to symbol table.
+
+Scope: 
+  SELF_TYPE
+
+Compilation halted due to static semantic errors.

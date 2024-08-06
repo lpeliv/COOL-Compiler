@@ -1,1305 +1,1335 @@
-error in line# 1
-    parsed as: TestTestTestTestTestClass Name: Foo, Class Definition: 0x5dd4170f6de0
-    should be: 
 error in line# 2
-    parsed as: Class Name: Bazz, Class Definition: 0x5dd4170f8490
+    parsed as: Scope: 
     should be: _program
 error in line# 3
-    parsed as: Class Name: Razz, Class Definition: 0x5dd4170f7890
+    parsed as:   Main
     should be: 
 error in line# 4
-    parsed as: Class Name: Bar, Class Definition: 0x5dd4170f7150
+    parsed as:   Bazz
     should be:   _class
 error in line# 5
-    parsed as: Class Name: Int, Class Definition: 0x5dd41612397a
+    parsed as:   Razz
     should be:     Foo
 error in line# 6
-    parsed as: Class Name: Object, Class Definition: 0x5dd4170f9520
+    parsed as:   Bar
     should be:     Bazz
 error in line# 7
-    parsed as: Class Name: IO, Class Definition: 0x7ffc2059c3d0
+    parsed as:   Foo
     should be:     filename
 error in line# 8
-    parsed as: Class Name: Main, Class Definition: 0x5dd4170f8a10
+    parsed as:   String
     should be:     (
 error in line# 9
-    parsed as: Class Name: String, Class Definition: 0x5dd4170f9180
+    parsed as:   Bool
     should be: 
 error in line# 10
-    parsed as: Class Name: Bool, Class Definition: 0x5dd4170f8a70
+    parsed as:   Int
     should be:     _attr
 error in line# 11
-    parsed as: Class Foo inherits from Bazz | Object | IO | 
+    parsed as:   IO
     should be:       a
 error in line# 12
-    parsed as: Class Bazz inherits from Object | IO | 
+    parsed as:   Object
     should be:       Razz
-error in line# 13
-    parsed as: Class Razz inherits from Foo | Bazz | Object | IO | 
-    should be: 
 error in line# 14
-    parsed as: Class Bar inherits from Foo | Bazz | Razz | Object | IO | 
+    parsed as: Scope: 
     should be:       _typcase
 error in line# 15
-    parsed as: Class Int inherits from Object | 
+    parsed as: Class Foo: SELF added to symbol table.
     should be: 
 error in line# 16
-    parsed as: Class IO inherits from Object | 
+    parsed as: 
     should be:         _object
 error in line# 17
-    parsed as: Class Main inherits from Object | 
+    parsed as: Scope: 
     should be:           self
 error in line# 18
-    parsed as: Class String inherits from Object | 
+    parsed as:   Foo
     should be:         : SELF_TYPE
-error in line# 19
-    parsed as: Class Bool inherits from Object | 
-    should be: 
 error in line# 20
     parsed as: 
     should be:         _branch
 error in line# 21
-    parsed as: _program
+    parsed as: Scope: 
     should be:           n
 error in line# 22
-    parsed as: 
+    parsed as: Class Bar: SELF added to symbol table.
     should be:           Razz
-error in line# 23
-    parsed as:   _class
-    should be: 
 error in line# 24
-    parsed as:     Foo
+    parsed as: Scope: 
     should be:           _new
 error in line# 25
-    parsed as:     Bazz
+    parsed as:   Bar
     should be:             Bar
 error in line# 26
-    parsed as:     filename
-    should be:           : Bar
-error in line# 27
-    parsed as:     (
-    should be: 
-error in line# 28
     parsed as: 
+    should be:           : Bar
+error in line# 28
+    parsed as: Scope: 
     should be:         _branch
 error in line# 29
-    parsed as:     _attr
+    parsed as: Class Razz: SELF added to symbol table.
     should be:           n
 error in line# 30
-    parsed as:       a
+    parsed as: 
     should be:           Foo
 error in line# 31
-    parsed as:       Razz
+    parsed as: Scope: 
     should be: 
 error in line# 32
-    parsed as: 
+    parsed as:   Razz
     should be:           _new
 error in line# 33
-    parsed as:       _typcase
+    parsed as: 
     should be:             Razz
 error in line# 34
     parsed as: 
     should be:           : Razz
 error in line# 35
-    parsed as:         _object
+    parsed as: Scope: 
     should be: 
 error in line# 36
-    parsed as:           self
+    parsed as: Class Bazz: SELF added to symbol table.
     should be:         _branch
 error in line# 37
-    parsed as:         : _no_type
+    parsed as: 
     should be:           n
 error in line# 38
-    parsed as: 
+    parsed as: Scope: 
     should be:           Bar
 error in line# 39
-    parsed as:         _branch
+    parsed as:   Bazz
     should be: 
 error in line# 40
-    parsed as:           n
+    parsed as: 
     should be:           _object
 error in line# 41
-    parsed as:           Razz
+    parsed as: 
     should be:             n
 error in line# 42
-    parsed as: 
+    parsed as: Scope: 
     should be:           : Bar
 error in line# 43
-    parsed as:           _new
+    parsed as: Class Main: SELF added to symbol table.
     should be:       : Razz
-error in line# 44
-    parsed as:             Bar
-    should be: 
 error in line# 45
-    parsed as:           : _no_type
+    parsed as: Scope: 
     should be:     _attr
 error in line# 46
-    parsed as: 
+    parsed as:   Main
     should be:       b
 error in line# 47
-    parsed as:         _branch
+    parsed as: 
     should be:       Int
-error in line# 48
-    parsed as:           n
-    should be: 
 error in line# 49
-    parsed as:           Foo
+    parsed as: _program
     should be:       _plus
 error in line# 51
-    parsed as:           _new
+    parsed as:   _class
     should be:         _plus
 error in line# 52
-    parsed as:             Razz
+    parsed as:     Foo
     should be: 
 error in line# 53
-    parsed as:           : _no_type
+    parsed as:     Bazz
     should be:           _plus
-error in line# 55
-    parsed as:         _branch
-    should be:             _dispatch
-error in line# 56
-    parsed as:           n
+error in line# 54
+    parsed as:     filename
     should be: 
+error in line# 55
+    parsed as:     (
+    should be:             _dispatch
 error in line# 57
-    parsed as:           Bar
+    parsed as:     _attr
     should be:               _object
 error in line# 58
-    parsed as: 
+    parsed as:       a
     should be:                 a
 error in line# 59
-    parsed as:           _object
+    parsed as:       Razz
     should be:               : Razz
 error in line# 60
-    parsed as:             n
+    parsed as: 
     should be:               doh
 error in line# 61
-    parsed as:           : _no_type
+    parsed as:       _typcase
     should be:               (
 error in line# 62
-    parsed as:       : _no_type
+    parsed as: 
     should be:               )
 error in line# 63
-    parsed as: 
+    parsed as:         _object
     should be:             : Int
 error in line# 64
-    parsed as:     _attr
+    parsed as:           self
     should be: 
 error in line# 65
-    parsed as:       b
+    parsed as:         : _no_type
     should be:             _dispatch
-error in line# 66
-    parsed as:       Int
-    should be: 
 error in line# 67
-    parsed as: 
+    parsed as:         _branch
     should be:               _object
 error in line# 68
-    parsed as:       _plus
+    parsed as:           n
     should be:                 g
 error in line# 69
-    parsed as: 
+    parsed as:           Razz
     should be:               : Foo
 error in line# 70
-    parsed as:         _plus
+    parsed as: 
     should be:               doh
 error in line# 71
-    parsed as: 
+    parsed as:           _new
     should be:               (
 error in line# 72
-    parsed as:           _plus
+    parsed as:             Bar
     should be:               )
 error in line# 73
-    parsed as: 
+    parsed as:           : _no_type
     should be:             : Int
 error in line# 74
-    parsed as:             _dispatch
+    parsed as: 
     should be:           : Int
+error in line# 75
+    parsed as:         _branch
+    should be: 
 error in line# 76
-    parsed as:               _object
+    parsed as:           n
     should be:           _dispatch
 error in line# 77
-    parsed as:                 a
+    parsed as:           Foo
     should be: 
 error in line# 78
-    parsed as:               : _no_type
+    parsed as: 
     should be:             _object
 error in line# 79
-    parsed as:               doh
+    parsed as:           _new
     should be:               self
 error in line# 80
-    parsed as:               (
+    parsed as:             Razz
     should be:             : SELF_TYPE
 error in line# 81
-    parsed as:               )
+    parsed as:           : _no_type
     should be:             doh
 error in line# 82
-    parsed as:             : _no_type
+    parsed as: 
     should be:             (
 error in line# 83
-    parsed as: 
+    parsed as:         _branch
     should be:             )
 error in line# 84
-    parsed as:             _dispatch
+    parsed as:           n
     should be:           : Int
 error in line# 85
-    parsed as: 
+    parsed as:           Bar
     should be:         : Int
-error in line# 86
-    parsed as:               _object
-    should be: 
 error in line# 87
-    parsed as:                 g
+    parsed as:           _object
     should be:         _dispatch
 error in line# 88
-    parsed as:               : _no_type
+    parsed as:             n
     should be: 
 error in line# 89
-    parsed as:               doh
+    parsed as:           : _no_type
     should be:           _object
 error in line# 90
-    parsed as:               (
+    parsed as:       : _no_type
     should be:             self
 error in line# 91
-    parsed as:               )
+    parsed as: 
     should be:           : SELF_TYPE
 error in line# 92
-    parsed as:             : _no_type
+    parsed as:     _attr
     should be:           printh
 error in line# 93
-    parsed as:           : _no_type
+    parsed as:       b
     should be:           (
 error in line# 94
-    parsed as: 
+    parsed as:       Int
     should be:           )
 error in line# 95
-    parsed as:           _dispatch
+    parsed as: 
     should be:         : Int
 error in line# 96
-    parsed as: 
+    parsed as:       _plus
     should be:       : Int
-error in line# 97
-    parsed as:             _object
-    should be: 
 error in line# 98
-    parsed as:               self
+    parsed as:         _plus
     should be:     _method
 error in line# 99
-    parsed as:             : _no_type
+    parsed as: 
     should be:       doh
 error in line# 100
-    parsed as:             doh
+    parsed as:           _plus
     should be:       Int
-error in line# 101
-    parsed as:             (
-    should be: 
 error in line# 102
-    parsed as:             )
+    parsed as:             _dispatch
     should be:       _let
 error in line# 103
-    parsed as:           : _no_type
+    parsed as: 
     should be:         i
 error in line# 104
-    parsed as:         : _no_type
+    parsed as:               _object
     should be:         Int
+error in line# 105
+    parsed as:                 a
+    should be: 
 error in line# 106
-    parsed as:         _dispatch
+    parsed as:               : _no_type
     should be:         _object
 error in line# 107
-    parsed as: 
+    parsed as:               doh
     should be:           h
 error in line# 108
-    parsed as:           _object
+    parsed as:               (
     should be:         : Int
 error in line# 109
-    parsed as:             self
+    parsed as:               )
     should be: 
 error in line# 110
-    parsed as:           : _no_type
+    parsed as:             : _no_type
     should be:         _block
-error in line# 111
-    parsed as:           printh
-    should be: 
 error in line# 112
-    parsed as:           (
+    parsed as:             _dispatch
     should be:           _assign
 error in line# 113
-    parsed as:           )
+    parsed as: 
     should be:             h
 error in line# 114
-    parsed as:         : _no_type
+    parsed as:               _object
     should be: 
 error in line# 115
-    parsed as:       : _no_type
+    parsed as:                 g
     should be:             _plus
+error in line# 116
+    parsed as:               : _no_type
+    should be: 
 error in line# 117
-    parsed as:     _method
+    parsed as:               doh
     should be:               _object
 error in line# 118
-    parsed as:       doh
+    parsed as:               (
     should be:                 h
 error in line# 119
-    parsed as:       Int
+    parsed as:               )
     should be:               : Int
+error in line# 120
+    parsed as:             : _no_type
+    should be: 
 error in line# 121
-    parsed as:       _let
+    parsed as:           : _no_type
     should be:               _int
 error in line# 122
-    parsed as:         i
+    parsed as: 
     should be:                 2
 error in line# 123
-    parsed as:         Int
+    parsed as:           _dispatch
     should be:               : Int
 error in line# 124
     parsed as: 
     should be:             : Int
 error in line# 125
-    parsed as:         _object
+    parsed as:             _object
     should be:           : Int
 error in line# 126
-    parsed as:           h
+    parsed as:               self
     should be: 
 error in line# 127
-    parsed as:         : _no_type
+    parsed as:             : _no_type
     should be:           _object
 error in line# 128
-    parsed as: 
+    parsed as:             doh
     should be:             i
 error in line# 129
-    parsed as:         _block
+    parsed as:             (
     should be:           : Int
 error in line# 130
-    parsed as: 
+    parsed as:             )
     should be:         : Int
 error in line# 131
-    parsed as:           _assign
+    parsed as:           : _no_type
     should be:       : Int
 error in line# 132
-    parsed as:             h
+    parsed as:         : _no_type
     should be:     )
 error in line# 134
-    parsed as:             _plus
+    parsed as:         _dispatch
     should be:   _class
 error in line# 135
     parsed as: 
     should be:     Bar
 error in line# 136
-    parsed as:               _object
+    parsed as:           _object
     should be:     Razz
 error in line# 137
-    parsed as:                 h
+    parsed as:             self
     should be:     filename
 error in line# 138
-    parsed as:               : _no_type
+    parsed as:           : _no_type
     should be:     (
+error in line# 139
+    parsed as:           printh
+    should be: 
 error in line# 140
-    parsed as:               _int
+    parsed as:           (
     should be:     _attr
 error in line# 141
-    parsed as:                 2
+    parsed as:           )
     should be:       c
 error in line# 142
-    parsed as:               : _no_type
+    parsed as:         : _no_type
     should be:       Int
 error in line# 143
-    parsed as:             : _no_type
+    parsed as:       : _no_type
     should be: 
 error in line# 144
-    parsed as:           : _no_type
+    parsed as: 
     should be:       _dispatch
+error in line# 145
+    parsed as:     _method
+    should be: 
 error in line# 146
-    parsed as:           _object
+    parsed as:       doh
     should be:         _object
 error in line# 147
-    parsed as:             i
+    parsed as:       Int
     should be:           self
 error in line# 148
-    parsed as:           : _no_type
+    parsed as: 
     should be:         : SELF_TYPE
 error in line# 149
-    parsed as:         : _no_type
+    parsed as:       _let
     should be:         doh
 error in line# 150
-    parsed as:       : _no_type
+    parsed as:         i
     should be:         (
 error in line# 151
-    parsed as:     )
+    parsed as:         Int
     should be:         )
 error in line# 152
     parsed as: 
     should be:       : Int
 error in line# 153
-    parsed as:   _class
+    parsed as:         _object
     should be: 
 error in line# 154
-    parsed as:     Bar
+    parsed as:           h
     should be:     _attr
 error in line# 155
-    parsed as:     Razz
+    parsed as:         : _no_type
     should be:       d
 error in line# 156
-    parsed as:     filename
+    parsed as: 
     should be:       Object
 error in line# 157
-    parsed as:     (
+    parsed as:         _block
     should be: 
 error in line# 158
     parsed as: 
     should be:       _dispatch
 error in line# 159
-    parsed as:     _attr
+    parsed as:           _assign
     should be: 
 error in line# 160
-    parsed as:       c
+    parsed as:             h
     should be:         _object
 error in line# 161
-    parsed as:       Int
+    parsed as: 
     should be:           self
 error in line# 162
-    parsed as: 
+    parsed as:             _plus
     should be:         : SELF_TYPE
 error in line# 163
-    parsed as:       _dispatch
+    parsed as: 
     should be:         printh
 error in line# 164
-    parsed as: 
+    parsed as:               _object
     should be:         (
 error in line# 165
-    parsed as:         _object
+    parsed as:                 h
     should be:         )
 error in line# 166
-    parsed as:           self
+    parsed as:               : _no_type
     should be:       : Int
 error in line# 167
-    parsed as:         : _no_type
+    parsed as: 
     should be:     )
 error in line# 168
-    parsed as:         doh
+    parsed as:               _int
     should be: 
 error in line# 169
-    parsed as:         (
+    parsed as:                 2
     should be:   _class
 error in line# 170
-    parsed as:         )
+    parsed as:               : _no_type
     should be:     Razz
 error in line# 171
-    parsed as:       : _no_type
+    parsed as:             : _no_type
     should be:     Foo
 error in line# 172
-    parsed as: 
+    parsed as:           : _no_type
     should be:     filename
 error in line# 173
-    parsed as:     _attr
+    parsed as: 
     should be:     (
 error in line# 174
-    parsed as:       d
+    parsed as:           _object
     should be: 
 error in line# 175
-    parsed as:       Object
+    parsed as:             i
     should be:     _attr
 error in line# 176
-    parsed as: 
+    parsed as:           : _no_type
     should be:       e
 error in line# 177
-    parsed as:       _dispatch
-    should be:       Bar
-error in line# 179
-    parsed as:         _object
-    should be:       _typcase
-error in line# 180
-    parsed as:           self
-    should be: 
-error in line# 181
     parsed as:         : _no_type
+    should be:       Bar
+error in line# 178
+    parsed as:       : _no_type
+    should be: 
+error in line# 179
+    parsed as:     )
+    should be:       _typcase
+error in line# 181
+    parsed as:   _class
     should be:         _object
 error in line# 182
-    parsed as:         printh
+    parsed as:     Bar
     should be:           self
 error in line# 183
-    parsed as:         (
+    parsed as:     Razz
     should be:         : SELF_TYPE
 error in line# 184
-    parsed as:         )
+    parsed as:     filename
     should be: 
 error in line# 185
-    parsed as:       : _no_type
+    parsed as:     (
     should be:         _branch
 error in line# 186
-    parsed as:     )
+    parsed as: 
     should be:           n
 error in line# 187
-    parsed as: 
+    parsed as:     _attr
     should be:           Razz
 error in line# 188
-    parsed as:   _class
+    parsed as:       c
     should be: 
 error in line# 189
-    parsed as:     Razz
+    parsed as:       Int
     should be:           _new
 error in line# 190
-    parsed as:     Foo
+    parsed as: 
     should be:             Bar
 error in line# 191
-    parsed as:     filename
+    parsed as:       _dispatch
     should be:           : Bar
-error in line# 192
-    parsed as:     (
-    should be: 
 error in line# 193
-    parsed as: 
+    parsed as:         _object
     should be:         _branch
 error in line# 194
-    parsed as:     _attr
+    parsed as:           self
     should be:           n
 error in line# 195
-    parsed as:       e
+    parsed as:         : _no_type
     should be:           Bar
 error in line# 196
-    parsed as:       Bar
+    parsed as:         doh
     should be: 
 error in line# 197
-    parsed as: 
+    parsed as:         (
     should be:           _object
 error in line# 198
-    parsed as:       _typcase
+    parsed as:         )
     should be:             n
 error in line# 199
-    parsed as: 
+    parsed as:       : _no_type
     should be:           : Bar
 error in line# 200
-    parsed as:         _object
+    parsed as: 
     should be:       : Bar
 error in line# 201
-    parsed as:           self
+    parsed as:     _attr
     should be: 
 error in line# 202
-    parsed as:         : _no_type
+    parsed as:       d
     should be:     _attr
 error in line# 203
-    parsed as: 
+    parsed as:       Object
     should be:       f
 error in line# 204
-    parsed as:         _branch
+    parsed as: 
     should be:       Int
 error in line# 205
-    parsed as:           n
+    parsed as:       _dispatch
     should be: 
 error in line# 206
-    parsed as:           Razz
+    parsed as: 
     should be:       _plus
+error in line# 207
+    parsed as:         _object
+    should be: 
 error in line# 208
-    parsed as:           _new
+    parsed as:           self
     should be:         _plus
 error in line# 209
-    parsed as:             Bar
+    parsed as:         : _no_type
     should be: 
 error in line# 210
-    parsed as:           : _no_type
+    parsed as:         printh
     should be:           _plus
+error in line# 211
+    parsed as:         (
+    should be: 
 error in line# 212
-    parsed as:         _branch
+    parsed as:         )
     should be:             _plus
 error in line# 213
-    parsed as:           n
+    parsed as:       : _no_type
     should be: 
 error in line# 214
-    parsed as:           Bar
+    parsed as:     )
     should be:               _static_dispatch
 error in line# 216
-    parsed as:           _object
+    parsed as:   _class
     should be:                 _object
 error in line# 217
-    parsed as:             n
+    parsed as:     Razz
     should be:                   a
 error in line# 218
-    parsed as:           : _no_type
+    parsed as:     Foo
     should be:                 : Razz
 error in line# 219
-    parsed as:       : _no_type
+    parsed as:     filename
     should be:                 Bazz
 error in line# 220
-    parsed as: 
+    parsed as:     (
     should be:                 doh
 error in line# 221
-    parsed as:     _attr
+    parsed as: 
     should be:                 (
 error in line# 222
-    parsed as:       f
+    parsed as:     _attr
     should be:                 )
 error in line# 223
-    parsed as:       Int
+    parsed as:       e
     should be:               : Int
+error in line# 224
+    parsed as:       Bar
+    should be: 
 error in line# 225
-    parsed as:       _plus
+    parsed as: 
     should be:               _dispatch
+error in line# 226
+    parsed as:       _typcase
+    should be: 
 error in line# 227
-    parsed as:         _plus
+    parsed as: 
     should be:                 _object
 error in line# 228
-    parsed as: 
+    parsed as:         _object
     should be:                   g
 error in line# 229
-    parsed as:           _plus
+    parsed as:           self
     should be:                 : Foo
 error in line# 230
-    parsed as: 
+    parsed as:         : _no_type
     should be:                 doh
 error in line# 231
-    parsed as:             _plus
+    parsed as: 
     should be:                 (
 error in line# 232
-    parsed as: 
+    parsed as:         _branch
     should be:                 )
 error in line# 233
-    parsed as:               _static_dispatch
+    parsed as:           n
     should be:               : Int
 error in line# 234
-    parsed as: 
+    parsed as:           Razz
     should be:             : Int
-error in line# 235
-    parsed as:                 _object
-    should be: 
 error in line# 236
-    parsed as:                   a
+    parsed as:           _new
     should be:             _dispatch
 error in line# 237
-    parsed as:                 : _no_type
+    parsed as:             Bar
     should be: 
 error in line# 238
-    parsed as:                 Bazz
+    parsed as:           : _no_type
     should be:               _object
 error in line# 239
-    parsed as:                 doh
+    parsed as: 
     should be:                 e
 error in line# 240
-    parsed as:                 (
+    parsed as:         _branch
     should be:               : Bar
 error in line# 241
-    parsed as:                 )
+    parsed as:           n
     should be:               doh
 error in line# 242
-    parsed as:               : _no_type
+    parsed as:           Bar
     should be:               (
 error in line# 243
     parsed as: 
     should be:               )
 error in line# 244
-    parsed as:               _dispatch
+    parsed as:           _object
     should be:             : Int
 error in line# 245
-    parsed as: 
+    parsed as:             n
     should be:           : Int
 error in line# 246
-    parsed as:                 _object
+    parsed as:           : _no_type
     should be: 
 error in line# 247
-    parsed as:                   g
+    parsed as:       : _no_type
     should be:           _dispatch
-error in line# 248
-    parsed as:                 : _no_type
-    should be: 
 error in line# 249
-    parsed as:                 doh
+    parsed as:     _attr
     should be:             _object
 error in line# 250
-    parsed as:                 (
+    parsed as:       f
     should be:               self
 error in line# 251
-    parsed as:                 )
+    parsed as:       Int
     should be:             : SELF_TYPE
 error in line# 252
-    parsed as:               : _no_type
+    parsed as: 
     should be:             doh
 error in line# 253
-    parsed as:             : _no_type
+    parsed as:       _plus
     should be:             (
 error in line# 254
     parsed as: 
     should be:             )
 error in line# 255
-    parsed as:             _dispatch
+    parsed as:         _plus
     should be:           : Int
 error in line# 256
     parsed as: 
     should be:         : Int
 error in line# 257
-    parsed as:               _object
+    parsed as:           _plus
     should be: 
 error in line# 258
-    parsed as:                 e
+    parsed as: 
     should be:         _dispatch
 error in line# 259
-    parsed as:               : _no_type
+    parsed as:             _plus
     should be: 
 error in line# 260
-    parsed as:               doh
+    parsed as: 
     should be:           _object
 error in line# 261
-    parsed as:               (
+    parsed as:               _static_dispatch
     should be:             self
 error in line# 262
-    parsed as:               )
+    parsed as: 
     should be:           : SELF_TYPE
 error in line# 263
-    parsed as:             : _no_type
+    parsed as:                 _object
     should be:           printh
 error in line# 264
-    parsed as:           : _no_type
+    parsed as:                   a
     should be:           (
 error in line# 265
-    parsed as: 
+    parsed as:                 : _no_type
     should be:           )
 error in line# 266
-    parsed as:           _dispatch
+    parsed as:                 Bazz
     should be:         : Int
 error in line# 267
-    parsed as: 
+    parsed as:                 doh
     should be:       : Int
 error in line# 268
-    parsed as:             _object
+    parsed as:                 (
     should be:     )
 error in line# 269
-    parsed as:               self
+    parsed as:                 )
     should be: 
 error in line# 270
-    parsed as:             : _no_type
+    parsed as:               : _no_type
     should be:   _class
 error in line# 271
-    parsed as:             doh
+    parsed as: 
     should be:     Bazz
 error in line# 272
-    parsed as:             (
+    parsed as:               _dispatch
     should be:     IO
 error in line# 273
-    parsed as:             )
+    parsed as: 
     should be:     filename
 error in line# 274
-    parsed as:           : _no_type
+    parsed as:                 _object
     should be:     (
 error in line# 275
-    parsed as:         : _no_type
+    parsed as:                   g
     should be: 
 error in line# 276
-    parsed as: 
+    parsed as:                 : _no_type
     should be:     _attr
 error in line# 277
-    parsed as:         _dispatch
+    parsed as:                 doh
     should be:       h
 error in line# 278
-    parsed as: 
+    parsed as:                 (
     should be:       Int
 error in line# 279
-    parsed as:           _object
+    parsed as:                 )
     should be: 
 error in line# 280
-    parsed as:             self
+    parsed as:               : _no_type
     should be:       _int
 error in line# 281
-    parsed as:           : _no_type
+    parsed as:             : _no_type
     should be:         1
 error in line# 282
-    parsed as:           printh
+    parsed as: 
     should be:       : Int
 error in line# 283
-    parsed as:           (
+    parsed as:             _dispatch
     should be: 
 error in line# 284
-    parsed as:           )
+    parsed as: 
     should be:     _attr
 error in line# 285
-    parsed as:         : _no_type
+    parsed as:               _object
     should be:       g
 error in line# 286
-    parsed as:       : _no_type
+    parsed as:                 e
     should be:       Foo
 error in line# 287
-    parsed as:     )
+    parsed as:               : _no_type
     should be: 
 error in line# 288
-    parsed as: 
+    parsed as:               doh
     should be:       _typcase
 error in line# 289
-    parsed as:   _class
+    parsed as:               (
     should be: 
 error in line# 290
-    parsed as:     Bazz
+    parsed as:               )
     should be:         _object
 error in line# 291
-    parsed as:     IO
+    parsed as:             : _no_type
     should be:           self
 error in line# 292
-    parsed as:     filename
+    parsed as:           : _no_type
     should be:         : SELF_TYPE
-error in line# 293
-    parsed as:     (
-    should be: 
 error in line# 294
-    parsed as: 
+    parsed as:           _dispatch
     should be:         _branch
 error in line# 295
-    parsed as:     _attr
+    parsed as: 
     should be:           n
 error in line# 296
-    parsed as:       h
+    parsed as:             _object
     should be:           Bazz
 error in line# 297
-    parsed as:       Int
+    parsed as:               self
     should be: 
 error in line# 298
-    parsed as: 
+    parsed as:             : _no_type
     should be:           _new
 error in line# 299
-    parsed as:       _int
+    parsed as:             doh
     should be:             Foo
 error in line# 300
-    parsed as:         1
+    parsed as:             (
     should be:           : Foo
 error in line# 301
-    parsed as:       : _no_type
+    parsed as:             )
     should be: 
 error in line# 302
-    parsed as: 
+    parsed as:           : _no_type
     should be:         _branch
 error in line# 303
-    parsed as:     _attr
+    parsed as:         : _no_type
     should be:           n
 error in line# 304
-    parsed as:       g
+    parsed as: 
     should be:           Razz
 error in line# 305
-    parsed as:       Foo
+    parsed as:         _dispatch
     should be: 
 error in line# 306
     parsed as: 
     should be:           _new
 error in line# 307
-    parsed as:       _typcase
+    parsed as:           _object
     should be:             Bar
 error in line# 308
-    parsed as: 
+    parsed as:             self
     should be:           : Bar
 error in line# 309
-    parsed as:         _object
+    parsed as:           : _no_type
     should be: 
 error in line# 310
-    parsed as:           self
+    parsed as:           printh
     should be:         _branch
 error in line# 311
-    parsed as:         : _no_type
+    parsed as:           (
     should be:           n
 error in line# 312
-    parsed as: 
+    parsed as:           )
     should be:           Foo
 error in line# 313
-    parsed as:         _branch
+    parsed as:         : _no_type
     should be: 
 error in line# 314
-    parsed as:           n
+    parsed as:       : _no_type
     should be:           _new
 error in line# 315
-    parsed as:           Bazz
+    parsed as:     )
     should be:             Razz
 error in line# 316
     parsed as: 
     should be:           : Razz
 error in line# 317
-    parsed as:           _new
+    parsed as:   _class
     should be: 
 error in line# 318
-    parsed as:             Foo
+    parsed as:     Bazz
     should be:         _branch
 error in line# 319
-    parsed as:           : _no_type
+    parsed as:     IO
     should be:           n
 error in line# 320
-    parsed as: 
+    parsed as:     filename
     should be:           Bar
 error in line# 321
-    parsed as:         _branch
+    parsed as:     (
     should be: 
 error in line# 322
-    parsed as:           n
+    parsed as: 
     should be:           _object
 error in line# 323
-    parsed as:           Razz
+    parsed as:     _attr
     should be:             n
 error in line# 324
-    parsed as: 
+    parsed as:       h
     should be:           : Bar
 error in line# 325
-    parsed as:           _new
+    parsed as:       Int
     should be:       : Foo
-error in line# 326
-    parsed as:             Bar
-    should be: 
 error in line# 327
-    parsed as:           : _no_type
+    parsed as:       _int
     should be:     _attr
 error in line# 328
-    parsed as: 
+    parsed as:         1
     should be:       i
 error in line# 329
-    parsed as:         _branch
+    parsed as:       : _no_type
     should be:       Object
-error in line# 330
-    parsed as:           n
-    should be: 
 error in line# 331
-    parsed as:           Foo
+    parsed as:     _attr
     should be:       _dispatch
+error in line# 332
+    parsed as:       g
+    should be: 
 error in line# 333
-    parsed as:           _new
+    parsed as:       Foo
     should be:         _object
 error in line# 334
-    parsed as:             Razz
+    parsed as: 
     should be:           self
 error in line# 335
-    parsed as:           : _no_type
+    parsed as:       _typcase
     should be:         : SELF_TYPE
 error in line# 336
     parsed as: 
     should be:         printh
 error in line# 337
-    parsed as:         _branch
+    parsed as:         _object
     should be:         (
 error in line# 338
-    parsed as:           n
+    parsed as:           self
     should be:         )
 error in line# 339
-    parsed as:           Bar
+    parsed as:         : _no_type
     should be:       : Int
 error in line# 341
-    parsed as:           _object
+    parsed as:         _branch
     should be:     _method
 error in line# 342
-    parsed as:             n
+    parsed as:           n
     should be:       printh
 error in line# 343
-    parsed as:           : _no_type
+    parsed as:           Bazz
     should be:       Int
-error in line# 344
-    parsed as:       : _no_type
-    should be: 
 error in line# 345
-    parsed as: 
+    parsed as:           _new
     should be:       _block
 error in line# 346
-    parsed as:     _attr
+    parsed as:             Foo
     should be: 
 error in line# 347
-    parsed as:       i
+    parsed as:           : _no_type
     should be:         _dispatch
-error in line# 348
-    parsed as:       Object
-    should be: 
 error in line# 349
-    parsed as: 
+    parsed as:         _branch
     should be:           _object
 error in line# 350
-    parsed as:       _dispatch
+    parsed as:           n
     should be:             self
 error in line# 351
-    parsed as: 
+    parsed as:           Razz
     should be:           : SELF_TYPE
 error in line# 352
-    parsed as:         _object
+    parsed as: 
     should be:           out_int
 error in line# 353
-    parsed as:           self
+    parsed as:           _new
     should be:           (
 error in line# 354
-    parsed as:         : _no_type
+    parsed as:             Bar
     should be: 
 error in line# 355
-    parsed as:         printh
+    parsed as:           : _no_type
     should be:           _object
 error in line# 356
-    parsed as:         (
+    parsed as: 
     should be:             h
 error in line# 357
-    parsed as:         )
+    parsed as:         _branch
     should be:           : Int
 error in line# 358
-    parsed as:       : _no_type
+    parsed as:           n
     should be:           )
 error in line# 359
-    parsed as: 
+    parsed as:           Foo
     should be:         : SELF_TYPE
-error in line# 360
-    parsed as:     _method
-    should be: 
 error in line# 361
-    parsed as:       printh
+    parsed as:           _new
     should be:         _int
 error in line# 362
-    parsed as:       Int
+    parsed as:             Razz
     should be:           0
 error in line# 363
-    parsed as: 
+    parsed as:           : _no_type
     should be:         : Int
 error in line# 364
-    parsed as:       _block
+    parsed as: 
     should be:       : Int
+error in line# 365
+    parsed as:         _branch
+    should be: 
 error in line# 366
-    parsed as:         _dispatch
+    parsed as:           n
     should be:     _method
 error in line# 367
-    parsed as: 
+    parsed as:           Bar
     should be:       doh
 error in line# 368
-    parsed as:           _object
+    parsed as: 
     should be:       Int
 error in line# 369
-    parsed as:             self
+    parsed as:           _object
     should be: 
 error in line# 370
-    parsed as:           : _no_type
+    parsed as:             n
     should be:       _let
 error in line# 371
-    parsed as:           out_int
+    parsed as:           : _no_type
     should be:         i
 error in line# 372
-    parsed as:           (
+    parsed as:       : _no_type
     should be:         Int
 error in line# 374
-    parsed as:           _object
+    parsed as:     _attr
     should be:         _object
 error in line# 375
-    parsed as:             h
+    parsed as:       i
     should be:           h
 error in line# 376
-    parsed as:           : _no_type
+    parsed as:       Object
     should be:         : Int
-error in line# 377
-    parsed as:           )
-    should be: 
 error in line# 378
-    parsed as:         : _no_type
+    parsed as:       _dispatch
     should be:         _block
 error in line# 380
-    parsed as:         _int
+    parsed as:         _object
     should be:           _assign
 error in line# 381
-    parsed as:           0
+    parsed as:           self
     should be:             h
 error in line# 382
     parsed as:         : _no_type
     should be: 
 error in line# 383
-    parsed as:       : _no_type
+    parsed as:         printh
     should be:             _plus
+error in line# 384
+    parsed as:         (
+    should be: 
 error in line# 385
-    parsed as:     _method
+    parsed as:         )
     should be:               _object
 error in line# 386
-    parsed as:       doh
+    parsed as:       : _no_type
     should be:                 h
 error in line# 387
-    parsed as:       Int
+    parsed as: 
     should be:               : Int
+error in line# 388
+    parsed as:     _method
+    should be: 
 error in line# 389
-    parsed as:       _let
+    parsed as:       printh
     should be:               _int
 error in line# 390
-    parsed as:         i
+    parsed as:       Int
     should be:                 1
 error in line# 391
-    parsed as:         Int
+    parsed as: 
     should be:               : Int
 error in line# 392
-    parsed as: 
+    parsed as:       _block
     should be:             : Int
 error in line# 393
-    parsed as:         _object
+    parsed as: 
     should be:           : Int
 error in line# 394
-    parsed as:           h
+    parsed as:         _dispatch
     should be: 
 error in line# 395
-    parsed as:         : _no_type
+    parsed as: 
     should be:           _object
 error in line# 396
-    parsed as: 
+    parsed as:           _object
     should be:             i
 error in line# 397
-    parsed as:         _block
+    parsed as:             self
     should be:           : Int
 error in line# 398
-    parsed as: 
+    parsed as:           : _no_type
     should be:         : Int
 error in line# 399
-    parsed as:           _assign
+    parsed as:           out_int
     should be:       : Int
 error in line# 400
-    parsed as:             h
+    parsed as:           (
     should be:     )
 error in line# 402
-    parsed as:             _plus
+    parsed as:           _object
     should be:   _class
 error in line# 403
-    parsed as: 
+    parsed as:             h
     should be:     Main
 error in line# 404
-    parsed as:               _object
+    parsed as:           : _no_type
     should be:     Object
 error in line# 405
-    parsed as:                 h
+    parsed as:           )
     should be:     filename
 error in line# 406
-    parsed as:               : _no_type
+    parsed as:         : _no_type
     should be:     (
 error in line# 408
-    parsed as:               _int
+    parsed as:         _int
     should be:     _attr
 error in line# 409
-    parsed as:                 1
+    parsed as:           0
     should be:       a
 error in line# 410
-    parsed as:               : _no_type
+    parsed as:         : _no_type
     should be:       Bazz
 error in line# 411
-    parsed as:             : _no_type
+    parsed as:       : _no_type
     should be: 
 error in line# 412
-    parsed as:           : _no_type
+    parsed as: 
     should be:       _new
 error in line# 413
-    parsed as: 
+    parsed as:     _method
     should be:         Bazz
 error in line# 414
-    parsed as:           _object
+    parsed as:       doh
     should be:       : Bazz
 error in line# 415
-    parsed as:             i
+    parsed as:       Int
     should be: 
 error in line# 416
-    parsed as:           : _no_type
+    parsed as: 
     should be:     _attr
 error in line# 417
-    parsed as:         : _no_type
+    parsed as:       _let
     should be:       b
 error in line# 418
-    parsed as:       : _no_type
+    parsed as:         i
     should be:       Foo
 error in line# 419
-    parsed as:     )
+    parsed as:         Int
     should be: 
 error in line# 420
     parsed as: 
     should be:       _new
 error in line# 421
-    parsed as:   _class
+    parsed as:         _object
     should be:         Foo
 error in line# 422
-    parsed as:     Main
+    parsed as:           h
     should be:       : Foo
 error in line# 423
-    parsed as:     Object
+    parsed as:         : _no_type
     should be: 
 error in line# 424
-    parsed as:     filename
+    parsed as: 
     should be:     _attr
 error in line# 425
-    parsed as:     (
+    parsed as:         _block
     should be:       c
 error in line# 426
     parsed as: 
     should be:       Razz
 error in line# 427
-    parsed as:     _attr
+    parsed as:           _assign
     should be: 
 error in line# 428
-    parsed as:       a
+    parsed as:             h
     should be:       _new
 error in line# 429
-    parsed as:       Bazz
+    parsed as: 
     should be:         Razz
 error in line# 430
-    parsed as: 
+    parsed as:             _plus
     should be:       : Razz
-error in line# 431
-    parsed as:       _new
-    should be: 
 error in line# 432
-    parsed as:         Bazz
+    parsed as:               _object
     should be:     _attr
 error in line# 433
-    parsed as:       : _no_type
+    parsed as:                 h
     should be:       d
 error in line# 434
-    parsed as: 
+    parsed as:               : _no_type
     should be:       Bar
-error in line# 435
-    parsed as:     _attr
-    should be: 
 error in line# 436
-    parsed as:       b
+    parsed as:               _int
     should be:       _new
 error in line# 437
-    parsed as:       Foo
+    parsed as:                 1
     should be:         Bar
 error in line# 438
-    parsed as: 
+    parsed as:               : _no_type
     should be:       : Bar
 error in line# 439
-    parsed as:       _new
+    parsed as:             : _no_type
     should be: 
 error in line# 440
-    parsed as:         Foo
+    parsed as:           : _no_type
     should be:     _method
 error in line# 441
-    parsed as:       : _no_type
+    parsed as: 
     should be:       main
 error in line# 442
-    parsed as: 
+    parsed as:           _object
     should be:       String
 error in line# 443
-    parsed as:     _attr
+    parsed as:             i
     should be: 
 error in line# 444
-    parsed as:       c
+    parsed as:           : _no_type
     should be:       _string
 error in line# 445
-    parsed as:       Razz
+    parsed as:         : _no_type
     should be:         "do nothing"
 error in line# 446
-    parsed as: 
-    should be:       : String
-error in line# 447
-    parsed as:       _new
-    should be:     )
-error in line# 448
-    parsed as:         Razz
-    should be: 
-error in line# 449
     parsed as:       : _no_type
+    should be:       : String
+error in line# 449
+    parsed as:   _class
+    should be: 
+error in line# 450
+    parsed as:     Main
     should be: 
 error in line# 451
-    parsed as:     _attr
+    parsed as:     Object
     should be: 
 error in line# 452
-    parsed as:       d
+    parsed as:     filename
     should be: 
 error in line# 453
-    parsed as:       Bar
+    parsed as:     (
     should be: 
 error in line# 455
-    parsed as:       _new
+    parsed as:     _attr
     should be: 
 error in line# 456
-    parsed as:         Bar
+    parsed as:       a
     should be: 
 error in line# 457
-    parsed as:       : _no_type
+    parsed as:       Bazz
     should be: 
 error in line# 459
-    parsed as:     _method
+    parsed as:       _new
     should be: 
 error in line# 460
-    parsed as:       main
+    parsed as:         Bazz
     should be: 
 error in line# 461
-    parsed as:       String
+    parsed as:       : _no_type
     should be: 
 error in line# 463
+    parsed as:     _attr
+    should be: 
+error in line# 464
+    parsed as:       b
+    should be: 
+error in line# 465
+    parsed as:       Foo
+    should be: 
+error in line# 467
+    parsed as:       _new
+    should be: 
+error in line# 468
+    parsed as:         Foo
+    should be: 
+error in line# 469
+    parsed as:       : _no_type
+    should be: 
+error in line# 471
+    parsed as:     _attr
+    should be: 
+error in line# 472
+    parsed as:       c
+    should be: 
+error in line# 473
+    parsed as:       Razz
+    should be: 
+error in line# 475
+    parsed as:       _new
+    should be: 
+error in line# 476
+    parsed as:         Razz
+    should be: 
+error in line# 477
+    parsed as:       : _no_type
+    should be: 
+error in line# 479
+    parsed as:     _attr
+    should be: 
+error in line# 480
+    parsed as:       d
+    should be: 
+error in line# 481
+    parsed as:       Bar
+    should be: 
+error in line# 483
+    parsed as:       _new
+    should be: 
+error in line# 484
+    parsed as:         Bar
+    should be: 
+error in line# 485
+    parsed as:       : _no_type
+    should be: 
+error in line# 487
+    parsed as:     _method
+    should be: 
+error in line# 488
+    parsed as:       main
+    should be: 
+error in line# 489
+    parsed as:       String
+    should be: 
+error in line# 491
     parsed as:       _string
     should be: 

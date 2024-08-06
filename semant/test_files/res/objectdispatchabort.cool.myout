@@ -1,16 +1,26 @@
-TestTestClass Name: A, Class Definition: 0x618f0023b240
-Class Name: Object, Class Definition: 0x618f0023c100
-Class Name: Main, Class Definition: 0x618f0023b4d0
-Class Name: Int, Class Definition: 0x618efe4b197a
-Class Name: Bool, Class Definition: 0x618f0023b530
-Class Name: IO, Class Definition: 0x7ffdfe390a50
-Class Name: String, Class Definition: 0x618f0023bd60
-Class A inherits from Object | 
-Class Main inherits from Object | 
-Class Int inherits from Object | 
-Class Bool inherits from Object | 
-Class IO inherits from Object | 
-Class String inherits from Object | 
+
+Scope: 
+  Main
+  A
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class A: SELF added to symbol table.
+
+Scope: 
+  A
+
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
 #1
 _program
   #1

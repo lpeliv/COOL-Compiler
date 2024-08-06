@@ -1,3 +1,17 @@
 .//test_files//inheritsselftype.cl:1: Cannot inherit from SELF_TYPE.
 .//test_files//inheritsselftype.cl:1: Class Main inherits from an undefined class SELF_TYPE.
-TestCompilation halted due to static semantic errors.
+
+Scope: 
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
+Compilation halted due to static semantic errors.

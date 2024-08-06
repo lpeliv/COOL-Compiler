@@ -1,2 +1,17 @@
 Class Main is not defined.
-TestCompilation halted due to static semantic errors.
+
+Scope: 
+  A
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class A: SELF added to symbol table.
+
+Scope: 
+  A
+
+Compilation halted due to static semantic errors.

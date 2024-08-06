@@ -1,24 +1,58 @@
-TestTestTestTestTestTestClass Name: Book, Class Definition: 0x5e9366b76ed0
-Class Name: IO, Class Definition: 0x7ffde7500db0
-Class Name: String, Class Definition: 0x5e9366b7ae80
-Class Name: Article, Class Definition: 0x5e9366b77a60
-Class Name: BookList, Class Definition: 0x5e9366b78a00
-Class Name: Bool, Class Definition: 0x5e9366b7a7d0
-Class Name: Cons, Class Definition: 0x5e9366b79930
-Class Name: Object, Class Definition: 0x5e9366b7b220
-Class Name: Nil, Class Definition: 0x5e9366b79bb0
-Class Name: Main, Class Definition: 0x5e9366b7a770
-Class Name: Int, Class Definition: 0x5e93655e997a
-Class Book inherits from IO | Object | 
-Class IO inherits from Object | 
-Class String inherits from Object | 
-Class Article inherits from Book | IO | Object | 
-Class BookList inherits from IO | Object | 
-Class Bool inherits from Object | 
-Class Cons inherits from IO | BookList | Object | 
-Class Nil inherits from IO | BookList | Object | 
-Class Main inherits from Object | 
-Class Int inherits from Object | 
+
+Scope: 
+  Main
+  Nil
+  Cons
+  BookList
+  Article
+  Book
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class Book: SELF added to symbol table.
+
+Scope: 
+  Book
+
+
+Scope: 
+Class Article: SELF added to symbol table.
+
+Scope: 
+  Article
+
+
+Scope: 
+Class BookList: SELF added to symbol table.
+
+Scope: 
+  BookList
+
+
+Scope: 
+Class Cons: SELF added to symbol table.
+
+Scope: 
+  Cons
+
+
+Scope: 
+Class Nil: SELF added to symbol table.
+
+Scope: 
+  Nil
+
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
 #1
 _program
   #1

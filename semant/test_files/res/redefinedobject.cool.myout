@@ -1,4 +1,34 @@
 .//test_files//redefinedobject.cl:1: Class Object cannot be redefined.
 Class Main is in a cycle inheritance.
 .//test_files//redefinedobject.cl:1: Class Object cannot inherit from itself.
-TestTestTestCompilation halted due to static semantic errors.
+
+Scope: 
+  A
+  Main
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
+
+Scope: 
+Class Object: SELF added to symbol table.
+
+Scope: 
+  Object
+
+
+Scope: 
+Class A: SELF added to symbol table.
+
+Scope: 
+  A
+
+Compilation halted due to static semantic errors.

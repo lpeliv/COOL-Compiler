@@ -1,63 +1,66 @@
 error in line# 1
-    parsed as: TestClass Name: Main, Class Definition: 0x58b62234e1e0
+    parsed as: 
     should be: : Undefined return type PinkElephant in method main.
 error in line# 2
-    parsed as: Class Name: Object, Class Definition: 0x58b62234eea0
+    parsed as: Scope: 
     should be: : 'new' used with undefined class PinkElephant.
 error in line# 3
-    parsed as: Class Name: Bool, Class Definition: 0x58b62234e220
+    parsed as:   Main
     should be: Compilation halted due to static semantic errors.
 error in line# 4
-    parsed as: Class Name: Int, Class Definition: 0x58b62137397a
+    parsed as:   String
     should be: 
 error in line# 5
-    parsed as: Class Name: IO, Class Definition: 0x7fff1a0652f0
+    parsed as:   Bool
     should be: 
 error in line# 6
-    parsed as: Class Name: String, Class Definition: 0x58b62234eb00
+    parsed as:   Int
     should be: 
 error in line# 7
-    parsed as: Class Main inherits from Object | 
+    parsed as:   IO
     should be: 
 error in line# 8
-    parsed as: Class Bool inherits from Object | 
-    should be: 
-error in line# 9
-    parsed as: Class Int inherits from Object | 
+    parsed as:   Object
     should be: 
 error in line# 10
-    parsed as: Class IO inherits from Object | 
+    parsed as: Scope: 
     should be: 
 error in line# 11
-    parsed as: Class String inherits from Object | 
+    parsed as: Class Main: SELF added to symbol table.
     should be: 
 error in line# 13
-    parsed as: _program
+    parsed as: Scope: 
     should be: 
-error in line# 15
-    parsed as:   _class
-    should be: 
-error in line# 16
-    parsed as:     Main
+error in line# 14
+    parsed as:   Main
     should be: 
 error in line# 17
-    parsed as:     Object
-    should be: 
-error in line# 18
-    parsed as:     filename
+    parsed as: _program
     should be: 
 error in line# 19
-    parsed as:     (
+    parsed as:   _class
+    should be: 
+error in line# 20
+    parsed as:     Main
     should be: 
 error in line# 21
-    parsed as:     _method
+    parsed as:     Object
     should be: 
 error in line# 22
-    parsed as:       main
+    parsed as:     filename
     should be: 
 error in line# 23
-    parsed as:       PinkElephant
+    parsed as:     (
     should be: 
 error in line# 25
+    parsed as:     _method
+    should be: 
+error in line# 26
+    parsed as:       main
+    should be: 
+error in line# 27
+    parsed as:       PinkElephant
+    should be: 
+error in line# 29
     parsed as:       _new
     should be: 

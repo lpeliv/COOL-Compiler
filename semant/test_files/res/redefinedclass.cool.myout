@@ -1,2 +1,32 @@
 .//test_files//redefinedclass.cl:1: Class A was previously defined.
-TestTestTestCompilation halted due to static semantic errors.
+
+Scope: 
+  A
+  Main
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
+
+Scope: 
+Class A: SELF added to symbol table.
+
+Scope: 
+  A
+
+
+Scope: 
+Class A: SELF added to symbol table.
+
+Scope: 
+  A
+
+Compilation halted due to static semantic errors.

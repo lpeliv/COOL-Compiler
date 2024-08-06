@@ -1,16 +1,26 @@
-TestTestClass Name: CellularAutomaton, Class Definition: 0x5ca83f858a50
-Class Name: IO, Class Definition: 0x7ffcce3d9d60
-Class Name: String, Class Definition: 0x5ca83f859b50
-Class Name: Int, Class Definition: 0x5ca83e1c897a
-Class Name: Main, Class Definition: 0x5ca83f859560
-Class Name: Object, Class Definition: 0x5ca83f859ef0
-Class Name: Bool, Class Definition: 0x5ca83f8595c0
-Class CellularAutomaton inherits from IO | Object | 
-Class IO inherits from Object | 
-Class String inherits from Object | 
-Class Int inherits from Object | 
-Class Main inherits from Object | 
-Class Bool inherits from Object | 
+
+Scope: 
+  Main
+  CellularAutomaton
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class CellularAutomaton: SELF added to symbol table.
+
+Scope: 
+  CellularAutomaton
+
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
 #1
 _program
   #1

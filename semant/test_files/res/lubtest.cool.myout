@@ -1,26 +1,66 @@
-TestTestTestTestTestTestTestClass Name: Main, Class Definition: 0x5c5b155f5240
-Class Name: Object, Class Definition: 0x5c5b155f6fb0
-Class Name: Int, Class Definition: 0x5c5b1451c97a
-Class Name: Z, Class Definition: 0x5c5b155f5320
-Class Name: A, Class Definition: 0x5c5b155f5430
-Class Name: B, Class Definition: 0x5c5b155f5540
-Class Name: C, Class Definition: 0x5c5b155f5650
-Class Name: D, Class Definition: 0x5c5b155f5760
-Class Name: Test, Class Definition: 0x5c5b155f6320
-Class Name: Bool, Class Definition: 0x5c5b155f6380
-Class Name: IO, Class Definition: 0x7ffec0b81170
-Class Name: String, Class Definition: 0x5c5b155f6c10
-Class Main inherits from Object | 
-Class Int inherits from Object | 
-Class Z inherits from Object | 
-Class A inherits from Object | Z | 
-Class B inherits from Object | Z | 
-Class C inherits from Object | Z | B | 
-Class D inherits from Object | Z | B | 
-Class Test inherits from Object | 
-Class Bool inherits from Object | 
-Class IO inherits from Object | 
-Class String inherits from Object | 
+
+Scope: 
+  Test
+  D
+  C
+  B
+  A
+  Z
+  Main
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
+
+Scope: 
+Class Z: SELF added to symbol table.
+
+Scope: 
+  Z
+
+
+Scope: 
+Class A: SELF added to symbol table.
+
+Scope: 
+  A
+
+
+Scope: 
+Class B: SELF added to symbol table.
+
+Scope: 
+  B
+
+
+Scope: 
+Class C: SELF added to symbol table.
+
+Scope: 
+  C
+
+
+Scope: 
+Class D: SELF added to symbol table.
+
+Scope: 
+  D
+
+
+Scope: 
+Class Test: SELF added to symbol table.
+
+Scope: 
+  Test
+
 #1
 _program
   #1

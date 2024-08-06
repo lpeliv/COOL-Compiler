@@ -1,2 +1,24 @@
 .//test_files//badredefineint.cl:1: Redefinition of Int is not allowed.
-TestTestCompilation halted due to static semantic errors.
+
+Scope: 
+  Main
+  String
+  Bool
+  Int
+  IO
+  Object
+
+Scope: 
+Class Main: SELF added to symbol table.
+
+Scope: 
+  Main
+
+
+Scope: 
+Class Int: SELF added to symbol table.
+
+Scope: 
+  Int
+
+Compilation halted due to static semantic errors.

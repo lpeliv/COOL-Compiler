@@ -190,6 +190,10 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
     /*------------------------------------------------*/
     /* Izlazak iz scope-a */
     /*------------------------------------------------*/ 
+    
+    if(PRINT == 1)
+        symbol_table.dump();
+    
     symbol_table.exitscope();
 }
 
@@ -390,9 +394,9 @@ void program_class::semant()
     /*------------------------------------------------*/
     /* Ispis klasa i pokazivača njihovih definicija */
     /*------------------------------------------------*/
-    if(PRINT == 1){ 
+    if(PRINT == 1){
         //classtable->dump_class_map();
-        classtable->print_inheritance_graph();
+        //classtable->print_inheritance_graph();
     }
 }
 
