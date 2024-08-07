@@ -86,49 +86,21 @@ public:
 void class__class::walk_down_add(ClassTable *ct) {
   Symbol class_name = this->fetchName();
   Class_ class_to_add = ct->get_class(class_name);
+
+  /*------------------------------------------------*/
+  /* Provjera scope-a trenutne klase */
+  /*------------------------------------------------*/
+  ct->get_class_table().enterscope();
   if (class_to_add != nullptr) {
-    
-    ct->get_class_table().enterscope();
-
-    /*------------------------------------------------*/
-    /* Provjera scope-a trenutne klase */
-    /*------------------------------------------------*/
-    ct->get_class_table().dump();
-    if(PRINT == 1)
-      cerr << "Class " << class_name->get_string() << ": ";
-    
-    /*------------------------------------------------*/
-    /* Dohvaćanje klase i pohrana u tablicu simbola --- Nepotrebno, izbrisati naknadno*/
-    /*------------------------------------------------*/
-    /*ct->get_class_table().addid(class_name, &class_to_add);
-
-    if(PRINT == 1)
-      cerr << "Class " << class_name->get_string() << " added to symbol table.\n";
-    */
-
-    /*------------------------------------------------*/
-    /* Ubacivanje SELF u tablicu simbola */
-    /*------------------------------------------------*/
-    Symbol self = class_name;
-    if (ct->get_class_table().lookup(self) == nullptr) {
-      ct->get_class_table().addid(self, &class_to_add);
-
-      if (PRINT){
-        cerr << "SELF added to symbol table.";
-        ct->get_class_table().dump();
-      }
-    }
-
-    ct->get_class_table().exitscope();
+    if(PRINT)
+      cerr << "Sada sam u scopu od " << class_name->get_string() << endl;
   } else {
-    if(PRINT == 1)
+    if(PRINT)
       cerr << "Class " << class_name->get_string() << " not found in class map.\n";
   }
-  
-  cerr << "\n";
+  ct->get_class_table().exitscope();
 
 }
-
 
 /*------------------------------------------------*/
 /* Klasa se dohvaća iz mape klasa */

@@ -193,8 +193,8 @@ ClassTable::ClassTable(Classes classes) : semant_errors(0) , error_stream(cerr) 
     
     if(PRINT == 1)
         symbol_table.dump();
-    
-    symbol_table.exitscope();
+    cerr << endl;
+    // symbol_table.exitscope();
 }
 
 void ClassTable::install_basic_classes() {
